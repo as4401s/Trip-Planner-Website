@@ -1,25 +1,46 @@
-# Trip-Planner-Website
+# Trip Planner Website
 
-Taiwan trip planner website with a static itinerary site in `site/`.
+Static travel itinerary website built with plain HTML, CSS, and JavaScript.
 
-## Local run
+## Overview
+
+This project renders a multi-day trip plan from local JSON data and local image assets. It is designed to work as a simple static site that can be previewed locally or deployed directly to Netlify.
+
+## Project Structure
+
+- `site/index.html` - main HTML entry point
+- `site/app.js` - client-side rendering logic
+- `site/styles.css` - site styling and responsive layout
+- `site/data/itinerary.json` - itinerary content
+- `site/data/asset-links.json` - source and link metadata
+- `site/assets/images/` - local image assets
+- `site/config.js` - client-side configuration values
+- `scripts/fetch_assets.py` - helper script for downloading and wiring local images
+
+## Local Development
+
+Run a local static server from the project root:
 
 ```bash
 uv run python -m http.server 3001 --directory site
 ```
 
-Open `http://127.0.0.1:3001/`.
+Then open:
 
-## Netlify
+```text
+http://127.0.0.1:3001/
+```
+
+## Deployment
+
+This project can be deployed as a static site on Netlify.
 
 - Publish directory: `site`
 - Build command: none
 
-## Google Maps Embeds
+## Optional Configuration
 
-The site supports day-level Google Maps Embed API iframes with tagged stops.
-
-Set your key in `site/config.js`:
+Google Maps embeds can be enabled through `site/config.js`:
 
 ```js
 window.APP_CONFIG = {
@@ -27,4 +48,4 @@ window.APP_CONFIG = {
 };
 ```
 
-Use a referrer-restricted browser key for your deployed domain.
+If no key is set, the site falls back gracefully without embedded maps.
