@@ -1,5 +1,6 @@
 const app = document.querySelector("#app");
 const mapsApiKey = window.APP_CONFIG?.GOOGLE_MAPS_EMBED_API_KEY?.trim() || "";
+const isCompactViewport = window.matchMedia("(max-width: 720px)").matches;
 
 const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
 
@@ -29,27 +30,42 @@ const foodMarkup = (foods = []) => {
   }
 
   return `
-    <div class="foods">
-      ${foods
-        .map((food) => {
-          const image = safeImage(food.images);
-          return `
-            <article class="food-card${image ? "" : " no-image"}">
-              ${
-                image
-                  ? `<img src="./${image}" alt="${food.name}" loading="lazy" />`
-                  : ""
-              }
-              <div class="food-body">
-                <h4 class="food-title">${food.name}</h4>
-                <p class="food-meta">${food.where}</p>
-                <p class="food-description">${food.description}</p>
-              </div>
-            </article>
-          `;
-        })
-        .join("")}
-    </div>
+    <details class="food-section" ${isCompactViewport ? "" : "open"}>
+      <summary class="food-section-summary">
+        <div>
+          <p class="food-section-kicker">Food</p>
+          <h4 class="food-section-title">Foods To Try</h4>
+        </div>
+        <div class="food-section-meta">
+          <span>${foods.length} item${foods.length > 1 ? "s" : ""}</span>
+          <span class="food-section-state food-open-label">Hide</span>
+          <span class="food-section-state food-closed-label">Show</span>
+        </div>
+      </summary>
+      <div class="food-section-panel">
+        <div class="foods">
+          ${foods
+            .map((food) => {
+              const image = safeImage(food.images);
+              return `
+                <article class="food-card${image ? "" : " no-image"}">
+                  ${
+                    image
+                      ? `<img src="./${image}" alt="${food.name}" loading="lazy" />`
+                      : ""
+                  }
+                  <div class="food-body">
+                    <h4 class="food-title">${food.name}</h4>
+                    <p class="food-meta">${food.where}</p>
+                    <p class="food-description">${food.description}</p>
+                  </div>
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+      </div>
+    </details>
   `;
 };
 
