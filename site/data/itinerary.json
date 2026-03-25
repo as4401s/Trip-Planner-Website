@@ -158,11 +158,9 @@
       ],
       "transfers": [
         {
-          "from": "Taipei 101 Observatory",
-          "to": "Raohe Night Market",
-          "mode": "MRT Red -> Green",
-          "instructions": "From Taipei 101/World Trade Center Station, take the Red Line north to Chiang Kai-shek Memorial Hall, change to the Green Line toward Songshan, then use Songshan Station Exit 5 for the market entrance beside Ciyou Temple.",
-          "note": "If you are tired after the flight, a taxi is the simpler 15 to 20 minute option."
+          "mode": "Taxi or MRT",
+          "instructions": "Fastest route is a taxi straight from Taipei 101 to Raohe Night Market. If you want MRT, ride the Red Line from Taipei 101/World Trade Center to Chiang Kai-shek Memorial Hall, change to the Green Line toward Songshan, and use Songshan Station Exit 5 for the market entrance beside Ciyou Temple.",
+          "note": "Taxi is usually the better choice on arrival night because it avoids one line change and extra walking."
         }
       ]
     },
@@ -394,24 +392,18 @@
       ],
       "transfers": [
         {
-          "from": "Lungshan Temple",
-          "to": "Chiang Kai-shek Memorial Hall",
           "mode": "MRT Blue -> Green",
           "instructions": "Walk back to Longshan Temple Station, take the Blue Line one stop east to Ximen, then change to the Green Line for Chiang Kai-shek Memorial Hall Station. Use Exit 5 for the main plaza.",
           "note": "This is the cleanest station-to-station transfer of the day and keeps walking minimal."
         },
         {
-          "from": "Chiang Kai-shek Memorial Hall",
-          "to": "Dihua Street",
           "mode": "MRT Green + short walk",
           "instructions": "Re-enter Chiang Kai-shek Memorial Hall Station, take the Green Line north to Beimen Station, then walk 10 to 15 minutes northwest into the Dadaocheng end of Dihua Street.",
           "note": "If you want to cut the walk, take a short taxi from Liberty Square instead."
         },
         {
-          "from": "Dihua Street",
-          "to": "Ximending",
           "mode": "Walk or 1-stop MRT",
-          "instructions": "From central Dihua Street, either walk south toward Ximen for 20 minutes or return to Beimen Station and ride one Green Line stop to Ximen Station for the pedestrian zone.",
+          "instructions": "From central Dihua Street, either walk south toward Ximen for about 20 minutes or return to Beimen Station and ride one Green Line stop to Ximen Station for the pedestrian zone.",
           "note": "The MRT option is better if you are carrying shopping or tea."
         }
       ]
@@ -599,22 +591,16 @@
       ],
       "transfers": [
         {
-          "from": "Crocodile Island Viewpoint",
-          "to": "Thousand-Island Lake",
           "mode": "Car or driver",
           "instructions": "Stay on the ridge road and continue a short distance to the next reservoir overlook. The two viewpoints are close enough to combine before traffic builds.",
           "note": "Expect roughly 10 to 15 minutes of driving plus a few minutes to park and walk into the viewpoint."
         },
         {
-          "from": "Thousand-Island Lake",
-          "to": "Yongan Trail",
           "mode": "Car or driver",
           "instructions": "Keep heading through the Shiding tea-country roads toward the Yongan Trail access point. This leg is short but not practical without your own transport.",
           "note": "Plan for another 10 to 15 minutes on narrow local roads."
         },
         {
-          "from": "Yongan Trail",
-          "to": "Shiding Old Street",
           "mode": "Car or driver",
           "instructions": "Drive back down into central Shiding and park near the old street before exploring the riverside tofu shops on foot.",
           "note": "This is the longest local leg of the day and usually takes around 20 to 25 minutes."
@@ -699,15 +685,11 @@
       ],
       "transfers": [
         {
-          "from": "Yehliu Geopark",
-          "to": "Shifen Waterfall",
           "mode": "Driver or taxi",
           "instructions": "Continue inland from Yehliu toward Pingxi rather than backtracking to Taipei. A direct driver or taxi hop is the practical way to reach Shifen the same afternoon.",
           "note": "This leg usually runs about 55 to 70 minutes. Public transport is possible but requires slow backtracking through Keelung or Ruifang."
         },
         {
-          "from": "Shifen Waterfall",
-          "to": "Jiufen Old Street",
           "mode": "Taxi or train + taxi",
           "instructions": "Take a taxi directly to Jiufen for the cleanest finish, or return by train to Ruifang and switch to a bus or taxi up the hill into Jiufen.",
           "note": "A direct taxi is typically 35 to 45 minutes and avoids the late-afternoon transfer crush."
@@ -894,24 +876,18 @@
       ],
       "transfers": [
         {
-          "from": "Guandu Temple",
-          "to": "Tianyuan Temple",
           "mode": "Red Line + taxi",
-          "instructions": "Return to Guandu Station, ride the Red Line north to Tamsui Station, then take a taxi for the final uphill stretch to Tianyuan Temple.",
+          "instructions": "Head back to Guandu Station, ride the Red Line north to Tamsui Station, then take a taxi for the uphill ride to Tianyuan Temple.",
           "note": "This is the easiest non-driving option. The last leg is much simpler by taxi than by piecing together local buses."
         },
         {
-          "from": "Tianyuan Temple",
-          "to": "Baishawan Beach",
           "mode": "Taxi or driver",
           "instructions": "Head west from Tianyuan Temple toward the north coast and continue straight to Baishawan Beach. This leg is best done by taxi or with the same driver.",
           "note": "Expect about 25 to 35 minutes depending on coastal traffic."
         },
         {
-          "from": "Baishawan Beach",
-          "to": "Shilin Night Market",
           "mode": "Taxi to MRT + Red Line",
-          "instructions": "Leave the beach for Tamsui or Guandu MRT Station by taxi, then ride the Red Line south to Jiantan Station and walk into Shilin Night Market.",
+          "instructions": "Leave the beach by taxi for Tamsui Station, then ride the Red Line south to Jiantan Station and walk into Shilin Night Market.",
           "note": "If you stay by road the whole way, a direct taxi usually takes 50 to 70 minutes."
         }
       ]

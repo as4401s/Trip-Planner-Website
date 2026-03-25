@@ -143,8 +143,8 @@ const dayMapMarkup = (day) => {
   `;
 };
 
-const transferMarkup = (transfer) => {
-  if (!transfer) {
+const transferMarkup = (transfer, fromPlace, toPlace) => {
+  if (!transfer || !fromPlace || !toPlace) {
     return "";
   }
 
@@ -152,7 +152,7 @@ const transferMarkup = (transfer) => {
     <article class="transfer-card">
       <div class="transfer-kicker">Next Stop</div>
       <div class="transfer-top">
-        <h3>${transfer.from} to ${transfer.to}</h3>
+        <h3>${fromPlace.name} to ${toPlace.name}</h3>
         <div class="transfer-badge">${transfer.mode}</div>
       </div>
       <p class="transfer-instructions">${transfer.instructions}</p>
@@ -214,10 +214,14 @@ const placeListMarkup = (day) => {
   return `
     <div class="place-list">
       ${day.places
-        .map(
-          (place, index) =>
-            `${placeMarkup(place)}${transferMarkup(day.transfers?.[index])}`
-        )
+        .map((place, index) => {
+          const nextPlace = day.places[index + 1];
+          return `${placeMarkup(place)}${transferMarkup(
+            day.transfers?.[index],
+            place,
+            nextPlace
+          )}`;
+        })
         .join("")}
     </div>
   `;
@@ -234,7 +238,7 @@ const celebrationMarkup = (images = []) => `
   </div>
 `;
 
-const dayMarkup = (day, index) => `
+const dayMarkup = (day) => `
   <details class="day fade-up" id="${day.id}" open>
     <summary class="day-summary">
       <div class="day-head${day.gallery_only ? " compact" : ""}">
