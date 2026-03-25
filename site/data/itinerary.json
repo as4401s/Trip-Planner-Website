@@ -32,7 +32,7 @@
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
           "route": "07:55 PEK -> 11:25 TPE",
-          "details": "Non-stop · 3h 30m · Economy"
+          "details": "Non-stop \u00b7 3h 30m \u00b7 Economy"
         }
       ],
       "places": [
@@ -333,8 +333,22 @@
                 "mee sua Taiwan",
                 "flour rice noodles Taiwan"
               ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ay-Chung_Flour-Rice_Noodle_20190504.jpg/1920px-Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+                  "title": "File:Ay-Chung Flour-Rice Noodle 20190504.jpg"
+                }
+              ],
               "desired_images": 1,
-              "images": []
+              "images": [
+                {
+                  "src": "assets/images/foods/ay-chung-noodles-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ay-Chung_Flour-Rice_Noodle_20190504.jpg/1920px-Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+                  "title": "File:Ay-Chung Flour-Rice Noodle 20190504.jpg"
+                }
+              ]
             },
             {
               "slug": "brown-sugar-boba",
@@ -1124,7 +1138,7 @@
           "to": "Berlin",
           "carrier": "Turkish Airlines TK125 / TK1727",
           "route": "09:35 TPE -> 21:25 BER",
-          "details": "1 stop · 17h 50m · Economy"
+          "details": "1 stop \u00b7 17h 50m \u00b7 Economy"
         }
       ],
       "places": []

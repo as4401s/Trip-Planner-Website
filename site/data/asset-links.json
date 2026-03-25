@@ -186,7 +186,14 @@
       "links": {
         "reference": "https://en.wikipedia.org/wiki/Mee_sua"
       },
-      "images": []
+      "images": [
+        {
+          "src": "assets/images/foods/ay-chung-noodles-1.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ay-Chung_Flour-Rice_Noodle_20190504.jpg/1920px-Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ay-Chung_Flour-Rice_Noodle_20190504.jpg",
+          "title": "File:Ay-Chung Flour-Rice Noodle 20190504.jpg"
+        }
+      ]
     },
     {
       "kind": "food",
