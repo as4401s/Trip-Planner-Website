@@ -820,6 +820,20 @@ img {
     gap: 1rem;
   }
 
+  .day-title {
+    font-size: clamp(2.05rem, 7vw, 2.55rem);
+    line-height: 0.95;
+  }
+
+  .day-subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.02rem;
+  }
+
+  .day-focus {
+    margin-top: 0.7rem;
+  }
+
   .day-panel {
     gap: 1.15rem;
     padding: 0 1rem 1.15rem;
