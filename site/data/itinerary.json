@@ -1,0 +1,1089 @@
+{
+  "title": "Taiwan 6-Day Itinerary",
+  "trip_dates": "May 24 to May 29, 2026",
+  "summary": "Taipei base with one Hualien day and one northeast coast day.",
+  "hero": {
+    "slug": "hero",
+    "image_queries": [
+      "Taipei skyline Taiwan",
+      "Taipei 101 city view"
+    ],
+    "desired_images": 1,
+    "images": [
+      {
+        "src": "assets/images/hero/hero-1.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+        "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
+      }
+    ]
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "label": "Day 1",
+      "date": "Sunday, May 24, 2026",
+      "focus": "Arrival, skyline, easy night market stop",
+      "transport_note": "Keep this day on the MRT or by taxi. Both stops are easy after check-in.",
+      "places": [
+        {
+          "slug": "taipei-101-observatory",
+          "name": "Taipei 101 Observatory",
+          "area": "Xinyi District, Taipei",
+          "best_time": "Late afternoon to sunset",
+          "duration": "60 to 90 min",
+          "summary": "Fast elevator, skyline view, and an easy first stop without extra walking.",
+          "highlights": [
+            "89th-floor city view",
+            "Tuned mass damper display"
+          ],
+          "transport": "Take the MRT Red Line to Taipei 101/World Trade Center Station and follow the mall signs to the observatory entrance.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Taipei+101+Observatory",
+            "reference": "https://en.wikipedia.org/wiki/Taipei_101"
+          },
+          "image_queries": [
+            "Taipei 101 Taiwan",
+            "Taipei 101 observatory"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/taipei-101-observatory-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
+              "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
+            },
+            {
+              "src": "assets/images/places/taipei-101-observatory-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1920px-Taipei_101_2009_amk.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
+              "title": "File:Taipei 101 2009 amk.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "raohe-night-market",
+          "name": "Raohe Night Market",
+          "area": "Songshan District, Taipei",
+          "best_time": "Dinner",
+          "duration": "90 min",
+          "summary": "Compact night market with strong street-food lineup and a straightforward walking route.",
+          "highlights": [
+            "Ciyou Temple entrance gate",
+            "Dense single-street food run"
+          ],
+          "transport": "Take the MRT Green Line to Songshan Station, Exit 5. The market starts right beside Ciyou Temple.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Raohe+Night+Market+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Raohe_Street_Night_Market"
+          },
+          "image_queries": [
+            "Raohe Street Night Market Taipei",
+            "Raohe Night Market entrance"
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "black-pepper-bun",
+              "name": "Fuzhou Black Pepper Bun",
+              "description": "Clay-oven bun with pork, scallion, and black pepper.",
+              "where": "Main entrance stall",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Hu_jiao_bing"
+              },
+              "image_queries": [
+                "Pepper bun Raohe Street Night Market",
+                "Hu jiao bing Taiwan"
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/black-pepper-bun-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Pepper_bun_at_Raohe_Street_Night_Market_20070622.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Pepper_bun_at_Raohe_Street_Night_Market_20070622.jpg",
+                  "title": "File:Pepper bun at Raohe Street Night Market 20070622.jpg"
+                }
+              ]
+            },
+            {
+              "slug": "sweet-potato-balls",
+              "name": "Sweet Potato Balls",
+              "description": "Fried, hollow, and chewy snack sold by the bag.",
+              "where": "Snack stalls inside the market",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Sweet_potato"
+              },
+              "image_queries": [
+                "sweet potato balls Taiwan street food",
+                "Taiwan sweet potato balls"
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/sweet-potato-balls-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/2011-10-10_Street_vendors_making_sweets_at_a_shop_in_Jiufen_Old_Street.jpg/1920px-2011-10-10_Street_vendors_making_sweets_at_a_shop_in_Jiufen_Old_Street.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:2011-10-10_Street_vendors_making_sweets_at_a_shop_in_Jiufen_Old_Street.jpg",
+                  "title": "File:2011-10-10 Street vendors making sweets at a shop in Jiufen Old Street.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/raohe-night-market-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg/1920px-East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
+              "title": "File:East Entrance of Raohe Street Night Market 20060118 night.jpg"
+            },
+            {
+              "src": "assets/images/places/raohe-night-market-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg/1920px-West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
+              "title": "File:West Entrance of Raohe Street Night Market 20080910.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "label": "Day 2",
+      "date": "Monday, May 25, 2026",
+      "focus": "Temple, memorial hall, old street, evening district",
+      "transport_note": "This is a clean MRT day. Start in Wanhua and work north and east by train.",
+      "places": [
+        {
+          "slug": "lungshan-temple",
+          "name": "Lungshan Temple",
+          "area": "Wanhua District, Taipei",
+          "best_time": "Morning",
+          "duration": "45 min",
+          "summary": "Historic temple with carved roofs, incense, and active worship throughout the day.",
+          "highlights": [
+            "Ceramic roof dragons",
+            "Busy prayer hall and forecourt"
+          ],
+          "transport": "Take the MRT Blue Line to Longshan Temple Station, Exit 1. The temple is directly outside.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Lungshan+Temple+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Lungshan_Temple_of_Manka"
+          },
+          "image_queries": [
+            "Lungshan Temple Taipei",
+            "Lungshan Temple of Manka"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/lungshan-temple-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Longshan_Temple%2C_Taipei_01.jpg/1920px-Longshan_Temple%2C_Taipei_01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Longshan_Temple,_Taipei_01.jpg",
+              "title": "File:Longshan Temple, Taipei 01.jpg"
+            },
+            {
+              "src": "assets/images/places/lungshan-temple-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taipei_Taiwan_Mengjia-Longshan-Temple-00.jpg/1920px-Taipei_Taiwan_Mengjia-Longshan-Temple-00.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Mengjia-Longshan-Temple-00.jpg",
+              "title": "File:Taipei Taiwan Mengjia-Longshan-Temple-00.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "chiang-kai-shek-memorial-hall",
+          "name": "Chiang Kai-shek Memorial Hall",
+          "area": "Zhongzheng District, Taipei",
+          "best_time": "Late morning",
+          "duration": "60 min",
+          "summary": "Large memorial plaza with formal gardens and the hourly guard ceremony.",
+          "highlights": [
+            "Main hall staircase",
+            "Liberty Square arch and grounds"
+          ],
+          "transport": "Take the MRT Red or Green Line to Chiang Kai-shek Memorial Hall Station, Exit 5.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Chiang+Kai-shek+Memorial+Hall",
+            "reference": "https://en.wikipedia.org/wiki/Chiang_Kai-shek_Memorial_Hall"
+          },
+          "image_queries": [
+            "Chiang Kai-shek Memorial Hall Taipei",
+            "Liberty Square Taipei"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/chiang-kai-shek-memorial-hall-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/1920px-Chiang_Kai-shek_memorial_amk.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_memorial_amk.jpg",
+              "title": "File:Chiang Kai-shek memorial amk.jpg"
+            },
+            {
+              "src": "assets/images/places/chiang-kai-shek-memorial-hall-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chiang_Kai-shek_memorial_2_amk.jpg/1920px-Chiang_Kai-shek_memorial_2_amk.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_memorial_2_amk.jpg",
+              "title": "File:Chiang Kai-shek memorial 2 amk.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "dihua-street",
+          "name": "Dihua Street",
+          "area": "Datong District, Taipei",
+          "best_time": "Afternoon",
+          "duration": "60 to 90 min",
+          "summary": "Historic trading street for tea, dried goods, fabric stores, and restored shophouses.",
+          "highlights": [
+            "Qing-era facades",
+            "Tea and dried-fruit shops"
+          ],
+          "transport": "Take the MRT to Beimen or Daqiaotou and walk into the Dadaocheng area.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Dihua+Street+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Dihua_Street"
+          },
+          "image_queries": [
+            "Dihua Street Taipei",
+            "Dadaocheng Taipei old street"
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "oolong-tea",
+              "name": "Taiwan Oolong Tea",
+              "description": "Good stop for tea tasting and easy gifts.",
+              "where": "Traditional tea shops on Dihua Street",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Oolong"
+              },
+              "image_queries": [
+                "Taiwan oolong tea",
+                "Taiwan tea shop"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Taiwan_New_Cultural_Movement_Memorial_Hall_%28Formosa_Oolong_Tea%29.jpg/1920px-Taiwan_New_Cultural_Movement_Memorial_Hall_%28Formosa_Oolong_Tea%29.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Taiwan_New_Cultural_Movement_Memorial_Hall_(Formosa_Oolong_Tea).jpg",
+                  "title": "File:Formosa Oolong Tea.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/oolong-tea-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Taiwan_New_Cultural_Movement_Memorial_Hall_%28Formosa_Oolong_Tea%29.jpg/1920px-Taiwan_New_Cultural_Movement_Memorial_Hall_%28Formosa_Oolong_Tea%29.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Taiwan_New_Cultural_Movement_Memorial_Hall_(Formosa_Oolong_Tea).jpg",
+                  "title": "File:Formosa Oolong Tea.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/dihua-street-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Buildings_along_Dihua_Street_07.23_%282%29.jpg/1920px-Buildings_along_Dihua_Street_07.23_%282%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Buildings_along_Dihua_Street_07.23_(2).jpg",
+              "title": "File:Buildings along Dihua Street 07.23 (2).jpg"
+            }
+          ]
+        },
+        {
+          "slug": "ximending",
+          "name": "Ximending",
+          "area": "Wanhua District, Taipei",
+          "best_time": "Evening",
+          "duration": "90 min",
+          "summary": "Pedestrian district for snack stops, shopping, and neon-heavy night photos.",
+          "highlights": [
+            "Red House area",
+            "Walking streets and pop culture shops"
+          ],
+          "transport": "Take the MRT Blue or Green Line to Ximen Station and use Exit 6 for the central walking area.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Ximending+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Ximending"
+          },
+          "image_queries": [
+            "Ximending Taipei",
+            "Ximen Walking District"
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "ay-chung-noodles",
+              "name": "Ay-Chung Flour-Rice Noodles",
+              "description": "Thin vermicelli soup sold as a fast standing snack.",
+              "where": "Ay-Chung stall in Ximending",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Mee_sua"
+              },
+              "image_queries": [
+                "mee sua Taiwan",
+                "flour rice noodles Taiwan"
+              ],
+              "desired_images": 1,
+              "images": []
+            },
+            {
+              "slug": "brown-sugar-boba",
+              "name": "Brown Sugar Boba Milk",
+              "description": "Fresh milk with warm brown-sugar pearls.",
+              "where": "Bubble tea shops around Ximen",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Bubble_tea"
+              },
+              "image_queries": [
+                "brown sugar bubble tea Taiwan",
+                "bubble tea Taiwan"
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/brown-sugar-boba-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg/1920px-Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Pearl_Milk_Tea_in_Chun_Shui_Tang.jpg",
+                  "title": "File:Pearl Milk Tea in Chun Shui Tang.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/ximending-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ximending_rainbow_crossing_201910.jpg/1920px-Ximending_rainbow_crossing_201910.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Ximending_rainbow_crossing_201910.jpg",
+              "title": "File:Ximending rainbow crossing 201910.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "label": "Day 3",
+      "date": "Tuesday, May 26, 2026",
+      "focus": "Shiding lookouts and old street",
+      "transport_note": "Use a rental car or a hired driver. Lookouts and trailheads are spread out and public transport is slow.",
+      "places": [
+        {
+          "slug": "crocodile-island-viewpoint",
+          "name": "Crocodile Island Viewpoint",
+          "area": "Shiding, New Taipei",
+          "best_time": "Early morning",
+          "duration": "45 to 60 min",
+          "summary": "Reservoir viewpoint over the peninsula shape that gives the site its nickname.",
+          "highlights": [
+            "Feitsui Reservoir panorama",
+            "Short uphill viewpoint walk"
+          ],
+          "transport": "Drive to the roadside pull-off near the viewpoint trailhead. Final access is on foot over a short but steep path.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Crocodile+Island+viewpoint+Shiding",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Crocodile+Island+viewpoint+Shiding"
+          },
+          "image_queries": [
+            "Feitsui Reservoir Taiwan",
+            "Shiding reservoir view Taiwan"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/crocodile-island-viewpoint-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fetsui_Reservoir_aerial_photography.jpg/1920px-Fetsui_Reservoir_aerial_photography.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Fetsui_Reservoir_aerial_photography.jpg",
+              "title": "File:Fetsui Reservoir aerial photography.jpg"
+            },
+            {
+              "src": "assets/images/places/crocodile-island-viewpoint-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/FeiCueiReservoir.jpg/1920px-FeiCueiReservoir.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:FeiCueiReservoir.jpg",
+              "title": "File:FeiCueiReservoir.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "thousand-island-lake",
+          "name": "Thousand-Island Lake",
+          "area": "Shiding, New Taipei",
+          "best_time": "Morning",
+          "duration": "45 min",
+          "summary": "Series of reservoir inlets framed by tea fields and layered ridgelines.",
+          "highlights": [
+            "Tea-country overlook",
+            "Wide reservoir views"
+          ],
+          "transport": "Continue by car from the Crocodile Island area; viewpoints are spread across the ridge roads.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Thousand+Island+Lake+Shiding",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Thousand+Island+Lake+Shiding"
+          },
+          "image_queries": [
+            "Thousand Island Lake Shiding Taiwan",
+            "Feitsui Reservoir Taiwan"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/thousand-island-lake-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fetsui_Reservoir_aerial_photography.jpg/1920px-Fetsui_Reservoir_aerial_photography.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Fetsui_Reservoir_aerial_photography.jpg",
+              "title": "File:Fetsui Reservoir aerial photography.jpg"
+            },
+            {
+              "src": "assets/images/places/thousand-island-lake-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/FeiCueiReservoir.jpg/1920px-FeiCueiReservoir.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:FeiCueiReservoir.jpg",
+              "title": "File:FeiCueiReservoir.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "yongan-trail",
+          "name": "Yongan Trail",
+          "area": "Shiding, New Taipei",
+          "best_time": "Late morning",
+          "duration": "60 min",
+          "summary": "Short shaded trail through tea-country forest with reservoir views in sections.",
+          "highlights": [
+            "Quiet forest path",
+            "Lookout points over the water"
+          ],
+          "transport": "Reach by car from the Shiding viewpoint roads. Trail access is easiest with your own vehicle.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Yongan+Trail+Shiding",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Yongan+Trail+Shiding"
+          },
+          "image_queries": [
+            "Shiding tea plantation Taiwan",
+            "Shiding trail Taiwan"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/yongan-trail-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Shiding_River_Walking_Trail_%E7%9F%B3%E7%A2%87%E6%BA%AA%E6%AD%A5%E9%81%93_-_panoramio.jpg/1920px-Shiding_River_Walking_Trail_%E7%9F%B3%E7%A2%87%E6%BA%AA%E6%AD%A5%E9%81%93_-_panoramio.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shiding_River_Walking_Trail_%E7%9F%B3%E7%A2%87%E6%BA%AA%E6%AD%A5%E9%81%93_-_panoramio.jpg",
+              "title": "File:Shiding River Walking Trail \u77f3\u7887\u6eaa\u6b65\u9053 - panoramio.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "shiding-old-street",
+          "name": "Shiding Old Street",
+          "area": "Shiding, New Taipei",
+          "best_time": "Lunch",
+          "duration": "60 min",
+          "summary": "Short old street with stilted riverside buildings and tofu-focused snack shops.",
+          "highlights": [
+            "Riverside houses on stone supports",
+            "Tofu shops and local snacks"
+          ],
+          "transport": "Drive back down into central Shiding and park before walking the old street.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Shiding+Old+Street",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Shiding+Old+Street"
+          },
+          "image_queries": [
+            "Shiding Old Street Taiwan",
+            "Shiding old street tofu"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg/1920px-%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg",
+              "title": "File:Century Old Blacksmith Shop - panoramio.jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "tofu-ice-cream",
+              "name": "Tofu Ice Cream",
+              "description": "Cold tofu-based dessert sold by local tofu shops.",
+              "where": "Old street dessert counters",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Tofu"
+              },
+              "image_queries": [
+                "tofu ice cream Taiwan",
+                "tofu dessert Taiwan"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg/1920px-%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg",
+                  "title": "File:Tofu ice cream.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/tofu-ice-cream-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg/1920px-%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%B1%86%E8%85%90%E5%86%B0%E6%B7%87%E6%B7%8B.jpg",
+                  "title": "File:Tofu ice cream.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/shiding-old-street-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg/1920px-%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:%E7%99%BE%E5%B9%B4%E6%89%93%E9%90%B5%E5%BA%97_Century_Old_Blacksmith_Shop_-_panoramio.jpg",
+              "title": "File:Century Old Blacksmith Shop - panoramio.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "label": "Day 4",
+      "date": "Wednesday, May 27, 2026",
+      "focus": "Hualien and Taroko day trip",
+      "transport_note": "Take an early train from Taipei to Hualien, then use a pre-booked driver or day tour inside the park corridor.",
+      "places": [
+        {
+          "slug": "taroko-national-park",
+          "name": "Taroko National Park",
+          "area": "Hualien County",
+          "best_time": "Full day",
+          "duration": "6 to 8 hr",
+          "summary": "Marble gorge, river canyons, and cliff roads. Best done with same-week checks on road and trail status.",
+          "highlights": [
+            "Taroko Terrace and visitor area",
+            "Scenic stops along the gorge corridor"
+          ],
+          "transport": "Take a morning train to Hualien, then continue by taxi, chartered car, or organized tour. Do not assume every gorge trail is open.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Taroko+National+Park",
+            "reference": "https://www.taroko.gov.tw/en/titlelist/news%28n%29/4046"
+          },
+          "access_note": "Taroko conditions can change. Official January 2026 notices show selected facilities and trails open, while damaged zones and some guided sections remain restricted after the 2024 earthquake and later storms.",
+          "image_queries": [
+            "Taroko National Park Taiwan",
+            "Taroko Gorge Hualien"
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "bamboo-tube-rice",
+              "name": "Bamboo Tube Rice",
+              "description": "Sticky rice steamed in bamboo, often sold around indigenous food stops.",
+              "where": "Roadside vendors near Taroko and Hualien",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Bamboo_rice"
+              },
+              "image_queries": [
+                "bamboo rice Taiwan",
+                "sticky rice bamboo Taiwan"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Water_bamboo_and_sausage.jpg/1920px-Water_bamboo_and_sausage.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Water_bamboo_and_sausage.jpg",
+                  "title": "File:Water bamboo and sausage.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/bamboo-tube-rice-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Water_bamboo_and_sausage.jpg/1920px-Water_bamboo_and_sausage.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Water_bamboo_and_sausage.jpg",
+                  "title": "File:Water bamboo and sausage.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/taroko-national-park-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Taroko_National_Park%EF%BC%8Bby_Steven%EF%BC%8B9287.jpg/1920px-Taroko_National_Park%EF%BC%8Bby_Steven%EF%BC%8B9287.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taroko_National_Park%EF%BC%8Bby_Steven%EF%BC%8B9287.jpg",
+              "title": "File:Taroko National Park\uff0bby Steven\uff0b9287.jpg"
+            },
+            {
+              "src": "assets/images/places/taroko-national-park-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg/1920px-Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taroko-Gorge_Hualien_Taiwan_Pudu-Bridge-at-Taroko-National-Park-01.jpg",
+              "title": "File:Taroko-Gorge Hualien Taiwan Pudu-Bridge-at-Taroko-National-Park-01.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "label": "Day 5",
+      "date": "Thursday, May 28, 2026",
+      "focus": "Northeast coast and Jiufen",
+      "transport_note": "Fastest option is a driver. Public option is train to Ruifang plus local buses or taxi hops.",
+      "places": [
+        {
+          "slug": "yehliu-geopark",
+          "name": "Yehliu Geopark",
+          "area": "Wanli District, New Taipei",
+          "best_time": "Morning",
+          "duration": "60 to 90 min",
+          "summary": "Coastal rock park with sea-eroded formations and open ocean exposure.",
+          "highlights": [
+            "Queen's Head area",
+            "Sea-carved mushroom rocks"
+          ],
+          "transport": "Driver or bus from Taipei to Yehliu Geopark. Enter early to avoid the mid-morning crowd.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Yehliu+Geopark",
+            "reference": "https://eng.taiwan.net.tw/m1.aspx?id=155&sNo=0002035"
+          },
+          "image_queries": [
+            "Yehliu Geopark Taiwan",
+            "Yehliu Queen's Head"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/yehliu-geopark-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Yehliu_Taiwan_GeoPark-01.jpg/1920px-Yehliu_Taiwan_GeoPark-01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Yehliu_Taiwan_GeoPark-01.jpg",
+              "title": "File:Yehliu Taiwan GeoPark-01.jpg"
+            },
+            {
+              "src": "assets/images/places/yehliu-geopark-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/20190415_Yehliu_geopark-2.jpg/1920px-20190415_Yehliu_geopark-2.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:20190415_Yehliu_geopark-2.jpg",
+              "title": "File:20190415 Yehliu geopark-2.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "shifen-waterfall",
+          "name": "Shifen Waterfall",
+          "area": "Pingxi District, New Taipei",
+          "best_time": "Afternoon",
+          "duration": "60 min",
+          "summary": "Broad waterfall reached by paved paths and bridge crossings from the visitor side.",
+          "highlights": [
+            "Main viewing deck",
+            "Bridge walk and side viewpoints"
+          ],
+          "transport": "From Ruifang or Jiufen, continue by train or car toward Shifen. Walk from the visitor area to the falls.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Shifen+Waterfall",
+            "reference": "https://newtaipei.travel/en-us/Attraction/Detail?id=111592&wnd_id=60"
+          },
+          "image_queries": [
+            "Shifen Waterfall Taiwan",
+            "Shifen waterfall Pingxi"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/shifen-waterfall-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ShiFengWaterFall_002.jpg/1920px-ShiFengWaterFall_002.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:ShiFengWaterFall_002.jpg",
+              "title": "File:ShiFengWaterFall 002.jpg"
+            },
+            {
+              "src": "assets/images/places/shifen-waterfall-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg/1920px-Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
+              "title": "File:Shifen Waterfall \u5341\u5206\u7011\u5e03 - panoramio.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "jiufen-old-street",
+          "name": "Jiufen Old Street",
+          "area": "Ruifang District, New Taipei",
+          "best_time": "Late afternoon to night",
+          "duration": "2 to 3 hr",
+          "summary": "Steep lantern-lined lanes, tea houses, and ocean viewpoints. Best after daylight but before the late-night bus crush.",
+          "highlights": [
+            "A-Mei teahouse area",
+            "Lantern alleys and sea views"
+          ],
+          "transport": "Reach Jiufen by bus, taxi, or driver from Ruifang or Shifen. Expect stairs and uphill lanes.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Jiufen+Old+Street",
+            "reference": "https://en.wikipedia.org/wiki/Jiufen"
+          },
+          "image_queries": [
+            "Jiufen Old Street Taiwan",
+            "Jiufen lanterns"
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "taro-balls",
+              "name": "Taro Balls",
+              "description": "Chewy taro and sweet potato balls served hot or cold.",
+              "where": "Dessert shops on Jiufen Old Street",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Taro"
+              },
+              "image_queries": [
+                "Jiufen taro balls",
+                "taro balls Taiwan dessert"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Taro_Balls_at_Jiufen%2C_New_Taipei_City%2C_Sept_2011.jpg/1920px-Taro_Balls_at_Jiufen%2C_New_Taipei_City%2C_Sept_2011.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Taro_Balls_at_Jiufen,_New_Taipei_City,_Sept_2011.jpg",
+                  "title": "File:Taro Balls at Jiufen, New Taipei City, Sept 2011.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/taro-balls-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Taro_Balls_at_Jiufen%2C_New_Taipei_City%2C_Sept_2011.jpg/1920px-Taro_Balls_at_Jiufen%2C_New_Taipei_City%2C_Sept_2011.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Taro_Balls_at_Jiufen,_New_Taipei_City,_Sept_2011.jpg",
+                  "title": "File:Taro Balls at Jiufen, New Taipei City, Sept 2011.jpg"
+                }
+              ]
+            },
+            {
+              "slug": "peanut-ice-cream-roll",
+              "name": "Peanut Ice Cream Roll",
+              "description": "Thin wrapper with shaved peanut brittle, ice cream, and cilantro.",
+              "where": "Snack stalls in Jiufen",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Popiah"
+              },
+              "image_queries": [
+                "peanut ice cream roll Taiwan",
+                "Taiwan ice cream burrito"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg/1920px-A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:A-Zhu_Peanut_Ice_Cream_Roll,_Jiufen_Old_Street,_2024.jpg",
+                  "title": "File:A-Zhu Peanut Ice Cream Roll, Jiufen Old Street, 2024.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/peanut-ice-cream-roll-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg/1920px-A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:A-Zhu_Peanut_Ice_Cream_Roll,_Jiufen_Old_Street,_2024.jpg",
+                  "title": "File:A-Zhu Peanut Ice Cream Roll, Jiufen Old Street, 2024.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/jiufen-old-street-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg/1920px-A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:A-Zhu_Peanut_Ice_Cream_Roll,_Jiufen_Old_Street,_2024.jpg",
+              "title": "File:A-Zhu Peanut Ice Cream Roll, Jiufen Old Street, 2024.jpg"
+            },
+            {
+              "src": "assets/images/places/jiufen-old-street-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Jiufen%2C_November_28%2C_2024_-_019.jpg/1920px-Jiufen%2C_November_28%2C_2024_-_019.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Jiufen,_November_28,_2024_-_019.jpg",
+              "title": "File:Jiufen, November 28, 2024 - 019.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-6",
+      "label": "Day 6",
+      "date": "Friday, May 29, 2026",
+      "focus": "North Taipei temples, coast, final market",
+      "transport_note": "Mix MRT with taxi for the temple-to-coast jump. Return south for the night market.",
+      "places": [
+        {
+          "slug": "guandu-temple",
+          "name": "Guandu Temple",
+          "area": "Beitou District, Taipei",
+          "best_time": "Morning",
+          "duration": "45 min",
+          "summary": "River-facing temple complex with tunnels, roof terraces, and long-standing Mazu worship.",
+          "highlights": [
+            "Cliffside temple complex",
+            "River and estuary views"
+          ],
+          "transport": "Take the MRT Red Line to Guandu Station, then bus or taxi to the temple entrance.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Guandu+Temple+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Guandu_Temple"
+          },
+          "image_queries": [
+            "Guandu Yun\u00fc Temple",
+            "Guandu Temple Taipei"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "title": "File:Guandu Yunu Temple 20241122.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "title": "File:Ceiling of the Guandu Yunu Temple 20241122.jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/guandu-temple-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "title": "File:Guandu Yunu Temple 20241122.jpg"
+            },
+            {
+              "src": "assets/images/places/guandu-temple-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
+              "title": "File:Ceiling of the Guandu Yunu Temple 20241122.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "tianyuan-temple",
+          "name": "Tianyuan Temple",
+          "area": "Tamsui District, New Taipei",
+          "best_time": "Late morning",
+          "duration": "45 min",
+          "summary": "Circular multi-tier temple complex known for blossom season and broad open grounds.",
+          "highlights": [
+            "Five-tier circular pagoda",
+            "Open terrace views"
+          ],
+          "transport": "Taxi or local bus from Tamsui area. This stop is easier by car than by full MRT-only routing.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Tianyuan+Temple+Tamsui",
+            "reference": "https://en.wikipedia.org/wiki/Tamsui_Tianyuan_Temple"
+          },
+          "image_queries": [
+            "Tamsui Wuji Tianyuan Temple",
+            "Tamsui Tianyuan Temple"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg/1920px-Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Tiansheng_Gate,_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
+              "title": "File:Tiansheng Gate, Tamsui Wuji Tianyuan Temple 20230323.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Tian-sheng_Gate%2C_Tamsui_Wu-ji_Tian-yuan_Temple_20140629.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Tian-sheng_Gate,_Tamsui_Wu-ji_Tian-yuan_Temple_20140629.jpg",
+              "title": "File:Tian-sheng Gate, Tamsui Wu-ji Tian-yuan Temple 20140629.jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/tianyuan-temple-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg/1920px-Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tiansheng_Gate,_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
+              "title": "File:Tiansheng Gate, Tamsui Wuji Tianyuan Temple 20230323.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "baishawan-beach",
+          "name": "Baishawan Beach",
+          "area": "Shimen District, New Taipei",
+          "best_time": "Afternoon",
+          "duration": "60 to 90 min",
+          "summary": "Wide sandy beach on the north coast for a final low-effort outdoor stop.",
+          "highlights": [
+            "White sand curve",
+            "Short seaside walk"
+          ],
+          "transport": "Continue by car from Tamsui or Tianyuan. Public transport is possible but slower and more fragmented.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Baishawan+Beach+Taiwan",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Baishawan+Beach+Taiwan"
+          },
+          "image_queries": [
+            "Baishawan Beach Taiwan",
+            "White Sand Bay Taiwan"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Baishawan_Beach.jpg/1920px-Baishawan_Beach.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Baishawan_Beach.jpg",
+              "title": "File:Baishawan Beach.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Baishawan.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Baishawan.jpg",
+              "title": "File:Baishawan.jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/baishawan-beach-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Baishawan_Beach.jpg/1920px-Baishawan_Beach.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Baishawan_Beach.jpg",
+              "title": "File:Baishawan Beach.jpg"
+            },
+            {
+              "src": "assets/images/places/baishawan-beach-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Baishawan.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Baishawan.jpg",
+              "title": "File:Baishawan.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "shilin-night-market",
+          "name": "Shilin Night Market",
+          "area": "Shilin District, Taipei",
+          "best_time": "Dinner",
+          "duration": "90 min",
+          "summary": "Large final-night market with heavier crowd volume and a wider snack mix than Raohe.",
+          "highlights": [
+            "Underground and street-level food zones",
+            "Late-night snack run"
+          ],
+          "transport": "Take the MRT Red Line to Jiantan Station and walk south into the market area.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Shilin+Night+Market+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Shilin_Night_Market"
+          },
+          "image_queries": [
+            "Shilin Night Market Taipei",
+            "Shilin market food Taipei"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Shilin_Night_Market_Dadong_Road.jpg/1920px-Shilin_Night_Market_Dadong_Road.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Shilin_Night_Market_Dadong_Road.jpg",
+              "title": "File:Shilin Night Market Dadong Road.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg/1920px-AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:AnPing_Street,_Taipei_(Shilin_Night_Market).jpg",
+              "title": "File:AnPing Street, Taipei (Shilin Night Market).jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [
+            {
+              "slug": "oyster-omelet",
+              "name": "Oyster Omelet",
+              "description": "Egg, starch batter, oysters, and sweet-savory sauce.",
+              "where": "Seafood-focused stalls",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Oyster_omelette"
+              },
+              "image_queries": [
+                "oyster omelette Taiwan",
+                "oyster omelet night market Taiwan"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg/1920px-Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Oyster_omelette,_Taipei,_Taiwan._(8447333000)_(2).jpg",
+                  "title": "File:Oyster omelette, Taipei, Taiwan. (8447333000) (2).jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/oyster-omelet-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg/1920px-Oyster_omelette%2C_Taipei%2C_Taiwan._%288447333000%29_%282%29.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Oyster_omelette,_Taipei,_Taiwan._(8447333000)_(2).jpg",
+                  "title": "File:Oyster omelette, Taipei, Taiwan. (8447333000) (2).jpg"
+                }
+              ]
+            },
+            {
+              "slug": "fried-chicken-cutlet",
+              "name": "XXL Fried Chicken Cutlet",
+              "description": "Large flat fried cutlet with pepper and chili seasoning.",
+              "where": "Popular takeaway snack stalls",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Fried_chicken"
+              },
+              "image_queries": [
+                "Taiwan fried chicken cutlet",
+                "xxl fried chicken Taiwan"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hot-Star%27s_vendor_picking_up_a_large_fried-chicken_cutlet_with_a_tong_at_Zhongli_Night_Market_on_31_March_2006.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Hot-Star%27s_vendor_picking_up_a_large_fried-chicken_cutlet_with_a_tong_at_Zhongli_Night_Market_on_31_March_2006.jpg",
+                  "title": "File:Hot-Star fried-chicken cutlet at Zhongli Night Market.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/fried-chicken-cutlet-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hot-Star%27s_vendor_picking_up_a_large_fried-chicken_cutlet_with_a_tong_at_Zhongli_Night_Market_on_31_March_2006.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Hot-Star%27s_vendor_picking_up_a_large_fried-chicken_cutlet_with_a_tong_at_Zhongli_Night_Market_on_31_March_2006.jpg",
+                  "title": "File:Hot-Star fried-chicken cutlet at Zhongli Night Market.jpg"
+                }
+              ]
+            },
+            {
+              "slug": "stinky-tofu",
+              "name": "Stinky Tofu",
+              "description": "Fermented tofu, deep-fried and served with pickles.",
+              "where": "Tofu and snack stalls",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Stinky_tofu"
+              },
+              "image_queries": [
+                "stinky tofu Taiwan",
+                "deep fried stinky tofu Taiwan"
+              ],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stinky_tofu_at_the_Xincheng_Night_Market.jpg/1920px-Stinky_tofu_at_the_Xincheng_Night_Market.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Stinky_tofu_at_the_Xincheng_Night_Market.jpg",
+                  "title": "File:Stinky tofu at the Xincheng Night Market.jpg"
+                }
+              ],
+              "desired_images": 1,
+              "images": [
+                {
+                  "src": "assets/images/foods/stinky-tofu-1.jpg",
+                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stinky_tofu_at_the_Xincheng_Night_Market.jpg/1920px-Stinky_tofu_at_the_Xincheng_Night_Market.jpg",
+                  "source_page": "https://commons.wikimedia.org/wiki/File:Stinky_tofu_at_the_Xincheng_Night_Market.jpg",
+                  "title": "File:Stinky tofu at the Xincheng Night Market.jpg"
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "src": "assets/images/places/shilin-night-market-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Shilin_Night_Market_Dadong_Road.jpg/1920px-Shilin_Night_Market_Dadong_Road.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shilin_Night_Market_Dadong_Road.jpg",
+              "title": "File:Shilin Night Market Dadong Road.jpg"
+            },
+            {
+              "src": "assets/images/places/shilin-night-market-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg/1920px-AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:AnPing_Street,_Taipei_(Shilin_Night_Market).jpg",
+              "title": "File:AnPing Street, Taipei (Shilin Night Market).jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
