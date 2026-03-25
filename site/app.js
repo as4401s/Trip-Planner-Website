@@ -143,6 +143,28 @@ const dayMapMarkup = (day) => {
   `;
 };
 
+const transferMarkup = (transfer) => {
+  if (!transfer) {
+    return "";
+  }
+
+  return `
+    <article class="transfer-card">
+      <div class="transfer-kicker">Next Stop</div>
+      <div class="transfer-top">
+        <h3>${transfer.from} to ${transfer.to}</h3>
+        <div class="transfer-badge">${transfer.mode}</div>
+      </div>
+      <p class="transfer-instructions">${transfer.instructions}</p>
+      ${
+        transfer.note
+          ? `<p class="transfer-note">${transfer.note}</p>`
+          : ""
+      }
+    </article>
+  `;
+};
+
 const placeMarkup = (place) => `
   <article class="place">
     <div class="place-grid">
@@ -184,6 +206,23 @@ const placeMarkup = (place) => `
   </article>
 `;
 
+const placeListMarkup = (day) => {
+  if (!day.places?.length) {
+    return "";
+  }
+
+  return `
+    <div class="place-list">
+      ${day.places
+        .map(
+          (place, index) =>
+            `${placeMarkup(place)}${transferMarkup(day.transfers?.[index])}`
+        )
+        .join("")}
+    </div>
+  `;
+};
+
 const celebrationMarkup = (images = []) => `
   <div class="celebration-grid${images.length === 1 ? " single" : ""}">
     ${images
@@ -196,7 +235,7 @@ const celebrationMarkup = (images = []) => `
 `;
 
 const dayMarkup = (day, index) => `
-  <details class="day fade-up" id="${day.id}" ${index < 2 ? "open" : ""}>
+  <details class="day fade-up" id="${day.id}" open>
     <summary class="day-summary">
       <div class="day-head${day.gallery_only ? " compact" : ""}">
         <div>
@@ -208,10 +247,8 @@ const dayMarkup = (day, index) => `
         <div class="day-summary-meta">
           ${day.transport_note ? `<div class="transport-note">${day.transport_note}</div>` : ""}
           <div class="day-toggle" aria-hidden="true">
-            <span>Toggle</span>
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <span class="when-open">Collapse</span>
+            <span class="when-closed">Expand</span>
           </div>
         </div>
       </div>
@@ -220,7 +257,7 @@ const dayMarkup = (day, index) => `
       ${flightMarkup(day.flights)}
       ${dayMapMarkup(day)}
       ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
-      ${day.places?.length ? `<div class="place-list">${day.places.map(placeMarkup).join("")}</div>` : ""}
+      ${placeListMarkup(day)}
     </div>
   </details>
 `;
