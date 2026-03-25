@@ -2,15 +2,17 @@ const app = document.querySelector("#app");
 
 const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
 
-const imageMarkup = (images = [], alt) => {
+const imageMarkup = (images = [], alt, max = 2) => {
   if (!images.length) {
     return `<div class="gallery single"><div></div></div>`;
   }
-  const cls = images.length === 1 ? "gallery single" : "gallery";
+
+  const visible = images.slice(0, max);
+  const cls = visible.length === 1 ? "gallery single" : "gallery";
+
   return `
     <div class="${cls}">
-      ${images
-        .slice(0, 2)
+      ${visible
         .map(
           (image, index) =>
             `<img src="./${image.src}" alt="${alt} photo ${index + 1}" loading="lazy" />`
@@ -50,8 +52,38 @@ const foodMarkup = (foods = []) => {
   `;
 };
 
+const flightMarkup = (flights = []) => {
+  if (!flights.length) {
+    return "";
+  }
+
+  return `
+    <div class="flight-list">
+      ${flights
+        .map(
+          (flight) => `
+            <article class="flight-card">
+              <div class="flight-top">
+                <div>
+                  <p class="flight-label">Flight</p>
+                  <h3 class="flight-route">${flight.from} to ${flight.to}</h3>
+                </div>
+                <div class="flight-badge">${flight.details}</div>
+              </div>
+              <div class="flight-main">
+                <div class="flight-times">${flight.route}</div>
+                <div class="flight-carrier">${flight.carrier}</div>
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+};
+
 const placeMarkup = (place) => `
-  <article class="place fade-up">
+  <article class="place">
     <div class="place-grid">
       ${imageMarkup(place.images, place.name)}
       <div class="place-body">
@@ -91,21 +123,70 @@ const placeMarkup = (place) => `
   </article>
 `;
 
-const dayMarkup = (day) => `
-  <section class="day" id="${day.id}">
-    <div class="day-head fade-up">
-      <div>
-        <p class="day-label">${day.label}</p>
-        <h2 class="day-title">${day.date}</h2>
-        <p class="day-focus">${day.focus}</p>
-      </div>
-      <div class="transport-note">${day.transport_note}</div>
-    </div>
-    <div class="place-list">
-      ${day.places.map(placeMarkup).join("")}
-    </div>
-  </section>
+const celebrationMarkup = (images = []) => `
+  <div class="celebration-grid">
+    ${images
+      .map(
+        (image, index) =>
+          `<img src="./${image.src}" alt="${image.alt || `Celebration image ${index + 1}`}" loading="lazy" />`
+      )
+      .join("")}
+  </div>
 `;
+
+const dayMarkup = (day, index) => `
+  <details class="day fade-up" id="${day.id}" ${index < 2 ? "open" : ""}>
+    <summary class="day-summary">
+      <div class="day-head${day.gallery_only ? " compact" : ""}">
+        <div>
+          <p class="day-label">${day.label}</p>
+          <h2 class="day-title">${day.date}</h2>
+          ${day.focus ? `<p class="day-focus">${day.focus}</p>` : ""}
+        </div>
+        <div class="day-summary-meta">
+          ${day.transport_note ? `<div class="transport-note">${day.transport_note}</div>` : ""}
+          <div class="day-toggle" aria-hidden="true">
+            <span>Collapse</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </summary>
+    <div class="day-panel">
+      ${flightMarkup(day.flights)}
+      ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
+      ${day.places?.length ? `<div class="place-list">${day.places.map(placeMarkup).join("")}</div>` : ""}
+    </div>
+  </details>
+`;
+
+const openDayFromHash = () => {
+  const id = window.location.hash.slice(1);
+  if (!id) {
+    return;
+  }
+  const day = document.getElementById(id);
+  if (day instanceof HTMLDetailsElement) {
+    day.open = true;
+  }
+};
+
+const wireDayNav = () => {
+  document.querySelectorAll(".day-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      const id = link.getAttribute("href")?.slice(1);
+      if (!id) {
+        return;
+      }
+      const day = document.getElementById(id);
+      if (day instanceof HTMLDetailsElement) {
+        day.open = true;
+      }
+    });
+  });
+};
 
 const startObservers = () => {
   const items = document.querySelectorAll(".fade-up");
@@ -118,7 +199,7 @@ const startObservers = () => {
         }
       });
     },
-    { threshold: 0.14 }
+    { threshold: 0.08 }
   );
   items.forEach((item) => observer.observe(item));
 };
@@ -135,14 +216,12 @@ const render = (data) => {
             <div class="meta-pill">${data.trip_dates}</div>
             <div class="meta-pill">${data.summary}</div>
           </div>
-          <p class="hero-copy">6-day route with stops, food notes, transport, and local map links.</p>
+          <p class="hero-copy">Flights, stops, food, and local map links in one mobile-safe itinerary.</p>
         </div>
       </header>
       <nav class="day-nav">
         <div class="day-nav-inner">
-          ${data.days
-            .map((day) => `<a href="#${day.id}">${day.label}</a>`)
-            .join("")}
+          ${data.days.map((day) => `<a href="#${day.id}">${day.label}</a>`).join("")}
         </div>
       </nav>
       <main class="content">
@@ -151,6 +230,9 @@ const render = (data) => {
       <footer class="footer">Maps and source links are attached to each stop.</footer>
     </div>
   `;
+
+  wireDayNav();
+  openDayFromHash();
   startObservers();
 };
 
@@ -158,6 +240,7 @@ const init = async () => {
   const response = await fetch("./data/itinerary.json");
   const data = await response.json();
   render(data);
+  window.addEventListener("hashchange", openDayFromHash);
 };
 
 init().catch((error) => {

@@ -128,7 +128,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(251, 250, 245, 0.88);
+  background: rgba(251, 250, 245, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -140,6 +140,11 @@ img {
   gap: 0.6rem;
   overflow-x: auto;
   padding: 0.8rem 0;
+  scrollbar-width: none;
+}
+
+.day-nav-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .day-nav a {
@@ -158,15 +163,57 @@ img {
 }
 
 .day {
-  padding: 2rem 0 2.4rem;
+  margin: 0 0 1rem;
   border-bottom: 1px solid var(--line);
+}
+
+.day-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.day-summary::-webkit-details-marker {
+  display: none;
 }
 
 .day-head {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
   gap: 1.5rem;
-  margin-bottom: 1.8rem;
+  padding: 2rem 0 1.4rem;
+}
+
+.day-head.compact {
+  align-items: end;
+}
+
+.day-summary-meta {
+  display: grid;
+  gap: 0.85rem;
+  align-self: end;
+}
+
+.day-toggle {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  padding: 0.7rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.day-toggle svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.day[open] .day-toggle svg {
+  transform: rotate(180deg);
 }
 
 .day-label {
@@ -204,6 +251,73 @@ img {
   line-height: 1.5;
 }
 
+.day-panel {
+  display: grid;
+  gap: 1.2rem;
+  padding: 0 0 2rem;
+}
+
+.flight-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.flight-card {
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  padding: 1.15rem 1.2rem;
+  background: linear-gradient(180deg, rgba(15, 92, 82, 0.08), rgba(255, 255, 255, 0.86));
+  box-shadow: var(--shadow);
+}
+
+.flight-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.flight-label {
+  margin: 0 0 0.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.flight-route {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.flight-badge {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  font-size: 0.84rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.flight-main {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.flight-times {
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.flight-carrier {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .place-list {
   display: grid;
   gap: 1.2rem;
@@ -222,11 +336,15 @@ img {
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
 }
 
-.gallery {
+.gallery,
+.celebration-grid {
   background: #dfe7e1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.25rem;
+}
+
+.gallery {
   min-height: 21rem;
 }
 
@@ -234,9 +352,21 @@ img {
   grid-template-columns: 1fr;
 }
 
-.gallery img {
+.gallery img,
+.celebration-grid img {
   height: 100%;
   object-fit: cover;
+}
+
+.celebration-grid {
+  border: 1px solid var(--line);
+  border-radius: 1.75rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.celebration-grid img {
+  min-height: 17rem;
 }
 
 .place-body {
@@ -416,12 +546,20 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .transport-note {
-    max-width: 40rem;
+  .day-summary-meta {
+    justify-items: start;
+  }
+
+  .day-toggle {
+    justify-self: start;
   }
 
   .gallery {
     min-height: 15rem;
+  }
+
+  .celebration-grid img {
+    min-height: 14rem;
   }
 }
 
@@ -434,16 +572,30 @@ img {
     padding-bottom: 5rem;
   }
 
-  .detail-grid {
+  .content {
+    padding-top: 1.5rem;
+  }
+
+  .day-head {
+    padding-top: 1.4rem;
+  }
+
+  .detail-grid,
+  .celebration-grid {
     grid-template-columns: 1fr;
   }
 
-  .place-top {
+  .place-top,
+  .flight-top {
     flex-direction: column;
   }
 
   .timing {
     text-align: left;
+  }
+
+  .flight-badge {
+    white-space: normal;
   }
 
   .food-card {

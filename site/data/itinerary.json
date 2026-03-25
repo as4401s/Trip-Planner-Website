@@ -1,7 +1,7 @@
 {
-  "title": "Taiwan 6-Day Itinerary",
-  "trip_dates": "May 24 to May 29, 2026",
-  "summary": "Taipei base with one Hualien day and one northeast coast day.",
+  "title": "Taiwan 8-Day Itinerary",
+  "trip_dates": "May 24 to May 31, 2026",
+  "summary": "Taipei base with arrival and departure flights, one Hualien day, and one northeast coast day.",
   "hero": {
     "slug": "hero",
     "image_queries": [
@@ -25,6 +25,16 @@
       "date": "Sunday, May 24, 2026",
       "focus": "Arrival, skyline, easy night market stop",
       "transport_note": "Keep this day on the MRT or by taxi. Both stops are easy after check-in.",
+      "flights": [
+        {
+          "slug": "pek-to-tpe",
+          "from": "Beijing",
+          "to": "Taipei",
+          "carrier": "Hainan Airlines HU7987",
+          "route": "07:55 PEK -> 11:25 TPE",
+          "details": "Non-stop · 3h 30m · Economy"
+        }
+      ],
       "places": [
         {
           "slug": "taipei-101-observatory",
@@ -1084,6 +1094,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "day-7",
+      "label": "Day 7",
+      "date": "Saturday, May 30, 2026",
+      "focus": "",
+      "transport_note": "",
+      "gallery_only": true,
+      "gallery": [
+        {
+          "src": "assets/images/special/may-30-celebration-1.jpg",
+          "alt": "Graduation celebration"
+        },
+        {
+          "src": "assets/images/special/may-30-celebration-2.jpg",
+          "alt": "Graduation cap toss"
+        },
+        {
+          "src": "assets/images/special/may-30-celebration-3.jpg",
+          "alt": "Birthday cake celebration"
+        },
+        {
+          "src": "assets/images/special/may-30-celebration-4.jpg",
+          "alt": "Birthday celebration"
+        }
+      ],
+      "places": []
+    },
+    {
+      "id": "day-8",
+      "label": "Day 8",
+      "date": "Sunday, May 31, 2026",
+      "focus": "Departure day",
+      "transport_note": "Plan an early airport transfer from central Taipei to TPE.",
+      "flights": [
+        {
+          "slug": "tpe-to-ber",
+          "from": "Taipei",
+          "to": "Berlin",
+          "carrier": "Turkish Airlines TK125 / TK1727",
+          "route": "09:35 TPE -> 21:25 BER",
+          "details": "1 stop · 17h 50m · Economy"
+        }
+      ],
+      "places": []
     }
   ]
 }
