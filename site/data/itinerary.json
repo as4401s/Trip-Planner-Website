@@ -1099,25 +1099,14 @@
       "id": "day-7",
       "label": "Day 7",
       "date": "Saturday, May 30, 2026",
+      "display_title": "Fucha Graduation & Maus Birthday Celebration",
       "focus": "",
       "transport_note": "",
       "gallery_only": true,
       "gallery": [
         {
-          "src": "assets/images/special/may-30-celebration-1.jpg",
-          "alt": "Graduation celebration"
-        },
-        {
-          "src": "assets/images/special/may-30-celebration-2.jpg",
-          "alt": "Graduation cap toss"
-        },
-        {
-          "src": "assets/images/special/may-30-celebration-3.jpg",
-          "alt": "Birthday cake celebration"
-        },
-        {
-          "src": "assets/images/special/may-30-celebration-4.jpg",
-          "alt": "Birthday celebration"
+          "src": "assets/images/DSC02769.JPG",
+          "alt": "Fucha Graduation and Maus Birthday celebration"
         }
       ],
       "places": []

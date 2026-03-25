@@ -210,7 +210,8 @@ const dayMarkup = (day, index) => `
       <div class="day-head${day.gallery_only ? " compact" : ""}">
         <div>
           <p class="day-label">${day.label}</p>
-          <h2 class="day-title">${day.date}</h2>
+          <h2 class="day-title">${day.display_title || day.date}</h2>
+          ${day.display_title ? `<p class="day-date">${day.date}</p>` : ""}
           ${day.focus ? `<p class="day-focus">${day.focus}</p>` : ""}
         </div>
         <div class="day-summary-meta">
@@ -282,7 +283,7 @@ const render = (data) => {
       <header class="hero" style="--hero-image: url('./${heroImage}')">
         <div class="hero-inner">
           <div class="eyebrow">Taiwan Trip Plan</div>
-          <h1 class="hero-title">${data.title}</h1>
+          <h1 class="hero-title"><span class="hero-title-main">Taiwan</span><span class="hero-title-sub">8-day Itinerary</span></h1>
           <div class="hero-meta">
             <div class="meta-pill">${data.trip_dates}</div>
             <div class="meta-pill">${data.summary}</div>

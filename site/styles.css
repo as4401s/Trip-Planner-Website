@@ -98,6 +98,20 @@ img {
   font-size: clamp(3.2rem, 8vw, 6.6rem);
   line-height: 0.92;
   letter-spacing: -0.04em;
+  display: grid;
+}
+
+.hero-title-main,
+.hero-title-sub {
+  display: block;
+}
+
+.hero-title-main {
+  font-weight: 700;
+}
+
+.hero-title-sub {
+  font-weight: 600;
 }
 
 .hero-meta {
@@ -238,6 +252,13 @@ img {
   font-size: 1rem;
   line-height: 1.55;
   max-width: 48rem;
+}
+
+.day-date {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .transport-note {
