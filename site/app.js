@@ -119,23 +119,14 @@ const buildMapEmbedUrl = (day) => {
 };
 
 const dayMapMarkup = (day) => {
-  if (day.gallery_only || !day.places?.length) {
+  if (day.gallery_only || !day.places?.length || !mapsApiKey) {
     return "";
-  }
-
-  if (!mapsApiKey) {
-    return `
-      <article class="map-card map-card-empty">
-        <h3 class="map-title">Day Map</h3>
-        <p class="map-note">Add a Google Maps Embed API key in <code>site/config.js</code> to turn on the tagged map view for this day.</p>
-      </article>
-    `;
   }
 
   return `
     <article class="map-card">
       <div class="map-head">
-        <h3 class="map-title">Day Map</h3>
+        <h3 class="map-title">Tagged Map</h3>
         <p class="map-note">Stops shown on one Google map for this day.</p>
       </div>
       <div class="map-frame-wrap">
@@ -194,7 +185,7 @@ const placeMarkup = (place) => `
 `;
 
 const celebrationMarkup = (images = []) => `
-  <div class="celebration-grid">
+  <div class="celebration-grid${images.length === 1 ? " single" : ""}">
     ${images
       .map(
         (image, index) =>
@@ -210,14 +201,14 @@ const dayMarkup = (day, index) => `
       <div class="day-head${day.gallery_only ? " compact" : ""}">
         <div>
           <p class="day-label">${day.label}</p>
-          <h2 class="day-title">${day.display_title || day.date}</h2>
-          ${day.display_title ? `<p class="day-date">${day.date}</p>` : ""}
+          <h2 class="day-title">${day.date}</h2>
+          ${day.display_title ? `<p class="day-subtitle">${day.display_title}</p>` : ""}
           ${day.focus ? `<p class="day-focus">${day.focus}</p>` : ""}
         </div>
         <div class="day-summary-meta">
           ${day.transport_note ? `<div class="transport-note">${day.transport_note}</div>` : ""}
           <div class="day-toggle" aria-hidden="true">
-            <span>Collapse</span>
+            <span>Toggle</span>
             <svg viewBox="0 0 24 24" fill="none">
               <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -288,7 +279,7 @@ const render = (data) => {
             <div class="meta-pill">${data.trip_dates}</div>
             <div class="meta-pill">${data.summary}</div>
           </div>
-          <p class="hero-copy">Flights, stops, food, and local map links in one mobile-safe itinerary.</p>
+          <p class="hero-copy">Flights, stops, food, and route planning in one polished itinerary.</p>
         </div>
       </header>
       <nav class="day-nav">
