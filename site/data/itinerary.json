@@ -732,13 +732,13 @@
       "id": "day-5",
       "label": "Day 5",
       "date": "Thursday, May 28, 2026",
-      "focus": "Northeast coast and Jiufen",
+      "focus": "Northeast coast, Houtong, and Jiufen",
       "transport_note": "Fastest option is a driver. Public option is train to Ruifang plus local buses or taxi hops.",
       "start_transfer": {
         "title": "Stay Base to Yehliu Geopark",
         "mode": "Driver or taxi",
         "instructions": "Start from Guishan by car and go directly to Yehliu Geopark. This avoids a slow chain of rail and bus transfers before the coastal loop even begins.",
-        "note": "A direct road start is the only option that keeps the full Yehliu-Shifen-Jiufen day comfortable."
+        "note": "A direct road start is the only option that keeps the full Yehliu-Houtong-Shifen-Jiufen day comfortable."
       },
       "places": [
         {
@@ -812,6 +812,43 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg/1920px-Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
               "title": "File:Shifen Waterfall \u5341\u5206\u7011\u5e03 - panoramio.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "houtong-cat-village",
+          "name": "Houtong Cat Village",
+          "area": "Ruifang District, New Taipei",
+          "best_time": "Late afternoon",
+          "duration": "45 to 60 min",
+          "summary": "Former mining village turned cat-friendly stop with station-side lanes, footbridges, and resident cats everywhere.",
+          "highlights": [
+            "Cat bridge and station area",
+            "Easy photo stops with village cats"
+          ],
+          "transport": "Best reached by taxi or driver from Shifen, or by train via Ruifang if you want to stay on rail. The cat village begins right around Houtong Station.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Houtong+Cat+Village",
+            "reference": "https://en.wikipedia.org/wiki/Houtong_Cat_Village"
+          },
+          "image_queries": [
+            "Houtong Cat Village Taiwan",
+            "Houtong Station cat village"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/houtong-cat-village-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Brown_cat_by_Houtong_Station.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Brown_cat_by_Houtong_Station.jpg",
+              "title": "File:Brown cat by Houtong Station.jpg"
+            },
+            {
+              "src": "assets/images/places/houtong-cat-village-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Houtong%2C_Taiwan_01.jpg/2560px-Houtong%2C_Taiwan_01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Houtong,_Taiwan_01.jpg",
+              "title": "File:Houtong, Taiwan 01.jpg"
             }
           ]
         },
@@ -914,19 +951,19 @@
       ],
       "transfers": [
         {
-          "mode": "Red Line + taxi",
-          "instructions": "Head back to Guandu Station, ride the Red Line north to Tamsui Station, then take a taxi for the uphill ride to Tianyuan Temple.",
-          "note": "This is the easiest non-driving option. The last leg is much simpler by taxi than by piecing together local buses."
+          "mode": "Driver or taxi",
+          "instructions": "Continue inland from Yehliu toward Pingxi rather than backtracking to Taipei. A direct driver or taxi hop is the practical way to reach Shifen the same afternoon.",
+          "note": "This leg usually runs about 55 to 70 minutes. Public transport is possible but requires slow backtracking through Keelung or Ruifang."
         },
         {
-          "mode": "Taxi or driver",
-          "instructions": "Head west from Tianyuan Temple toward the north coast and continue straight to Baishawan Beach. This leg is best done by taxi or with the same driver.",
-          "note": "Expect about 25 to 35 minutes depending on coastal traffic."
+          "mode": "Taxi or train via Ruifang",
+          "instructions": "From Shifen, take a taxi straight to Houtong for the fastest link, or ride the Pingxi Line back toward Ruifang and change for Houtong Station.",
+          "note": "A taxi is usually around 20 to 25 minutes and keeps the cat village as an easy add-on."
         },
         {
-          "mode": "Taxi to MRT + Red Line",
-          "instructions": "Leave the beach by taxi for Tamsui Station, then ride the Red Line south to Jiantan Station and walk into Shilin Night Market.",
-          "note": "If you stay by road the whole way, a direct taxi usually takes 50 to 70 minutes."
+          "mode": "Train or taxi",
+          "instructions": "From Houtong, continue to Jiufen by taxi, or ride one stop to Ruifang Station and change to a bus or taxi up the hill to Jiufen Old Street.",
+          "note": "This last leg is short, so you can still reach Jiufen before the evening rush builds."
         }
       ]
     },

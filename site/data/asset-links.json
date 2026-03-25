@@ -398,6 +398,29 @@
     {
       "kind": "place",
       "day": "Day 5",
+      "name": "Houtong Cat Village",
+      "links": {
+        "map": "https://www.google.com/maps/search/?api=1&query=Houtong+Cat+Village",
+        "reference": "https://en.wikipedia.org/wiki/Houtong_Cat_Village"
+      },
+      "images": [
+        {
+          "src": "assets/images/places/houtong-cat-village-1.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Brown_cat_by_Houtong_Station.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Brown_cat_by_Houtong_Station.jpg",
+          "title": "File:Brown cat by Houtong Station.jpg"
+        },
+        {
+          "src": "assets/images/places/houtong-cat-village-2.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Houtong%2C_Taiwan_01.jpg/2560px-Houtong%2C_Taiwan_01.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Houtong,_Taiwan_01.jpg",
+          "title": "File:Houtong, Taiwan 01.jpg"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "day": "Day 5",
       "name": "Jiufen Old Street",
       "links": {
         "map": "https://www.google.com/maps/search/?api=1&query=Jiufen+Old+Street",
