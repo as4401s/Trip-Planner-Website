@@ -111,6 +111,27 @@ const extractMapQuery = (url = "") => {
 const placeQuery = (place) =>
   extractMapQuery(place.links?.map) || `${place.name}, ${place.area}, Taiwan`;
 
+const stayMarkup = (stay) => {
+  if (!stay) {
+    return "";
+  }
+
+  return `
+    <section class="stay-card fade-up">
+      <div class="stay-copy">
+        <p class="stay-kicker">Stay Base</p>
+        <h2 class="stay-title">${stay.label}</h2>
+        <p class="stay-address">${stay.address}</p>
+        <p class="stay-note">${stay.note}</p>
+        <p class="stay-transit">${stay.transit}</p>
+      </div>
+      <div class="stay-links">
+        <a class="button-link primary" href="${stay.map}" target="_blank" rel="noreferrer">Open Map</a>
+      </div>
+    </section>
+  `;
+};
+
 const buildMapEmbedUrl = (day) => {
   if (!mapsApiKey || day.gallery_only || !day.places?.length) {
     return "";
@@ -175,6 +196,28 @@ const transferMarkup = (transfer, fromPlace, toPlace) => {
       ${
         transfer.note
           ? `<p class="transfer-note">${transfer.note}</p>`
+          : ""
+      }
+    </article>
+  `;
+};
+
+const dayStartMarkup = (startTransfer) => {
+  if (!startTransfer) {
+    return "";
+  }
+
+  return `
+    <article class="transfer-card start-card">
+      <div class="transfer-kicker">${startTransfer.kicker || "Day Start"}</div>
+      <div class="transfer-top">
+        <h3>${startTransfer.title}</h3>
+        <div class="transfer-badge">${startTransfer.mode}</div>
+      </div>
+      <p class="transfer-instructions">${startTransfer.instructions}</p>
+      ${
+        startTransfer.note
+          ? `<p class="transfer-note">${startTransfer.note}</p>`
           : ""
       }
     </article>
@@ -274,6 +317,7 @@ const dayMarkup = (day) => `
       </div>
     </summary>
     <div class="day-panel">
+      ${dayStartMarkup(day.start_transfer)}
       ${flightMarkup(day.flights)}
       ${dayMapMarkup(day)}
       ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
@@ -345,6 +389,7 @@ const render = (data) => {
         </div>
       </nav>
       <main class="content">
+        ${stayMarkup(data.stay)}
         ${data.days.map(dayMarkup).join("")}
       </main>
       <footer class="footer">Maps and source links are attached to each stop.</footer>

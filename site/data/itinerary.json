@@ -2,6 +2,13 @@
   "title": "Taiwan 8-Day Itinerary",
   "trip_dates": "May 24 to May 31, 2026",
   "summary": "Taipei base with arrival and departure flights, one Hualien day, and one northeast coast day.",
+  "stay": {
+    "label": "No. 250, Wenhua 1st Rd, Guishan District",
+    "address": "No. 250, Wenhua 1st Rd, Guishan District, Taoyuan City, Taiwan 333",
+    "note": "Use this as the start and end point for the daily routes below.",
+    "transit": "Best rail access is Taoyuan Airport MRT A7 National Taiwan Sport University. A8 Chang Gung Memorial Hospital also works if you prefer a taxi pickup.",
+    "map": "https://www.google.com/maps/place/%E6%A8%B8%E5%9C%92%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E4%B8%AD%E5%BF%83/@25.0347049,121.3853484,18z/data=!4m6!3m5!1s0x3442a765141a87dd:0xf8226da0bfcb779d!8m2!3d25.0347049!4d121.3867334!16s%2Fg%2F11bzt947dg?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D"
+  },
   "hero": {
     "slug": "hero",
     "image_queries": [
@@ -25,6 +32,13 @@
       "date": "Sunday, May 24, 2026",
       "focus": "Arrival, skyline, easy night market stop",
       "transport_note": "Keep this day on the MRT or by taxi. Both stops are easy after check-in.",
+      "start_transfer": {
+        "kicker": "Arrival Transfer",
+        "title": "TPE Airport to Stay Base",
+        "mode": "Airport MRT + walk or taxi",
+        "instructions": "After landing at Taoyuan International Airport, take the Airport MRT toward Taipei and get off at A7 National Taiwan Sport University Station. From there, walk or take a short taxi along Wenhua 1st Rd to No. 250.",
+        "note": "If you have heavy luggage, go straight by taxi from the airport instead."
+      },
       "flights": [
         {
           "slug": "pek-to-tpe",
@@ -170,6 +184,12 @@
       "date": "Monday, May 25, 2026",
       "focus": "Temple, memorial hall, old street, evening district",
       "transport_note": "This is a clean MRT day. Start in Wanhua and work north and east by train.",
+      "start_transfer": {
+        "title": "Stay Base to Lungshan Temple",
+        "mode": "Airport MRT + Blue Line",
+        "instructions": "Start from A7 National Taiwan Sport University Station, ride the Airport MRT to Taipei Main Station, then transfer to the Blue Line for Longshan Temple Station Exit 1.",
+        "note": "Leave early. This is the longest pure transit start among the Taipei city days."
+      },
       "places": [
         {
           "slug": "lungshan-temple",
@@ -414,6 +434,12 @@
       "date": "Tuesday, May 26, 2026",
       "focus": "Shiding lookouts and old street",
       "transport_note": "Use a rental car or a hired driver. Lookouts and trailheads are spread out and public transport is slow.",
+      "start_transfer": {
+        "title": "Stay Base to Crocodile Island Viewpoint",
+        "mode": "Driver or rental car",
+        "instructions": "Leave directly from Guishan by car and head toward the Shiding reservoir viewpoint roads. This is the most efficient start because the lookouts are not practical by MRT.",
+        "note": "Plan roughly 45 to 60 minutes depending on traffic."
+      },
       "places": [
         {
           "slug": "crocodile-island-viewpoint",
@@ -613,6 +639,12 @@
       "date": "Wednesday, May 27, 2026",
       "focus": "Hualien and Taroko day trip",
       "transport_note": "Take an early train from Taipei to Hualien, then use a pre-booked driver or day tour inside the park corridor.",
+      "start_transfer": {
+        "title": "Stay Base to Taipei Main for Hualien Train",
+        "mode": "Airport MRT",
+        "instructions": "Go from A7 National Taiwan Sport University Station to Taipei Main Station on the Airport MRT, then transfer to your early TRA train for Hualien.",
+        "note": "Build in extra buffer time. You are starting outside central Taipei."
+      },
       "places": [
         {
           "slug": "taroko-national-park",
@@ -702,6 +734,12 @@
       "date": "Thursday, May 28, 2026",
       "focus": "Northeast coast and Jiufen",
       "transport_note": "Fastest option is a driver. Public option is train to Ruifang plus local buses or taxi hops.",
+      "start_transfer": {
+        "title": "Stay Base to Yehliu Geopark",
+        "mode": "Driver or taxi",
+        "instructions": "Start from Guishan by car and go directly to Yehliu Geopark. This avoids a slow chain of rail and bus transfers before the coastal loop even begins.",
+        "note": "A direct road start is the only option that keeps the full Yehliu-Shifen-Jiufen day comfortable."
+      },
       "places": [
         {
           "slug": "yehliu-geopark",
@@ -898,6 +936,12 @@
       "date": "Friday, May 29, 2026",
       "focus": "North Taipei temples, coast, final market",
       "transport_note": "Mix MRT with taxi for the temple-to-coast jump. Return south for the night market.",
+      "start_transfer": {
+        "title": "Stay Base to Guandu Temple",
+        "mode": "Taxi or Airport MRT + Red Line",
+        "instructions": "Fastest option is a taxi direct from Guishan to Guandu Temple. If you want rail, take the Airport MRT to Taipei Main Station and transfer to the Red Line north toward Guandu.",
+        "note": "A taxi start saves a long double-rail transfer before the temple visit."
+      },
       "places": [
         {
           "slug": "guandu-temple",
@@ -1201,6 +1245,12 @@
       "date": "Sunday, May 31, 2026",
       "focus": "Departure day",
       "transport_note": "Plan an early airport transfer from central Taipei to TPE.",
+      "start_transfer": {
+        "title": "Stay Base to TPE Airport",
+        "mode": "Taxi or Airport MRT",
+        "instructions": "For the 09:35 departure, the cleanest move is an early taxi straight to Taoyuan International Airport. If you prefer rail, take the Airport MRT from A7 National Taiwan Sport University toward the airport.",
+        "note": "Leave with extra margin for check-in and baggage drop."
+      },
       "flights": [
         {
           "slug": "tpe-to-ber",
