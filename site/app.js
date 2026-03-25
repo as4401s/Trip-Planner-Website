@@ -1,4 +1,5 @@
 const app = document.querySelector("#app");
+const mapsApiKey = window.APP_CONFIG?.GOOGLE_MAPS_EMBED_API_KEY?.trim() || "";
 
 const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
 
@@ -82,6 +83,75 @@ const flightMarkup = (flights = []) => {
   `;
 };
 
+const extractMapQuery = (url = "") => {
+  try {
+    const parsed = new URL(url);
+    return parsed.searchParams.get("query") || parsed.searchParams.get("q") || "";
+  } catch {
+    return "";
+  }
+};
+
+const placeQuery = (place) =>
+  extractMapQuery(place.links?.map) || `${place.name}, ${place.area}, Taiwan`;
+
+const buildMapEmbedUrl = (day) => {
+  if (!mapsApiKey || day.gallery_only || !day.places?.length) {
+    return "";
+  }
+
+  if (day.places.length === 1) {
+    const query = placeQuery(day.places[0]);
+    return `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(
+      mapsApiKey
+    )}&q=${encodeURIComponent(query)}&zoom=13&language=en&region=TW`;
+  }
+
+  const [origin, ...rest] = day.places;
+  const destination = rest.at(-1);
+  const waypoints = rest.slice(0, -1).map(placeQuery).join("|");
+
+  return `https://www.google.com/maps/embed/v1/directions?key=${encodeURIComponent(
+    mapsApiKey
+  )}&origin=${encodeURIComponent(placeQuery(origin))}&destination=${encodeURIComponent(
+    placeQuery(destination)
+  )}${waypoints ? `&waypoints=${encodeURIComponent(waypoints)}` : ""}&language=en&region=TW`;
+};
+
+const dayMapMarkup = (day) => {
+  if (day.gallery_only || !day.places?.length) {
+    return "";
+  }
+
+  if (!mapsApiKey) {
+    return `
+      <article class="map-card map-card-empty">
+        <h3 class="map-title">Day Map</h3>
+        <p class="map-note">Add a Google Maps Embed API key in <code>site/config.js</code> to turn on the tagged map view for this day.</p>
+      </article>
+    `;
+  }
+
+  return `
+    <article class="map-card">
+      <div class="map-head">
+        <h3 class="map-title">Day Map</h3>
+        <p class="map-note">Stops shown on one Google map for this day.</p>
+      </div>
+      <div class="map-frame-wrap">
+        <iframe
+          class="map-frame"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          src="${buildMapEmbedUrl(day)}"
+          title="${day.label} map"
+        ></iframe>
+      </div>
+    </article>
+  `;
+};
+
 const placeMarkup = (place) => `
   <article class="place">
     <div class="place-grid">
@@ -156,6 +226,7 @@ const dayMarkup = (day, index) => `
     </summary>
     <div class="day-panel">
       ${flightMarkup(day.flights)}
+      ${dayMapMarkup(day)}
       ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
       ${day.places?.length ? `<div class="place-list">${day.places.map(placeMarkup).join("")}</div>` : ""}
     </div>

@@ -1,0 +1,3 @@
+window.APP_CONFIG = {
+  GOOGLE_MAPS_EMBED_API_KEY: ""
+};

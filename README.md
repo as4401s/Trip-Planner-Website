@@ -14,3 +14,17 @@ Open `http://127.0.0.1:3001/`.
 
 - Publish directory: `site`
 - Build command: none
+
+## Google Maps Embeds
+
+The site supports day-level Google Maps Embed API iframes with tagged stops.
+
+Set your key in `site/config.js`:
+
+```js
+window.APP_CONFIG = {
+  GOOGLE_MAPS_EMBED_API_KEY: "YOUR_KEY"
+};
+```
+
+Use a referrer-restricted browser key for your deployed domain.
