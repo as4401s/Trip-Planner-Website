@@ -30,8 +30,8 @@
       "id": "day-1",
       "label": "Day 1",
       "date": "Sunday, May 24, 2026",
-      "focus": "Arrival, skyline, easy night market stop",
-      "transport_note": "Keep this day on the MRT or by taxi. Both stops are easy after check-in.",
+      "focus": "Arrival, skyline, short night hike, easy night market stop",
+      "transport_note": "Keep this day on the MRT or by taxi. Xinyi stays compact, and Elephant Mountain fits naturally after Taipei 101 if energy is still good.",
       "start_transfer": {
         "kicker": "Arrival Transfer",
         "title": "TPE Airport to Stay Base",
@@ -84,6 +84,56 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1920px-Taipei_101_2009_amk.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
               "title": "File:Taipei 101 2009 amk.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "elephant-mountain",
+          "name": "Elephant Mountain Trail",
+          "area": "Xinyi District, Taipei",
+          "best_time": "Sunset into night",
+          "duration": "60 to 75 min",
+          "summary": "Short but stair-heavy climb for the classic Taipei 101 night skyline once the city lights come on.",
+          "highlights": [
+            "Six Giant Rocks viewpoint",
+            "Taipei 101 framed against the night skyline"
+          ],
+          "transport": "Walk 15 to 20 minutes from Taipei 101, or take a quick ride to Xiangshan Station and follow the signed trailhead near Lingyun Temple.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Elephant+Mountain+Taipei",
+            "reference": "https://en.wikipedia.org/wiki/Elephant_Mountain_(Taipei)"
+          },
+          "access_note": "This is the best night-view add-on in the plan, but only if arrival energy is decent. The hike is short, popular, and mostly stairs, so expect a sweaty climb in late-May humidity.",
+          "image_queries": [
+            "Elephant Mountain Taipei night view",
+            "Xiangshan Taipei 101 view"
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
+              "title": "File:Taipei101-Night view.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/View_from_Elephant_Mountain%2C_Taipei%2C_Taiwan_2015.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:View_from_Elephant_Mountain,_Taipei,_Taiwan_2015.jpg",
+              "title": "File:View from Elephant Mountain, Taipei, Taiwan 2015.jpg"
+            }
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/elephant-mountain-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
+              "title": "File:Taipei101-Night view.jpg"
+            },
+            {
+              "src": "assets/images/places/elephant-mountain-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/View_from_Elephant_Mountain%2C_Taipei%2C_Taiwan_2015.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:View_from_Elephant_Mountain,_Taipei,_Taiwan_2015.jpg",
+              "title": "File:View from Elephant Mountain, Taipei, Taiwan 2015.jpg"
             }
           ]
         },
@@ -172,9 +222,14 @@
       ],
       "transfers": [
         {
+          "mode": "Walk or short taxi",
+          "instructions": "From Taipei 101, head southeast toward the Xiangshan trail area for the Elephant Mountain climb. Walking works if you still have energy; a short taxi is the better call if you want to save your legs for the stairs.",
+          "note": "This is the most efficient skyline pairing in the full itinerary because both stops sit in the same Xinyi pocket."
+        },
+        {
           "mode": "Taxi or MRT",
-          "instructions": "Fastest route is a taxi straight from Taipei 101 to Raohe Night Market. If you want MRT, ride the Red Line from Taipei 101/World Trade Center to Chiang Kai-shek Memorial Hall, change to the Green Line toward Songshan, and use Songshan Station Exit 5 for the market entrance beside Ciyou Temple.",
-          "note": "Taxi is usually the better choice on arrival night because it avoids one line change and extra walking."
+          "instructions": "After the hike, take a taxi to Raohe Night Market for the easiest dinner finish. If you want rail, return to Xiangshan Station first and connect back across the city toward Songshan.",
+          "note": "Taxi is usually the better choice after dark because it avoids another station walk right after the climb."
         }
       ]
     },

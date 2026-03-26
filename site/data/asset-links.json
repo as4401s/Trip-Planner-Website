@@ -27,6 +27,29 @@
     {
       "kind": "place",
       "day": "Day 1",
+      "name": "Elephant Mountain Trail",
+      "links": {
+        "map": "https://www.google.com/maps/search/?api=1&query=Elephant+Mountain+Taipei",
+        "reference": "https://en.wikipedia.org/wiki/Elephant_Mountain_(Taipei)"
+      },
+      "images": [
+        {
+          "src": "assets/images/places/elephant-mountain-1.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
+          "title": "File:Taipei101-Night view.jpg"
+        },
+        {
+          "src": "assets/images/places/elephant-mountain-2.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/View_from_Elephant_Mountain%2C_Taipei%2C_Taiwan_2015.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:View_from_Elephant_Mountain,_Taipei,_Taiwan_2015.jpg",
+          "title": "File:View from Elephant Mountain, Taipei, Taiwan 2015.jpg"
+        }
+      ]
+    },
+    {
+      "kind": "place",
+      "day": "Day 1",
       "name": "Raohe Night Market",
       "links": {
         "map": "https://www.google.com/maps/search/?api=1&query=Raohe+Night+Market+Taipei",
