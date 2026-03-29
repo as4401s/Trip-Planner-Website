@@ -131,13 +131,20 @@ def normalize_ext(url: str) -> str:
     return suffix if suffix in {".jpg", ".jpeg", ".png"} else ".jpg"
 
 
+def iter_place_groups(data: dict):
+    for day in data.get("days", []):
+        yield day, None, day.get("places", [])
+        for plan in day.get("plans", []):
+            yield day, plan, plan.get("places", [])
+
+
 def collect_targets(data: dict, allowed: set[str] | None = None) -> list[tuple[dict, Path, str]]:
     targets: list[tuple[dict, Path, str]] = []
     hero = data.get("hero")
     if hero and (allowed is None or hero["slug"] in allowed):
         targets.append((hero, IMAGE_ROOT / "hero", hero["slug"]))
-    for day in data.get("days", []):
-        for place in day.get("places", []):
+    for _, _, places in iter_place_groups(data):
+        for place in places:
             if allowed is None or place["slug"] in allowed:
                 targets.append((place, IMAGE_ROOT / "places", place["slug"]))
             for food in place.get("foods", []):
@@ -148,12 +155,13 @@ def collect_targets(data: dict, allowed: set[str] | None = None) -> list[tuple[d
 
 def build_link_manifest(data: dict) -> dict:
     manifest = {"trip_dates": data["trip_dates"], "items": []}
-    for day in data.get("days", []):
-        for place in day.get("places", []):
+    for day, plan, places in iter_place_groups(data):
+        for place in places:
             manifest["items"].append(
                 {
                     "kind": "place",
                     "day": day["label"],
+                    "plan": plan.get("label") if plan else None,
                     "name": place["name"],
                     "links": place.get("links", {}),
                     "images": place.get("images", []),
@@ -164,6 +172,7 @@ def build_link_manifest(data: dict) -> dict:
                     {
                         "kind": "food",
                         "day": day["label"],
+                        "plan": plan.get("label") if plan else None,
                         "name": food["name"],
                         "parent_place": place["name"],
                         "links": food.get("links", {}),

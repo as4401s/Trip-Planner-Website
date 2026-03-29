@@ -3,6 +3,7 @@ const mapsApiKey = window.APP_CONFIG?.GOOGLE_MAPS_EMBED_API_KEY?.trim() || "";
 const isCompactViewport = window.matchMedia("(max-width: 720px)").matches;
 
 const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
+const assetSrc = (src = "") => (/^(https?:)?\/\//.test(src) ? src : `./${src}`);
 
 const imageMarkup = (images = [], alt, max = 2) => {
   if (!images.length) {
@@ -17,7 +18,7 @@ const imageMarkup = (images = [], alt, max = 2) => {
       ${visible
         .map(
           (image, index) =>
-            `<img src="./${image.src}" alt="${alt} photo ${index + 1}" loading="lazy" />`
+            `<img src="${assetSrc(image.src)}" alt="${alt} photo ${index + 1}" loading="lazy" />`
         )
         .join("")}
     </div>
@@ -51,7 +52,7 @@ const foodMarkup = (foods = []) => {
                 <article class="food-card${image ? "" : " no-image"}">
                   ${
                     image
-                      ? `<img src="./${image}" alt="${food.name}" loading="lazy" />`
+                      ? `<img src="${assetSrc(image)}" alt="${food.name}" loading="lazy" />`
                       : ""
                   }
                   <div class="food-body">
@@ -286,12 +287,46 @@ const placeListMarkup = (day) => {
   `;
 };
 
+const planMarkup = (plan) => `
+  <section class="plan-card">
+    <div class="plan-head">
+      <div>
+        <p class="plan-kicker">${plan.label}</p>
+        <h3 class="plan-title">${plan.title}</h3>
+        ${plan.focus ? `<p class="plan-focus">${plan.focus}</p>` : ""}
+      </div>
+      ${
+        plan.transport_note
+          ? `<div class="plan-transport-note">${plan.transport_note}</div>`
+          : ""
+      }
+    </div>
+    <div class="plan-body">
+      ${dayStartMarkup(plan.start_transfer)}
+      ${dayMapMarkup(plan)}
+      ${placeListMarkup(plan)}
+    </div>
+  </section>
+`;
+
+const planListMarkup = (plans = []) => {
+  if (!plans.length) {
+    return "";
+  }
+
+  return `
+    <div class="plan-list">
+      ${plans.map(planMarkup).join("")}
+    </div>
+  `;
+};
+
 const celebrationMarkup = (images = []) => `
   <div class="celebration-grid${images.length === 1 ? " single" : ""}">
     ${images
       .map(
         (image, index) =>
-          `<img src="./${image.src}" alt="${image.alt || `Celebration image ${index + 1}`}" loading="lazy" />`
+          `<img src="${assetSrc(image.src)}" alt="${image.alt || `Celebration image ${index + 1}`}" loading="lazy" />`
       )
       .join("")}
   </div>
@@ -317,11 +352,15 @@ const dayMarkup = (day) => `
       </div>
     </summary>
     <div class="day-panel">
-      ${dayStartMarkup(day.start_transfer)}
+      ${
+        day.plans?.length
+          ? planListMarkup(day.plans)
+          : `${dayStartMarkup(day.start_transfer)}
       ${flightMarkup(day.flights)}
       ${dayMapMarkup(day)}
       ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
-      ${placeListMarkup(day)}
+      ${placeListMarkup(day)}`
+      }
     </div>
   </details>
 `;
@@ -372,7 +411,7 @@ const render = (data) => {
   const heroImage = safeImage(data.hero.images);
   app.innerHTML = `
     <div class="page">
-      <header class="hero" style="--hero-image: url('./${heroImage}')">
+      <header class="hero" style="--hero-image: url('${assetSrc(heroImage)}')">
         <div class="hero-inner">
           <div class="eyebrow">Taiwan Trip Plan</div>
           <h1 class="hero-title"><span class="hero-title-main">Taiwan</span><span class="hero-title-sub">8-day Itinerary</span></h1>
