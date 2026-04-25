@@ -12,12 +12,6 @@
       },
       "images": [
         {
-          "src": "assets/images/places/the-bund-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/1920px-Pudong_Shanghai_November_2017_panorama.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
-          "title": "File:Pudong Shanghai November 2017 panorama.jpg"
-        },
-        {
           "src": "assets/images/places/the-bund-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pudong_Shanghai_November_2017_HDR_panorama.jpg/1920px-Pudong_Shanghai_November_2017_HDR_panorama.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_HDR_panorama.jpg",
@@ -54,12 +48,6 @@
       },
       "images": [
         {
-          "src": "assets/images/places/nanjing-road-east-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/20090705_Shanghai_Nanjing_Road_0602.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:20090705_Shanghai_Nanjing_Road_0602.jpg",
-          "title": "File:20090705 Shanghai Nanjing Road 0602.jpg"
-        },
-        {
           "src": "assets/images/places/nanjing-road-east-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2024-Apr_Shanghai_East_Nanjing_Road_morning_01.jpg/1920px-2024-Apr_Shanghai_East_Nanjing_Road_morning_01.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_East_Nanjing_Road_morning_01.jpg",
@@ -82,12 +70,6 @@
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starbucks_Reserve_Roastery_Shanghai_02.jpg/1920px-Starbucks_Reserve_Roastery_Shanghai_02.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_Shanghai_02.jpg",
           "title": "File:Starbucks Reserve Roastery Shanghai 02.jpg"
-        },
-        {
-          "src": "assets/images/places/starbucks-reserve-roastery-shanghai-2.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Starbucks_Reserve_Roastery_Shanghai_04.jpg/1920px-Starbucks_Reserve_Roastery_Shanghai_04.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_Shanghai_04.jpg",
-          "title": "File:Starbucks Reserve Roastery Shanghai 04.jpg"
         }
       ]
     },
@@ -101,12 +83,6 @@
         "reference": "https://en.wikipedia.org/wiki/Yu_Garden"
       },
       "images": [
-        {
-          "src": "assets/images/places/yu-garden-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Yuyuan_Gardens_-_concrete_bird_design.JPG",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Yuyuan_Gardens_-_concrete_bird_design.JPG",
-          "title": "File:Yuyuan Gardens - concrete bird design.JPG"
-        },
         {
           "src": "assets/images/places/yu-garden-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Shanghai_-_Yu_Garden_-_0035.jpg/1920px-Shanghai_-_Yu_Garden_-_0035.jpg",
@@ -180,12 +156,6 @@
       },
       "images": [
         {
-          "src": "assets/images/places/jing-an-temple-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jing%27an_Temple_Shanghai_3.jpg/1920px-Jing%27an_Temple_Shanghai_3.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Jing%27an_Temple_Shanghai_3.jpg",
-          "title": "File:Jing'an Temple Shanghai 3.jpg"
-        },
-        {
           "src": "assets/images/places/jing-an-temple-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jing%27an_Temple_Shanghai_11.jpg/1920px-Jing%27an_Temple_Shanghai_11.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Jing%27an_Temple_Shanghai_11.jpg",
@@ -204,16 +174,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg/1920px-Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg/1920px-Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai,_China,_East_Asia.jpg",
-          "title": "File:Shanghai Art Museum against background of Tomorrow Square building. Shanghai, China, East Asia.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
-          "title": "File:Kathleen's 5 Interior Shanghai Art Museum Remnant.jpg"
+          "src": "assets/images/places/shanghai-museum-1.jpg",
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_shanghai_museum.jpg/1920px-The_shanghai_museum.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:The_shanghai_museum.jpg",
+          "title": "File:The shanghai museum.jpg"
         }
       ]
     },
@@ -228,13 +192,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
-          "title": "File:Fountain with Sculptures in Xintiandi Shanghai 20210329.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg/1920px-Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg",
+          "src": "assets/images/places/downloaded-451eb2011bcc.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg/1920px-Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Xintiandi_Style_I,_Shanghai,_China_-_54272980778.jpg",
           "title": "File:Xintiandi Style I, Shanghai, China - 54272980778.jpg"
@@ -274,12 +232,6 @@
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
           "title": "File:Roundabout Lujiazui 2.jpg"
-        },
-        {
-          "src": "assets/images/places/mingzhu-roundabout-2.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Roundabout_Lujiazui_1.jpg/1920px-Roundabout_Lujiazui_1.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_1.jpg",
-          "title": "File:Roundabout Lujiazui 1.jpg"
         }
       ]
     },
@@ -293,12 +245,6 @@
         "reference": "https://en.wikipedia.org/wiki/Oriental_Pearl_Tower"
       },
       "images": [
-        {
-          "src": "assets/images/places/oriental-pearl-tv-tower-deck-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg/1920px-Oriental_Pearl_Tower_in_Shanghai.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg",
-          "title": "File:Oriental Pearl Tower in Shanghai.jpg"
-        },
         {
           "src": "assets/images/places/oriental-pearl-tv-tower-deck-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg/1920px-Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
@@ -318,13 +264,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Zhujiajiao_canal_4.JPG/1920px-Zhujiajiao_canal_4.JPG",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Zhujiajiao_canal_4.JPG/1920px-Zhujiajiao_canal_4.JPG",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Zhujiajiao_canal_4.JPG",
-          "title": "File:Zhujiajiao canal 4.JPG"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhujiajiao_at_night.jpg/1920px-Zhujiajiao_at_night.jpg",
+          "src": "assets/images/places/downloaded-a4b63c1c88f1.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhujiajiao_at_night.jpg/1920px-Zhujiajiao_at_night.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Zhujiajiao_at_night.jpg",
           "title": "File:Zhujiajiao at night.jpg"
@@ -341,12 +281,6 @@
         "reference": "https://en.wikipedia.org/wiki/Fenghuang_County"
       },
       "images": [
-        {
-          "src": "assets/images/places/fenghuang-ancient-town-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
-          "title": "File:Hunan Fenghuang County ancient town.jpg"
-        },
         {
           "src": "assets/images/places/fenghuang-ancient-town-2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg/1920px-Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg",
@@ -388,16 +322,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
+          "src": "assets/images/places/downloaded-c059c51fed58.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_aerial_panorama_2017.jpg",
           "title": "File:1 furong aerial panorama 2017.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hunan.Furong_zhen.Indigo.jpg/1920px-Hunan.Furong_zhen.Indigo.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hunan.Furong_zhen.Indigo.jpg/1920px-Hunan.Furong_zhen.Indigo.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Hunan.Furong_zhen.Indigo.jpg",
-          "title": "File:Hunan.Furong zhen.Indigo.jpg"
         }
       ]
     },
@@ -412,16 +340,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
+          "src": "assets/images/places/downloaded-129c42640f38.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Wv_Furong_banner.jpg",
           "title": "File:Wv Furong banner.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_panorama_2012.jpg",
-          "title": "File:1 furong panorama 2012.jpg"
         }
       ]
     },
@@ -436,13 +358,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bailong_Elevator_april_2008.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bailong_Elevator_april_2008.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Bailong_Elevator_april_2008.jpg",
-          "title": "File:Bailong Elevator april 2008.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bailong_Elevator_01.jpg/1920px-Bailong_Elevator_01.jpg",
+          "src": "assets/images/places/downloaded-b67bc8860529.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bailong_Elevator_01.jpg/1920px-Bailong_Elevator_01.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Bailong_Elevator_01.jpg",
           "title": "File:Bailong Elevator 01.jpg"
@@ -460,16 +376,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+          "src": "assets/images/places/downloaded-da1a261dd74b.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_in_Bailong_(%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
           "title": "File:Stunning rock formations in Bailong Yuanjiajie scenic area.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_from_the_top_of_Bailong.jpg",
-          "title": "File:Stunning rock formations from the top of Bailong, Yuanjiajie scenic area.jpg"
         }
       ]
     },
@@ -502,13 +412,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg/1920px-%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg/1920px-%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
-          "title": "File:张家界十里画廊小火车.jpeg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg/1920px-%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg",
+          "src": "assets/images/places/downloaded-2c9847ac1ff2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg/1920px-%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_(3).jpg",
           "title": "File:武陵源景区十里画廊风光 - panoramio (3).jpg"
@@ -556,15 +460,9 @@
       "images": [
         {
           "src": "assets/images/places/zhangjiajie-72-strange-buildings-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
-          "title": "File:Hunan Fenghuang County ancient town.jpg"
-        },
-        {
-          "src": "assets/images/places/zhangjiajie-72-strange-buildings-2.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1920px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
-          "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
+          "source_url": "https://www.zhangjiajietourguide.com/public/upload/photo/zhangjiajie-72-qilou/img_796_d20240203221335.jpg",
+          "source_page": "https://www.zhangjiajietourguide.com/attraction-p25-zhangjiajie-72-qilou.html",
+          "title": "Zhangjiajie 72 Qilou night view"
         }
       ]
     },
@@ -579,7 +477,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yangjiajie.jpg/1920px-Yangjiajie.jpg",
+          "src": "assets/images/places/downloaded-7dac11a11d55.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yangjiajie.jpg/1920px-Yangjiajie.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Yangjiajie.jpg",
           "title": "File:Yangjiajie.jpg"
@@ -597,16 +495,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+          "src": "assets/images/places/downloaded-ecef7c85b047.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
           "title": "File:1 zhangjiajie huangshizhai wulingyuan panorama 2012.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg/1920px-%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg/1920px-%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
-          "title": "File:索車直上黃石寨 Huangshizhai from Cable Car - panoramio.jpg"
         }
       ]
     },
@@ -621,16 +513,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg/1920px-Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg",
+          "src": "assets/images/places/downloaded-3bfb7173bec2.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg/1920px-Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_Glass_Bridge_20190726_(2).jpg",
           "title": "File:Zhangjiajie Glass Bridge 20190726 (2).jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ZhangjiajieGlassByHighestBridges.jpg/1920px-ZhangjiajieGlassByHighestBridges.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ZhangjiajieGlassByHighestBridges.jpg/1920px-ZhangjiajieGlassByHighestBridges.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:ZhangjiajieGlassByHighestBridges.jpg",
-          "title": "File:ZhangjiajieGlassByHighestBridges.jpg"
         }
       ]
     },
@@ -663,16 +549,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
+          "src": "assets/images/places/downloaded-aab194ba55bb.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
           "title": "File:Glass walkway- Tianmen Mountain - panoramio.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Glass_walkway-_Tianmen_Mountain_-_panoramio_%281%29.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Glass_walkway-_Tianmen_Mountain_-_panoramio_%281%29.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Glass_walkway-_Tianmen_Mountain_-_panoramio_(1).jpg",
-          "title": "File:Glass walkway- Tianmen Mountain - panoramio (1).jpg"
         }
       ]
     },
@@ -705,16 +585,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tianmen_Mountain_temple_I_%2830000795430%29.jpg/1920px-Tianmen_Mountain_temple_I_%2830000795430%29.jpg",
+          "src": "assets/images/places/downloaded-2d9997dbc8b3.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tianmen_Mountain_temple_I_%2830000795430%29.jpg/1920px-Tianmen_Mountain_temple_I_%2830000795430%29.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_temple_I_(30000795430).jpg",
           "title": "File:Tianmen Mountain temple I (30000795430).jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tianmen_Mountain_temple_III_%2830000792010%29.jpg/1920px-Tianmen_Mountain_temple_III_%2830000792010%29.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tianmen_Mountain_temple_III_%2830000792010%29.jpg/1920px-Tianmen_Mountain_temple_III_%2830000792010%29.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_temple_III_(30000792010).jpg",
-          "title": "File:Tianmen Mountain temple III (30000792010).jpg"
         }
       ]
     },
@@ -729,16 +603,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tianmen_Mountain_cliff_footpath.jpg",
+          "src": "assets/images/places/downloaded-91b97c708e28.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tianmen_Mountain_cliff_footpath.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_cliff_footpath.jpg",
           "title": "File:Tianmen Mountain cliff footpath.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Zhangjiajie_from_Tianmen_Mountain_06.jpg/1920px-Zhangjiajie_from_Tianmen_Mountain_06.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Zhangjiajie_from_Tianmen_Mountain_06.jpg/1920px-Zhangjiajie_from_Tianmen_Mountain_06.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_from_Tianmen_Mountain_06.jpg",
-          "title": "File:Zhangjiajie from Tianmen Mountain 06.jpg"
         }
       ]
     },
@@ -771,13 +639,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_(5668676781).jpg",
-          "title": "File:Longqingxia 龙庆峡 (5668676781).jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
+          "src": "assets/images/places/downloaded-7242c30eecac.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Cable_car_longqing_gorge.jpg",
           "title": "File:Cable car longqing gorge.jpg"
@@ -795,16 +657,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/View_of_Houhai_in_Beijing_20160825.jpg/1920px-View_of_Houhai_in_Beijing_20160825.jpg",
+          "src": "assets/images/places/downloaded-d60d831af11f.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/View_of_Houhai_in_Beijing_20160825.jpg/1920px-View_of_Houhai_in_Beijing_20160825.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:View_of_Houhai_in_Beijing_20160825.jpg",
           "title": "File:View of Houhai in Beijing 20160825.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Houhai_Lake_Beijing_2015_October.jpg/1920px-Houhai_Lake_Beijing_2015_October.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Houhai_Lake_Beijing_2015_October.jpg/1920px-Houhai_Lake_Beijing_2015_October.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Houhai_Lake_Beijing_2015_October.jpg",
-          "title": "File:Houhai Lake Beijing 2015 October.jpg"
         }
       ]
     },
@@ -819,13 +675,7 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peking_Zhengyangmen-20110103-RM-134438.jpg/1920px-Peking_Zhengyangmen-20110103-RM-134438.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peking_Zhengyangmen-20110103-RM-134438.jpg/1920px-Peking_Zhengyangmen-20110103-RM-134438.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Peking_Zhengyangmen-20110103-RM-134438.jpg",
-          "title": "File:Peking Zhengyangmen-20110103-RM-134438.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/1920px-Zhengyangmen_gatehouse.jpg",
+          "src": "assets/images/places/downloaded-48c03720cff9.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/1920px-Zhengyangmen_gatehouse.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
           "title": "File:Zhengyangmen gatehouse.jpg"
@@ -883,12 +733,6 @@
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/1920px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
           "title": "File:The Forbidden City - View from Coal Hill.jpg"
-        },
-        {
-          "src": "assets/images/places/jingshan-park-2.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/View_over_Forbidden_City_to_Jingshan_Park%2C_Beijing%2C_in_smog.jpg/1920px-View_over_Forbidden_City_to_Jingshan_Park%2C_Beijing%2C_in_smog.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:View_over_Forbidden_City_to_Jingshan_Park,_Beijing,_in_smog.jpg",
-          "title": "File:View over Forbidden City to Jingshan Park, Beijing, in smog.jpg"
         }
       ]
     },
@@ -921,16 +765,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+          "src": "assets/images/places/downloaded-e035820cb420.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Longevity_Hill_of_the_Summer_Palace.jpg",
           "title": "File:Longevity Hill of the Summer Palace.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Summer-Palace-01.jpg",
-          "title": "File:Beijing China Summer-Palace-01.jpg"
         }
       ]
     },
@@ -945,16 +783,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+          "src": "assets/images/places/downloaded-6970c1883f1d.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
           "title": "File:CCTV Headquarters (6349184617).jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/China_Central_Television_Headquarters_2.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/China_Central_Television_Headquarters_2.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:China_Central_Television_Headquarters_2.jpg",
-          "title": "File:China Central Television Headquarters 2.jpg"
         }
       ]
     },
@@ -969,16 +801,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1920px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg",
+          "src": "assets/images/places/downloaded-a22cdb7585e4.jpg",
           "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1920px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg",
           "source_page": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven,_Beijing,_China_-_010_edit.jpg",
           "title": "File:Temple of Heaven, Beijing, China - 010 edit.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/20200110_Temple_of_Heaven-1.jpg/1920px-20200110_Temple_of_Heaven-1.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/20200110_Temple_of_Heaven-1.jpg/1920px-20200110_Temple_of_Heaven-1.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:20200110_Temple_of_Heaven-1.jpg",
-          "title": "File:20200110 Temple of Heaven-1.jpg"
         }
       ]
     },
@@ -993,16 +819,10 @@
       },
       "images": [
         {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Longevity_Hill_of_the_Summer_Palace.jpg",
-          "title": "File:Longevity Hill of the Summer Palace.jpg"
-        },
-        {
-          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
-          "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Summer-Palace-01.jpg",
-          "title": "File:Beijing China Summer-Palace-01.jpg"
+          "src": "assets/images/places/beiwu-park-1.jpg",
+          "source_url": "https://ak-d.tripcdn.com/images/1mi1f12000s1mbecp7EBD.jpg?proc=source/trip",
+          "source_page": "https://in.trip.com/moments/detail/beijing-1-143929773",
+          "title": "Beiwu Park landscape"
         }
       ]
     }

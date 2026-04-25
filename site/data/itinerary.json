@@ -70,7 +70,7 @@
             "Ximending Taipei",
             "Ximen Walking District"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [
             {
               "slug": "ay-chung-noodles",
@@ -159,14 +159,9 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
               "title": "File:Taipei101-Night view.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/View_from_Elephant_Mountain%2C_Taipei%2C_Taiwan_2015.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:View_from_Elephant_Mountain,_Taipei,_Taiwan_2015.jpg",
-              "title": "File:View from Elephant Mountain, Taipei, Taiwan 2015.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -174,12 +169,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
               "title": "File:Taipei101-Night view.jpg"
-            },
-            {
-              "src": "assets/images/places/elephant-mountain-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/View_from_Elephant_Mountain%2C_Taipei%2C_Taiwan_2015.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:View_from_Elephant_Mountain,_Taipei,_Taiwan_2015.jpg",
-              "title": "File:View from Elephant Mountain, Taipei, Taiwan 2015.jpg"
             }
           ]
         },
@@ -203,7 +192,7 @@
             "Taipei 101 Taiwan",
             "Taipei 101 observatory"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -211,12 +200,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
               "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
-            },
-            {
-              "src": "assets/images/places/taipei-101-observatory-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1920px-Taipei_101_2009_amk.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
-              "title": "File:Taipei 101 2009 amk.jpg"
             }
           ]
         }
@@ -267,15 +250,9 @@
             "Houtong Cat Village Taiwan",
             "Houtong Station cat village"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
-            {
-              "src": "assets/images/places/houtong-cat-village-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Brown_cat_by_Houtong_Station.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Brown_cat_by_Houtong_Station.jpg",
-              "title": "File:Brown cat by Houtong Station.jpg"
-            },
             {
               "src": "assets/images/places/houtong-cat-village-2.jpg",
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Houtong%2C_Taiwan_01.jpg/2560px-Houtong%2C_Taiwan_01.jpg",
@@ -304,7 +281,7 @@
             "Shifen Waterfall Taiwan",
             "Shifen waterfall Pingxi"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -312,12 +289,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ShiFengWaterFall_002.jpg/1920px-ShiFengWaterFall_002.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:ShiFengWaterFall_002.jpg",
               "title": "File:ShiFengWaterFall 002.jpg"
-            },
-            {
-              "src": "assets/images/places/shifen-waterfall-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg/1920px-Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Shifen_Waterfall_%E5%8D%81%E5%88%86%E7%80%91%E5%B8%83_-_panoramio.jpg",
-              "title": "File:Shifen Waterfall 十分瀑布 - panoramio.jpg"
             }
           ]
         },
@@ -325,19 +296,13 @@
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/shifen-old-street-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/TRA_DRC1027_on_Shifen_Old_Street_20101024.jpg/1920px-TRA_DRC1027_on_Shifen_Old_Street_20101024.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:TRA_DRC1027_on_Shifen_Old_Street_20101024.jpg",
-              "title": "File:TRA DRC1027 on Shifen Old Street 20101024.jpg"
-            },
-            {
               "src": "assets/images/places/shifen-old-street-2.jpg",
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/TRA_DRC1029_and_Pingxi_Sky_Lanterns_at_Shifen_Old_Street_20171028.jpg/1920px-TRA_DRC1029_and_Pingxi_Sky_Lanterns_at_Shifen_Old_Street_20171028.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:TRA_DRC1029_and_Pingxi_Sky_Lanterns_at_Shifen_Old_Street_20171028.jpg",
               "title": "File:TRA DRC1029 and Pingxi Sky Lanterns at Shifen Old Street 20171028.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "slug": "shifen-old-street",
           "name": "Shifen Old Street Walk",
           "area": "Pingxi District, New Taipei",
@@ -366,15 +331,9 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/%E9%81%A0%E7%9C%BA%E8%8C%B6%E5%A3%BA%E5%B1%B1.jpg/1920px-%E9%81%A0%E7%9C%BA%E8%8C%B6%E5%A3%BA%E5%B1%B1.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:%E9%81%A0%E7%9C%BA%E8%8C%B6%E5%A3%BA%E5%B1%B1.jpg",
               "title": "File:遠眺茶壺山.jpg"
-            },
-            {
-              "src": "assets/images/places/teapot-mountain-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Soft_feeling_of_Teapot_mountain-Queen_shufang.jpg/1920px-Soft_feeling_of_Teapot_mountain-Queen_shufang.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Soft_feeling_of_Teapot_mountain-Queen_shufang.jpg",
-              "title": "File:Soft feeling of Teapot mountain-Queen shufang.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "slug": "teapot-mountain",
           "name": "Teapot Mountain Trail",
           "area": "Ruifang District, New Taipei",
@@ -416,7 +375,7 @@
             "Jiufen Old Street Taiwan",
             "Jiufen lanterns"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [
             {
               "slug": "taro-balls",
@@ -478,12 +437,6 @@
             }
           ],
           "images": [
-            {
-              "src": "assets/images/places/jiufen-old-street-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg/1920px-A-Zhu_Peanut_Ice_Cream_Roll%2C_Jiufen_Old_Street%2C_2024.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:A-Zhu_Peanut_Ice_Cream_Roll,_Jiufen_Old_Street,_2024.jpg",
-              "title": "File:A-Zhu Peanut Ice Cream Roll, Jiufen Old Street, 2024.jpg"
-            },
             {
               "src": "assets/images/places/jiufen-old-street-2.jpg",
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Jiufen%2C_November_28%2C_2024_-_019.jpg/1920px-Jiufen%2C_November_28%2C_2024_-_019.jpg",
@@ -549,15 +502,9 @@
             "Lungshan Temple Taipei",
             "Lungshan Temple of Manka"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
-            {
-              "src": "assets/images/places/lungshan-temple-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Longshan_Temple%2C_Taipei_01.jpg/1920px-Longshan_Temple%2C_Taipei_01.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Longshan_Temple,_Taipei_01.jpg",
-              "title": "File:Longshan Temple, Taipei 01.jpg"
-            },
             {
               "src": "assets/images/places/lungshan-temple-2.jpg",
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taipei_Taiwan_Mengjia-Longshan-Temple-00.jpg/1920px-Taipei_Taiwan_Mengjia-Longshan-Temple-00.jpg",
@@ -586,7 +533,7 @@
             "Chiang Kai-shek Memorial Hall Taipei",
             "Liberty Square Taipei"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -594,12 +541,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/1920px-Chiang_Kai-shek_memorial_amk.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_memorial_amk.jpg",
               "title": "File:Chiang Kai-shek memorial amk.jpg"
-            },
-            {
-              "src": "assets/images/places/chiang-kai-shek-memorial-hall-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chiang_Kai-shek_memorial_2_amk.jpg/1920px-Chiang_Kai-shek_memorial_2_amk.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Chiang_Kai-shek_memorial_2_amk.jpg",
-              "title": "File:Chiang Kai-shek memorial 2 amk.jpg"
             }
           ]
         },
@@ -628,14 +569,9 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Guandu_Yun%C3%BC_Temple_20241122.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:Guandu_Yun%C3%BC_Temple_20241122.jpg",
               "title": "File:Guandu Yunu Temple 20241122.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
-              "title": "File:Ceiling of the Guandu Yunu Temple 20241122.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -643,12 +579,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Guandu_Yun%C3%BC_Temple_20241122.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Guandu_Yun%C3%BC_Temple_20241122.jpg",
               "title": "File:Guandu Yunu Temple 20241122.jpg"
-            },
-            {
-              "src": "assets/images/places/guandu-temple-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg/1920px-Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Ceiling_of_the_Guandu_Yun%C3%BC_Temple_20241122.jpg",
-              "title": "File:Ceiling of the Guandu Yunu Temple 20241122.jpg"
             }
           ]
         },
@@ -677,14 +607,9 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg/1920px-Tiansheng_Gate%2C_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:Tiansheng_Gate,_Tamsui_Wuji_Tianyuan_Temple_20230323.jpg",
               "title": "File:Tiansheng Gate, Tamsui Wuji Tianyuan Temple 20230323.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Tian-sheng_Gate%2C_Tamsui_Wu-ji_Tian-yuan_Temple_20140629.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Tian-sheng_Gate,_Tamsui_Wu-ji_Tian-yuan_Temple_20140629.jpg",
-              "title": "File:Tian-sheng Gate, Tamsui Wu-ji Tian-yuan Temple 20140629.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -705,7 +630,7 @@
               "title": "File:Tamsui sunset 20221118.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "slug": "tamsui-sunset",
           "name": "Tamsui Sunset Walk",
           "area": "Tamsui District, New Taipei",
@@ -746,7 +671,7 @@
             "Dihua Street Taipei",
             "Dadaocheng Taipei old street"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [
             {
               "slug": "oolong-tea",
@@ -849,7 +774,7 @@
             "Yehliu Geopark Taiwan",
             "Yehliu Queen's Head"
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -857,12 +782,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Yehliu_Taiwan_GeoPark-01.jpg/1920px-Yehliu_Taiwan_GeoPark-01.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Yehliu_Taiwan_GeoPark-01.jpg",
               "title": "File:Yehliu Taiwan GeoPark-01.jpg"
-            },
-            {
-              "src": "assets/images/places/yehliu-geopark-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/20190415_Yehliu_geopark-2.jpg/1920px-20190415_Yehliu_geopark-2.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:20190415_Yehliu_geopark-2.jpg",
-              "title": "File:20190415 Yehliu geopark-2.jpg"
             }
           ]
         },
@@ -870,19 +789,13 @@
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/bitou-cape-trail-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/2018_Bitou_Cape_B.jpg/1920px-2018_Bitou_Cape_B.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:2018_Bitou_Cape_B.jpg",
-              "title": "File:2018 Bitou Cape B.jpg"
-            },
-            {
               "src": "assets/images/places/bitou-cape-trail-2.jpg",
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2018_Bitou_Cape.jpg/1920px-2018_Bitou_Cape.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:2018_Bitou_Cape.jpg",
               "title": "File:2018 Bitou Cape.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "slug": "bitou-cape-trail",
           "name": "Bitou Cape Trail",
           "area": "Ruifang District, New Taipei",
@@ -907,11 +820,6 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/2018_Bitou_Cape_B.jpg/1920px-2018_Bitou_Cape_B.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:2018_Bitou_Cape_B.jpg",
               "title": "File:2018 Bitou Cape B.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2018_Bitou_Cape.jpg/1920px-2018_Bitou_Cape.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:2018_Bitou_Cape.jpg",
-              "title": "File:2018 Bitou Cape.jpg"
             }
           ]
         },
@@ -940,14 +848,9 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Baishawan_Beach.jpg/1920px-Baishawan_Beach.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:Baishawan_Beach.jpg",
               "title": "File:Baishawan Beach.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Baishawan.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Baishawan.jpg",
-              "title": "File:Baishawan.jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [],
           "images": [
             {
@@ -955,12 +858,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Baishawan_Beach.jpg/1920px-Baishawan_Beach.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Baishawan_Beach.jpg",
               "title": "File:Baishawan Beach.jpg"
-            },
-            {
-              "src": "assets/images/places/baishawan-beach-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Baishawan.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Baishawan.jpg",
-              "title": "File:Baishawan.jpg"
             }
           ]
         },
@@ -989,14 +886,9 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Shilin_Night_Market_Dadong_Road.jpg/1920px-Shilin_Night_Market_Dadong_Road.jpg",
               "page": "https://commons.wikimedia.org/wiki/File:Shilin_Night_Market_Dadong_Road.jpg",
               "title": "File:Shilin Night Market Dadong Road.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg/1920px-AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:AnPing_Street,_Taipei_(Shilin_Night_Market).jpg",
-              "title": "File:AnPing Street, Taipei (Shilin Night Market).jpg"
             }
           ],
-          "desired_images": 2,
+          "desired_images": 1,
           "foods": [
             {
               "slug": "oyster-omelet",
@@ -1092,12 +984,6 @@
               "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Shilin_Night_Market_Dadong_Road.jpg/1920px-Shilin_Night_Market_Dadong_Road.jpg",
               "source_page": "https://commons.wikimedia.org/wiki/File:Shilin_Night_Market_Dadong_Road.jpg",
               "title": "File:Shilin Night Market Dadong Road.jpg"
-            },
-            {
-              "src": "assets/images/places/shilin-night-market-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg/1920px-AnPing_Street%2C_Taipei_%28Shilin_Night_Market%29.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:AnPing_Street,_Taipei_(Shilin_Night_Market).jpg",
-              "title": "File:AnPing Street, Taipei (Shilin Night Market).jpg"
             }
           ]
         }
@@ -1143,19 +1029,13 @@
               "foods": [],
               "images": [
                 {
-                  "src": "assets/images/places/qingtiangang-grassland-1.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Qingtiangang_Grassland%2C_Taipei_City%2C_Taiwan.jpg/1920px-Qingtiangang_Grassland%2C_Taipei_City%2C_Taiwan.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Qingtiangang_Grassland,_Taipei_City,_Taiwan.jpg",
-                  "title": "File:Qingtiangang Grassland, Taipei City, Taiwan.jpg"
-                },
-                {
                   "src": "assets/images/places/qingtiangang-grassland-2.jpg",
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Qingtiangang_with_sky.jpg/1920px-Qingtiangang_with_sky.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Qingtiangang_with_sky.jpg",
                   "title": "File:Qingtiangang with sky.jpg"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "slug": "qingtiangang-grassland",
               "name": "Qingtiangang Grassland",
               "area": "Yangmingshan National Park, Taipei",
@@ -1180,11 +1060,6 @@
                   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Qingtiangang_Grassland%2C_Taipei_City%2C_Taiwan.jpg/1920px-Qingtiangang_Grassland%2C_Taipei_City%2C_Taiwan.jpg",
                   "page": "https://commons.wikimedia.org/wiki/File:Qingtiangang_Grassland,_Taipei_City,_Taiwan.jpg",
                   "title": "File:Qingtiangang Grassland, Taipei City, Taiwan.jpg"
-                },
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Qingtiangang_with_sky.jpg/1920px-Qingtiangang_with_sky.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Qingtiangang_with_sky.jpg",
-                  "title": "File:Qingtiangang with sky.jpg"
                 }
               ]
             },
@@ -1198,7 +1073,7 @@
                   "title": "File:Hiking Yangmingshan 43.jpg"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "slug": "yangmingshan-scenic-loop",
               "name": "Yangmingshan Scenic Loop",
               "area": "Yangmingshan National Park, Taipei",
@@ -1223,11 +1098,6 @@
                   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hiking_Yangmingshan_43.jpg/1920px-Hiking_Yangmingshan_43.jpg",
                   "page": "https://commons.wikimedia.org/wiki/File:Hiking_Yangmingshan_43.jpg",
                   "title": "File:Hiking Yangmingshan 43.jpg"
-                },
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Yangmingshan_National_Park%2C_Hermes_Li%2C_03.jpg/1920px-Yangmingshan_National_Park%2C_Hermes_Li%2C_03.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Yangmingshan_National_Park,_Hermes_Li,_03.jpg",
-                  "title": "File:Yangmingshan National Park, Hermes Li, 03.jpg"
                 }
               ]
             },
@@ -1251,7 +1121,7 @@
                 "Raohe Street Night Market Taipei",
                 "Raohe Night Market entrance"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [
                 {
                   "slug": "black-pepper-bun",
@@ -1304,12 +1174,6 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg/1920px-East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
                   "title": "File:East Entrance of Raohe Street Night Market 20060118 night.jpg"
-                },
-                {
-                  "src": "assets/images/places/raohe-night-market-2.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg/1920px-West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
-                  "title": "File:West Entrance of Raohe Street Night Market 20080910.jpg"
                 }
               ]
             }
@@ -1359,7 +1223,7 @@
                 "Feitsui Reservoir Taiwan",
                 "Shiding reservoir view Taiwan"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [],
               "images": [
                 {
@@ -1367,12 +1231,6 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fetsui_Reservoir_aerial_photography.jpg/1920px-Fetsui_Reservoir_aerial_photography.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Fetsui_Reservoir_aerial_photography.jpg",
                   "title": "File:Fetsui Reservoir aerial photography.jpg"
-                },
-                {
-                  "src": "assets/images/places/crocodile-island-viewpoint-2.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/FeiCueiReservoir.jpg/1920px-FeiCueiReservoir.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:FeiCueiReservoir.jpg",
-                  "title": "File:FeiCueiReservoir.jpg"
                 }
               ]
             },
@@ -1396,15 +1254,9 @@
                 "Thousand Island Lake Shiding Taiwan",
                 "Feitsui Reservoir Taiwan"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [],
               "images": [
-                {
-                  "src": "assets/images/places/thousand-island-lake-1.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Qiandao_Lake%2C_Shiding_District%2C_New_Taipei_City_20170121.jpg/2560px-Qiandao_Lake%2C_Shiding_District%2C_New_Taipei_City_20170121.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Qiandao_Lake,_Shiding_District,_New_Taipei_City_20170121.jpg",
-                  "title": "File:Qiandao Lake, Shiding District, New Taipei City 20170121.jpg"
-                },
                 {
                   "src": "assets/images/places/thousand-island-lake-2.jpg",
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Thousand_Island_Lake%2C_Taiwan.jpg/2560px-Thousand_Island_Lake%2C_Taiwan.jpg",
@@ -1433,7 +1285,7 @@
                 "Raohe Street Night Market Taipei",
                 "Raohe Night Market entrance"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [
                 {
                   "slug": "black-pepper-bun",
@@ -1486,12 +1338,6 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg/1920px-East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg",
                   "title": "File:East Entrance of Raohe Street Night Market 20060118 night.jpg"
-                },
-                {
-                  "src": "assets/images/places/raohe-night-market-2.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg/1920px-West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:West_Entrance_of_Raohe_Street_Night_Market_20080910.jpg",
-                  "title": "File:West Entrance of Raohe Street Night Market 20080910.jpg"
                 }
               ]
             }
@@ -1551,7 +1397,7 @@
                 "Feitsui Reservoir Taiwan",
                 "Shiding reservoir view Taiwan"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [],
               "images": [
                 {
@@ -1559,12 +1405,6 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fetsui_Reservoir_aerial_photography.jpg/1920px-Fetsui_Reservoir_aerial_photography.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Fetsui_Reservoir_aerial_photography.jpg",
                   "title": "File:Fetsui Reservoir aerial photography.jpg"
-                },
-                {
-                  "src": "assets/images/places/crocodile-island-viewpoint-2.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/FeiCueiReservoir.jpg/1920px-FeiCueiReservoir.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:FeiCueiReservoir.jpg",
-                  "title": "File:FeiCueiReservoir.jpg"
                 }
               ]
             },
@@ -1588,15 +1428,9 @@
                 "Thousand Island Lake Shiding Taiwan",
                 "Feitsui Reservoir Taiwan"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [],
               "images": [
-                {
-                  "src": "assets/images/places/thousand-island-lake-1.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Qiandao_Lake%2C_Shiding_District%2C_New_Taipei_City_20170121.jpg/2560px-Qiandao_Lake%2C_Shiding_District%2C_New_Taipei_City_20170121.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Qiandao_Lake,_Shiding_District,_New_Taipei_City_20170121.jpg",
-                  "title": "File:Qiandao Lake, Shiding District, New Taipei City 20170121.jpg"
-                },
                 {
                   "src": "assets/images/places/thousand-island-lake-2.jpg",
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Thousand_Island_Lake%2C_Taiwan.jpg/2560px-Thousand_Island_Lake%2C_Taiwan.jpg",
@@ -1632,7 +1466,7 @@
                   "title": "File:Century Old Blacksmith Shop - panoramio.jpg"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [
                 {
                   "slug": "tofu-ice-cream",
@@ -1731,7 +1565,7 @@
                 "Dihua Street Taipei",
                 "Dadaocheng Taipei old street"
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "foods": [
                 {
                   "slug": "oolong-tea",
@@ -1812,19 +1646,13 @@
               "foods": [],
               "images": [
                 {
-                  "src": "assets/images/places/wufengchi-waterfall-1.jpeg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Wufengqi_Falls_Taiwan.jpeg/1920px-Wufengqi_Falls_Taiwan.jpeg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Wufengqi_Falls_Taiwan.jpeg",
-                  "title": "File:Wufengqi Falls Taiwan.jpeg"
-                },
-                {
                   "src": "assets/images/places/wufengchi-waterfall-2.jpg",
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg/1920px-Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg",
                   "title": "File:Yilan Wufengqi Waterfall-宜蘭-五峰旗瀑布.jpg"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "slug": "wufengchi-waterfall",
               "name": "Wufengchi Waterfall",
               "area": "Jiaoxi, Yilan County",
@@ -1849,11 +1677,6 @@
                   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Wufengqi_Falls_Taiwan.jpeg/1920px-Wufengqi_Falls_Taiwan.jpeg",
                   "page": "https://commons.wikimedia.org/wiki/File:Wufengqi_Falls_Taiwan.jpeg",
                   "title": "File:Wufengqi Falls Taiwan.jpeg"
-                },
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg/1920px-Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Yilan_Wufengqi_Waterfall-%E5%AE%9C%E8%98%AD-%E4%BA%94%E5%B3%B0%E6%97%97%E7%80%91%E5%B8%83.jpg",
-                  "title": "File:Yilan Wufengqi Waterfall-宜蘭-五峰旗瀑布.jpg"
                 }
               ]
             },
@@ -1865,15 +1688,9 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Wushi_Harbor_and_Waiao_Beach.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Wushi_Harbor_and_Waiao_Beach.jpg",
                   "title": "File:Wushi Harbor and Waiao Beach.jpg"
-                },
-                {
-                  "src": "assets/images/places/waiao-beach-2.JPG",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Wai-ao.JPG",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Wai-ao.JPG",
-                  "title": "File:Wai-ao.JPG"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "slug": "waiao-beach",
               "name": "Waiao Beach",
               "area": "Toucheng, Yilan County",
@@ -1898,11 +1715,6 @@
                   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Wushi_Harbor_and_Waiao_Beach.jpg/1920px-Wushi_Harbor_and_Waiao_Beach.jpg",
                   "page": "https://commons.wikimedia.org/wiki/File:Wushi_Harbor_and_Waiao_Beach.jpg",
                   "title": "File:Wushi Harbor and Waiao Beach.jpg"
-                },
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%E5%A4%96%E6%BE%B3%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4_Waiao_Beach_-_panoramio.jpg/1920px-%E5%A4%96%E6%BE%B3%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4_Waiao_Beach_-_panoramio.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%96%E6%BE%B3%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4_Waiao_Beach_-_panoramio.jpg",
-                  "title": "File:外澳海水浴場 Waiao Beach - panoramio.jpg"
                 }
               ]
             },
@@ -1914,15 +1726,9 @@
                   "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
                   "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
                   "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
-                },
-                {
-                  "src": "assets/images/places/taipei-101-observatory-2.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1920px-Taipei_101_2009_amk.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
-                  "title": "File:Taipei 101 2009 amk.jpg"
                 }
               ],
-              "desired_images": 2,
+              "desired_images": 1,
               "slug": "xinyi-district-night-walk",
               "name": "Xinyi District Night Walk",
               "area": "Xinyi District, Taipei",
@@ -1943,11 +1749,6 @@
                   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
                   "page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
                   "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
-                },
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1920px-Taipei_101_2009_amk.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
-                  "title": "File:Taipei 101 2009 amk.jpg"
                 }
               ],
               "image_queries": [

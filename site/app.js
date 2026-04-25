@@ -1,9 +1,11 @@
 const app = document.querySelector("#app");
 const mapsApiKey = window.APP_CONFIG?.GOOGLE_MAPS_EMBED_API_KEY?.trim() || "";
 const isCompactViewport = window.matchMedia("(max-width: 720px)").matches;
+let currentTripKey = "taiwan";
 
 const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
 const assetSrc = (src = "") => (/^(https?:)?\/\//.test(src) ? src : `./${src}`);
+const encode = (value = "") => encodeURIComponent(value);
 
 const imageMarkup = (images = [], alt, max = 2) => {
   if (!images.length) {
@@ -112,6 +114,189 @@ const extractMapQuery = (url = "") => {
 const placeQuery = (place) =>
   extractMapQuery(place.links?.map) || `${place.name}, ${place.area}, Taiwan`;
 
+const nativeMapLinks = (query, { includeChina = currentTripKey === "china" } = {}) => {
+  const encoded = encode(query);
+  const links = [];
+  if (includeChina) {
+    links.push({
+      label: "Amap",
+      primary: true,
+      href: `https://uri.amap.com/search?keyword=${encoded}&src=tripplanner&coordinate=gaode&callnative=1`
+    });
+    links.push({
+      label: "Baidu",
+      href: `https://api.map.baidu.com/place/search?query=${encoded}&output=html&src=webapp.tripplanner`
+    });
+  }
+  links.push({
+    label: currentTripKey === "china" ? "Apple" : "Apple Maps",
+    href: `https://maps.apple.com/?q=${encoded}`
+  });
+  links.push({
+    label: currentTripKey === "china" ? "Google" : "Google Maps",
+    primary: !includeChina,
+    href: `https://www.google.com/maps/search/?api=1&query=${encoded}`
+  });
+  return links;
+};
+
+const mapLinksMarkup = (query, referenceHref) => `
+  <div class="links map-links">
+    ${nativeMapLinks(query)
+      .map(
+        (link) =>
+          `<a class="button-link${link.primary ? " primary" : ""}" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+      )
+      .join("")}
+    ${
+      referenceHref
+        ? `<a class="button-link reference-link" href="${referenceHref}" target="_blank" rel="noreferrer">Reference</a>`
+        : ""
+    }
+  </div>
+`;
+
+const transitLinksMarkup = (fromPlace, toPlace) => {
+  if (!fromPlace || !toPlace) {
+    return "";
+  }
+  const from = placeQuery(fromPlace);
+  const to = placeQuery(toPlace);
+  const links =
+    currentTripKey === "china"
+      ? [
+          {
+            label: "Amap Destination",
+            href: `https://uri.amap.com/search?keyword=${encode(to)}&src=tripplanner&coordinate=gaode&callnative=1`
+          },
+          {
+            label: "Baidu Transit",
+            href: `https://api.map.baidu.com/direction?origin=${encode(from)}&destination=${encode(to)}&mode=transit&output=html&src=webapp.tripplanner`
+          }
+        ]
+      : [
+          {
+            label: "Google Transit",
+            href: `https://www.google.com/maps/dir/?api=1&origin=${encode(from)}&destination=${encode(to)}&travelmode=transit`
+          },
+          {
+            label: "Apple Transit",
+            href: `https://maps.apple.com/?saddr=${encode(from)}&daddr=${encode(to)}&dirflg=r`
+          }
+        ];
+
+  return `
+    <div class="transfer-links">
+      ${links
+        .map(
+          (link) =>
+            `<a class="button-link" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+        )
+        .join("")}
+    </div>
+  `;
+};
+
+const weatherLocations = {
+  china: {
+    "day-1": { name: "Berlin / in flight", latitude: 52.52, longitude: 13.405 },
+    "day-2": { name: "Shanghai", latitude: 31.2304, longitude: 121.4737 },
+    "day-3": { name: "Shanghai", latitude: 31.2304, longitude: 121.4737 },
+    "day-4": { name: "Shanghai", latitude: 31.2304, longitude: 121.4737 },
+    "day-5": { name: "Fenghuang", latitude: 27.9483, longitude: 109.5992 },
+    "day-6": { name: "Fenghuang / Furong / Zhangjiajie", latitude: 28.1659, longitude: 109.9567 },
+    "day-7": { name: "Zhangjiajie", latitude: 29.1171, longitude: 110.4792 },
+    "day-8": { name: "Zhangjiajie", latitude: 29.1171, longitude: 110.4792 },
+    "day-9": { name: "Beijing", latitude: 39.9042, longitude: 116.4074 },
+    "day-10": { name: "Beijing", latitude: 39.9042, longitude: 116.4074 },
+    "day-11": { name: "Beijing / Taipei", latitude: 25.033, longitude: 121.5654 }
+  },
+  taiwan: {
+    "day-1": { name: "Taipei / Taoyuan", latitude: 25.033, longitude: 121.5654 },
+    "day-2": { name: "Taipei", latitude: 25.033, longitude: 121.5654 },
+    "day-3": { name: "North Coast / Jiufen", latitude: 25.1096, longitude: 121.8442 },
+    "day-4": { name: "Taipei", latitude: 25.033, longitude: 121.5654 },
+    "day-5": { name: "Taroko / Hualien", latitude: 24.1587, longitude: 121.6216 },
+    "day-6": { name: "Taipei / Tamsui", latitude: 25.1676, longitude: 121.4458 },
+    "day-7": { name: "Taipei", latitude: 25.033, longitude: 121.5654 },
+    "day-8": { name: "Taipei / Taoyuan", latitude: 25.033, longitude: 121.5654 }
+  }
+};
+
+const weatherCodeLabels = {
+  0: "Clear",
+  1: "Mostly clear",
+  2: "Partly cloudy",
+  3: "Overcast",
+  45: "Fog",
+  48: "Rime fog",
+  51: "Light drizzle",
+  53: "Drizzle",
+  55: "Dense drizzle",
+  61: "Light rain",
+  63: "Rain",
+  65: "Heavy rain",
+  80: "Rain showers",
+  81: "Rain showers",
+  82: "Heavy showers",
+  95: "Thunderstorm"
+};
+
+const formatIsoDate = (dateText = "") => {
+  const months = {
+    january: "01",
+    february: "02",
+    march: "03",
+    april: "04",
+    may: "05",
+    june: "06",
+    july: "07",
+    august: "08",
+    september: "09",
+    october: "10",
+    november: "11",
+    december: "12"
+  };
+  const cleaned = dateText.replace(/(\d+)(st|nd|rd|th)/gi, "$1");
+  const match = cleaned.match(
+    /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})|(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i
+  );
+  if (!match) {
+    return "";
+  }
+  const monthName = (match[1] || match[5]).toLowerCase();
+  const day = String(match[2] || match[4]).padStart(2, "0");
+  const year = match[3] || match[6];
+  return `${year}-${months[monthName]}-${day}`;
+};
+
+const weatherMarkup = (day) => {
+  const location = weatherLocations[currentTripKey]?.[day.id];
+  const isoDate = formatIsoDate(day.date);
+  if (!location || !isoDate) {
+    return "";
+  }
+
+  return `
+    <article
+      class="weather-card"
+      data-weather-date="${isoDate}"
+      data-weather-lat="${location.latitude}"
+      data-weather-lon="${location.longitude}"
+      data-weather-place="${location.name}"
+    >
+      <div>
+        <p class="weather-kicker">Weather</p>
+        <h3 class="weather-title">${location.name}</h3>
+        <p class="weather-copy">Live daily forecast from Open-Meteo will load when this date is inside the forecast window.</p>
+      </div>
+      <div class="weather-values" aria-live="polite">
+        <span class="weather-status">Checking forecast...</span>
+      </div>
+    </article>
+  `;
+};
+
 const singleStayMarkup = (stay) => {
   if (!stay) {
     return "";
@@ -130,7 +315,7 @@ const singleStayMarkup = (stay) => {
         <p class="stay-transit">${stay.transit}</p>
       </div>
       <div class="stay-links">
-        <a class="button-link primary" href="${stay.map}" target="_blank" rel="noreferrer">Open Map</a>
+        ${mapLinksMarkup(`${stay.label}, ${stay.address || stay.city || ""}`, null)}
       </div>
     </section>
   `;
@@ -182,7 +367,9 @@ const buildMapEmbedUrl = (day) => {
     const query = placeQuery(day.places[0]);
     return `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(
       mapsApiKey
-    )}&q=${encodeURIComponent(query)}&zoom=13&language=en&region=TW`;
+    )}&q=${encodeURIComponent(query)}&zoom=13&language=en&region=${
+      currentTripKey === "china" ? "CN" : "TW"
+    }`;
   }
 
   const [origin, ...rest] = day.places;
@@ -193,11 +380,31 @@ const buildMapEmbedUrl = (day) => {
     mapsApiKey
   )}&origin=${encodeURIComponent(placeQuery(origin))}&destination=${encodeURIComponent(
     placeQuery(destination)
-  )}${waypoints ? `&waypoints=${encodeURIComponent(waypoints)}` : ""}&language=en&region=TW`;
+  )}${waypoints ? `&waypoints=${encodeURIComponent(waypoints)}` : ""}&language=en&region=${
+    currentTripKey === "china" ? "CN" : "TW"
+  }`;
 };
 
 const dayMapMarkup = (day) => {
-  if (day.gallery_only || !day.places?.length || !mapsApiKey) {
+  if (day.gallery_only || !day.places?.length) {
+    return "";
+  }
+
+  if (currentTripKey === "china") {
+    const origin = day.places[0];
+    const destination = day.places.at(-1);
+    return `
+      <article class="map-card route-card">
+        <div class="map-head">
+          <h3 class="map-title">China Map & Transit</h3>
+          <p class="map-note">Amap/Gaode and Baidu work reliably in mainland China. Use these for live metro, bus, taxi, and walking routes.</p>
+        </div>
+        ${origin && destination && origin !== destination ? transitLinksMarkup(origin, destination) : mapLinksMarkup(placeQuery(origin), null)}
+      </article>
+    `;
+  }
+
+  if (!mapsApiKey) {
     return "";
   }
 
@@ -239,6 +446,7 @@ const transferMarkup = (transfer, fromPlace, toPlace) => {
           ? `<p class="transfer-note">${transfer.note}</p>`
           : ""
       }
+      ${transitLinksMarkup(fromPlace, toPlace)}
     </article>
   `;
 };
@@ -296,10 +504,7 @@ const placeMarkup = (place) => `
             ? `<div class="access-note">${place.access_note}</div>`
             : ""
         }
-        <div class="links">
-          <a class="button-link primary" href="${place.links.map}" target="_blank" rel="noreferrer">Open Map</a>
-          <a class="button-link" href="${place.links.reference}" target="_blank" rel="noreferrer">Reference</a>
-        </div>
+        ${mapLinksMarkup(placeQuery(place), place.links.reference)}
         ${foodMarkup(place.foods)}
       </div>
     </div>
@@ -423,6 +628,7 @@ const dayMarkup = (day, index) => `
       </div>
     </summary>
     <div class="day-panel">
+      ${weatherMarkup(day)}
       ${
         day.plans?.length
           ? planListMarkup(day.plans)
@@ -601,6 +807,91 @@ const wireBackToTop = () => {
   update();
 };
 
+const weatherCache = new Map();
+
+const setWeatherStatus = (card, message) => {
+  const target = card.querySelector(".weather-values");
+  if (target) {
+    target.innerHTML = `<span class="weather-status">${message}</span>`;
+  }
+};
+
+const fetchWeather = async (lat, lon) => {
+  const key = `${lat},${lon}`;
+  if (!weatherCache.has(key)) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encode(lat)}&longitude=${encode(lon)}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&forecast_days=16&timezone=auto`;
+    weatherCache.set(
+      key,
+      fetch(url).then((response) => {
+        if (!response.ok) {
+          throw new Error("Weather unavailable");
+        }
+        return response.json();
+      })
+    );
+  }
+  return weatherCache.get(key);
+};
+
+const hydrateWeather = async () => {
+  const cards = Array.from(document.querySelectorAll(".weather-card"));
+  if (!cards.length) {
+    return;
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  await Promise.all(
+    cards.map(async (card) => {
+      const date = card.dataset.weatherDate;
+      const lat = card.dataset.weatherLat;
+      const lon = card.dataset.weatherLon;
+      const place = card.dataset.weatherPlace;
+      const tripDate = new Date(`${date}T00:00:00`);
+      const daysAway = Math.round((tripDate - today) / 86400000);
+
+      if (Number.isNaN(daysAway)) {
+        setWeatherStatus(card, "Date unavailable");
+        return;
+      }
+
+      if (daysAway < 0) {
+        setWeatherStatus(card, "Trip date has passed");
+        return;
+      }
+
+      if (daysAway > 15) {
+        setWeatherStatus(card, `Forecast opens about 16 days before ${date}`);
+        return;
+      }
+
+      try {
+        const data = await fetchWeather(lat, lon);
+        const index = data.daily?.time?.indexOf(date) ?? -1;
+        if (index === -1) {
+          setWeatherStatus(card, `Forecast not published yet for ${date}`);
+          return;
+        }
+
+        const code = data.daily.weather_code?.[index];
+        const max = Math.round(data.daily.temperature_2m_max?.[index]);
+        const min = Math.round(data.daily.temperature_2m_min?.[index]);
+        const rain = data.daily.precipitation_probability_max?.[index];
+        const wind = Math.round(data.daily.wind_speed_10m_max?.[index]);
+        card.querySelector(".weather-values").innerHTML = `
+          <span><strong>${weatherCodeLabels[code] || "Forecast"}</strong>${place}</span>
+          <span>${min}° / ${max}°C</span>
+          <span>${rain ?? 0}% rain</span>
+          <span>${wind} km/h wind</span>
+        `;
+      } catch {
+        setWeatherStatus(card, "Weather service unavailable. Try again later.");
+      }
+    })
+  );
+};
+
 const startObservers = () => {
   const items = document.querySelectorAll(".fade-up");
   const observer = new IntersectionObserver(
@@ -631,6 +922,7 @@ const tripDefaults = {
 };
 
 const render = (data, tripKey) => {
+  currentTripKey = tripKey;
   const heroImage = safeImage(data.hero?.images);
   const trip = tripDefaults[tripKey] || tripDefaults.taiwan;
   const hasDayStays = data.days?.some((day) => day.stay);
@@ -677,6 +969,7 @@ const render = (data, tripKey) => {
   wireToggleAll();
   wireBackToTop();
   wirePrint();
+  hydrateWeather();
 };
 
 const init = async () => {

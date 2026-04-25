@@ -620,6 +620,7 @@ img {
 }
 
 .map-card,
+.weather-card,
 .flight-card,
 .place {
   border: 1px solid var(--line);
@@ -630,6 +631,62 @@ img {
 
 .map-card {
   padding: 0.95rem;
+}
+
+.route-card {
+  background: linear-gradient(180deg, rgba(16, 36, 42, 0.94), rgba(11, 22, 30, 0.92));
+}
+
+.weather-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.05rem;
+  background: linear-gradient(135deg, rgba(78, 205, 196, 0.13), rgba(240, 179, 95, 0.08));
+}
+
+.weather-kicker {
+  margin: 0 0 0.22rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.weather-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: #f4f8fa;
+}
+
+.weather-copy,
+.weather-status {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.weather-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  max-width: 28rem;
+}
+
+.weather-values span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(78, 205, 196, 0.18);
+  border-radius: 999px;
+  background: rgba(6, 14, 22, 0.32);
+  color: #e8f3f5;
+  padding: 0.38rem 0.62rem;
+  font-size: 0.78rem;
 }
 
 .map-head {
@@ -992,6 +1049,18 @@ img {
   gap: 0.6rem;
 }
 
+.map-links {
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  max-width: 39rem;
+}
+
+.transfer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
 .button-link {
   display: inline-flex;
   align-items: center;
@@ -1249,8 +1318,10 @@ img {
 
   .place-top,
   .flight-top,
-  .map-head {
+  .map-head,
+  .weather-card {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .timing {
@@ -1309,8 +1380,13 @@ img {
   .transport-note,
   .transfer-card,
   .flight-card,
+  .weather-card,
   .map-card {
     border-radius: 1.1rem;
+  }
+
+  .weather-values {
+    justify-content: flex-start;
   }
 }
 
@@ -1363,6 +1439,7 @@ img {
   .day-toggle,
   .plan-toggle,
   .map-card,
+  .weather-card,
   .food-section-meta,
   .links,
   .stay-links,
