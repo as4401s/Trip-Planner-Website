@@ -8,11 +8,14 @@ This project renders a multi-day trip plan from local JSON data and local image 
 
 ## Project Structure
 
-- `site/index.html` - main HTML entry point
-- `site/app.js` - client-side rendering logic
+- `site/index.html` - Taiwan itinerary entry point
+- `site/china.html` - China itinerary entry point
+- `site/app.js` - shared client-side rendering logic
 - `site/styles.css` - site styling and responsive layout
-- `site/data/itinerary.json` - itinerary content
-- `site/data/asset-links.json` - source and link metadata
+- `site/data/itinerary.json` - Taiwan itinerary content
+- `site/data/china.json` - China itinerary content
+- `site/data/asset-links.json` - Taiwan source and link metadata
+- `site/data/china-links.json` - China source and link metadata
 - `site/assets/images/` - local image assets
 - `site/config.js` - client-side configuration values
 - `scripts/fetch_assets.py` - helper script for downloading and wiring local images
@@ -28,7 +31,25 @@ uv run python -m http.server 3001 --directory site
 Then open:
 
 ```text
-http://127.0.0.1:3001/
+http://127.0.0.1:3001/            # Taiwan itinerary
+http://127.0.0.1:3001/china.html  # China itinerary
+```
+
+Use the China / Taiwan switcher inside the hero on either page to jump between trips.
+
+## Fetching images
+
+The `fetch_assets.py` script searches Wikimedia Commons for each `image_queries` entry and downloads the chosen images locally.
+
+```bash
+# Taiwan (default data file)
+uv run python scripts/fetch_assets.py
+
+# China
+uv run python scripts/fetch_assets.py --data site/data/china.json
+
+# Re-fetch only specific slugs
+uv run python scripts/fetch_assets.py --data site/data/china.json --include the-bund yu-garden
 ```
 
 ## Deployment

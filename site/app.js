@@ -112,17 +112,20 @@ const extractMapQuery = (url = "") => {
 const placeQuery = (place) =>
   extractMapQuery(place.links?.map) || `${place.name}, ${place.area}, Taiwan`;
 
-const stayMarkup = (stay) => {
+const singleStayMarkup = (stay) => {
   if (!stay) {
     return "";
   }
-
+  const kicker = stay.city
+    ? `${stay.city}${stay.dates ? ` · ${stay.dates}` : ""}`
+    : "Stay Base";
   return `
     <section class="stay-card fade-up">
       <div class="stay-copy">
-        <p class="stay-kicker">Stay Base</p>
+        <p class="stay-kicker">${kicker}</p>
         <h2 class="stay-title">${stay.label}</h2>
         <p class="stay-address">${stay.address}</p>
+        ${stay.phone ? `<p class="stay-phone">${stay.phone}</p>` : ""}
         <p class="stay-note">${stay.note}</p>
         <p class="stay-transit">${stay.transit}</p>
       </div>
@@ -130,6 +133,43 @@ const stayMarkup = (stay) => {
         <a class="button-link primary" href="${stay.map}" target="_blank" rel="noreferrer">Open Map</a>
       </div>
     </section>
+  `;
+};
+
+const stayMarkup = (data) => {
+  const stays = Array.isArray(data?.stays) ? data.stays : null;
+  if (stays?.length) {
+    return `
+      <section class="stays fade-up">
+        <header class="stays-head">
+          <p class="stays-kicker">Stay Bases</p>
+          <h2 class="stays-title">${stays.length} hotels across the trip</h2>
+        </header>
+        <div class="stays-grid">
+          ${stays.map(singleStayMarkup).join("")}
+        </div>
+      </section>
+    `;
+  }
+  return singleStayMarkup(data?.stay);
+};
+
+const tripSwitcherMarkup = (currentKey) => {
+  const trips = [
+    { key: "china", label: "China", href: "./china.html" },
+    { key: "taiwan", label: "Taiwan", href: "./index.html" }
+  ];
+  return `
+    <nav class="trip-switcher" aria-label="Trip selector">
+      ${trips
+        .map((trip) => {
+          const isActive = trip.key === currentKey;
+          return `<a class="trip-tab${isActive ? " active" : ""}" href="${trip.href}"${
+            isActive ? ' aria-current="page"' : ""
+          }>${trip.label}</a>`;
+        })
+        .join("")}
+    </nav>
   `;
 };
 
@@ -391,6 +431,138 @@ const wireDayNav = () => {
   });
 };
 
+const centerNavLink = (link) => {
+  const scroller = link.closest(".day-nav-scroller");
+  if (!scroller) {
+    return;
+  }
+  const linkRect = link.getBoundingClientRect();
+  const scrollerRect = scroller.getBoundingClientRect();
+  const target =
+    scroller.scrollLeft +
+    linkRect.left -
+    scrollerRect.left -
+    scrollerRect.width / 2 +
+    linkRect.width / 2;
+  scroller.scrollTo({ left: target, behavior: "smooth" });
+};
+
+const setActiveDay = (id) => {
+  document.querySelectorAll(".day-nav a").forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${id}`;
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "location");
+      centerNavLink(link);
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+};
+
+const wireActiveDay = () => {
+  const days = Array.from(document.querySelectorAll(".day"));
+  if (!days.length) {
+    return;
+  }
+
+  let frame = 0;
+  const update = () => {
+    frame = 0;
+    const offset = 120;
+    let active = days[0];
+    for (const day of days) {
+      if (day.getBoundingClientRect().top - offset <= 0) {
+        active = day;
+      } else {
+        break;
+      }
+    }
+    if (active?.id) {
+      setActiveDay(active.id);
+    }
+  };
+
+  const onScroll = () => {
+    if (frame) {
+      return;
+    }
+    frame = window.requestAnimationFrame(update);
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  update();
+};
+
+const wireToggleAll = () => {
+  const button = document.querySelector(".toggle-all");
+  if (!button) {
+    return;
+  }
+  const days = Array.from(document.querySelectorAll(".day"));
+  if (!days.length) {
+    return;
+  }
+
+  const sync = () => {
+    const anyClosed = days.some((day) => !day.open);
+    button.dataset.state = anyClosed ? "expand" : "collapse";
+    button.setAttribute(
+      "aria-label",
+      anyClosed ? "Expand all days" : "Collapse all days"
+    );
+  };
+
+  button.addEventListener("click", () => {
+    const anyClosed = days.some((day) => !day.open);
+    days.forEach((day) => {
+      day.open = anyClosed;
+    });
+    sync();
+  });
+
+  days.forEach((day) => {
+    day.addEventListener("toggle", sync);
+  });
+
+  sync();
+};
+
+const wirePrint = () => {
+  const stash = new WeakMap();
+  window.addEventListener("beforeprint", () => {
+    document.querySelectorAll("details").forEach((node) => {
+      stash.set(node, node.open);
+      node.open = true;
+    });
+  });
+  window.addEventListener("afterprint", () => {
+    document.querySelectorAll("details").forEach((node) => {
+      if (stash.has(node)) {
+        node.open = stash.get(node);
+      }
+    });
+  });
+};
+
+const wireBackToTop = () => {
+  const button = document.querySelector(".back-to-top");
+  if (!button) {
+    return;
+  }
+
+  const update = () => {
+    button.classList.toggle("is-visible", window.scrollY > 480);
+  };
+
+  button.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+};
+
 const startObservers = () => {
   const items = document.querySelectorAll(".fade-up");
   const observer = new IntersectionObserver(
@@ -407,14 +579,29 @@ const startObservers = () => {
   items.forEach((item) => observer.observe(item));
 };
 
-const render = (data) => {
-  const heroImage = safeImage(data.hero.images);
+const tripDefaults = {
+  taiwan: {
+    eyebrow: "Taiwan Trip Plan",
+    titleMain: "Taiwan",
+    titleSub: "8-day Itinerary"
+  },
+  china: {
+    eyebrow: "China Trip Plan",
+    titleMain: "China",
+    titleSub: "11-day Itinerary"
+  }
+};
+
+const render = (data, tripKey) => {
+  const heroImage = safeImage(data.hero?.images);
+  const trip = tripDefaults[tripKey] || tripDefaults.taiwan;
   app.innerHTML = `
     <div class="page">
       <header class="hero" style="--hero-image: url('${assetSrc(heroImage)}')">
         <div class="hero-inner">
-          <div class="eyebrow">Taiwan Trip Plan</div>
-          <h1 class="hero-title"><span class="hero-title-main">Taiwan</span><span class="hero-title-sub">8-day Itinerary</span></h1>
+          ${tripSwitcherMarkup(tripKey)}
+          <div class="eyebrow">${trip.eyebrow}</div>
+          <h1 class="hero-title"><span class="hero-title-main">${trip.titleMain}</span><span class="hero-title-sub">${trip.titleSub}</span></h1>
           <div class="hero-meta">
             <div class="meta-pill">${data.trip_dates}</div>
             <div class="meta-pill">${data.summary}</div>
@@ -422,28 +609,43 @@ const render = (data) => {
           <p class="hero-copy">Flights, stops, food, and route planning in one polished itinerary.</p>
         </div>
       </header>
-      <nav class="day-nav">
+      <nav class="day-nav" aria-label="Day navigation">
         <div class="day-nav-inner">
-          ${data.days.map((day) => `<a href="#${day.id}">${day.label}</a>`).join("")}
+          <div class="day-nav-scroller">
+            ${data.days.map((day) => `<a href="#${day.id}">${day.label}</a>`).join("")}
+          </div>
+          <button type="button" class="toggle-all" data-state="collapse" aria-label="Collapse all days">
+            <span class="toggle-all-collapse">Collapse all</span>
+            <span class="toggle-all-expand">Expand all</span>
+          </button>
         </div>
       </nav>
       <main class="content">
-        ${stayMarkup(data.stay)}
+        ${stayMarkup(data)}
         ${data.days.map(dayMarkup).join("")}
       </main>
       <footer class="footer">Maps and source links are attached to each stop.</footer>
+      <button type="button" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/></svg>
+      </button>
     </div>
   `;
 
   wireDayNav();
   openDayFromHash();
   startObservers();
+  wireActiveDay();
+  wireToggleAll();
+  wireBackToTop();
+  wirePrint();
 };
 
 const init = async () => {
-  const response = await fetch("./data/itinerary.json");
+  const tripKey = window.TRIP_KEY || "taiwan";
+  const dataPath = window.TRIP_DATA_PATH || "./data/itinerary.json";
+  const response = await fetch(dataPath);
   const data = await response.json();
-  render(data);
+  render(data, tripKey);
   window.addEventListener("hashchange", openDayFromHash);
 };
 

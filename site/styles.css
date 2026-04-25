@@ -96,6 +96,38 @@ img {
   color: rgba(238, 244, 247, 0.72);
 }
 
+.trip-switcher {
+  display: inline-flex;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  margin-bottom: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(6, 14, 22, 0.55);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+}
+
+.trip-tab {
+  text-decoration: none;
+  padding: 0.42rem 1.05rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  color: rgba(238, 244, 247, 0.72);
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.trip-tab:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.trip-tab.active {
+  background: rgba(78, 205, 196, 0.22);
+  color: #effbfa;
+  box-shadow: 0 0 0 1px rgba(78, 205, 196, 0.32) inset;
+}
+
 .hero-title {
   margin: 1rem 0 0.9rem;
   max-width: 9ch;
@@ -159,13 +191,22 @@ img {
   width: min(calc(100% - 1.5rem), var(--max));
   margin: 0 auto;
   display: flex;
+  align-items: center;
   gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.75rem 0;
-  scrollbar-width: none;
+  padding: 0.6rem 0;
 }
 
-.day-nav-inner::-webkit-scrollbar {
+.day-nav-scroller {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  padding: 0.15rem 0;
+}
+
+.day-nav-scroller::-webkit-scrollbar {
   display: none;
 }
 
@@ -187,6 +228,84 @@ img {
   border-color: rgba(78, 205, 196, 0.3);
 }
 
+.day-nav a.active {
+  background: rgba(78, 205, 196, 0.18);
+  color: #effbfa;
+  border-color: rgba(78, 205, 196, 0.45);
+  box-shadow: 0 0 0 1px rgba(78, 205, 196, 0.18) inset;
+}
+
+.toggle-all {
+  flex: 0 0 auto;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.toggle-all:hover {
+  background: rgba(78, 205, 196, 0.1);
+  color: var(--ink);
+  border-color: rgba(78, 205, 196, 0.28);
+}
+
+.toggle-all .toggle-all-expand {
+  display: none;
+}
+
+.toggle-all[data-state="expand"] .toggle-all-collapse {
+  display: none;
+}
+
+.toggle-all[data-state="expand"] .toggle-all-expand {
+  display: inline;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 30;
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(78, 205, 196, 0.35);
+  background: rgba(7, 13, 20, 0.82);
+  color: var(--accent-2);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: rgba(78, 205, 196, 0.16);
+  color: #effbfa;
+}
+
+.back-to-top svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
 .content {
   padding: 2.4rem 0 5rem;
 }
@@ -202,6 +321,54 @@ img {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1rem;
   align-items: end;
+}
+
+.stays {
+  margin-bottom: 1.8rem;
+}
+
+.stays-head {
+  margin-bottom: 0.9rem;
+}
+
+.stays-kicker {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.stays-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  letter-spacing: -0.02em;
+  color: #f4f8fa;
+}
+
+.stays-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.stays-grid .stay-card {
+  margin-bottom: 0;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.stays-grid .stay-links {
+  align-self: end;
+  margin-top: 0.4rem;
+}
+
+.stay-phone {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
 }
 
 .stay-kicker {
@@ -885,7 +1052,8 @@ img {
   .stay-card,
   .day-head,
   .place-grid,
-  .plan-head {
+  .plan-head,
+  .stays-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1027,5 +1195,135 @@ img {
   .flight-card,
   .map-card {
     border-radius: 1.1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .toggle-all {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.72rem;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #111827;
+  }
+
+  .hero,
+  .day-nav,
+  .back-to-top,
+  .day-toggle,
+  .map-card,
+  .food-section-meta,
+  .links,
+  .stay-links,
+  .footer {
+    display: none !important;
+  }
+
+  .content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .day,
+  .stay-card,
+  .plan-card,
+  .place,
+  .flight-card,
+  .transfer-card,
+  .food-section,
+  .food-card,
+  .access-note {
+    background: #ffffff !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 0.4rem !important;
+  }
+
+  .day {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 0.6rem;
+  }
+
+  details,
+  details > .day-panel,
+  details > .food-section-panel {
+    display: block !important;
+  }
+
+  details:not([open]) > .day-panel,
+  details:not([open]) > .food-section-panel {
+    display: block !important;
+  }
+
+  .day-summary,
+  .food-section-summary {
+    cursor: default;
+  }
+
+  .day-label,
+  .plan-kicker,
+  .stay-kicker,
+  .transfer-kicker,
+  .flight-label,
+  .detail-block h4,
+  .food-section-kicker {
+    color: #1f2937 !important;
+  }
+
+  .day-title,
+  .stay-title,
+  .plan-title,
+  .place-title-wrap h3,
+  .food-title,
+  .map-title,
+  .flight-route {
+    color: #0f172a !important;
+  }
+
+  .day-subtitle,
+  .day-focus,
+  .place-summary,
+  .stay-address,
+  .stay-note,
+  .stay-transit,
+  .plan-focus,
+  .transfer-instructions,
+  .transfer-note,
+  .place-area,
+  .timing strong,
+  .timing span,
+  .detail-block p,
+  .detail-block ul,
+  .food-meta,
+  .food-description,
+  .flight-times,
+  .flight-carrier {
+    color: #1f2937 !important;
+  }
+
+  .gallery,
+  .celebration-grid {
+    display: none !important;
+  }
+
+  .place-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a,
+  a:visited {
+    color: #1f2937;
+    text-decoration: none;
   }
 }

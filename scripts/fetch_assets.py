@@ -13,8 +13,9 @@ from urllib.error import HTTPError, URLError
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
-DATA_FILE = SITE_DIR / "data" / "itinerary.json"
-LINKS_FILE = SITE_DIR / "data" / "asset-links.json"
+DATA_DIR = SITE_DIR / "data"
+DEFAULT_DATA_FILE = DATA_DIR / "itinerary.json"
+DEFAULT_LINKS_FILE = DATA_DIR / "asset-links.json"
 IMAGE_ROOT = SITE_DIR / "assets" / "images"
 USER_AGENT = "Mozilla/5.0 (compatible; TaiwanItineraryBuilder/1.0)"
 COMMONS_ENDPOINT = "https://commons.wikimedia.org/w/api.php"
@@ -189,10 +190,34 @@ def main() -> int:
         nargs="*",
         help="Optional list of target slugs to fetch. Leave empty to fetch everything.",
     )
+    parser.add_argument(
+        "--data",
+        type=Path,
+        default=DEFAULT_DATA_FILE,
+        help="Path to the itinerary JSON file. Defaults to site/data/itinerary.json.",
+    )
+    parser.add_argument(
+        "--links",
+        type=Path,
+        default=None,
+        help="Path to write the asset-links manifest. Defaults to <data-dir>/<stem>-links.json or asset-links.json for itinerary.json.",
+    )
     args = parser.parse_args()
     allowed = set(args.include) if args.include else None
 
-    data = json.loads(DATA_FILE.read_text())
+    data_file = args.data if args.data.is_absolute() else (Path.cwd() / args.data).resolve()
+    if not data_file.exists():
+        candidate = DATA_DIR / args.data.name
+        if candidate.exists():
+            data_file = candidate
+    if args.links is not None:
+        links_file = args.links if args.links.is_absolute() else (Path.cwd() / args.links).resolve()
+    elif data_file.name == "itinerary.json":
+        links_file = DEFAULT_LINKS_FILE
+    else:
+        links_file = data_file.with_name(f"{data_file.stem}-links.json")
+
+    data = json.loads(data_file.read_text())
     for target, directory, slug in collect_targets(data, allowed):
         count = int(target.get("desired_images", 1))
         selected = target.get("manual_images") or choose_images(target.get("image_queries", []), count)
@@ -215,10 +240,10 @@ def main() -> int:
                 }
             )
 
-    DATA_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=True) + "\n")
-    LINKS_FILE.write_text(json.dumps(build_link_manifest(data), indent=2, ensure_ascii=True) + "\n")
-    print(f"Updated {DATA_FILE}")
-    print(f"Wrote {LINKS_FILE}")
+    data_file.write_text(json.dumps(data, indent=2, ensure_ascii=True) + "\n")
+    links_file.write_text(json.dumps(build_link_manifest(data), indent=2, ensure_ascii=True) + "\n")
+    print(f"Updated {data_file}")
+    print(f"Wrote {links_file}")
     return 0
 
 
