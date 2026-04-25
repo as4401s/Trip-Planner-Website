@@ -486,7 +486,7 @@
         "title": "Hotel to Pudong New Area robotaxi zone",
         "mode": "Metro Line 2 + local pickup point",
         "instructions": "Ride Line 2 east from Nanjing East Road toward Pudong. For the central Pudong pilot areas, start around Jinqiao/Huamu or Century Park; Yunshun Road and Century Park are useful anchors depending on the app coverage that day.",
-        "note": "Open Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai (小马智行), Dazhong app, Baidu Maps, or Gaode/AMap after you are physically in the service area. Look for robotaxi / 无人车 options and choose an available designated pickup point."
+        "note": "Open Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai (小马智行), Dazhong app, or Gaode/AMap after you are physically in the service area. Look for robotaxi / 无人车 options and choose an available designated pickup point."
       },
       "places": [
         {
@@ -497,7 +497,7 @@
           "duration": "90 min to 2 hours",
           "summary": "Shanghai robotaxi pilots operate in defined Pudong zones, especially Jinqiao and Huamu near Century Park, Lalaport, Pudong Football Stadium metro area, and office/residential clusters. Availability changes by operator and permit, so treat this as a flexible tech stop.",
           "highlights": [
-            "Book through Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai, Dazhong, Baidu Maps, or Gaode/AMap",
+            "Book through Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai, Dazhong, or Gaode/AMap",
             "Board only at mapped pickup/drop-off points inside the service zone",
             "Typical pilots run daytime on weekdays; Jinqiao Apollo has operated roughly 9:00 to 18:00 and Pony around 7:30 to 21:30"
           ],
