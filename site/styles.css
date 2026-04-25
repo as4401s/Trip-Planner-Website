@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.2rem;
 }
 
 body {
@@ -181,10 +182,11 @@ img {
 .day-nav {
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: rgba(7, 13, 20, 0.78);
+  z-index: 50;
+  background: rgba(7, 13, 20, 0.88);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
 }
 
 .day-nav-inner {
@@ -402,6 +404,7 @@ img {
 
 .day {
   margin: 0 0 1.35rem;
+  scroll-margin-top: 5.2rem;
   border: 1px solid var(--line);
   border-radius: 1.6rem;
   background: linear-gradient(180deg, rgba(12, 21, 31, 0.92), rgba(9, 17, 26, 0.86));
@@ -529,12 +532,22 @@ img {
   padding: 1.05rem;
 }
 
+.plan-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.plan-summary::-webkit-details-marker {
+  display: none;
+}
+
 .plan-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px) auto;
   gap: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--line);
+  align-items: start;
 }
 
 .plan-kicker {
@@ -571,10 +584,39 @@ img {
   line-height: 1.45;
 }
 
+.plan-toggle {
+  align-self: start;
+  display: inline-flex;
+  justify-content: center;
+  min-width: 5.3rem;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid rgba(240, 179, 95, 0.24);
+  border-radius: 999px;
+  color: var(--warm);
+  font-size: 0.74rem;
+}
+
+.plan-toggle .when-closed {
+  display: none;
+}
+
+.plan-card:not([open]) .plan-toggle .when-open {
+  display: none;
+}
+
+.plan-card:not([open]) .plan-toggle .when-closed {
+  display: inline;
+}
+
 .plan-body {
   display: grid;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.plan-card:not([open]) .plan-head {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .map-card,
@@ -680,6 +722,67 @@ img {
 .place-list {
   display: grid;
   gap: 1.2rem;
+}
+
+.optional-section {
+  border: 1px solid rgba(240, 179, 95, 0.24);
+  border-radius: 1.35rem;
+  background: linear-gradient(180deg, rgba(30, 28, 20, 0.8), rgba(14, 21, 29, 0.86));
+  overflow: clip;
+}
+
+.optional-section-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.05rem;
+}
+
+.optional-section-summary::-webkit-details-marker {
+  display: none;
+}
+
+.optional-section-kicker {
+  margin: 0 0 0.18rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--warm);
+}
+
+.optional-section-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.optional-section-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.optional-section-state {
+  min-width: 2.2rem;
+  text-align: right;
+  color: var(--warm);
+}
+
+.optional-section:not([open]) .optional-open-label {
+  display: none;
+}
+
+.optional-section[open] .optional-closed-label {
+  display: none;
+}
+
+.optional-section-panel {
+  padding: 0 1.05rem 1.05rem;
 }
 
 .transfer-card {
@@ -1065,6 +1168,10 @@ img {
     justify-self: start;
   }
 
+  .plan-toggle {
+    justify-self: start;
+  }
+
   .gallery {
     min-height: 15rem;
   }
@@ -1079,6 +1186,10 @@ img {
 }
 
 @media (max-width: 720px) {
+  html {
+    scroll-padding-top: 4.65rem;
+  }
+
   .hero {
     min-height: 68svh;
   }
@@ -1104,6 +1215,7 @@ img {
   .day {
     margin-bottom: 1.55rem;
     border-radius: 1.45rem;
+    scroll-margin-top: 4.65rem;
   }
 
   .day-head {
@@ -1190,6 +1302,10 @@ img {
     min-width: 5.3rem;
   }
 
+  .plan-toggle {
+    min-width: 5.3rem;
+  }
+
   .transport-note,
   .transfer-card,
   .flight-card,
@@ -1203,6 +1319,36 @@ img {
     padding: 0.4rem 0.55rem;
     font-size: 0.72rem;
   }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  .optional-section-summary,
+  .food-section-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .optional-section-meta,
+  .food-section-meta {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media print {
@@ -1215,6 +1361,7 @@ img {
   .day-nav,
   .back-to-top,
   .day-toggle,
+  .plan-toggle,
   .map-card,
   .food-section-meta,
   .links,
@@ -1252,16 +1399,22 @@ img {
 
   details,
   details > .day-panel,
+  details > .plan-body,
+  details > .optional-section-panel,
   details > .food-section-panel {
     display: block !important;
   }
 
   details:not([open]) > .day-panel,
+  details:not([open]) > .plan-body,
+  details:not([open]) > .optional-section-panel,
   details:not([open]) > .food-section-panel {
     display: block !important;
   }
 
   .day-summary,
+  .plan-summary,
+  .optional-section-summary,
   .food-section-summary {
     cursor: default;
   }

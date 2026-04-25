@@ -12,16 +12,16 @@
   "hero": {
     "slug": "hero",
     "image_queries": [
-      "Taipei skyline Taiwan",
-      "Taipei 101 city view"
+      "Taipei 101 night skyline from Elephant Mountain",
+      "Xiangshan Taipei night view"
     ],
     "desired_images": 1,
     "images": [
       {
-        "src": "assets/images/hero/hero-1.jpg",
-        "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/1920px-Taipei_Taiwan_Taipei-101-Tower-01.jpg",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg",
-        "title": "File:Taipei Taiwan Taipei-101-Tower-01.jpg"
+        "src": "assets/images/places/elephant-mountain-1.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Taipei101-Night_view.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Taipei101-Night_view.jpg",
+        "title": "File:Taipei101-Night view.jpg"
       }
     ]
   },

@@ -327,26 +327,57 @@ const placeListMarkup = (day) => {
   `;
 };
 
-const planMarkup = (plan) => `
-  <section class="plan-card">
-    <div class="plan-head">
-      <div>
-        <p class="plan-kicker">${plan.label}</p>
-        <h3 class="plan-title">${plan.title}</h3>
-        ${plan.focus ? `<p class="plan-focus">${plan.focus}</p>` : ""}
+const optionalPlacesMarkup = (day) => {
+  if (!day.optional_places?.length) {
+    return "";
+  }
+
+  return `
+    <details class="optional-section" open>
+      <summary class="optional-section-summary">
+        <div>
+          <p class="optional-section-kicker">Optional</p>
+          <h3 class="optional-section-title">${day.optional_title || "Worth Adding If Time Allows"}</h3>
+        </div>
+        <div class="optional-section-meta">
+          <span>${day.optional_places.length} stop${day.optional_places.length > 1 ? "s" : ""}</span>
+          <span class="optional-section-state optional-open-label">Hide</span>
+          <span class="optional-section-state optional-closed-label">Show</span>
+        </div>
+      </summary>
+      <div class="optional-section-panel">
+        ${placeListMarkup({ places: day.optional_places, transfers: day.optional_transfers || [] })}
       </div>
-      ${
-        plan.transport_note
-          ? `<div class="plan-transport-note">${plan.transport_note}</div>`
-          : ""
-      }
-    </div>
+    </details>
+  `;
+};
+
+const planMarkup = (plan) => `
+  <details class="plan-card" open>
+    <summary class="plan-summary">
+      <div class="plan-head">
+        <div>
+          <p class="plan-kicker">${plan.label}</p>
+          <h3 class="plan-title">${plan.title}</h3>
+          ${plan.focus ? `<p class="plan-focus">${plan.focus}</p>` : ""}
+        </div>
+        ${
+          plan.transport_note
+            ? `<div class="plan-transport-note">${plan.transport_note}</div>`
+            : ""
+        }
+        <div class="plan-toggle" aria-hidden="true">
+          <span class="when-open">Collapse</span>
+          <span class="when-closed">Expand</span>
+        </div>
+      </div>
+    </summary>
     <div class="plan-body">
       ${dayStartMarkup(plan.start_transfer)}
       ${dayMapMarkup(plan)}
       ${placeListMarkup(plan)}
     </div>
-  </section>
+  </details>
 `;
 
 const planListMarkup = (plans = []) => {
@@ -372,8 +403,8 @@ const celebrationMarkup = (images = []) => `
   </div>
 `;
 
-const dayMarkup = (day) => `
-  <details class="day fade-up" id="${day.id}" open>
+const dayMarkup = (day, index) => `
+  <details class="day fade-up" id="${day.id}"${index === 0 ? " open" : ""}>
     <summary class="day-summary">
       <div class="day-head${day.gallery_only ? " compact" : ""}">
         <div>
@@ -396,10 +427,17 @@ const dayMarkup = (day) => `
         day.plans?.length
           ? planListMarkup(day.plans)
           : `${dayStartMarkup(day.start_transfer)}
-      ${flightMarkup(day.flights)}
+      ${day.stay_position ? "" : singleStayMarkup(day.stay)}
+      ${day.flight_position === "after_places" ? "" : flightMarkup(day.flights)}
+      ${dayStartMarkup(day.after_flight_transfer)}
+      ${day.stay_position === "after_flights" ? singleStayMarkup(day.stay) : ""}
       ${dayMapMarkup(day)}
       ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
-      ${placeListMarkup(day)}`
+      ${placeListMarkup(day)}
+      ${optionalPlacesMarkup(day)}
+      ${dayStartMarkup(day.end_transfer)}
+      ${day.stay_position === "after_places" ? singleStayMarkup(day.stay) : ""}
+      ${day.flight_position === "after_places" ? flightMarkup(day.flights) : ""}`
       }
     </div>
   </details>
@@ -595,6 +633,7 @@ const tripDefaults = {
 const render = (data, tripKey) => {
   const heroImage = safeImage(data.hero?.images);
   const trip = tripDefaults[tripKey] || tripDefaults.taiwan;
+  const hasDayStays = data.days?.some((day) => day.stay);
   app.innerHTML = `
     <div class="page">
       <header class="hero" style="--hero-image: url('${assetSrc(heroImage)}')">
@@ -621,7 +660,7 @@ const render = (data, tripKey) => {
         </div>
       </nav>
       <main class="content">
-        ${stayMarkup(data)}
+        ${hasDayStays ? "" : stayMarkup(data)}
         ${data.days.map(dayMarkup).join("")}
       </main>
       <footer class="footer">Maps and source links are attached to each stop.</footer>

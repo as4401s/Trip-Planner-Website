@@ -1,7 +1,7 @@
 {
   "title": "China 11-Day Itinerary",
   "trip_dates": "May 14 to May 24, 2026",
-  "summary": "Shanghai start, a Suzhou day trip, Fenghuang water town, Zhangjiajie peaks, then Beijing classics before flying south to Taipei.",
+  "summary": "Shanghai start, Zhangjiajie and Fenghuang rail hops, Avatar peaks, Tianmen Mountain, Beijing classics, then Taipei.",
   "stays": [
     {
       "label": "Homeinn Selected Hotel (Nanjing Road)",
@@ -9,7 +9,7 @@
       "dates": "May 15 to May 18",
       "address": "No. 11, Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
       "phone": "+86-21-63239966-9",
-      "note": "Walking distance to The Bund and Nanjing Road East. Use this base for the three Shanghai days and the Suzhou day trip.",
+      "note": "Walking distance to The Bund and Nanjing Road East. Use this base for the Shanghai city days and the Pudong robotaxi morning.",
       "transit": "Nanjing East Road Station (Lines 2 and 10) is a short walk. From PVG, take Metro Line 2 directly, or the Maglev to Longyang Road then Line 2.",
       "map": "https://www.google.com/maps/search/?api=1&query=Homeinn+Selected+Hotel+Nanjing+Road+Shanghai+Jiangxi+Middle+Road"
     },
@@ -20,7 +20,7 @@
       "address": "No. 70 Jinping Road, Tuojiang Town, Fenghuang County, Hunan, China",
       "phone": "+86-17707437762",
       "note": "Riverside guesthouse inside the ancient town. Perfect for the lantern-lit evening walk along the Tuojiang River.",
-      "transit": "About 4 hours by car or shuttle from Zhangjiajie Hehua (DYG) Airport. Drop-off close to Hong Bridge.",
+      "transit": "From Zhangjiajie Hehua (DYG), taxi to Zhangjiajie West Railway Station, take the high-speed train to Fenghuanggucheng, then shuttle or taxi into the old town.",
       "map": "https://www.google.com/maps/search/?api=1&query=Tianqingshe+Riverview+Homestay+Fenghuang+Jinping+Road"
     },
     {
@@ -47,13 +47,13 @@
   "hero": {
     "slug": "hero",
     "image_queries": [
-      "Shanghai Bund Pudong skyline",
-      "Pudong Shanghai night skyline"
+      "Shanghai Bund Pudong skyline blue hour",
+      "Pudong Shanghai skyline panorama"
     ],
     "desired_images": 1,
     "images": [
       {
-        "src": "assets/images/hero/hero-1.jpg",
+        "src": "assets/images/places/the-bund-1.jpg",
         "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/1920px-Pudong_Shanghai_November_2017_panorama.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg",
         "title": "File:Pudong Shanghai November 2017 panorama.jpg"
@@ -75,7 +75,7 @@
           "to": "Shanghai",
           "carrier": "Hainan Airlines HU490 / HU7613",
           "route": "13:55 BER -> 09:50(+1) PVG",
-          "details": "1 stop \u00b7 13h 55m \u00b7 Economy"
+          "details": "1 stop · 13h 55m · Economy"
         }
       ],
       "places": []
@@ -84,8 +84,8 @@
       "id": "day-2",
       "label": "Day 2",
       "date": "Friday, May 15, 2026",
-      "display_title": "Shanghai arrival and the Bund",
-      "focus": "Easy arrival day. Check in, walk to the Bund, and warm up on Nanjing Road East.",
+      "display_title": "Shanghai arrival, hotel, Bund and Nanjing Road",
+      "focus": "Check in beside Nanjing Road East, then ease into Shanghai with the Bund, pedestrian street lights, and coffee at the Roastery.",
       "transport_note": "Stay on foot once you check in. Hotel is steps from the Bund and Nanjing Road East.",
       "start_transfer": {
         "kicker": "Arrival Transfer",
@@ -158,17 +158,17 @@
         },
         {
           "slug": "nanjing-road-east",
-          "name": "Nanjing Road East",
+          "name": "Nanjing Road Walking Street",
           "area": "Huangpu District, Shanghai",
           "best_time": "Evening",
           "duration": "60 min",
-          "summary": "Pedestrian shopping street that links People's Square to the Bund. Bright signs, snack stalls, and a good jet-lag stroll.",
+          "summary": "Shanghai's classic shopping spine from People's Square toward the Bund. Use the East Nanjing pedestrian stretch for neon, snacks, and an easy first-night walk.",
           "highlights": [
-            "Pedestrian-only walking street",
-            "Old department stores and neon signs",
-            "Great low-effort first night"
+            "Pedestrian East Nanjing Road",
+            "Historic department stores and bright signage",
+            "Simple walk back to the hotel"
           ],
-          "transport": "Walk from the hotel. The street begins one block east at Henan Middle Road and runs all the way to the Bund.",
+          "transport": "Walk from the hotel. The main pedestrian section starts around Henan Middle Road and runs west toward People's Square.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Nanjing+Road+East+Walking+Street+Shanghai",
             "reference": "https://en.wikipedia.org/wiki/Nanjing_Road"
@@ -193,23 +193,76 @@
               "title": "File:2024-Apr Shanghai East Nanjing Road morning 01.jpg"
             }
           ]
+        },
+        {
+          "slug": "starbucks-reserve-roastery-shanghai",
+          "name": "Starbucks Reserve Roastery 星巴克臻选上海烘焙工坊",
+          "area": "West Nanjing Road, Jing'an District, Shanghai",
+          "best_time": "Evening or late afternoon",
+          "duration": "45 to 60 min",
+          "summary": "Huge Shanghai Reserve Roastery with copper roasting casks, coffee bars, tea drinks, and bakery counters. Good low-effort stop after the first city walk.",
+          "highlights": [
+            "Coffee roasting floor",
+            "Reserve coffee and tea bars",
+            "Easy West Nanjing Road location"
+          ],
+          "transport": "Metro Line 2 from Nanjing East Road to West Nanjing Road, then walk a few minutes to HKRI Taikoo Hui.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Starbucks+Reserve+Roastery+Shanghai",
+            "reference": "https://www.starbucksreserve.com/en-us/locations/shanghai-roastery"
+          },
+          "image_queries": [
+            "Starbucks Reserve Roastery Shanghai",
+            "Shanghai Starbucks Reserve Roastery"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/starbucks-reserve-roastery-shanghai-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starbucks_Reserve_Roastery_Shanghai_02.jpg/1920px-Starbucks_Reserve_Roastery_Shanghai_02.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_Shanghai_02.jpg",
+              "title": "File:Starbucks Reserve Roastery Shanghai 02.jpg"
+            },
+            {
+              "src": "assets/images/places/starbucks-reserve-roastery-shanghai-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Starbucks_Reserve_Roastery_Shanghai_04.jpg/1920px-Starbucks_Reserve_Roastery_Shanghai_04.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_Shanghai_04.jpg",
+              "title": "File:Starbucks Reserve Roastery Shanghai 04.jpg"
+            }
+          ]
         }
       ],
       "transfers": [
         {
           "mode": "Walk",
-          "instructions": "After the Bund lights, walk back along Nanjing Road East toward the hotel. Stop for a snack along the way.",
-          "note": "Whole loop runs under a kilometer."
+          "instructions": "Walk from the Bund into Nanjing Road Walking Street and follow the lights west.",
+          "note": "Keep this relaxed after the long-haul arrival."
+        },
+        {
+          "mode": "Metro Line 2",
+          "instructions": "Ride Line 2 from Nanjing East Road to West Nanjing Road for the Roastery.",
+          "note": "Taxi or Didi is easier if jet lag is catching up."
         }
-      ]
+      ],
+      "stay": {
+        "label": "Homeinn Selected Hotel (Nanjing Road)",
+        "city": "Shanghai",
+        "dates": "May 15 to May 18",
+        "address": "No. 11, Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
+        "phone": "+86-21-63239966-9",
+        "note": "Walking distance to The Bund and Nanjing Road East. Use this base for the Shanghai city days and the Pudong robotaxi morning.",
+        "transit": "Nanjing East Road Station (Lines 2 and 10) is a short walk. From PVG, take Metro Line 2 directly, or the Maglev to Longyang Road then Line 2.",
+        "map": "https://www.google.com/maps/search/?api=1&query=Homeinn+Selected+Hotel+Nanjing+Road+Shanghai+Jiangxi+Middle+Road"
+      }
     },
     {
       "id": "day-3",
       "label": "Day 3",
       "date": "Saturday, May 16, 2026",
-      "display_title": "Shanghai depth: Yu Garden, Tianzifang, Pudong skyline",
-      "focus": "Old Shanghai gardens, French Concession lanes, then a sunset observation deck across the river.",
-      "transport_note": "Use the metro between districts. Yu Garden and Tianzifang are short Line 10 / Line 9 hops.",
+      "display_title": "Shanghai gardens, lanes and Jing'an Temple",
+      "focus": "Old Shanghai at Yu Garden, French Concession lanes at Tianzifang, then Jing'an Temple and West Nanjing Road.",
+      "transport_note": "Use Metro Lines 10, 9, and 2. Keep the day city-focused before the Pudong robotaxi morning tomorrow.",
       "start_transfer": {
         "title": "Hotel to Yu Garden",
         "mode": "Walk or Metro Line 10",
@@ -334,49 +387,133 @@
           ]
         },
         {
-          "slug": "shanghai-tower",
-          "name": "Shanghai Tower Observation Deck",
-          "area": "Lujiazui, Pudong, Shanghai",
-          "best_time": "Sunset",
-          "duration": "75 to 90 min",
-          "summary": "Second-tallest building in the world. The 118th-floor deck gives a clean sunset-to-night transition over the Bund and the Huangpu River.",
+          "slug": "jing-an-temple",
+          "name": "Jing'an Temple",
+          "area": "Jing'an District, Shanghai",
+          "best_time": "Late afternoon",
+          "duration": "60 to 75 min",
+          "summary": "Active Buddhist temple wrapped by one of Shanghai's busiest commercial districts. The gold roofs against modern towers make it one of the city's best contrasts.",
           "highlights": [
-            "Top of the world's fastest elevator",
-            "118F observation deck with full skyline view",
-            "Bund and Pudong both visible"
+            "Mahavira Hall and golden roofline",
+            "Incense courtyard",
+            "West Nanjing Road skyline around the temple"
           ],
-          "transport": "Metro Line 2 to Lujiazui Station, Exit 6. Follow signs to Shanghai Tower (Building 3). Book tickets online for the timed slot.",
+          "transport": "Metro Line 2 or 7 to Jing'an Temple Station. The temple entrance is directly above the station area.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Shanghai+Tower+Observation+Deck",
-            "reference": "https://en.wikipedia.org/wiki/Shanghai_Tower"
+            "map": "https://www.google.com/maps/search/?api=1&query=Jing%27an+Temple+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Jing%27an_Temple"
           },
-          "access_note": "Pre-book a sunset slot if possible. Walk-up tickets are sold but the queue can be long on a Saturday.",
           "image_queries": [
-            "Shanghai Tower",
-            "Shanghai Tower observation deck"
+            "Jing'an Temple Shanghai",
+            "Jing An Temple Shanghai"
           ],
           "desired_images": 2,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/shanghai-tower-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Shanghai_-_Shanghai_Tower_-_0001.jpg/1920px-Shanghai_-_Shanghai_Tower_-_0001.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_-_Shanghai_Tower_-_0001.jpg",
-              "title": "File:Shanghai - Shanghai Tower - 0001.jpg"
+              "src": "assets/images/places/jing-an-temple-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jing%27an_Temple_Shanghai_3.jpg/1920px-Jing%27an_Temple_Shanghai_3.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Jing%27an_Temple_Shanghai_3.jpg",
+              "title": "File:Jing'an Temple Shanghai 3.jpg"
+            },
+            {
+              "src": "assets/images/places/jing-an-temple-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jing%27an_Temple_Shanghai_11.jpg/1920px-Jing%27an_Temple_Shanghai_11.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Jing%27an_Temple_Shanghai_11.jpg",
+              "title": "File:Jing'an Temple Shanghai 11.jpg"
             }
           ]
         }
       ],
       "transfers": [
         {
-          "mode": "Metro Line 9",
-          "instructions": "From Yuyuan Garden walk to Laoximen Station, take Line 10 one stop to South Shaanxi Road, transfer to Line 9 toward Dapuqiao for Tianzifang.",
-          "note": "Or grab a quick Didi if you want to save the transfer time."
+          "mode": "Metro Line 10 + Line 9",
+          "instructions": "From Yu Garden, ride Line 10 to South Shaanxi Road and transfer to Line 9 for Dapuqiao and Tianzifang.",
+          "note": "A short Didi is also fine between these older districts."
         },
         {
           "mode": "Metro Line 9 + Line 2",
-          "instructions": "From Dapuqiao take Line 9 to Century Avenue, then Line 2 one stop to Lujiazui for Shanghai Tower.",
-          "note": "Aim to be at Lujiazui by 90 minutes before sunset."
+          "instructions": "From Dapuqiao, ride Line 9 to Century Avenue and transfer to Line 2 westbound for Jing'an Temple.",
+          "note": "West Nanjing Road is easy for dinner or coffee after the temple."
+        }
+      ],
+      "optional_title": "Extra Shanghai Stops If Energy Is High",
+      "optional_places": [
+        {
+          "slug": "shanghai-museum",
+          "name": "Shanghai Museum",
+          "area": "People's Square, Huangpu, Shanghai",
+          "best_time": "Morning or rainy afternoon",
+          "duration": "90 min to 2 hours",
+          "summary": "One of China's best museums for bronzes, ceramics, calligraphy, painting, jade, and furniture. It is the easiest high-value indoor add-on in central Shanghai.",
+          "highlights": [
+            "Ancient bronze gallery",
+            "Ceramics and calligraphy collections",
+            "Good weather backup near People's Square"
+          ],
+          "transport": "Metro Line 1, 2, or 8 to People's Square, then walk through the square. Reserve ahead if timed entry is required.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Shanghai+Museum",
+            "reference": "https://en.wikipedia.org/wiki/Shanghai_Museum"
+          },
+          "image_queries": [
+            "Shanghai Museum building",
+            "Shanghai Museum People Square"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg/1920px-Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg/1920px-Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai%2C_China%2C_East_Asia.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_Art_Museum_against_background_of_Tomorrow_Square_building._Shanghai,_China,_East_Asia.jpg",
+              "title": "File:Shanghai Art Museum against background of Tomorrow Square building. Shanghai, China, East Asia.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Kathleen%27s_5_Interior_Shanghai_Art_Museum_Remnant.jpg",
+              "title": "File:Kathleen's 5 Interior Shanghai Art Museum Remnant.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "xintiandi",
+          "name": "Xintiandi",
+          "area": "Huangpu District, Shanghai",
+          "best_time": "Evening",
+          "duration": "60 to 90 min",
+          "summary": "Restored shikumen lane-house district with cafes, restaurants, and polished nightlife. Works well after Jing'an or Tianzifang if you want a cleaner dinner area.",
+          "highlights": [
+            "Restored shikumen architecture",
+            "Dinner and cocktail options",
+            "Easy link to French Concession walks"
+          ],
+          "transport": "Metro Line 10/13 to Xintiandi Station, or short taxi from Tianzifang/Jing'an.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Xintiandi+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Xintiandi"
+          },
+          "image_queries": [
+            "Xintiandi Shanghai",
+            "Shanghai Xintiandi shikumen"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Fountain_with_Sculptures_in_Xintiandi_Shanghai_20210329.jpg",
+              "title": "File:Fountain with Sculptures in Xintiandi Shanghai 20210329.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg/1920px-Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg/1920px-Xintiandi_Style_I%2C_Shanghai%2C_China_-_54272980778.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Xintiandi_Style_I,_Shanghai,_China_-_54272980778.jpg",
+              "title": "File:Xintiandi Style I, Shanghai, China - 54272980778.jpg"
+            }
+          ]
         }
       ]
     },
@@ -384,189 +521,210 @@
       "id": "day-4",
       "label": "Day 4",
       "date": "Sunday, May 17, 2026",
-      "display_title": "Suzhou day trip",
-      "focus": "Bullet train out of Hongqiao for a classical-garden day in Suzhou, then back to Shanghai for dinner.",
-      "transport_note": "Buy round-trip high-speed rail (G-train) tickets in advance via Trip.com or 12306. Hongqiao to Suzhou runs about 30 minutes.",
+      "display_title": "Pudong self-driving cars and Lujiazui icons",
+      "focus": "Spend the morning in Pudong New Area trying a robotaxi, then cover the Oriental Pearl deck, Mingzhu Roundabout, and the Lujiazui skyline.",
+      "transport_note": "Robotaxi pickup/drop-off is by designated stop inside the service zone, not anywhere like a normal Didi. Some pilots run weekday-only, so confirm in-app and swap this with a weekday Shanghai block if needed.",
       "start_transfer": {
-        "title": "Hotel to Suzhou (Hongqiao + G-train)",
-        "mode": "Metro Line 2 + High-speed rail",
-        "instructions": "Take Metro Line 2 west to Shanghai Hongqiao Railway Station, then catch a G-train to Suzhou. From Suzhou Station, taxi or Metro Line 4 to the gardens.",
-        "note": "Arrive Hongqiao at least 40 minutes before departure for ID check and security."
+        "title": "Hotel to Pudong New Area robotaxi zone",
+        "mode": "Metro Line 2 + local pickup point",
+        "instructions": "Ride Line 2 east from Nanjing East Road toward Pudong. For the central Pudong pilot areas, start around Jinqiao/Huamu or Century Park; Yunshun Road and Century Park are useful anchors depending on the app coverage that day.",
+        "note": "Open Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai (小马智行), Dazhong app, Baidu Maps, or Gaode/AMap after you are physically in the service area. Look for robotaxi / 无人车 options and choose an available designated pickup point."
       },
       "places": [
         {
-          "slug": "humble-administrators-garden",
-          "name": "Humble Administrator's Garden",
-          "area": "Suzhou, Jiangsu",
-          "best_time": "Morning",
+          "slug": "pudong-robotaxi",
+          "name": "Pudong New Area Self-Driving Car Trial",
+          "area": "Jinqiao, Huamu and Century Park area, Pudong, Shanghai",
+          "best_time": "Morning, subject to pilot hours",
+          "duration": "90 min to 2 hours",
+          "summary": "Shanghai robotaxi pilots operate in defined Pudong zones, especially Jinqiao and Huamu near Century Park, Lalaport, Pudong Football Stadium metro area, and office/residential clusters. Availability changes by operator and permit, so treat this as a flexible tech stop.",
+          "highlights": [
+            "Book through Apollo Go (萝卜快跑), PonyPilot+ / Pony.ai, Dazhong, Baidu Maps, or Gaode/AMap",
+            "Board only at mapped pickup/drop-off points inside the service zone",
+            "Typical pilots run daytime on weekdays; Jinqiao Apollo has operated roughly 9:00 to 18:00 and Pony around 7:30 to 21:30"
+          ],
+          "transport": "Once in Pudong, open the app, switch to the Shanghai/Pudong service area if needed, select a nearby pickup pin, then choose a short loop to another allowed stop such as Century Park, Lalaport, or Pudong Football Stadium metro area. Bring passport and use a mainland +86 phone number if registration asks for one.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Century+Park+Shanghai+Pudong",
+            "reference": "https://english.shanghai.gov.cn/en-IndustrialInnovation-Scitechcenter/20250910/13524677f7a1435582beb6166c5bd702.html"
+          },
+          "image_queries": [
+            "Shanghai Pudong robotaxi",
+            "Pudong autonomous taxi"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/pudong-robotaxi-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVG_Lingang_DRT_Trams_14%2619_%40_Feidu_Road%2C_2023-09-02.jpg/1920px-PVG_Lingang_DRT_Trams_14%2619_%40_Feidu_Road%2C_2023-09-02.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:PVG_Lingang_DRT_Trams_14%2619_@_Feidu_Road,_2023-09-02.jpg",
+              "title": "File:PVG Lingang DRT Trams 14&19 @ Feidu Road, 2023-09-02.jpg"
+            }
+          ],
+          "access_note": "Bad weather, traffic controls, app registration, or weekend/permit limits can suspend service. If no robotaxi appears, use this as a Pudong tech-area walk and continue to Lujiazui by Metro Line 2.",
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVG_Lingang_DRT_Trams_14%2619_%40_Feidu_Road%2C_2023-09-02.jpg/1920px-PVG_Lingang_DRT_Trams_14%2619_%40_Feidu_Road%2C_2023-09-02.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:PVG_Lingang_DRT_Trams_14%2619_@_Feidu_Road,_2023-09-02.jpg",
+              "title": "File:PVG Lingang DRT Trams 14&19 @ Feidu Road, 2023-09-02.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "mingzhu-roundabout",
+          "name": "Mingzhu Roundabout",
+          "area": "Lujiazui, Pudong, Shanghai",
+          "best_time": "Midday",
+          "duration": "30 to 45 min",
+          "summary": "The circular pedestrian overpass and traffic ring at the heart of Lujiazui, surrounded by the Oriental Pearl, IFC, Super Brand Mall, and the big Pudong towers.",
+          "highlights": [
+            "Circular elevated walkway",
+            "Close-up Oriental Pearl views",
+            "Best orientation point for Lujiazui"
+          ],
+          "transport": "Metro Line 2 to Lujiazui Station. Follow signs up to the pedestrian roundabout outside the station.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Mingzhu+Roundabout+Lujiazui+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Lujiazui"
+          },
+          "image_queries": [
+            "Lujiazui roundabout Shanghai",
+            "Mingzhu roundabout Shanghai"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/mingzhu-roundabout-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
+              "title": "File:Roundabout Lujiazui 2.jpg"
+            },
+            {
+              "src": "assets/images/places/mingzhu-roundabout-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Roundabout_Lujiazui_1.jpg/1920px-Roundabout_Lujiazui_1.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_1.jpg",
+              "title": "File:Roundabout Lujiazui 1.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
+              "title": "File:Roundabout Lujiazui 2.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Roundabout_Lujiazui_1.jpg/1920px-Roundabout_Lujiazui_1.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_1.jpg",
+              "title": "File:Roundabout Lujiazui 1.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "oriental-pearl-tv-tower-deck",
+          "name": "Oriental Pearl TV Tower Deck",
+          "area": "Lujiazui, Pudong, Shanghai",
+          "best_time": "Afternoon to sunset",
           "duration": "90 min",
-          "summary": "Largest classical garden in Suzhou. UNESCO-listed pavilions, lotus ponds, and corridors that frame the water from every angle.",
+          "summary": "Retro-futurist Shanghai landmark with observation decks over the Huangpu River, Bund, and Lujiazui towers.",
           "highlights": [
-            "Central pond and pavilions",
-            "Bonsai (penjing) garden",
-            "UNESCO World Heritage site"
+            "Main sightseeing deck",
+            "Glass-floor viewing area if open",
+            "Bund skyline from the Pudong side"
           ],
-          "transport": "Metro Line 4 to Beisita Station, then a 10 minute walk. Or taxi from Suzhou Railway Station (about 10 minutes).",
+          "transport": "Walk from Mingzhu Roundabout to the tower entrance. Buy a timed ticket online or at the ticket hall if queues are manageable.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Humble+Administrator%27s+Garden+Suzhou",
-            "reference": "https://en.wikipedia.org/wiki/Humble_Administrator%27s_Garden"
+            "map": "https://www.google.com/maps/search/?api=1&query=Oriental+Pearl+Tower+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Oriental_Pearl_Tower"
           },
           "image_queries": [
-            "Humble Administrator's Garden Suzhou",
-            "Zhuozheng Yuan Suzhou"
+            "Oriental Pearl Tower observation deck",
+            "Oriental Pearl Tower Shanghai"
           ],
           "desired_images": 2,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/humble-administrators-garden-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Humble_Administrator%27s_Garden_Suzhou_November_2017_005.jpg/1920px-Humble_Administrator%27s_Garden_Suzhou_November_2017_005.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Humble_Administrator%27s_Garden_Suzhou_November_2017_005.jpg",
-              "title": "File:Humble Administrator's Garden Suzhou November 2017 005.jpg"
+              "src": "assets/images/places/oriental-pearl-tv-tower-deck-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg/1920px-Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "title": "File:Oriental Pearl Tower in Shanghai.jpg"
             },
             {
-              "src": "assets/images/places/humble-administrators-garden-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Humble_Administrator%27s_Garden_Suzhou_November_2017_006.jpg/1920px-Humble_Administrator%27s_Garden_Suzhou_November_2017_006.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Humble_Administrator%27s_Garden_Suzhou_November_2017_006.jpg",
-              "title": "File:Humble Administrator's Garden Suzhou November 2017 006.jpg"
-            }
-          ]
-        },
-        {
-          "slug": "pingjiang-road",
-          "name": "Pingjiang Road",
-          "area": "Suzhou, Jiangsu",
-          "best_time": "Afternoon",
-          "duration": "60 to 75 min",
-          "summary": "Canal-side stone street with Ming-era houses, teahouses, and stone bridges. The most preserved corner of old Suzhou.",
-          "highlights": [
-            "Canal walk along Pingjiang River",
-            "Old teahouses and storefronts",
-            "Easy stop after the garden"
-          ],
-          "transport": "Walk south from Humble Administrator's Garden, about 15 minutes. Or short taxi.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Pingjiang+Road+Suzhou",
-            "reference": "https://en.wikipedia.org/wiki/Pingjiang_District"
-          },
-          "image_queries": [
-            "Pingjiang Road Suzhou",
-            "Pingjiang Lu canal Suzhou"
-          ],
-          "desired_images": 2,
-          "foods": [
-            {
-              "slug": "songshu-yu",
-              "name": "Songshu Gui Yu (Squirrel Mandarin Fish)",
-              "description": "Mandarin fish scored, fried into a squirrel-tail shape, and topped with a sweet-sour glaze. The signature Suzhou banquet dish.",
-              "where": "Songhelou Restaurant on Taijian Lane, the original Suzhou location.",
-              "links": {
-                "reference": "https://en.wikipedia.org/wiki/Squirrel_fish"
-              },
-              "image_queries": [
-                "songshu yu squirrel mandarin fish Suzhou",
-                "songshu guiyu"
-              ],
-              "desired_images": 1,
-              "images": [
-                {
-                  "src": "assets/images/foods/songshu-yu-1.jpg",
-                  "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Squirrel-shaped_mandarin_fish_%288482833747%29.jpg",
-                  "source_page": "https://commons.wikimedia.org/wiki/File:Squirrel-shaped_mandarin_fish_(8482833747).jpg",
-                  "title": "File:Squirrel-shaped mandarin fish (8482833747).jpg"
-                }
-              ],
-              "manual_images": [
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Squirrel-shaped_mandarin_fish_%288482833747%29.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Squirrel-shaped_mandarin_fish_(8482833747).jpg",
-                  "title": "File:Squirrel-shaped mandarin fish (8482833747).jpg"
-                }
-              ]
+              "src": "assets/images/places/oriental-pearl-tv-tower-deck-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg/1920px-Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "title": "File:Shanghai Oriental Pearl Tower-20150516-RM-130617.jpg"
             }
           ],
-          "images": [
-            {
-              "src": "assets/images/places/pingjiang-road-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Gate_of_Pingjiang_Road%2C_Suzhou.jpg/1920px-Gate_of_Pingjiang_Road%2C_Suzhou.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Gate_of_Pingjiang_Road,_Suzhou.jpg",
-              "title": "File:Gate of Pingjiang Road, Suzhou.jpg"
-            },
-            {
-              "src": "assets/images/places/pingjiang-road-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg/1920px-Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg",
-              "title": "File:Riverside of Pingjiang Road, Gusu, Suzhou, Jiangsu, China, 215000.jpg"
-            }
-          ],
+          "access_note": "Use this as the Pudong observation deck for the skyline view day.",
           "manual_images": [
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Gate_of_Pingjiang_Road%2C_Suzhou.jpg/1920px-Gate_of_Pingjiang_Road%2C_Suzhou.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Gate_of_Pingjiang_Road,_Suzhou.jpg",
-              "title": "File:Gate of Pingjiang Road, Suzhou.jpg"
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg/1920px-Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "title": "File:Oriental Pearl Tower in Shanghai.jpg"
             },
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg/1920px-Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg",
-              "title": "File:Riverside of Pingjiang Road, Gusu, Suzhou, Jiangsu, China, 215000.jpg"
-            }
-          ]
-        },
-        {
-          "slug": "master-of-the-nets-garden",
-          "name": "Master of the Nets Garden",
-          "area": "Suzhou, Jiangsu",
-          "best_time": "Late afternoon",
-          "duration": "45 to 60 min",
-          "summary": "The smallest of the famous Suzhou gardens, often the most loved. Tight courtyards designed for layered borrowed views.",
-          "highlights": [
-            "Compact UNESCO garden",
-            "Quieter than the Humble Administrator's",
-            "Easy walk from Pingjiang area"
-          ],
-          "transport": "Short taxi or 20 minute walk from Pingjiang Road. Located on Kuojiatou Lane.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Master+of+the+Nets+Garden+Suzhou",
-            "reference": "https://en.wikipedia.org/wiki/Master_of_the_Nets_Garden"
-          },
-          "image_queries": [
-            "Master of the Nets Garden Suzhou",
-            "Wangshi Yuan Suzhou"
-          ],
-          "desired_images": 2,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/master-of-the-nets-garden-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Master_of_the_Nets_Garden_Suzhou.jpg/1920px-Master_of_the_Nets_Garden_Suzhou.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Master_of_the_Nets_Garden_Suzhou.jpg",
-              "title": "File:Master of the Nets Garden Suzhou.jpg"
-            }
-          ],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Master_of_the_Nets_Garden_Suzhou.jpg/1920px-Master_of_the_Nets_Garden_Suzhou.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Master_of_the_Nets_Garden_Suzhou.jpg",
-              "title": "File:Master of the Nets Garden Suzhou.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Master_of_the_Nets_Garden_2.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Master_of_the_Nets_Garden_2.jpg",
-              "title": "File:Master of the Nets Garden 2.jpg"
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg/1920px-Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "title": "File:Shanghai Oriental Pearl Tower-20150516-RM-130617.jpg"
             }
           ]
         }
       ],
       "transfers": [
         {
-          "mode": "Walk",
-          "instructions": "Head south from the garden along Lindun Road into Pingjiang Road's canal lane.",
-          "note": "Stop in a teahouse if the weather is warm."
+          "mode": "Metro or robotaxi",
+          "instructions": "After the robotaxi ride, use its endpoint if it lands near Lujiazui; otherwise ride Metro Line 2 from Century Park or nearby Pudong stations to Lujiazui.",
+          "note": "Do not rely on the robotaxi for a cross-city transfer; the service area is bounded."
         },
         {
-          "mode": "Taxi or Didi",
-          "instructions": "From Pingjiang, taxi southwest to Master of the Nets Garden.",
-          "note": "Walking is doable but the taxi saves 20 minutes."
+          "mode": "Walk",
+          "instructions": "From Mingzhu Roundabout, walk directly to the Oriental Pearl entrance.",
+          "note": "Stay in Lujiazui for blue-hour skyline photos before returning to Huangpu."
+        }
+      ],
+      "optional_title": "Optional Shanghai Day Trip Swap",
+      "optional_places": [
+        {
+          "slug": "zhujiajiao-water-town",
+          "name": "Zhujiajiao Water Town",
+          "area": "Qingpu District, Shanghai",
+          "best_time": "Half day",
+          "duration": "4 to 5 hours including transit",
+          "summary": "Canal water town on Shanghai's western edge, often used as the easy alternative to a Suzhou day. Add only if you want old bridges and lanes more than the Pudong tech morning.",
+          "highlights": [
+            "Fangsheng Bridge",
+            "Canal boats and old lanes",
+            "Good Shanghai water-town substitute"
+          ],
+          "transport": "Metro Line 17 to Zhujiajiao Station, then taxi or local bus to the old town. From central Shanghai, budget 75 to 100 minutes each way.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Zhujiajiao+Water+Town+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Zhujiajiao"
+          },
+          "image_queries": [
+            "Zhujiajiao Water Town Shanghai",
+            "Zhujiajiao canal"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Zhujiajiao_canal_4.JPG/1920px-Zhujiajiao_canal_4.JPG",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Zhujiajiao_canal_4.JPG/1920px-Zhujiajiao_canal_4.JPG",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Zhujiajiao_canal_4.JPG",
+              "title": "File:Zhujiajiao canal 4.JPG"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhujiajiao_at_night.jpg/1920px-Zhujiajiao_at_night.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhujiajiao_at_night.jpg/1920px-Zhujiajiao_at_night.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Zhujiajiao_at_night.jpg",
+              "title": "File:Zhujiajiao at night.jpg"
+            }
+          ],
+          "access_note": "This is a swap, not an add-on, unless you are happy to drop the robotaxi experiment or shorten Lujiazui."
         }
       ]
     },
@@ -574,9 +732,9 @@
       "id": "day-5",
       "label": "Day 5",
       "date": "Monday, May 18, 2026",
-      "display_title": "Shanghai to Fenghuang",
-      "focus": "Early flight south to Zhangjiajie, then a long road transfer to the lantern-lit ancient town of Fenghuang.",
-      "transport_note": "Pre-book a private car or shared shuttle from Zhangjiajie Hehua Airport (DYG) to Fenghuang. The drive is about 4 hours.",
+      "display_title": "Shanghai to Zhangjiajie, train to Fenghuang",
+      "focus": "Fly into Zhangjiajie, transfer to Zhangjiajie West Railway Station, then take the high-speed train to Fenghuang Ancient Town for the evening.",
+      "transport_note": "Use the train instead of the long road transfer: DYG airport to Zhangjiajie West by taxi, high-speed rail to Fenghuanggucheng, then shuttle/taxi into the old town.",
       "flights": [
         {
           "slug": "pvg-to-dyg",
@@ -584,30 +742,31 @@
           "to": "Zhangjiajie",
           "carrier": "Sichuan Airlines 3U4639 (operated by Juneyao HO2199)",
           "route": "06:55 PVG (T2) -> 09:25 DYG (T2)",
-          "details": "Non-stop \u00b7 2h 30m \u00b7 Economy"
+          "details": "Non-stop · 2h 30m · Economy"
         }
       ],
       "start_transfer": {
         "kicker": "Departure Transfer",
         "title": "Hotel to Pudong Airport",
         "mode": "Metro Line 2 or pre-booked taxi",
-        "instructions": "Leave the hotel by 04:30 to be at PVG by 05:30. Metro Line 2 is the most reliable pre-dawn option, but a taxi from Huangpu runs about 50 minutes at that hour.",
-        "note": "International leg counts as same-airport transfer. Confirm Terminal 2 for the connecting Sichuan/Juneyao flight."
+        "instructions": "Leave the hotel by 04:30 to be at PVG by 05:30. A pre-booked taxi is simplest for the 06:55 flight; confirm Terminal 2.",
+        "note": "Keep passports handy for airport and railway ID checks later in the day."
       },
       "places": [
         {
           "slug": "fenghuang-ancient-town",
           "name": "Fenghuang Ancient Town",
           "area": "Tuojiang Town, Fenghuang County, Hunan",
-          "best_time": "Evening",
-          "duration": "2 to 3 hours",
-          "summary": "Stilted Diaojiaolou houses lean over the Tuojiang River. After dark the lanterns turn on and the entire town reflects on the water.",
+          "best_time": "Late afternoon and evening",
+          "duration": "3 to 4 hours",
+          "summary": "Fenghuang is best after the train arrival: lantern-lit bridges, old lanes, riverside viewpoints, and Miao/Tujia food around the ancient town core.",
           "highlights": [
             "Hong Bridge (Hongqiao Wind and Rain Bridge)",
-            "Stilt houses along the Tuojiang River",
-            "Stepping-stone river crossing"
+            "East Gate Tower and old lanes",
+            "Wanming Pagoda and Shawan riverside views",
+            "Stepping-stone crossing if water levels allow"
           ],
-          "transport": "Drop-off from the airport transfer is at the West Gate. The hotel sits a short walk inside the old town.",
+          "transport": "Arrive at Fenghuanggucheng Station, then use the shuttle or taxi into the old town. The homestay is a short walk from the drop-off edge.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Fenghuang+Ancient+Town",
             "reference": "https://en.wikipedia.org/wiki/Fenghuang_County"
@@ -663,7 +822,20 @@
               ]
             }
           ],
-          "images": [],
+          "images": [
+            {
+              "src": "assets/images/places/fenghuang-ancient-town-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
+              "title": "File:Hunan Fenghuang County ancient town.jpg"
+            },
+            {
+              "src": "assets/images/places/fenghuang-ancient-town-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg/1920px-Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Fenghuang_County,_Hunan,_China,_21_December_2016b.jpg",
+              "title": "File:Fenghuang County, Hunan, China, 21 December 2016b.jpg"
+            }
+          ],
           "manual_images": [
             {
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
@@ -677,88 +849,150 @@
             }
           ]
         }
-      ]
+      ],
+      "stay": {
+        "label": "Tianqingshe Riverview Homestay",
+        "city": "Fenghuang",
+        "dates": "May 18 to May 19 (1 night)",
+        "address": "No. 70 Jinping Road, Tuojiang Town, Fenghuang County, Hunan, China",
+        "phone": "+86-17707437762",
+        "note": "Riverside guesthouse inside the ancient town. Perfect for the lantern-lit evening walk along the Tuojiang River.",
+        "transit": "From Zhangjiajie Hehua (DYG), taxi to Zhangjiajie West Railway Station, take the high-speed train to Fenghuanggucheng, then shuttle or taxi into the old town.",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tianqingshe+Riverview+Homestay+Fenghuang+Jinping+Road"
+      },
+      "stay_position": "after_flights",
+      "transfers": [
+        {
+          "mode": "Taxi + high-speed train",
+          "instructions": "After landing at DYG, taxi about 20 to 30 minutes to Zhangjiajie West Railway Station. Take a high-speed train to Fenghuanggucheng Station; fastest services are roughly 1 hour.",
+          "note": "Book Zhangjiajie West to Fenghuanggucheng on Trip.com or 12306 and leave a buffer after the flight."
+        },
+        {
+          "mode": "Station shuttle or taxi",
+          "instructions": "From Fenghuanggucheng Station, take the tourist shuttle or taxi 15 to 25 minutes to Fenghuang Ancient Town, then walk to the riverside homestay.",
+          "note": "Cars may stop outside the old-town pedestrian lanes."
+        }
+      ],
+      "after_flight_transfer": {
+        "kicker": "After Flight Transfer",
+        "title": "DYG Airport to Fenghuang by Train",
+        "mode": "Taxi + high-speed rail + shuttle",
+        "instructions": "After landing at Zhangjiajie Hehua Airport, taxi 20 to 30 minutes to Zhangjiajie West Railway Station. Take a high-speed train to Fenghuanggucheng Station, then use the tourist shuttle or taxi 15 to 25 minutes into Fenghuang Ancient Town.",
+        "note": "Book Zhangjiajie West to Fenghuanggucheng on Trip.com or 12306 and leave a flight-delay buffer before the train."
+      }
     },
     {
       "id": "day-6",
       "label": "Day 6",
       "date": "Tuesday, May 19, 2026",
-      "display_title": "Fenghuang to Zhangjiajie",
-      "focus": "Daylight walk through the ancient town, then the road back north to Zhangjiajie before dark.",
-      "transport_note": "Book the same driver back to Zhangjiajie or a shared shuttle for the afternoon. About 4 hours.",
+      "display_title": "Fenghuang to Furong day trip, return to Zhangjiajie",
+      "focus": "Leave Fenghuang Ancient Town by train, spend the day in Furong Ancient Town and its waterfall, then train back to Zhangjiajie at night.",
+      "transport_note": "Book Fenghuanggucheng to Furongzhen and Furongzhen to Zhangjiajie West rail tickets in advance. Keep luggage light or store it near the station/old-town entrance.",
       "start_transfer": {
-        "title": "Homestay to Tuojiang River",
-        "mode": "Walk",
-        "instructions": "Step out of the homestay onto Jinping Road, walk to the riverside, and follow the embankment north toward Hong Bridge.",
-        "note": "Earlier the better. The day-trip tour buses arrive after 10:00."
+        "title": "Homestay to Fenghuanggucheng Station",
+        "mode": "Taxi or tourist shuttle",
+        "instructions": "Leave the old town after breakfast and ride 15 to 25 minutes to Fenghuanggucheng Station. Take the high-speed train toward Furongzhen.",
+        "note": "Train times vary; aim for a late-morning arrival in Furong so the waterfall town is not rushed."
       },
       "places": [
         {
-          "slug": "tuojiang-river-walk",
-          "name": "Tuojiang River and Stilt Houses",
-          "area": "Fenghuang Old Town, Hunan",
-          "best_time": "Morning",
-          "duration": "75 to 90 min",
-          "summary": "The same town in daylight is a different place. Walk the river edge for the diaojiaolou stilt houses, the laundry stones, and small bridges.",
+          "slug": "furong-ancient-town",
+          "name": "Furong Ancient Town",
+          "area": "Yongshun County, Xiangxi, Hunan",
+          "best_time": "Late morning to afternoon",
+          "duration": "2 to 3 hours",
+          "summary": "A compact Tujia old town built above a wide waterfall. Stone lanes, wooden houses, and river viewpoints make it a strong day trip between Fenghuang and Zhangjiajie.",
           "highlights": [
-            "Diaojiaolou stilt-house panorama",
-            "Stepping stones across the river",
-            "Hong Bridge from the water level"
+            "Old stone street through the Tujia town",
+            "Cliffside viewpoints above the falls",
+            "Rice tofu snack stalls"
           ],
-          "transport": "Walking start from the homestay. The full riverside loop is about 1.5 km.",
+          "transport": "Arrive at Furongzhen Railway Station, then take a taxi or local shuttle 10 to 15 minutes to the scenic-area entrance.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Tuojiang+River+Fenghuang+stilt+houses",
-            "reference": "https://en.wikipedia.org/wiki/Fenghuang_County"
+            "map": "https://www.google.com/maps/search/?api=1&query=Furong+Ancient+Town+Hunan",
+            "reference": "https://en.wikipedia.org/wiki/Furong,_Yongshun_County"
           },
           "image_queries": [
-            "Tuojiang River Fenghuang stilt houses",
-            "Diaojiaolou Fenghuang"
-          ],
-          "desired_images": 2,
-          "foods": [],
-          "images": [],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tuojiang_in_fenghuang.jpg/1920px-Tuojiang_in_fenghuang.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Tuojiang_in_fenghuang.jpg",
-              "title": "File:Tuojiang in fenghuang.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016a.jpg/1920px-Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016a.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Fenghuang_County,_Hunan,_China,_21_December_2016a.jpg",
-              "title": "File:Fenghuang County, Hunan, China, 21 December 2016a.jpg"
-            }
-          ]
-        },
-        {
-          "slug": "fenghuang-north-gate",
-          "name": "North Gate Tower and Old City Wall",
-          "area": "Fenghuang Old Town, Hunan",
-          "best_time": "Late morning",
-          "duration": "45 min",
-          "summary": "The surviving Ming-Qing gate that guarded the riverside town. Climb the wall for a high view of the rooftops and Hongqiao.",
-          "highlights": [
-            "Old gate and stone wall",
-            "Rooftop view toward Hong Bridge",
-            "Quiet alleys behind the gate"
-          ],
-          "transport": "Walk inside the old town. The North Gate sits at the river bend just north of Hong Bridge.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Fenghuang+North+Gate+Tower",
-            "reference": "https://en.wikipedia.org/wiki/Fenghuang_County"
-          },
-          "image_queries": [
-            "Fenghuang North Gate Tower",
-            "Fenghuang ancient city wall"
+            "Furong Ancient Town Hunan",
+            "Furongzhen waterfall town"
           ],
           "desired_images": 2,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/fenghuang-north-gate-1.png",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Hang-Chau-Fu_with_the_Lake.png/1920px-Hang-Chau-Fu_with_the_Lake.png",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Hang-Chau-Fu_with_the_Lake.png",
-              "title": "File:Hang-Chau-Fu with the Lake.png"
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_aerial_panorama_2017.jpg",
+              "title": "File:1 furong aerial panorama 2017.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hunan.Furong_zhen.Indigo.jpg/1920px-Hunan.Furong_zhen.Indigo.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hunan.Furong_zhen.Indigo.jpg/1920px-Hunan.Furong_zhen.Indigo.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Hunan.Furong_zhen.Indigo.jpg",
+              "title": "File:Hunan.Furong zhen.Indigo.jpg"
+            }
+          ],
+          "access_note": "The old town is ticketed. Keep your ticket for re-entry around the waterfall viewpoints.",
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:1_furong_aerial_panorama_2017.jpg",
+              "title": "File:1 furong aerial panorama 2017.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hunan.Furong_zhen.Indigo.jpg/1920px-Hunan.Furong_zhen.Indigo.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Hunan.Furong_zhen.Indigo.jpg",
+              "title": "File:Hunan.Furong zhen.Indigo.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "furong-waterfall",
+          "name": "Furong Waterfall and Riverside Walk",
+          "area": "Furong Ancient Town, Hunan",
+          "best_time": "Afternoon",
+          "duration": "60 to 90 min",
+          "summary": "The signature curtain waterfall sits directly below the town. Paths usually loop behind or beside the falls depending on water and maintenance conditions.",
+          "highlights": [
+            "Waterfall under the old town",
+            "Night-light view if staying late enough",
+            "Short riverside photo loop"
+          ],
+          "transport": "Walk down through the scenic area from the old street. Return uphill to the entrance for the taxi back to Furongzhen Station.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Furong+Town+Waterfall+Hunan",
+            "reference": "https://en.wikipedia.org/wiki/Furong,_Yongshun_County"
+          },
+          "image_queries": [
+            "Furong Town waterfall",
+            "Furong waterfall Hunan"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Wv_Furong_banner.jpg",
+              "title": "File:Wv Furong banner.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_panorama_2012.jpg",
+              "title": "File:1 furong panorama 2012.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Wv_Furong_banner.jpg",
+              "title": "File:Wv Furong banner.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:1_furong_panorama_2012.jpg",
+              "title": "File:1 furong panorama 2012.jpg"
             }
           ]
         }
@@ -766,75 +1000,57 @@
       "transfers": [
         {
           "mode": "Walk",
-          "instructions": "From the river path, head one block inland to the North Gate Tower at the bend in the wall.",
-          "note": "Pick up a snack on the riverside lanes on the way back."
+          "instructions": "Follow the old street downhill from Furong Ancient Town toward the waterfall viewpoints.",
+          "note": "Wear shoes that handle wet stone steps."
         }
-      ]
+      ],
+      "stay": {
+        "label": "Zhinanzhen Boutique Inn",
+        "city": "Zhangjiajie",
+        "dates": "May 19 to May 21 (2 nights)",
+        "address": "Guanliping Resettlement Community, Yongding District, Zhangjiajie, Hunan, China",
+        "phone": "+86-18574480289 / +86-13807443111",
+        "note": "Close to the park access roads. Use this base for the National Forest Park day and Tianmen Mountain.",
+        "transit": "About 30 to 45 minutes by taxi from Zhangjiajie Hehua Airport (DYG). Park shuttles connect to Wulingyuan and Tianmen.",
+        "map": "https://www.google.com/maps/search/?api=1&query=Zhinanzhen+Boutique+Inn+Zhangjiajie+Yongding+District"
+      },
+      "stay_position": "after_places",
+      "end_transfer": {
+        "kicker": "Night Transfer",
+        "title": "Furong to Zhangjiajie",
+        "mode": "Taxi + evening train",
+        "instructions": "Return to Furongzhen Station by taxi or shuttle, then take the evening train to Zhangjiajie West. Taxi from Zhangjiajie West to the inn after arrival.",
+        "note": "This is where the Zhangjiajie stay begins."
+      }
     },
     {
       "id": "day-7",
       "label": "Day 7",
       "date": "Wednesday, May 20, 2026",
-      "display_title": "Zhangjiajie National Forest Park",
-      "focus": "Avatar mountains. Take the elevator up, walk the rim, and let the sandstone pillars do the work.",
-      "transport_note": "Buy the multi-day park pass at the Wulingyuan or Forest Park entrance. Save the same pass for tomorrow if Tianmen is split.",
+      "display_title": "Avatar Mountain Route B and 72 Strange Buildings at night",
+      "focus": "Use the most efficient one-day summit route: Wulingyuan East Gate, Bailong Elevator up, Yuanjiajie Avatar viewpoints, Tianzi Mountain, Ten-Mile Gallery, then 72 Strange Buildings at night.",
+      "transport_note": "Best one-day route: Route B / first-timer flow from Wulingyuan East Gate. Eco-bus to Bailong Elevator, elevator up to Yuanjiajie, shuttle to Tianzi Mountain, descend by Tianzi cableway or shuttle, finish Ten-Mile Gallery if daylight remains. Skip Golden Whip Stream unless you drop Yangjiajie or Ten-Mile Gallery.",
       "start_transfer": {
-        "title": "Inn to Forest Park Entrance",
+        "title": "Inn to Wulingyuan East Gate (Wujiayu Ticket Office)",
         "mode": "Taxi or hotel shuttle",
-        "instructions": "Pre-arrange a hotel taxi to the Wulingyuan or Forest Park gate. Both gates connect by free park shuttle to the same trails.",
-        "note": "Wulingyuan side is closer to the Bailong Elevator and Yuanjiajie."
+        "instructions": "Leave around 07:00 and aim to enter by 08:00. Use Wulingyuan East Gate / Wujiayu Ticket Office because it has the cleanest shuttle access to Bailong Elevator, Tianzi Mountain, and Ten-Mile Gallery.",
+        "note": "Buy the park ticket plus Bailong Elevator and Tianzi Cableway add-ons in advance if possible. Carry passport for ticket pickup/checks."
       },
       "places": [
-        {
-          "slug": "yuanjiajie",
-          "name": "Yuanjiajie and Avatar Hallelujah Mountain",
-          "area": "Wulingyuan, Zhangjiajie",
-          "best_time": "Morning",
-          "duration": "2 to 3 hours",
-          "summary": "Quartzite sandstone pillars rise from the green valley. The Hallelujah pillar is the famous Avatar movie reference.",
-          "highlights": [
-            "Avatar Hallelujah Mountain viewpoint",
-            "First Bridge Under Heaven",
-            "Mihun Platform"
-          ],
-          "transport": "Take the Bailong Elevator up to the Yuanjiajie plateau, then walk the rim trail.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Yuanjiajie+Zhangjiajie",
-            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
-          },
-          "image_queries": [
-            "Avatar Hallelujah Mountain Zhangjiajie",
-            "Yuanjiajie sandstone pillars"
-          ],
-          "desired_images": 2,
-          "foods": [],
-          "images": [],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_in_Bailong_(%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
-              "title": "File:Stunning rock formations in Bailong Yuanjiajie scenic area.jpg"
-            },
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_from_the_top_of_Bailong.jpg",
-              "title": "File:Stunning rock formations from the top of Bailong, Yuanjiajie scenic area.jpg"
-            }
-          ]
-        },
         {
           "slug": "bailong-elevator",
           "name": "Bailong Elevator",
           "area": "Wulingyuan, Zhangjiajie",
-          "best_time": "Morning ride up",
-          "duration": "30 min",
-          "summary": "Glass elevator bolted onto a sandstone cliff. 326 meters in under 90 seconds, cutting hours off the climb to Yuanjiajie.",
+          "best_time": "08:30, before tour-bus queues build",
+          "duration": "30 to 60 min including queue",
+          "summary": "Route B starts with the Bailong Elevator: a 326 m glass outdoor lift that jumps from the valley to the Yuanjiajie plateau in under two minutes. It is the fastest way to reach the Avatar viewpoints.",
           "highlights": [
-            "Tallest outdoor lift in the world",
-            "Cliff-face glass cabins",
-            "Saves a long stair climb"
+            "Route B uphill transport",
+            "326 m cliff elevator",
+            "Buy separate elevator ticket",
+            "Window side is best for the short ride"
           ],
-          "transport": "Free park shuttle from the Wulingyuan gate drops at the lower station. Buy the elevator add-on ticket separately.",
+          "transport": "Inside Wulingyuan East Gate, take the free eco-bus to Bailong Elevator Lower Station. Ride the elevator up, then follow signs or shuttle to Yuanjiajie viewpoints.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Bailong+Elevator+Zhangjiajie",
             "reference": "https://en.wikipedia.org/wiki/Bailong_Elevator"
@@ -845,7 +1061,20 @@
           ],
           "desired_images": 2,
           "foods": [],
-          "images": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bailong_Elevator_april_2008.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bailong_Elevator_april_2008.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Bailong_Elevator_april_2008.jpg",
+              "title": "File:Bailong Elevator april 2008.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bailong_Elevator_01.jpg/1920px-Bailong_Elevator_01.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bailong_Elevator_01.jpg/1920px-Bailong_Elevator_01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Bailong_Elevator_01.jpg",
+              "title": "File:Bailong Elevator 01.jpg"
+            }
+          ],
           "manual_images": [
             {
               "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bailong_Elevator_april_2008.jpg",
@@ -857,21 +1086,75 @@
               "page": "https://commons.wikimedia.org/wiki/File:Bailong_Elevator_01.jpg",
               "title": "File:Bailong Elevator 01.jpg"
             }
-          ]
+          ],
+          "access_note": "If the elevator queue is extreme, reverse the route: take Tianzi Mountain Cableway up first, then use Bailong Elevator down later."
+        },
+        {
+          "slug": "yuanjiajie",
+          "name": "Yuanjiajie and Avatar Hallelujah Mountain",
+          "area": "Wulingyuan, Zhangjiajie",
+          "best_time": "Morning after Bailong Elevator",
+          "duration": "1.5 to 2.5 hours",
+          "summary": "The core Avatar section. Walk the signed Yuanjiajie loop for Qiankun Pillar / Avatar Hallelujah Mountain, Mihun Platform, and First Bridge Under Heaven.",
+          "highlights": [
+            "Qiankun Pillar / Avatar Hallelujah Mountain",
+            "Mihun Platform / Enchanting Terrace",
+            "First Bridge Under Heaven",
+            "Best pillar views of the day"
+          ],
+          "transport": "From Bailong Elevator upper station, take the short summit shuttle or walk to Yuanjiajie. Follow the one-way viewpoint loop, then exit at Yuanjiajie Tianqiao Station for the shuttle toward Tianzi Mountain.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Yuanjiajie+Zhangjiajie",
+            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
+          },
+          "image_queries": [
+            "Avatar Hallelujah Mountain Zhangjiajie",
+            "Yuanjiajie sandstone pillars"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_in_Bailong_(%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "title": "File:Stunning rock formations in Bailong Yuanjiajie scenic area.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_from_the_top_of_Bailong.jpg",
+              "title": "File:Stunning rock formations from the top of Bailong, Yuanjiajie scenic area.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_in_Bailong_%28%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_in_Bailong_(%E7%99%BD%E9%BE%99%EF%BC%89Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "title": "File:Stunning rock formations in Bailong Yuanjiajie scenic area.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg/1920px-Stunning_rock_formations_from_the_top_of_Bailong_%28%E7%99%BD%E9%BE%99%29%2C_in_the_Yuanjiajie_%EF%BC%88%E8%A2%81%E5%AE%B6%E7%95%8C%EF%BC%89scenic_area.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Stunning_rock_formations_from_the_top_of_Bailong.jpg",
+              "title": "File:Stunning rock formations from the top of Bailong, Yuanjiajie scenic area.jpg"
+            }
+          ],
+          "access_note": "This is the non-negotiable part of the day. If fog is heavy, wait 10 to 20 minutes at a viewpoint; visibility can open suddenly."
         },
         {
           "slug": "tianzi-mountain",
           "name": "Tianzi Mountain",
           "area": "Wulingyuan, Zhangjiajie",
-          "best_time": "Afternoon",
-          "duration": "90 min",
-          "summary": "Northern pillar field. Cable car up to the rim for the West Sea Stone Forest and the King-of-Heaven viewpoint.",
+          "best_time": "Early to mid afternoon",
+          "duration": "1.5 to 2 hours",
+          "summary": "The big panorama section after Yuanjiajie. Use the shuttle to Tianzi Mountain for West Sea Stone Forest, Yubi Feng / Imperial Brush Peaks, and Fairy Scattering Flowers.",
           "highlights": [
             "West Sea Stone Forest",
-            "Imperial Brush Peaks (Yubi Feng)",
-            "Cable car up the ridgeline"
+            "Yubi Feng / Imperial Brush Peaks",
+            "Fairy Scattering Flowers",
+            "He Long Park viewpoint area"
           ],
-          "transport": "Park shuttle from Yuanjiajie connects to the Tianzi Mountain cable car bottom station.",
+          "transport": "At Yuanjiajie Tianqiao Station, take the eco-bus toward Tianzi Mountain / He Long Park. After sightseeing, descend by Tianzi Mountain Cableway if operating, then shuttle to Ten-Mile Gallery.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Tianzi+Mountain+Zhangjiajie",
             "reference": "https://en.wikipedia.org/wiki/Tianzi_Mountain"
@@ -889,21 +1172,75 @@
               "source_page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
               "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
             }
-          ]
+          ],
+          "access_note": "Do not miss the last descent transport. Ask staff for the final Tianzi cableway/shuttle time when you arrive."
+        },
+        {
+          "slug": "ten-mile-gallery",
+          "name": "Ten-Mile Gallery",
+          "area": "Suoxiyu, Zhangjiajie National Forest Park",
+          "best_time": "Late afternoon, after Tianzi descent",
+          "duration": "45 to 75 min",
+          "summary": "Lower-valley finish after the summit loop. The Shili Hualang / Ten-Mile Gallery mini-train passes named formations like Three Sisters Peaks; walking is possible if queues are light.",
+          "highlights": [
+            "Shili Hualang mini-train",
+            "Three Sisters Peaks",
+            "Herb-Gathering Elder formation",
+            "Easy exit toward Wulingyuan"
+          ],
+          "transport": "After Tianzi descent, take the eco-bus to Ten-Mile Gallery. Ride the mini-train one way or walk the flat valley path, then shuttle back to Wulingyuan East Gate.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Ten+Mile+Gallery+Zhangjiajie",
+            "reference": "https://en.wikipedia.org/wiki/Wulingyuan"
+          },
+          "image_queries": [
+            "Ten Mile Gallery Zhangjiajie",
+            "Suoxiyu Ten Mile Gallery"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg/1920px-%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg/1920px-%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
+              "title": "File:张家界十里画廊小火车.jpeg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg/1920px-%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg/1920px-%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_(3).jpg",
+              "title": "File:武陵源景区十里画廊风光 - panoramio (3).jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg/1920px-%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
+              "page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E5%B0%8F%E7%81%AB%E8%BD%A6.jpeg",
+              "title": "File:张家界十里画廊小火车.jpeg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg/1920px-%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_%283%29.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E9%99%B5%E6%BA%90%E6%99%AF%E5%8C%BA%E5%8D%81%E9%87%8C%E7%94%BB%E5%BB%8A%E9%A3%8E%E5%85%89_-_panoramio_(3).jpg",
+              "title": "File:武陵源景区十里画廊风光 - panoramio (3).jpg"
+            }
+          ],
+          "access_note": "If daylight is low, choose Ten-Mile Gallery over Golden Whip Stream because it is shorter and easier to exit from Wulingyuan."
         },
         {
           "slug": "golden-whip-stream",
           "name": "Golden Whip Stream",
           "area": "Zhangjiajie National Forest Park",
-          "best_time": "Late afternoon",
-          "duration": "75 min",
-          "summary": "Flat valley walk along a clear stream with pillars rising on both sides. A break from the rim trails after the elevator and cable car.",
+          "best_time": "Optional late afternoon only if you cut another section",
+          "duration": "1 to 3 hours depending on segment",
+          "summary": "Beautiful valley trail, but a full Golden Whip Stream walk is too much on a one-day Avatar route. Use only a short Water Winding Four Gates / lower-valley segment if you have time.",
           "highlights": [
-            "Easy 7 km flat trail",
+            "Golden Whip Rock area",
             "Macaques and stream views",
-            "Best for the late-afternoon light"
+            "Flat canyon trail",
+            "Best as a separate half-day if possible"
           ],
-          "transport": "Walk down via the trail or take the shuttle to the Forest Park entrance and follow the stream upstream.",
+          "transport": "Use eco-bus links between Water Winding Four Gates and the Forest Park/South Gate area. For this itinerary, treat it as a short optional segment rather than a full 7.5 km walk.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Golden+Whip+Stream+Zhangjiajie",
             "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
@@ -956,24 +1293,204 @@
               "page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
               "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
             }
-          ]
+          ],
+          "access_note": "For one day, Golden Whip Stream is the first thing to cut if queues, fog, or tired legs slow the summit loop."
+        },
+        {
+          "slug": "zhangjiajie-72-strange-buildings",
+          "name": "Zhangjiajie 72 Strange Buildings",
+          "area": "Yongding District, Zhangjiajie",
+          "best_time": "Night",
+          "duration": "90 min",
+          "summary": "Modern Tujia-style night landmark known as 72 Qilou / 72 Strange Buildings. The main tower lights up after dark with food streets, performances, and a dramatic stilt-house facade.",
+          "highlights": [
+            "Night-lit 72 Qilou tower",
+            "Tujia-style food street",
+            "Good full-building photo from across Wulingshan Avenue",
+            "Easy taxi stop after a rest"
+          ],
+          "transport": "Return to the inn from Wulingyuan first if possible, then taxi to No. 1 Wulingshan Avenue in Yongding District. Photograph the full tower from across the road rather than only inside the plaza.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Zhangjiajie+72+Strange+Buildings",
+            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie"
+          },
+          "image_queries": [
+            "Zhangjiajie 72 Strange Buildings",
+            "Zhangjiajie 72 Qilou"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/zhangjiajie-72-strange-buildings-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
+              "title": "File:Hunan Fenghuang County ancient town.jpg"
+            },
+            {
+              "src": "assets/images/places/zhangjiajie-72-strange-buildings-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1920px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
+              "title": "File:Hunan Fenghuang County ancient town.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1920px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
+            }
+          ],
+          "access_note": "This is a modern cultural/night-market complex, not an ancient site. It is best as a fun night-photo stop after the park."
         }
       ],
       "transfers": [
         {
-          "mode": "Park shuttle",
-          "instructions": "Free shuttle connects Yuanjiajie, Tianzi Mountain, and Forest Park gates. Show your park pass on each ride.",
-          "note": "Last shuttle leaves the rim around 18:00. Plan the descent before that."
+          "mode": "Eco-bus + Bailong Elevator",
+          "instructions": "Enter Wulingyuan East Gate, take the eco-bus to Bailong Elevator Lower Station, then ride up to the Yuanjiajie plateau.",
+          "note": "This is Route B / first-timer flow and gets the Avatar pillars early."
         },
         {
-          "mode": "Walk",
-          "instructions": "Walk from the Tianzi cable car lower station along the valley road into Golden Whip Stream.",
-          "note": "Or shuttle down if the legs are done."
+          "mode": "Walk + summit shuttle",
+          "instructions": "Walk the Yuanjiajie loop: Mihun Platform, Qiankun Pillar / Avatar Hallelujah Mountain, and First Bridge Under Heaven. Exit at Yuanjiajie Tianqiao Station.",
+          "note": "Avoid backtracking; follow signs toward the Tianzi Mountain shuttle."
         },
         {
-          "mode": "Walk to shuttle",
-          "instructions": "Follow the stream out toward the Forest Park gate, then take the shuttle and a taxi back to the inn.",
-          "note": "Save energy. Tianmen Mountain is tomorrow."
+          "mode": "Eco-bus",
+          "instructions": "Ride the summit eco-bus from Yuanjiajie toward Tianzi Mountain / He Long Park for West Sea Stone Forest and Yubi Feng.",
+          "note": "If queues are bad, skip Yangjiajie and keep moving to Tianzi."
+        },
+        {
+          "mode": "Cableway + eco-bus",
+          "instructions": "Descend from Tianzi Mountain by cableway if operating, then take the eco-bus to Ten-Mile Gallery.",
+          "note": "Confirm the last cableway time when you arrive at Tianzi Mountain."
+        },
+        {
+          "mode": "Mini-train, walk, or eco-bus",
+          "instructions": "Do Ten-Mile Gallery as a short finish, then shuttle back to Wulingyuan East Gate. Only add Golden Whip Stream if you still have daylight and energy.",
+          "note": "For a single day, keep Golden Whip Stream optional."
+        },
+        {
+          "mode": "Taxi",
+          "instructions": "After a rest at the inn, taxi to Zhangjiajie 72 Strange Buildings for night lights and snacks.",
+          "note": "Keep this optional if the park day runs long."
+        }
+      ],
+      "optional_title": "Optional Zhangjiajie Add-Ons",
+      "optional_places": [
+        {
+          "slug": "yangjiajie-scenic-area",
+          "name": "Yangjiajie Scenic Area",
+          "area": "Zhangjiajie National Forest Park",
+          "best_time": "Midday if queues are light",
+          "duration": "1.5 to 2.5 hours",
+          "summary": "Quieter peak-wall area between Yuanjiajie and Tianzi. Add it only if you are moving fast; otherwise it makes the one-day route too tight.",
+          "highlights": [
+            "Natural Great Wall peak walls",
+            "Wulong Village route for adventurous walkers",
+            "Fewer crowds than Yuanjiajie"
+          ],
+          "transport": "From Yuanjiajie Tianqiao Station, take the summit shuttle toward Yangjiajie. Rejoin the shuttle network afterward for Tianzi Mountain.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Yangjiajie+Zhangjiajie",
+            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
+          },
+          "image_queries": [
+            "Yangjiajie Zhangjiajie",
+            "Natural Great Wall Yangjiajie"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yangjiajie.jpg/1920px-Yangjiajie.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yangjiajie.jpg/1920px-Yangjiajie.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Yangjiajie.jpg",
+              "title": "File:Yangjiajie.jpg"
+            }
+          ],
+          "access_note": "Best optional inside the park, but skip if the Bailong Elevator or Yuanjiajie queues eat the morning."
+        },
+        {
+          "slug": "huangshi-village",
+          "name": "Huangshi Village (Huangshizhai)",
+          "area": "Zhangjiajie National Forest Park",
+          "best_time": "Separate half day",
+          "duration": "3 to 4 hours",
+          "summary": "High viewpoint area often quieter in the morning, reached by cable car from the Forest Park/South Gate side. It is excellent, but it does not fit cleanly into the Route B day.",
+          "highlights": [
+            "Quieter morning panoramas",
+            "Cable car access",
+            "Good bad-weather backup if summit shuttles are crowded"
+          ],
+          "transport": "Use the Forest Park/South Gate and Huangshi Village cable car. Treat it as a separate half-day, not an add-on after Yuanjiajie/Tianzi.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Huangshi+Village+Zhangjiajie",
+            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
+          },
+          "image_queries": [
+            "Huangshi Village Zhangjiajie",
+            "Huangshizhai Zhangjiajie"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+              "title": "File:1 zhangjiajie huangshizhai wulingyuan panorama 2012.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg/1920px-%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg/1920px-%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:%E7%B4%A2%E8%BB%8A%E7%9B%B4%E4%B8%8A%E9%BB%83%E7%9F%B3%E5%AF%A8_Huangshizhai_from_Cable_Car_-_panoramio.jpg",
+              "title": "File:索車直上黃石寨 Huangshizhai from Cable Car - panoramio.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "zhangjiajie-grand-canyon-glass-bridge",
+          "name": "Zhangjiajie Grand Canyon Glass Bridge",
+          "area": "Cili County, Zhangjiajie",
+          "best_time": "Separate day",
+          "duration": "4 to 6 hours",
+          "summary": "World-famous glass bridge and canyon walk outside the national forest park. Amazing, but logistically separate from the Avatar mountain day.",
+          "highlights": [
+            "Glass bridge over the canyon",
+            "Canyon walk",
+            "Good extra day if you extend Zhangjiajie"
+          ],
+          "transport": "Book as a separate day trip from Wulingyuan/Zhangjiajie city by private car or tour. Do not combine with Yuanjiajie/Tianzi in one day.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Zhangjiajie+Grand+Canyon+Glass+Bridge",
+            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_Glass_Bridge"
+          },
+          "image_queries": [
+            "Zhangjiajie Glass Bridge",
+            "Zhangjiajie Grand Canyon Glass Bridge"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg/1920px-Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg/1920px-Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_Glass_Bridge_20190726_(2).jpg",
+              "title": "File:Zhangjiajie Glass Bridge 20190726 (2).jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ZhangjiajieGlassByHighestBridges.jpg/1920px-ZhangjiajieGlassByHighestBridges.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/ZhangjiajieGlassByHighestBridges.jpg/1920px-ZhangjiajieGlassByHighestBridges.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:ZhangjiajieGlassByHighestBridges.jpg",
+              "title": "File:ZhangjiajieGlassByHighestBridges.jpg"
+            }
+          ]
         }
       ]
     },
@@ -981,14 +1498,14 @@
       "id": "day-8",
       "label": "Day 8",
       "date": "Thursday, May 21, 2026",
-      "display_title": "Tianmen Mountain, then night flight to Beijing",
-      "focus": "Cable-car the long ridge, walk the glass skywalk, climb to Heaven's Gate, then late flight to Beijing.",
-      "transport_note": "Leave bags packed at the inn for late checkout. Book a 19:30 transfer to the airport for the 22:30 departure.",
+      "display_title": "Tianmen Mountain Route A, then night flight to Beijing",
+      "focus": "Book Route A / Line A if available: ride up on the long Tianmen Mountain Cableway, use the summit cliff walks and escalators, visit Heaven's Gate, then come down on the shorter Express Cableway.",
+      "transport_note": "Ask for Route A / Line A (A线): Main Tianmen Mountain Cableway up, Tianmen Cave Express Cableway down. If the upper main cableway section is still under maintenance, Route A becomes main cableway to mid-station + eco-bus on 99 Bends + escalator to the summit, then Express Cableway down.",
       "start_transfer": {
-        "title": "Inn to Tianmen Cableway",
+        "title": "Inn to Tianmen Mountain Cableway Lower Station",
         "mode": "Taxi",
-        "instructions": "Taxi or Didi to the Tianmen Mountain Cableway lower station in central Zhangjiajie city. About 15 to 20 minutes from the inn.",
-        "note": "The cableway base is right next to the train station for easy taxi drop-off."
+        "instructions": "Taxi or Didi to the downtown Tianmen Mountain Cableway Lower Station beside Zhangjiajie Railway Station. Arrive 30 to 45 minutes before opening if possible and book Route A / Line A.",
+        "note": "Route A is the one that matches your preference: long main cableway up, shorter Express Cableway down. Confirm live operations because cableway maintenance can change the exact sequence."
       },
       "flights": [
         {
@@ -997,23 +1514,24 @@
           "to": "Beijing",
           "carrier": "Air China CA1954",
           "route": "22:30 DYG (T2) -> 00:55(+1) PEK (T3)",
-          "details": "Non-stop \u00b7 2h 25m \u00b7 Economy"
+          "details": "Non-stop · 2h 25m · Economy"
         }
       ],
       "places": [
         {
           "slug": "tianmen-mountain",
-          "name": "Tianmen Mountain Cableway",
+          "name": "Tianmen Mountain Route A / Line A Ascent",
           "area": "Yongding District, Zhangjiajie",
           "best_time": "Morning",
-          "duration": "60 min ride up",
-          "summary": "One of the longest passenger cable cars in the world. The 7.5 km ride climbs from the city straight to the cliff plateau.",
+          "duration": "45 to 90 min including transfers/queues",
+          "summary": "Route A is the desired direction: start in downtown Zhangjiajie on the main Tianmen Mountain Cableway, the famous 7,455 m cableway. Under current maintenance patterns, the long line may run only to mid-station, then an eco-bus continues up the 99 Bends Road before the escalator system takes you toward the summit.",
           "highlights": [
-            "7.5 km cable-car ride",
-            "Switchback road view (99 Bends)",
-            "Drops you on the rim trail"
+            "Route A / Line A ticket",
+            "Main Tianmen Mountain Cableway up",
+            "99 Bends Road if modified operations apply",
+            "Best match for long-up / short-down preference"
           ],
-          "transport": "Cableway lower station next to Zhangjiajie Railway Station. Buy the bundled park ticket at the gate.",
+          "transport": "Buy or collect a Route A ticket at the downtown lower station. Board the main cableway first; if staff route you to mid-station, follow signs to the eco-bus for Tongtian Avenue / 99 Bends, then continue by the mountain escalator system.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Tianmen+Mountain+Cableway",
             "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
@@ -1031,33 +1549,48 @@
               "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie,_Tianmen_mountain_-_panoramio_(1).jpg",
               "title": "File:Zhangjiajie, Tianmen mountain - panoramio (1).jpg"
             }
-          ]
+          ],
+          "access_note": "This is a cableway, not an elevator. If the full 7.5 km cableway is restored by your date, Route A gives the complete downtown-to-summit ride; if not, it still starts with the longest cableway section available."
         },
         {
           "slug": "tianmen-skywalk",
-          "name": "Coiling Dragon Cliff Glass Skywalk",
+          "name": "West Line Cliff Walks and Glass Skywalk",
           "area": "Tianmen Mountain, Zhangjiajie",
           "best_time": "Late morning",
-          "duration": "60 min",
-          "summary": "Glass-floored walkway bolted to a vertical cliff face. About 100 meters of full-glass section over an open drop.",
+          "duration": "1.5 to 2 hours",
+          "summary": "After the Route A ascent, do the West Line first: cliff-hanging walkways, glass sections, and big views toward the 99 Bends. It is the classic summit loop and easier to fit before the cave descent.",
           "highlights": [
-            "Glass cliff walk",
-            "View down to the 99 Bends Road",
-            "Photogenic and scary in equal parts"
+            "West Line cliff path",
+            "Coiling Dragon Cliff / glass section if open",
+            "Views down to Tongtian Avenue",
+            "Shoe covers required for glass"
           ],
-          "transport": "Walk along the rim trail clockwise from the cableway top station.",
+          "transport": "From the summit/escalator exit, follow signs for West Line / Xixian. Continue toward Tianmen Mountain Temple or loop back depending on time.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Coiling+Dragon+Cliff+Skywalk+Tianmen",
             "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
           },
-          "access_note": "Shoe covers are required and rented at the entrance. Bags can be checked free.",
+          "access_note": "Glass sections may close in bad weather. If queues are long, do one glass walkway only and keep moving toward Heaven's Gate.",
           "image_queries": [
             "Tianmen Mountain glass skywalk",
             "Coiling Dragon Cliff walk"
           ],
           "desired_images": 2,
           "foods": [],
-          "images": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
+              "title": "File:Glass walkway- Tianmen Mountain - panoramio.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Glass_walkway-_Tianmen_Mountain_-_panoramio_%281%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Glass_walkway-_Tianmen_Mountain_-_panoramio_%281%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Glass_walkway-_Tianmen_Mountain_-_panoramio_(1).jpg",
+              "title": "File:Glass walkway- Tianmen Mountain - panoramio (1).jpg"
+            }
+          ],
           "manual_images": [
             {
               "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Glass_walkway-_Tianmen_Mountain_-_panoramio.jpg",
@@ -1073,17 +1606,18 @@
         },
         {
           "slug": "heavens-gate",
-          "name": "Heaven's Gate (Tianmen Cave)",
+          "name": "Heaven's Gate and Express Cableway Descent",
           "area": "Tianmen Mountain, Zhangjiajie",
           "best_time": "Afternoon",
-          "duration": "60 to 75 min",
-          "summary": "Natural limestone arch, 131 meters tall, with 999 stairs cut up the mountain face. Take the escalators inside the cliff back down.",
+          "duration": "1.5 to 2 hours",
+          "summary": "Finish at Tianmen Cave / Heaven's Gate. Descend from the summit by the 7-section mountain escalator to the cave area, walk down the 999 steps if your knees allow, then take the shorter Tianmen Cave Express Cableway down to the mountain gate.",
           "highlights": [
-            "999 step climb to Heaven's Gate",
-            "Natural arch",
-            "Mountain escalators inside the cliff"
+            "7-section mountain escalator to cave area",
+            "Tianmen Cave natural arch",
+            "999 Steps downward",
+            "Short Express Cableway down"
           ],
-          "transport": "Take the rim trail back to the central plaza, then ride the mountain shuttle and 7-stage escalators down to the cave.",
+          "transport": "From the summit, take the included upper escalators down to Tianmen Cave. Walk down the 999 steps to the plaza, or pay for the lower escalator if needed. Then walk about 500 m to the Express Cableway station for the short descent and shuttle back toward downtown.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Tianmen+Cave+Heaven%27s+Gate+Zhangjiajie",
             "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
@@ -1101,19 +1635,114 @@
               "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_38334-Zhangjiajie_(49046809583).jpg",
               "title": "File:Tianmen 38334-Zhangjiajie (49046809583).jpg"
             }
-          ]
+          ],
+          "access_note": "For your requested direction, choose Route A. Route B is the reverse direction: Express Cableway up and main cableway/bus down."
         }
       ],
       "transfers": [
         {
-          "mode": "Walk",
-          "instructions": "Continue clockwise on the rim trail from the skywalk to the central plaza for the descent route.",
-          "note": "Skip the second skywalk (Walk of Faith) if pressed for time."
+          "mode": "Route A / Main Cableway",
+          "instructions": "Start at the downtown lower station and take the main Tianmen Mountain Cableway up. If maintenance is active, ride to mid-station, then transfer to the eco-bus up 99 Bends and escalators toward the summit.",
+          "note": "This is the longest-up option."
         },
         {
-          "mode": "Mountain shuttle + escalator",
-          "instructions": "Shuttle bus down to the upper escalator, then ride the multi-stage escalators inside the cliff to Heaven's Gate plaza.",
-          "note": "Plan to be back at the inn by 18:00 to repack and head to DYG for the night flight."
+          "mode": "West Line walk",
+          "instructions": "Do the West Line cliff path and one glass skywalk, then loop toward the summit/escalator connection.",
+          "note": "West Line is the most efficient summit route if you only have one day before a flight."
+        },
+        {
+          "mode": "Escalator + steps + Express Cableway",
+          "instructions": "Take the mountain escalators down to Tianmen Cave, descend the 999 Steps or lower escalator, then take the shorter Express Cableway down to the mountain gate.",
+          "note": "This is the shorter-down option; shuttle or taxi back to the city afterward."
+        }
+      ],
+      "flight_position": "after_places",
+      "end_transfer": {
+        "kicker": "Departure Transfer",
+        "title": "Tianmen Mountain to DYG Airport",
+        "mode": "Taxi or pre-booked transfer",
+        "instructions": "Return to the inn by around 18:00, collect bags, eat, and leave for Zhangjiajie Hehua Airport around 19:30 for the 22:30 Beijing flight.",
+        "note": "Keep the flight card after the Tianmen route so it reads as the transition to Beijing."
+      },
+      "optional_title": "Optional Tianmen Mountain Add-Ons",
+      "optional_places": [
+        {
+          "slug": "yunmeng-fairy-summit",
+          "name": "Yunmeng Fairy Summit (Yunmeng Xianding)",
+          "area": "Tianmen Mountain summit",
+          "best_time": "Only if weather is clear",
+          "duration": "30 to 45 min",
+          "summary": "Highest viewpoint area on Tianmen Mountain, reached by the small Forest Sightseeing Cable Car from near Tianmen Mountain Temple. Add only if visibility is good.",
+          "highlights": [
+            "Highest viewpoint around 1,518 m",
+            "Small open-air sightseeing cable car",
+            "City and ridge panorama on clear days"
+          ],
+          "transport": "From the West/East Line junction near Tianmen Mountain Temple, take the Forest Sightseeing Cable Car to Yunmeng Xianding, then return to the main loop.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Yunmeng+Xianding+Tianmen+Mountain",
+            "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
+          },
+          "image_queries": [
+            "Yunmeng Xianding Tianmen Mountain",
+            "Tianmen Mountain Temple cable car"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tianmen_Mountain_temple_I_%2830000795430%29.jpg/1920px-Tianmen_Mountain_temple_I_%2830000795430%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tianmen_Mountain_temple_I_%2830000795430%29.jpg/1920px-Tianmen_Mountain_temple_I_%2830000795430%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_temple_I_(30000795430).jpg",
+              "title": "File:Tianmen Mountain temple I (30000795430).jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tianmen_Mountain_temple_III_%2830000792010%29.jpg/1920px-Tianmen_Mountain_temple_III_%2830000792010%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tianmen_Mountain_temple_III_%2830000792010%29.jpg/1920px-Tianmen_Mountain_temple_III_%2830000792010%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_temple_III_(30000792010).jpg",
+              "title": "File:Tianmen Mountain temple III (30000792010).jpg"
+            }
+          ],
+          "access_note": "Skip in fog or if you need to protect the airport transfer buffer."
+        },
+        {
+          "slug": "east-line-cliff-walk",
+          "name": "East Line Cliff Walk",
+          "area": "Tianmen Mountain summit",
+          "best_time": "Optional extension",
+          "duration": "1.5 to 2 hours",
+          "summary": "Quieter summit loop with more cliff paths. Good if you arrive early and queues are light, but the West Line plus Heaven's Gate is the priority.",
+          "highlights": [
+            "Quieter cliff walk",
+            "Longer summit circuit",
+            "Good crowd escape"
+          ],
+          "transport": "After the West Line, continue onto the East Line instead of returning directly to the escalator, then loop back toward Tianmen Cave descent.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Tianmen+Mountain+East+Line",
+            "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
+          },
+          "image_queries": [
+            "Tianmen Mountain east line cliff walk",
+            "Tianmen Mountain cliff path"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tianmen_Mountain_cliff_footpath.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Tianmen_Mountain_cliff_footpath.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_cliff_footpath.jpg",
+              "title": "File:Tianmen Mountain cliff footpath.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Zhangjiajie_from_Tianmen_Mountain_06.jpg/1920px-Zhangjiajie_from_Tianmen_Mountain_06.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Zhangjiajie_from_Tianmen_Mountain_06.jpg/1920px-Zhangjiajie_from_Tianmen_Mountain_06.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_from_Tianmen_Mountain_06.jpg",
+              "title": "File:Zhangjiajie from Tianmen Mountain 06.jpg"
+            }
+          ],
+          "access_note": "Do not add this if you are behind schedule; the night flight makes time control important."
         }
       ]
     },
@@ -1121,52 +1750,237 @@
       "id": "day-9",
       "label": "Day 9",
       "date": "Friday, May 22, 2026",
-      "display_title": "Beijing core: Forbidden City and Jingshan",
-      "focus": "Slow start after the late arrival, then Tiananmen, the Forbidden City, and a Jingshan sunset.",
-      "transport_note": "Book the Forbidden City entry online in advance via gugong.ktmtech.cn. Tickets sell out and you cannot buy at the gate.",
+      "display_title": "Badaling Great Wall, Longqingxia Gorge and Houhai",
+      "focus": "First Beijing day: go north to Badaling Great Wall, continue to Longqingxia Gorge, then return to the city for Houhai Lake at night.",
+      "transport_note": "Book a private car for the wall + gorge loop. It is a long day after the late arrival, but it avoids backtracking through public transport.",
       "start_transfer": {
-        "title": "Hotel to Tiananmen East",
-        "mode": "Metro Line 1",
-        "instructions": "From the Guomao area take Metro Line 1 west to Tiananmen East Station, Exit A.",
-        "note": "Bring your passport. There is a security check before entering Tiananmen Square."
+        "title": "Hotel to Badaling Great Wall",
+        "mode": "Pre-booked car",
+        "instructions": "Start around 07:30 from the hotel and drive north to Badaling. A private car lets you continue to Longqingxia Gorge afterward instead of returning to Beijing first.",
+        "note": "Badaling is the easiest logistics choice but crowded. Book tickets in advance and bring passports."
       },
       "places": [
         {
-          "slug": "tiananmen-square",
-          "name": "Tiananmen Square",
-          "area": "Dongcheng District, Beijing",
-          "best_time": "Late morning",
-          "duration": "45 min",
-          "summary": "The world's largest public square. Rostrum to the north, Mao's Mausoleum and the Monument to the People's Heroes in the middle.",
+          "slug": "badaling-great-wall",
+          "name": "Badaling Great Wall",
+          "area": "Yanqing District, Beijing",
+          "best_time": "Morning",
+          "duration": "2.5 to 3.5 hours",
+          "summary": "The most accessible restored Great Wall section, with broad ramparts, strong views, and easy cable-car options. Go early to beat the biggest crowds.",
           "highlights": [
-            "Tiananmen Gate / Rostrum",
-            "Monument to the People's Heroes",
-            "Approach to the Forbidden City"
+            "Classic restored Great Wall towers",
+            "North and south walking routes",
+            "Cable car or pulley options depending on route"
           ],
-          "transport": "Metro Line 1 to Tiananmen East. Pass the security check, then walk through the underpass.",
+          "transport": "Private car is easiest from the hotel. Public transport is possible by high-speed train to Badaling Great Wall Station, but less convenient if continuing to Longqingxia.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Tiananmen+Square+Beijing",
-            "reference": "https://en.wikipedia.org/wiki/Tiananmen_Square"
+            "map": "https://www.google.com/maps/search/?api=1&query=Badaling+Great+Wall",
+            "reference": "https://en.wikipedia.org/wiki/Badaling"
           },
-          "access_note": "Passport required for the security check. Pre-registration is recommended.",
           "image_queries": [
-            "Tiananmen Square Beijing",
-            "Tiananmen Gate Beijing"
+            "Badaling Great Wall",
+            "Great Wall Badaling Beijing"
           ],
           "desired_images": 2,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/tiananmen-square-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Beijing_China_Tiananmen-Square-Young_Pioneers_of_China-01.jpg/1920px-Beijing_China_Tiananmen-Square-Young_Pioneers_of_China-01.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Tiananmen-Square-Young_Pioneers_of_China-01.jpg",
-              "title": "File:Beijing China Tiananmen-Square-Young Pioneers of China-01.jpg"
+              "src": "assets/images/places/mutianyu-great-wall-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Great_Wall_of_China_July_2006.JPG/1920px-Great_Wall_of_China_July_2006.JPG",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
+              "title": "File:Great Wall of China July 2006.JPG"
+            }
+          ],
+          "access_note": "Carry passports for ticket checks. Start early; Badaling gets crowded fast."
+        },
+        {
+          "slug": "longqingxia-gorge",
+          "name": "Longqingxia Gorge",
+          "area": "Yanqing District, Beijing",
+          "best_time": "Afternoon",
+          "duration": "2 to 3 hours",
+          "summary": "Longqingxia / Dragon Gorge is a reservoir canyon with boat cruises through steep northern-China cliffs. It pairs well with Badaling because both sit in Yanqing.",
+          "highlights": [
+            "Boat cruise through the gorge if operating",
+            "Dragon escalator up the dam area",
+            "Cable car viewpoint if time allows",
+            "Cooler mountain air than central Beijing"
+          ],
+          "transport": "Drive from Badaling to Longqingxia in about 40 to 60 minutes. Ask the driver to wait. Inside, prioritize entrance + boat ticket first; add cable car/viewpoint only if the boat line is short.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Longqingxia+Gorge+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Longqingxia"
+          },
+          "image_queries": [
+            "Longqingxia Gorge Beijing",
+            "Longqing Gorge Yanqing"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_(5668676781).jpg",
+              "title": "File:Longqingxia 龙庆峡 (5668676781).jpg"
             },
             {
-              "src": "assets/images/places/tiananmen-square-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Beijing_China_Tiananmen-Square-05.jpg/1920px-Beijing_China_Tiananmen-Square-05.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Tiananmen-Square-05.jpg",
-              "title": "File:Beijing China Tiananmen-Square-05.jpg"
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Cable_car_longqing_gorge.jpg",
+              "title": "File:Cable car longqing gorge.jpg"
+            }
+          ],
+          "access_note": "Arrive as early as possible after Badaling. Boat schedules and water activities vary by season/weather; if closed, use the gorge viewpoints and head back to Beijing earlier.",
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_(5668676781).jpg",
+              "title": "File:Longqingxia 龙庆峡 (5668676781).jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Cable_car_longqing_gorge.jpg",
+              "title": "File:Cable car longqing gorge.jpg"
+            }
+          ]
+        },
+        {
+          "slug": "houhai-lake",
+          "name": "Houhai Lake",
+          "area": "Shichahai, Xicheng District, Beijing",
+          "best_time": "Evening",
+          "duration": "60 to 90 min",
+          "summary": "Houhai is the relaxed Shichahai lake-and-hutong evening zone. Use it for a soft landing after the wall/gorge day: lakeside walk, Yinding Bridge, dinner, and bars if you want them.",
+          "highlights": [
+            "Yinding Bridge sunset/night view",
+            "Hutong lanes around Shichahai",
+            "Easy dinner after the long drive",
+            "Optional bar street without committing to nightlife"
+          ],
+          "transport": "Have the driver drop you at Shichahai/Houhai, or rest at the hotel first and taxi over. Metro Line 8 to Shichahai also works if you are returning independently.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Houhai+Lake+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Shichahai"
+          },
+          "image_queries": [
+            "Houhai Lake Beijing",
+            "Shichahai Beijing night"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/View_of_Houhai_in_Beijing_20160825.jpg/1920px-View_of_Houhai_in_Beijing_20160825.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/View_of_Houhai_in_Beijing_20160825.jpg/1920px-View_of_Houhai_in_Beijing_20160825.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:View_of_Houhai_in_Beijing_20160825.jpg",
+              "title": "File:View of Houhai in Beijing 20160825.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Houhai_Lake_Beijing_2015_October.jpg/1920px-Houhai_Lake_Beijing_2015_October.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Houhai_Lake_Beijing_2015_October.jpg/1920px-Houhai_Lake_Beijing_2015_October.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Houhai_Lake_Beijing_2015_October.jpg",
+              "title": "File:Houhai Lake Beijing 2015 October.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/View_of_Houhai_in_Beijing_20160825.jpg/1920px-View_of_Houhai_in_Beijing_20160825.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:View_of_Houhai_in_Beijing_20160825.jpg",
+              "title": "File:View of Houhai in Beijing 20160825.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Houhai_Lake_Beijing_2015_October.jpg/1920px-Houhai_Lake_Beijing_2015_October.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Houhai_Lake_Beijing_2015_October.jpg",
+              "title": "File:Houhai Lake Beijing 2015 October.jpg"
+            }
+          ]
+        }
+      ],
+      "transfers": [
+        {
+          "mode": "Pre-booked car",
+          "instructions": "Continue from Badaling to Longqingxia Gorge by car.",
+          "note": "This is the reason to avoid doing Badaling by train today."
+        },
+        {
+          "mode": "Pre-booked car",
+          "instructions": "Return from Longqingxia to central Beijing and get dropped near Houhai or back at the hotel.",
+          "note": "Expect 90 minutes or more back into the city depending on traffic."
+        }
+      ],
+      "stay": {
+        "label": "PiaoHome Chain Hotel (Guomao Donghua)",
+        "city": "Beijing",
+        "dates": "May 22 to May 24 (2 nights)",
+        "address": "No. 1-6, Building 4, Chaijiawan, Chaoyang District, Beijing, 100025, China",
+        "phone": "+86-10-65030988-0 / +86-13810081644",
+        "note": "Chaoyang base for the Beijing classics. Late check-in expected because the Zhangjiajie flight lands after midnight.",
+        "transit": "Closest stations are Sihui and Sihui East (Lines 1 and Batong). Quick taxi to CBD and Wangfujing. Daxing Airport is about 60 to 75 minutes by taxi.",
+        "map": "https://www.google.com/maps/search/?api=1&query=PiaoHome+Hotel+Guomao+Donghua+Beijing+Chaijiawan+Chaoyang"
+      }
+    },
+    {
+      "id": "day-10",
+      "label": "Day 10",
+      "date": "Saturday, May 23, 2026",
+      "display_title": "Zhengyangmen, Forbidden City, Jingshan, Summer Palace and CBD",
+      "focus": "Second Beijing day: old central-axis landmarks, palace roofs from Jingshan, Summer Palace, then the CBD around CCTV Headquarters.",
+      "transport_note": "Book Forbidden City tickets in advance. This is a packed day, so start early and use taxis between distant zones when needed.",
+      "start_transfer": {
+        "title": "Hotel to Zhengyangmen / Qianmen",
+        "mode": "Metro Line 1 + Line 2 or taxi",
+        "instructions": "Go early to Qianmen/Zhengyangmen. From there continue north toward the Forbidden City entrance route without scheduling the square as a stop.",
+        "note": "Carry passports for palace security and ticket checks."
+      },
+      "places": [
+        {
+          "slug": "zhengyangmen",
+          "name": "Zhengyangmen (Qianmen Gate)",
+          "area": "Dongcheng District, Beijing",
+          "best_time": "Morning",
+          "duration": "30 to 45 min",
+          "summary": "Historic gate tower on Beijing's central axis, marking the old front gate of the Inner City and the Qianmen area.",
+          "highlights": [
+            "Qianmen Gate tower",
+            "Central-axis photo stop",
+            "Easy link toward the palace route"
+          ],
+          "transport": "Metro Line 2 to Qianmen Station or taxi to Zhengyangmen. Keep the stop short so the Forbidden City day stays on schedule.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Zhengyangmen+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Zhengyangmen"
+          },
+          "image_queries": [
+            "Zhengyangmen Beijing",
+            "Qianmen Gate Beijing"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peking_Zhengyangmen-20110103-RM-134438.jpg/1920px-Peking_Zhengyangmen-20110103-RM-134438.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peking_Zhengyangmen-20110103-RM-134438.jpg/1920px-Peking_Zhengyangmen-20110103-RM-134438.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Peking_Zhengyangmen-20110103-RM-134438.jpg",
+              "title": "File:Peking Zhengyangmen-20110103-RM-134438.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/1920px-Zhengyangmen_gatehouse.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/1920px-Zhengyangmen_gatehouse.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
+              "title": "File:Zhengyangmen gatehouse.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Peking_Zhengyangmen-20110103-RM-134438.jpg/1920px-Peking_Zhengyangmen-20110103-RM-134438.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Peking_Zhengyangmen-20110103-RM-134438.jpg",
+              "title": "File:Peking Zhengyangmen-20110103-RM-134438.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zhengyangmen_gatehouse.jpg/1920px-Zhengyangmen_gatehouse.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Zhengyangmen_gatehouse.jpg",
+              "title": "File:Zhengyangmen gatehouse.jpg"
             }
           ]
         },
@@ -1176,13 +1990,14 @@
           "area": "Dongcheng District, Beijing",
           "best_time": "Midday",
           "duration": "3 hours",
-          "summary": "Ming and Qing imperial palace. 980 surviving buildings on a north-south axis. Three hours covers the central halls and the back gardens.",
+          "summary": "Follow the south-to-north palace axis: Meridian Gate, Hall of Supreme Harmony, central courtyards, Palace of Heavenly Purity, Imperial Garden, then exit at Gate of Divine Prowess for Jingshan.",
           "highlights": [
-            "Hall of Supreme Harmony",
-            "Inner courtyards",
-            "Imperial Garden at the north end"
+            "Meridian Gate entry",
+            "Three Great Halls on the central axis",
+            "Imperial Garden",
+            "North exit directly to Jingshan"
           ],
-          "transport": "Enter at Meridian Gate (south), exit at Gate of Divine Prowess (north). The route is one-way.",
+          "transport": "Pre-book tickets online and enter at Meridian Gate. The palace route is one-way south to north, so do not plan to backtrack to Qianmen afterward.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Forbidden+City+Beijing",
             "reference": "https://en.wikipedia.org/wiki/Forbidden_City"
@@ -1244,7 +2059,7 @@
             "reference": "https://en.wikipedia.org/wiki/Jingshan_Park"
           },
           "image_queries": [
-            "Jingshan Park Beijing sunset Forbidden City",
+            "Jingshan Park Beijing Forbidden City view",
             "Wanchun Pavilion Beijing"
           ],
           "desired_images": 2,
@@ -1275,140 +2090,223 @@
           "images": [
             {
               "src": "assets/images/places/jingshan-park-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sunset_on_Tiananmen_Square_%2811512917514%29.jpg/1920px-Sunset_on_Tiananmen_Square_%2811512917514%29.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Sunset_on_Tiananmen_Square_(11512917514).jpg",
-              "title": "File:Sunset on Tiananmen Square (11512917514).jpg"
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/1920px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+              "title": "File:The Forbidden City - View from Coal Hill.jpg"
+            },
+            {
+              "src": "assets/images/places/jingshan-park-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/View_over_Forbidden_City_to_Jingshan_Park%2C_Beijing%2C_in_smog.jpg/1920px-View_over_Forbidden_City_to_Jingshan_Park%2C_Beijing%2C_in_smog.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:View_over_Forbidden_City_to_Jingshan_Park,_Beijing,_in_smog.jpg",
+              "title": "File:View over Forbidden City to Jingshan Park, Beijing, in smog.jpg"
             }
           ]
-        }
-      ],
-      "transfers": [
-        {
-          "mode": "Walk",
-          "instructions": "Walk straight north from Tiananmen through the underpass and into the Meridian Gate of the Forbidden City.",
-          "note": "Tickets are checked at the gate."
         },
         {
-          "mode": "Walk",
-          "instructions": "From the Forbidden City's north gate, cross Jingshanqian Street into Jingshan Park's south entrance and climb to Wanchun Pavilion.",
-          "note": "Aim for 30 to 45 min before sunset for the best light."
-        }
-      ]
-    },
-    {
-      "id": "day-10",
-      "label": "Day 10",
-      "date": "Saturday, May 23, 2026",
-      "display_title": "Mutianyu Great Wall and 798 Art District",
-      "focus": "Out to the wall in the morning, back into the city for an art-and-warehouse evening.",
-      "transport_note": "Book a private car for Mutianyu round-trip (about 90 minutes each way) or use the Mubus from Dongzhimen Wai.",
-      "start_transfer": {
-        "title": "Hotel to Mutianyu",
-        "mode": "Pre-booked car",
-        "instructions": "Pickup at 07:30 from the hotel. Drive northeast to Huairou and the Mutianyu base. The driver waits at the lot for the return.",
-        "note": "Alternatively, take the official Mutianyu shuttle bus from Dongzhimen Wai. Slower but cheaper."
-      },
-      "places": [
-        {
-          "slug": "mutianyu-great-wall",
-          "name": "Mutianyu Great Wall",
-          "area": "Huairou District, Beijing",
-          "best_time": "Morning to early afternoon",
-          "duration": "3 to 4 hours",
-          "summary": "Restored Ming wall section in green hills. Cable car up, walk a long restored stretch, slide back down on the toboggan.",
+          "slug": "summer-palace",
+          "name": "Summer Palace",
+          "area": "Haidian District, Beijing",
+          "best_time": "Afternoon",
+          "duration": "2 to 3 hours",
+          "summary": "For a packed day, use a focused Summer Palace route: North Palace Gate or East Palace Gate, Long Corridor, Kunming Lake edge, Marble Boat, then exit near the easiest taxi/metro point.",
           "highlights": [
-            "Cable car up to Watchtower 14",
-            "Restored Ming-era wall",
-            "Toboggan ride down"
+            "Long Corridor painted walkway",
+            "Kunming Lake shore",
+            "Marble Boat",
+            "Longevity Hill view if energy remains"
           ],
-          "transport": "Park shuttle from the visitor center to the cable car base. Walk uphill if you prefer the trail.",
+          "transport": "Taxi is fastest from Jingshan. If using metro, take Line 4 to Beigongmen for North Palace Gate. Use a 2-hour loop and exit before evening traffic gets heavy.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Mutianyu+Great+Wall",
-            "reference": "https://en.wikipedia.org/wiki/Mutianyu"
+            "map": "https://www.google.com/maps/search/?api=1&query=Summer+Palace+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Summer_Palace"
           },
-          "access_note": "Far less crowded than Badaling. Total round trip from central Beijing runs 6 to 7 hours.",
           "image_queries": [
-            "Mutianyu Great Wall",
-            "Great Wall Mutianyu watchtower"
+            "Summer Palace Beijing",
+            "Kunming Lake Summer Palace"
           ],
           "desired_images": 2,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/mutianyu-great-wall-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Great_Wall_of_China_July_2006.JPG/1920px-Great_Wall_of_China_July_2006.JPG",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
-              "title": "File:Great Wall of China July 2006.JPG"
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Longevity_Hill_of_the_Summer_Palace.jpg",
+              "title": "File:Longevity Hill of the Summer Palace.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Summer-Palace-01.jpg",
+              "title": "File:Beijing China Summer-Palace-01.jpg"
+            }
+          ],
+          "access_note": "Large site. Do not try to cover every corner; choose a 2-hour loop around the lake and hill.",
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Longevity_Hill_of_the_Summer_Palace.jpg",
+              "title": "File:Longevity Hill of the Summer Palace.jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Summer-Palace-01.jpg",
+              "title": "File:Beijing China Summer-Palace-01.jpg"
             }
           ]
         },
         {
-          "slug": "798-art-district",
-          "name": "798 Art District",
-          "area": "Dashanzi, Chaoyang District, Beijing",
-          "best_time": "Late afternoon to evening",
-          "duration": "90 min to 2 hours",
-          "summary": "Bauhaus factory complex turned into galleries, studios, and bookshops. Slogans on the brick, exposed pipes, and contemporary work inside.",
+          "slug": "beijing-cbd-cctv-headquarters",
+          "name": "Beijing CBD and CCTV Headquarters",
+          "area": "Guomao, Chaoyang District, Beijing",
+          "best_time": "Evening",
+          "duration": "60 to 90 min",
+          "summary": "End in Guomao/CBD for the modern contrast: CCTV Headquarters exterior, China World towers, and bright business-district streets near your hotel side of town.",
           "highlights": [
-            "UCCA Center for Contemporary Art",
-            "Old factory architecture",
-            "Independent galleries and bookshops"
+            "CCTV Headquarters / underpants building exterior",
+            "China World Trade Center skyline",
+            "Guomao night lights",
+            "Easy dinner and taxi back"
           ],
-          "transport": "Metro Line 14 to Wangjing South Station, then a 10 minute walk. Or taxi direct from the hotel.",
+          "transport": "Taxi from Summer Palace is easiest. By metro, use Line 4/10 toward Guomao. The CCTV building is viewed from public sidewalks; there is no tourist interior visit.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=798+Art+District+Beijing",
-            "reference": "https://en.wikipedia.org/wiki/798_Art_Zone"
+            "map": "https://www.google.com/maps/search/?api=1&query=CCTV+Headquarters+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/CCTV_Headquarters"
           },
           "image_queries": [
-            "798 Art District Beijing",
-            "Dashanzi 798 Beijing"
+            "CCTV Headquarters Beijing",
+            "Beijing CBD Guomao skyline"
           ],
           "desired_images": 2,
-          "foods": [
-            {
-              "slug": "beijing-hotpot",
-              "name": "Old Beijing Lamb Hotpot",
-              "description": "Brass chimney pot of clear broth with thinly sliced mutton, daikon, and sesame paste dip. Lao Beijing winter staple, eaten year-round.",
-              "where": "Manfu Lou or Yang Da Ye, both classic Beijing instant-boil mutton hotpot houses.",
-              "links": {
-                "reference": "https://en.wikipedia.org/wiki/Mongolian_hot_pot"
-              },
-              "image_queries": [
-                "Old Beijing lamb hotpot",
-                "Shuan yang rou Beijing"
-              ],
-              "desired_images": 1,
-              "images": [],
-              "manual_images": [
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Old_beijing_Hotpot%21%21%21_%E8%A3%95%E5%BE%B7%E5%AD%9A%E8%80%81%E5%8C%97%E4%BA%AC%E6%B6%AE%E7%BE%8A%E8%82%89_%E9%B2%9C%E7%BE%8A%E8%82%89%E5%A4%A7%E8%B5%9E%EF%BC%81%EF%BC%81_%2816154316166%29.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Old_beijing_Hotpot.jpg",
-                  "title": "File:Old beijing Hotpot.jpg"
-                }
-              ]
-            }
-          ],
+          "foods": [],
           "images": [
             {
-              "src": "assets/images/places/798-art-district-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Beijing_798_Art_District.jpg/1920px-Beijing_798_Art_District.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_798_Art_District.jpg",
-              "title": "File:Beijing 798 Art District.jpg"
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
+              "title": "File:CCTV Headquarters (6349184617).jpg"
             },
             {
-              "src": "assets/images/places/798-art-district-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/798_Art_District_banner.jpg/1920px-798_Art_District_banner.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:798_Art_District_banner.jpg",
-              "title": "File:798 Art District banner.jpg"
+              "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/China_Central_Television_Headquarters_2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/China_Central_Television_Headquarters_2.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:China_Central_Television_Headquarters_2.jpg",
+              "title": "File:China Central Television Headquarters 2.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
+              "title": "File:CCTV Headquarters (6349184617).jpg"
+            },
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/China_Central_Television_Headquarters_2.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:China_Central_Television_Headquarters_2.jpg",
+              "title": "File:China Central Television Headquarters 2.jpg"
             }
           ]
         }
       ],
       "transfers": [
         {
-          "mode": "Pre-booked car or taxi",
-          "instructions": "Driver returns from Mutianyu to 798 (about 60 minutes). Or taxi from Mutianyu's lot if not pre-arranged.",
-          "note": "If energy is low, head straight back to the hotel and walk Guomao or Sanlitun in the evening instead."
+          "mode": "Walk or short taxi",
+          "instructions": "Go from Zhengyangmen/Qianmen toward the Forbidden City visitor entry route.",
+          "note": "Keep this as a transit path only, not a planned stop."
+        },
+        {
+          "mode": "Walk",
+          "instructions": "Exit the Forbidden City at the north gate and cross to Jingshan Park for the rooftop view.",
+          "note": "Keep enough time for the Summer Palace transfer."
+        },
+        {
+          "mode": "Taxi or Metro Line 4",
+          "instructions": "Transfer from Jingshan to the Summer Palace. Taxi is fastest for this packed route.",
+          "note": "Use Beigongmen or East Palace Gate depending on ticket availability."
+        },
+        {
+          "mode": "Taxi or Metro",
+          "instructions": "Return from the Summer Palace to Guomao/CBD for the CCTV Headquarters exterior and dinner.",
+          "note": "This places the modern business district at the end near the Beijing hotel base."
+        }
+      ],
+      "optional_title": "Optional Beijing Add-Ons",
+      "optional_places": [
+        {
+          "slug": "temple-of-heaven",
+          "name": "Temple of Heaven",
+          "area": "Dongcheng District, Beijing",
+          "best_time": "Early morning",
+          "duration": "1.5 to 2 hours",
+          "summary": "Imperial ritual complex with the Hall of Prayer for Good Harvests. It is one of Beijing's most beautiful sites, but only fits if you drop or shorten another stop.",
+          "highlights": [
+            "Hall of Prayer for Good Harvests",
+            "Circular Mound Altar",
+            "Morning locals exercising in the park"
+          ],
+          "transport": "Metro Line 5 to Tiantandongmen. Best before Zhengyangmen, but it makes the day very full.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Temple+of+Heaven+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Temple_of_Heaven"
+          },
+          "image_queries": [
+            "Temple of Heaven Beijing",
+            "Hall of Prayer for Good Harvests"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1920px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1920px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven,_Beijing,_China_-_010_edit.jpg",
+              "title": "File:Temple of Heaven, Beijing, China - 010 edit.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/20200110_Temple_of_Heaven-1.jpg/1920px-20200110_Temple_of_Heaven-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/20200110_Temple_of_Heaven-1.jpg/1920px-20200110_Temple_of_Heaven-1.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:20200110_Temple_of_Heaven-1.jpg",
+              "title": "File:20200110 Temple of Heaven-1.jpg"
+            }
+          ],
+          "access_note": "Add only by shortening Summer Palace or CBD; do not squeeze it into the middle of the Forbidden City route."
+        },
+        {
+          "slug": "beiwu-park",
+          "name": "Beiwu Park",
+          "area": "Haidian District, Beijing",
+          "best_time": "Late afternoon near Summer Palace",
+          "duration": "45 to 90 min",
+          "summary": "Quiet free park west of the Summer Palace with rice fields, water, boardwalks, and a softer local feel. Good decompression if Summer Palace crowds are heavy.",
+          "highlights": [
+            "Rice-field boardwalks",
+            "Small bridges and water views",
+            "Quiet local park near Summer Palace"
+          ],
+          "transport": "Take the Xijiao Line to Summer Palace West Gate Station and walk about 500 m, or taxi from Summer Palace West Gate.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Beiwu+Park+Beijing",
+            "reference": "https://www.google.com/maps/search/?api=1&query=Beiwu+Park+Beijing"
+          },
+          "image_queries": [
+            "Beiwu Park Beijing",
+            "Beijing Beiwu Park"
+          ],
+          "desired_images": 2,
+          "foods": [],
+          "images": [
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Longevity_Hill_of_the_Summer_Palace.jpg/1920px-Longevity_Hill_of_the_Summer_Palace.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Longevity_Hill_of_the_Summer_Palace.jpg",
+              "title": "File:Longevity Hill of the Summer Palace.jpg"
+            },
+            {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Beijing_China_Summer-Palace-01.jpg/1920px-Beijing_China_Summer-Palace-01.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_China_Summer-Palace-01.jpg",
+              "title": "File:Beijing China Summer-Palace-01.jpg"
+            }
+          ],
+          "access_note": "Use as a crowd-escape swap near Summer Palace, not as an extra if the palace day is already running late. Image fallback uses nearby Summer Palace context because open Beiwu Park images were not available from Commons."
         }
       ]
     },
@@ -1433,7 +2331,7 @@
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
           "route": "07:55 PEK -> 11:25 TPE",
-          "details": "Non-stop \u00b7 3h 30m \u00b7 Economy"
+          "details": "Non-stop · 3h 30m · Economy"
         }
       ],
       "places": []
