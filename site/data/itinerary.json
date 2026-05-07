@@ -41,12 +41,12 @@
       },
       "flights": [
         {
-          "slug": "pek-to-tpe",
+          "slug": "pek-tpe-hu7987",
           "from": "Beijing",
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
-          "route": "07:55 PEK -> 11:25 TPE",
-          "details": "Non-stop · 3h 30m · Economy"
+          "route": "Sun 24 May 07:55 PEK → 11:25 TPE",
+          "details": "3h 30m · Economy"
         }
       ],
       "places": [
@@ -1803,12 +1803,23 @@
       },
       "flights": [
         {
-          "slug": "tpe-to-ber",
+          "slug": "tpe-ist-tk125",
+          "label": "Leg 1 of 2",
           "from": "Taipei",
+          "to": "Istanbul (transit)",
+          "carrier": "Turkish Airlines TK125",
+          "route": "Sun 31 May 09:35 TPE → 17:10 IST",
+          "details": "12h 35m · Economy"
+        },
+        {
+          "slug": "ist-ber-tk1727",
+          "label": "Leg 2 of 2",
+          "from": "Istanbul (transit)",
           "to": "Berlin",
-          "carrier": "Turkish Airlines TK125 / TK1727",
-          "route": "09:35 TPE -> 21:25 BER",
-          "details": "1 stop · 17h 50m · Economy"
+          "carrier": "Turkish Airlines TK1727",
+          "route": "Sun 31 May 19:25 IST → 21:25 BER",
+          "details": "3h · Economy",
+          "layover": "2h 15m at IST"
         }
       ],
       "places": []

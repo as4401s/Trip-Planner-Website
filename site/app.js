@@ -159,12 +159,16 @@ const flightMarkup = (flights = []) => {
   return `
     <div class="flight-list">
       ${flights
-        .map(
-          (flight) => `
-            <article class="flight-card">
+        .map((flight) => {
+          const isTrain = flight.mode === "train";
+          const modeIcon = isTrain ? icon("train") : icon("plane");
+          const defaultLabel = isTrain ? "Train" : "Flight";
+          const cardCls = `flight-card${isTrain ? " flight-card--train" : ""}`;
+          return `
+            <article class="${cardCls}">
               <div class="flight-top">
                 <div>
-                  <p class="flight-label">${icon("plane")}Flight</p>
+                  <p class="flight-label">${modeIcon}${esc(flight.label || defaultLabel)}</p>
                   <h3 class="flight-route">${esc(flight.from)} to ${esc(flight.to)}</h3>
                 </div>
                 <div class="flight-badge">${esc(flight.details)}</div>
@@ -173,6 +177,52 @@ const flightMarkup = (flights = []) => {
                 <div class="flight-times">${esc(flight.route)}</div>
                 <div class="flight-carrier">${esc(flight.carrier)}</div>
               </div>
+              ${
+                flight.seats || flight.layover || flight.gate
+                  ? `<div class="flight-meta">
+                      ${flight.seats ? `<span class="flight-meta-pill flight-seats">💺 Seats ${esc(flight.seats)}</span>` : ""}
+                      ${flight.gate ? `<span class="flight-meta-pill flight-gate">🚪 ${esc(flight.gate)}</span>` : ""}
+                      ${flight.layover ? `<span class="flight-meta-pill flight-layover">⏱ Layover ${esc(flight.layover)}</span>` : ""}
+                    </div>`
+                  : ""
+              }
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+};
+
+const ticketsMarkup = (tickets = []) => {
+  if (!tickets.length) return "";
+  return `
+    <div class="ticket-list">
+      ${tickets
+        .map(
+          (ticket) => `
+            <article class="ticket-card">
+              <div class="ticket-top">
+                <div>
+                  <p class="ticket-label">🎟️ ${esc(ticket.label || "Ticket")}</p>
+                  <h3 class="ticket-name">${esc(ticket.name)}</h3>
+                </div>
+                ${ticket.qty ? `<div class="ticket-badge">${esc(ticket.qty)}</div>` : ""}
+              </div>
+              ${ticket.kind ? `<p class="ticket-kind">${esc(ticket.kind)}</p>` : ""}
+              <div class="ticket-meta">
+                ${ticket.valid ? `<span class="ticket-meta-pill ticket-when">📅 ${esc(ticket.valid)}</span>` : ""}
+                ${ticket.window ? `<span class="ticket-meta-pill ticket-window">⏰ ${esc(ticket.window)}</span>` : ""}
+              </div>
+              ${
+                ticket.pickup || ticket.address
+                  ? `<div class="ticket-pickup">
+                      ${ticket.pickup ? `<p class="ticket-pickup-line">📍 ${esc(ticket.pickup)}</p>` : ""}
+                      ${ticket.address ? `<p class="ticket-address">${esc(ticket.address)}</p>` : ""}
+                    </div>`
+                  : ""
+              }
+              ${ticket.note ? `<p class="ticket-note">${esc(ticket.note)}</p>` : ""}
             </article>
           `
         )
@@ -393,6 +443,46 @@ const weatherMarkup = (day) => {
   `;
 };
 
+const stayDetailsMarkup = (stay) => {
+  const pills = [];
+  if (stay.bed) pills.push({ icon: "🛏", text: stay.bed });
+  if (stay.size) pills.push({ icon: "📐", text: stay.size });
+  if (stay.view) pills.push({ icon: "🪟", text: stay.view });
+  if (stay.floor) pills.push({ icon: "🏢", text: stay.floor });
+  if (stay.smoking) pills.push({ icon: stay.smoking.toLowerCase().includes("non") ? "🚭" : "🚬", text: stay.smoking });
+
+  const times = [];
+  if (stay.check_in) times.push({ icon: "🕑", label: "Check in", value: stay.check_in });
+  if (stay.check_out) times.push({ icon: "🕛", label: "Check out", value: stay.check_out });
+
+  if (!stay.room && !pills.length && !times.length && !stay.breakfast) return "";
+
+  return `
+    <div class="stay-room">
+      ${stay.room ? `<p class="stay-room-name">${esc(stay.room)}</p>` : ""}
+      ${
+        pills.length
+          ? `<div class="stay-room-pills">
+              ${pills.map((p) => `<span class="stay-pill"><span aria-hidden="true">${p.icon}</span>${esc(p.text)}</span>`).join("")}
+            </div>`
+          : ""
+      }
+      ${
+        times.length
+          ? `<div class="stay-times">
+              ${times.map((t) => `<span class="stay-time"><span aria-hidden="true">${t.icon}</span><strong>${esc(t.label)}</strong> ${esc(t.value)}</span>`).join("")}
+            </div>`
+          : ""
+      }
+      ${
+        stay.breakfast
+          ? `<p class="stay-breakfast">🍳 ${esc(stay.breakfast)}</p>`
+          : ""
+      }
+    </div>
+  `;
+};
+
 const singleStayMarkup = (stay) => {
   if (!stay) {
     return "";
@@ -407,8 +497,9 @@ const singleStayMarkup = (stay) => {
         <h2 class="stay-title">${icon("hotel")}<span>${esc(stay.label)}</span></h2>
         <p class="stay-address">${esc(stay.address)}</p>
         ${stay.phone ? `<p class="stay-phone">${esc(stay.phone)}</p>` : ""}
-        <p class="stay-note">${esc(stay.note)}</p>
-        <p class="stay-transit">${esc(stay.transit)}</p>
+        ${stayDetailsMarkup(stay)}
+        ${stay.note ? `<p class="stay-note">${esc(stay.note)}</p>` : ""}
+        ${stay.transit ? `<p class="stay-transit">${esc(stay.transit)}</p>` : ""}
       </div>
       <div class="stay-links">
         ${mapLinksMarkup(`${stay.label}, ${stay.address || stay.city || ""}`, null)}
@@ -718,6 +809,7 @@ const dayBodyTabsMarkup = (day) => {
   const itineraryParts = [
     dayStartMarkup(day.start_transfer),
     dayStartMarkup(day.after_flight_transfer),
+    ticketsMarkup(day.tickets),
     dayMapMarkup(day),
     day.gallery_only ? celebrationMarkup(day.gallery) : "",
     placeListMarkup(day, { showFoods: false }),

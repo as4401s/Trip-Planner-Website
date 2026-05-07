@@ -4,42 +4,77 @@
   "summary": "Shanghai start, Zhangjiajie and Fenghuang rail hops, Avatar peaks, Tianmen Mountain, Beijing classics, then Taipei.",
   "stays": [
     {
-      "label": "Homeinn Selected Hotel (Nanjing Road)",
+      "label": "Homeinn Selected Hotel (Nanjing Road Pedestrian Street · The Bund Center)",
       "city": "Shanghai",
-      "dates": "May 15 to May 18",
-      "address": "No. 11, Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
+      "dates": "May 15 to May 18 (3 nights)",
+      "address": "No. 11 (inside the alley), Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
       "phone": "+86-21-63239966-9",
+      "room": "Superior Queen Room · Shikumen style",
+      "bed": "1 queen bed",
+      "size": "25–26 m²",
+      "view": "City view",
+      "floor": "Floor 1–5",
+      "smoking": "Non-smoking",
+      "check_in": "After 14:00",
+      "check_out": "Before 14:00",
+      "breakfast": "No meals · breakfast not included",
       "note": "Walking distance to The Bund and Nanjing Road East. Use this base for the Shanghai city days and the Pudong robotaxi morning.",
       "transit": "Nanjing East Road Station (Lines 2 and 10) is a short walk. From PVG, take Metro Line 2 directly, or the Maglev to Longyang Road then Line 2.",
       "map": "https://www.google.com/maps/search/?api=1&query=Homeinn+Selected+Hotel+Nanjing+Road+Shanghai+Jiangxi+Middle+Road"
     },
     {
-      "label": "Tianqingshe Riverview Homestay",
+      "label": "Tianqingshe Riverview Homestay (Phoenix Ancient City · Lijiang branch)",
       "city": "Fenghuang",
       "dates": "May 18 to May 19 (1 night)",
       "address": "No. 70 Jinping Road, Tuojiang Town, Fenghuang County, Hunan, China",
       "phone": "+86-17707437762",
+      "room": "Guestroom · River-View",
+      "bed": "1 queen bed",
+      "size": "42 m²",
+      "view": "River view (Tuojiang)",
+      "floor": "Floor 5",
+      "smoking": "Smoking permitted",
+      "check_in": "After 14:00",
+      "check_out": "Before 12:00",
+      "breakfast": "Breakfast for 2 included on May 19",
       "note": "Riverside guesthouse inside the ancient town. Perfect for the lantern-lit evening walk along the Tuojiang River.",
       "transit": "From Zhangjiajie Hehua (DYG), taxi to Zhangjiajie West Railway Station, take the high-speed train to Fenghuanggucheng, then shuttle or taxi into the old town.",
       "map": "https://www.google.com/maps/search/?api=1&query=Tianqingshe+Riverview+Homestay+Fenghuang+Jinping+Road"
     },
     {
-      "label": "Zhinanzhen Boutique Inn",
+      "label": "Zhinanzhen Boutique Inn (Tianmen Mountain Cableway branch)",
       "city": "Zhangjiajie",
       "dates": "May 19 to May 21 (2 nights)",
-      "address": "Guanliping Resettlement Community, Yongding District, Zhangjiajie, Hunan, China",
+      "address": "Guanliping Resettlement Community, Guanliping Residents Committee, Guanliping Office, Yongding District, Zhangjiajie, Hunan, China",
       "phone": "+86-18574480289 / +86-13807443111",
-      "note": "Close to the park access roads. Use this base for the National Forest Park day and Tianmen Mountain.",
+      "room": "Yunlou Duplex Family Room",
+      "bed": "1 single bed + 1 double bed",
+      "size": "38 m²",
+      "view": "Has window(s)",
+      "floor": "Floor 5",
+      "smoking": "Smoking permitted",
+      "check_in": "After 14:00",
+      "check_out": "Before 12:00",
+      "note": "Close to the Tianmen cableway and park access roads. Use this base for the National Forest Park day and Tianmen Mountain.",
       "transit": "About 30 to 45 minutes by taxi from Zhangjiajie Hehua Airport (DYG). Park shuttles connect to Wulingyuan and Tianmen.",
       "map": "https://www.google.com/maps/search/?api=1&query=Zhinanzhen+Boutique+Inn+Zhangjiajie+Yongding+District"
     },
     {
-      "label": "PiaoHome Chain Hotel (Guomao Donghua)",
+      "label": "PiaoHome Chain Hotel (Beijing Guomao Donghua trade store)",
       "city": "Beijing",
-      "dates": "May 22 to May 24 (2 nights)",
-      "address": "No. 1-6, Building 4, Chaijiawan, Chaoyang District, Beijing, 100025, China",
+      "dates": "May 21 to May 24 (3 nights)",
+      "address": "Building 5, Chaijiawan, Chaoyang District, Beijing, 100025, China",
       "phone": "+86-10-65030988-0 / +86-13810081644",
-      "note": "Chaoyang base for the Beijing classics. Late check-in expected because the Zhangjiajie flight lands after midnight.",
+      "room": "Queen Room With Memory Foam Mattress",
+      "bed": "1 queen bed",
+      "size": "18 m²",
+      "view": "Has window(s)",
+      "floor": "Floor 1–6",
+      "smoking": "Non-smoking",
+      "check_in": "After 12:00",
+      "check_out": "Before 14:00",
+      "breakfast": "Breakfast for 2 on May 22, May 23, May 24",
+      "note": "Booked from May 21 to absorb the 00:55 (May 22) arrival from the Zhangjiajie flight. Chaoyang base for the Beijing classics.",
       "transit": "Closest stations are Sihui and Sihui East (Lines 1 and Batong). Quick taxi to CBD and Wangfujing. Daxing Airport is about 60 to 75 minutes by taxi.",
       "map": "https://www.google.com/maps/search/?api=1&query=PiaoHome+Hotel+Guomao+Donghua+Beijing+Chaijiawan+Chaoyang"
     }
@@ -70,12 +105,25 @@
       "transport_note": "Pack light carry-on items for the layover. Eat and sleep on the second leg if you can.",
       "flights": [
         {
-          "slug": "ber-to-pvg",
+          "slug": "ber-pek-hu490",
+          "label": "Leg 1 of 2",
           "from": "Berlin",
+          "to": "Beijing (transit)",
+          "carrier": "Hainan Airlines HU490",
+          "route": "Thu 14 May 13:55 BER → Fri 15 May 05:00 PEK",
+          "details": "9h 05m · Economy",
+          "seats": "56A · 56B"
+        },
+        {
+          "slug": "pek-pvg-hu7613",
+          "label": "Leg 2 of 2",
+          "from": "Beijing (transit)",
           "to": "Shanghai",
-          "carrier": "Hainan Airlines HU490 / HU7613",
-          "route": "13:55 BER -> 09:50(+1) PVG",
-          "details": "1 stop · 13h 55m · Economy"
+          "carrier": "Hainan Airlines HU7613",
+          "route": "Fri 15 May 07:30 PEK → 09:50 PVG",
+          "details": "2h 20m · Economy",
+          "seats": "47A · 47B",
+          "layover": "2h 30m at PEK"
         }
       ],
       "places": []
@@ -228,11 +276,20 @@
         }
       ],
       "stay": {
-        "label": "Homeinn Selected Hotel (Nanjing Road)",
+        "label": "Homeinn Selected Hotel (Nanjing Road Pedestrian Street · The Bund Center)",
         "city": "Shanghai",
-        "dates": "May 15 to May 18",
-        "address": "No. 11, Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
+        "dates": "May 15 to May 18 (3 nights)",
+        "address": "No. 11 (inside the alley), Lane 135, Jiangxi Middle Road, Huangpu District, Shanghai, 200002, China",
         "phone": "+86-21-63239966-9",
+        "room": "Superior Queen Room · Shikumen style",
+        "bed": "1 queen bed",
+        "size": "25–26 m²",
+        "view": "City view",
+        "floor": "Floor 1–5",
+        "smoking": "Non-smoking",
+        "check_in": "After 14:00",
+        "check_out": "Before 14:00",
+        "breakfast": "No meals · breakfast not included",
         "note": "Walking distance to The Bund and Nanjing Road East. Use this base for the Shanghai city days and the Pudong robotaxi morning.",
         "transit": "Nanjing East Road Station (Lines 2 and 10) is a short walk. From PVG, take Metro Line 2 directly, or the Maglev to Longyang Road then Line 2.",
         "map": "https://www.google.com/maps/search/?api=1&query=Homeinn+Selected+Hotel+Nanjing+Road+Shanghai+Jiangxi+Middle+Road"
@@ -243,8 +300,21 @@
       "label": "Day 3",
       "date": "Saturday, May 16, 2026",
       "display_title": "Shanghai gardens, lanes and Jing'an Temple",
-      "focus": "Old Shanghai at Yu Garden, French Concession lanes at Tianzifang, then Jing'an Temple and West Nanjing Road.",
-      "transport_note": "Use Metro Lines 10, 9, and 2. Keep the day city-focused before the Pudong robotaxi morning tomorrow.",
+      "focus": "Old Shanghai at Yu Garden, French Concession lanes at Tianzifang, Jing'an Temple, then cross to Pudong in the evening for the Oriental Pearl Tower (Two-Sphere ticket booked for tonight).",
+      "transport_note": "Use Metro Lines 10, 9, and 2. End the day on Line 2 east to Lujiazui so you can use the pre-booked Pearl Tower ticket during its 17:00–20:30 evening window.",
+      "tickets": [
+        {
+          "slug": "oriental-pearl-tower",
+          "name": "Oriental Pearl Tower",
+          "kind": "Two-Sphere Sightseeing · Adult (non-mainland)",
+          "qty": "2 adults",
+          "valid": "Sat 16 May",
+          "window": "Flexible · 09:00–17:00 daytime / 17:00–20:30 evening",
+          "pickup": "Ticket gate of the Oriental Pearl Tower",
+          "address": "No. 1 Century Avenue, Lujiazui, Pudong New Area, Shanghai",
+          "note": "Historical Exhibition Hall is in the 0 m lobby. An evening visit pairs naturally with crossing to Pudong after gardens."
+        }
+      ],
       "start_transfer": {
         "title": "Hotel to Yu Garden",
         "mode": "Walk or Metro Line 10",
@@ -393,6 +463,46 @@
               "title": "File:Jing'an Temple Shanghai 11.jpg"
             }
           ]
+        },
+        {
+          "slug": "oriental-pearl-tv-tower-deck",
+          "name": "Oriental Pearl TV Tower Deck",
+          "area": "Lujiazui, Pudong, Shanghai",
+          "best_time": "Late afternoon to early evening (Saturday booking · 17:00–20:30 evening session works best)",
+          "duration": "1.5 to 2 hours including queues",
+          "summary": "End the city day in Pudong: cross to Lujiazui in the late afternoon, head up the Two-Sphere Sightseeing route on the pre-booked ticket, then catch Shanghai's skyline lighting up over the Huangpu.",
+          "highlights": [
+            "Main sightseeing deck",
+            "Glass-floor viewing area if open",
+            "Bund skyline from the Pudong side"
+          ],
+          "transport": "From Jing'an Temple Station take Metro Line 2 east to Lujiazui Station (about 15 minutes). Exit toward the pedestrian roundabout — the tower entrance is a 5 minute walk.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Oriental+Pearl+Tower+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Oriental_Pearl_Tower"
+          },
+          "image_queries": [
+            "Oriental Pearl Tower observation deck",
+            "Oriental Pearl Tower Shanghai"
+          ],
+          "desired_images": 1,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/oriental-pearl-tv-tower-deck-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg/1920px-Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
+              "title": "File:Shanghai Oriental Pearl Tower-20150516-RM-130617.jpg"
+            }
+          ],
+          "access_note": "Use this as the Pudong observation deck for the skyline view day.",
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg/1920px-Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg",
+              "title": "File:Oriental Pearl Tower in Shanghai.jpg"
+            }
+          ]
         }
       ],
       "transfers": [
@@ -409,38 +519,6 @@
       ],
       "optional_title": "Extra Shanghai Stops If Energy Is High",
       "optional_places": [
-        {
-          "slug": "shanghai-museum",
-          "name": "Shanghai Museum",
-          "area": "People's Square, Huangpu, Shanghai",
-          "best_time": "Morning or rainy afternoon",
-          "duration": "90 min to 2 hours",
-          "summary": "One of China's best museums for bronzes, ceramics, calligraphy, painting, jade, and furniture. It is the easiest high-value indoor add-on in central Shanghai.",
-          "highlights": [
-            "Ancient bronze gallery",
-            "Ceramics and calligraphy collections",
-            "Good weather backup near People's Square"
-          ],
-          "transport": "Metro Line 1, 2, or 8 to People's Square, then walk through the square. Reserve ahead if timed entry is required.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Shanghai+Museum",
-            "reference": "https://en.wikipedia.org/wiki/Shanghai_Museum"
-          },
-          "image_queries": [
-            "Shanghai Museum building",
-            "Shanghai Museum People Square"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/shanghai-museum-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_shanghai_museum.jpg/1920px-The_shanghai_museum.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:The_shanghai_museum.jpg",
-              "title": "File:The shanghai museum.jpg"
-            }
-          ]
-        },
         {
           "slug": "xintiandi",
           "name": "Xintiandi",
@@ -480,8 +558,8 @@
       "label": "Day 4",
       "date": "Sunday, May 17, 2026",
       "display_title": "Pudong self-driving cars and Lujiazui icons",
-      "focus": "Spend the morning in Pudong New Area trying a robotaxi, then cover the Oriental Pearl deck, Mingzhu Roundabout, and the Lujiazui skyline.",
-      "transport_note": "Robotaxi pickup/drop-off is by designated stop inside the service zone, not anywhere like a normal Didi. Some pilots run weekday-only, so confirm in-app and swap this with a weekday Shanghai block if needed.",
+      "focus": "Spend the morning in Pudong New Area trying a robotaxi, then take in the Mingzhu Roundabout pedestrian loop and the Lujiazui skyline at street level before a calm last evening in Shanghai.",
+      "transport_note": "Robotaxi pickup/drop-off is at designated stops inside the service zone, not anywhere like a normal Didi ride. Most pilots run on Sundays but a few are weekday-only — confirm hours in the app the night before.",
       "start_transfer": {
         "title": "Hotel to Pudong New Area robotaxi zone",
         "mode": "Metro Line 2 + local pickup point",
@@ -533,9 +611,9 @@
           "slug": "mingzhu-roundabout",
           "name": "Mingzhu Roundabout",
           "area": "Lujiazui, Pudong, Shanghai",
-          "best_time": "Midday",
-          "duration": "30 to 45 min",
-          "summary": "The circular pedestrian overpass and traffic ring at the heart of Lujiazui, surrounded by the Oriental Pearl, IFC, Super Brand Mall, and the big Pudong towers.",
+          "best_time": "Late morning to afternoon",
+          "duration": "1 to 2 hours",
+          "summary": "Pudong's elevated pedestrian ring sits between the Pearl Tower, Shanghai Tower and Jin Mao. Walk the loop for ground-up skyline angles, then drop down to the Bund-side promenade for the river view.",
           "highlights": [
             "Circular elevated walkway",
             "Close-up Oriental Pearl views",
@@ -567,46 +645,6 @@
               "title": "File:Roundabout Lujiazui 2.jpg"
             }
           ]
-        },
-        {
-          "slug": "oriental-pearl-tv-tower-deck",
-          "name": "Oriental Pearl TV Tower Deck",
-          "area": "Lujiazui, Pudong, Shanghai",
-          "best_time": "Afternoon to sunset",
-          "duration": "90 min",
-          "summary": "Retro-futurist Shanghai landmark with observation decks over the Huangpu River, Bund, and Lujiazui towers.",
-          "highlights": [
-            "Main sightseeing deck",
-            "Glass-floor viewing area if open",
-            "Bund skyline from the Pudong side"
-          ],
-          "transport": "Walk from Mingzhu Roundabout to the tower entrance. Buy a timed ticket online or at the ticket hall if queues are manageable.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Oriental+Pearl+Tower+Shanghai",
-            "reference": "https://en.wikipedia.org/wiki/Oriental_Pearl_Tower"
-          },
-          "image_queries": [
-            "Oriental Pearl Tower observation deck",
-            "Oriental Pearl Tower Shanghai"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/oriental-pearl-tv-tower-deck-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg/1920px-Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Shanghai_Oriental_Pearl_Tower-20150516-RM-130617.jpg",
-              "title": "File:Shanghai Oriental Pearl Tower-20150516-RM-130617.jpg"
-            }
-          ],
-          "access_note": "Use this as the Pudong observation deck for the skyline view day.",
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg/1920px-Oriental_Pearl_Tower_in_Shanghai.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_in_Shanghai.jpg",
-              "title": "File:Oriental Pearl Tower in Shanghai.jpg"
-            }
-          ]
         }
       ],
       "transfers": [
@@ -620,42 +658,6 @@
           "instructions": "From Mingzhu Roundabout, walk directly to the Oriental Pearl entrance.",
           "note": "Stay in Lujiazui for blue-hour skyline photos before returning to Huangpu."
         }
-      ],
-      "optional_title": "Optional Shanghai Day Trip Swap",
-      "optional_places": [
-        {
-          "slug": "zhujiajiao-water-town",
-          "name": "Zhujiajiao Water Town",
-          "area": "Qingpu District, Shanghai",
-          "best_time": "Half day",
-          "duration": "4 to 5 hours including transit",
-          "summary": "Canal water town on Shanghai's western edge, often used as the easy alternative to a Suzhou day. Add only if you want old bridges and lanes more than the Pudong tech morning.",
-          "highlights": [
-            "Fangsheng Bridge",
-            "Canal boats and old lanes",
-            "Good Shanghai water-town substitute"
-          ],
-          "transport": "Metro Line 17 to Zhujiajiao Station, then taxi or local bus to the old town. From central Shanghai, budget 75 to 100 minutes each way.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Zhujiajiao+Water+Town+Shanghai",
-            "reference": "https://en.wikipedia.org/wiki/Zhujiajiao"
-          },
-          "image_queries": [
-            "Zhujiajiao Water Town Shanghai",
-            "Zhujiajiao canal"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/downloaded-a4b63c1c88f1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhujiajiao_at_night.jpg/1920px-Zhujiajiao_at_night.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Zhujiajiao_at_night.jpg",
-              "title": "File:Zhujiajiao at night.jpg"
-            }
-          ],
-          "access_note": "This is a swap, not an add-on, unless you are happy to drop the robotaxi experiment or shorten Lujiazui."
-        }
       ]
     },
     {
@@ -667,19 +669,30 @@
       "transport_note": "Use the train instead of the long road transfer: DYG airport to Zhangjiajie West by taxi, high-speed rail to Fenghuanggucheng, then shuttle/taxi into the old town.",
       "flights": [
         {
-          "slug": "pvg-to-dyg",
+          "slug": "pvg-dyg-ho2199",
           "from": "Shanghai",
           "to": "Zhangjiajie",
-          "carrier": "Sichuan Airlines 3U4639 (operated by Juneyao HO2199)",
-          "route": "06:55 PVG (T2) -> 09:25 DYG (T2)",
-          "details": "Non-stop · 2h 30m · Economy"
+          "carrier": "Juneyao Airlines HO2199",
+          "route": "Mon 18 May 06:40 PVG (T2) → 09:05 DYG (T2)",
+          "details": "2h 25m · Economy · Airbus A319/A320/A321"
+        },
+        {
+          "slug": "zjjxi-fenghuang-g5665",
+          "mode": "train",
+          "from": "Zhangjiajie West",
+          "to": "Fenghuang Gucheng",
+          "carrier": "China Railway G5665 (HSR)",
+          "route": "Mon 18 May 11:31 Zhangjiajiexi → 12:36 Fenghuang Gucheng",
+          "details": "1h 5m · 1st Class · Car 05",
+          "seats": "1A · 7F",
+          "gate": "Gate 2F"
         }
       ],
       "start_transfer": {
         "kicker": "Departure Transfer",
         "title": "Hotel to Pudong Airport",
         "mode": "Metro Line 2 or pre-booked taxi",
-        "instructions": "Leave the hotel by 04:30 to be at PVG by 05:30. A pre-booked taxi is simplest for the 06:55 flight; confirm Terminal 2.",
+        "instructions": "Leave the hotel by 04:15 to be at PVG by 05:15. A pre-booked taxi is simplest for the 06:40 flight; confirm Terminal 2.",
         "note": "Keep passports handy for airport and railway ID checks later in the day."
       },
       "places": [
@@ -754,27 +767,30 @@
           ],
           "images": [
             {
-              "src": "assets/images/places/fenghuang-ancient-town-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg/1920px-Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Fenghuang_County,_Hunan,_China,_21_December_2016b.jpg",
-              "title": "File:Fenghuang County, Hunan, China, 21 December 2016b.jpg"
+              "src": "assets/images/places/fenghuang-tuojiang.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tuojiang_in_fenghuang.jpg/1920px-Tuojiang_in_fenghuang.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tuojiang_in_fenghuang.jpg",
+              "title": "File:Tuojiang in fenghuang.jpg"
             }
           ],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hunan_Fenghuang_County_ancient_town.jpg/1920px-Hunan_Fenghuang_County_ancient_town.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Hunan_Fenghuang_County_ancient_town.jpg",
-              "title": "File:Hunan Fenghuang County ancient town.jpg"
-            }
-          ]
+          "manual_images": []
         }
       ],
       "stay": {
-        "label": "Tianqingshe Riverview Homestay",
+        "label": "Tianqingshe Riverview Homestay (Phoenix Ancient City · Lijiang branch)",
         "city": "Fenghuang",
         "dates": "May 18 to May 19 (1 night)",
         "address": "No. 70 Jinping Road, Tuojiang Town, Fenghuang County, Hunan, China",
         "phone": "+86-17707437762",
+        "room": "Guestroom · River-View",
+        "bed": "1 queen bed",
+        "size": "42 m²",
+        "view": "River view (Tuojiang)",
+        "floor": "Floor 5",
+        "smoking": "Smoking permitted",
+        "check_in": "After 14:00",
+        "check_out": "Before 12:00",
+        "breakfast": "Breakfast for 2 included on May 19",
         "note": "Riverside guesthouse inside the ancient town. Perfect for the lantern-lit evening walk along the Tuojiang River.",
         "transit": "From Zhangjiajie Hehua (DYG), taxi to Zhangjiajie West Railway Station, take the high-speed train to Fenghuanggucheng, then shuttle or taxi into the old town.",
         "map": "https://www.google.com/maps/search/?api=1&query=Tianqingshe+Riverview+Homestay+Fenghuang+Jinping+Road"
@@ -796,8 +812,8 @@
         "kicker": "After Flight Transfer",
         "title": "DYG Airport to Fenghuang by Train",
         "mode": "Taxi + high-speed rail + shuttle",
-        "instructions": "After landing at Zhangjiajie Hehua Airport, taxi 20 to 30 minutes to Zhangjiajie West Railway Station. Take a high-speed train to Fenghuanggucheng Station, then use the tourist shuttle or taxi 15 to 25 minutes into Fenghuang Ancient Town.",
-        "note": "Book Zhangjiajie West to Fenghuanggucheng on Trip.com or 12306 and leave a flight-delay buffer before the train."
+        "instructions": "After the 09:05 landing at Zhangjiajie Hehua, taxi 20 to 30 minutes to Zhangjiajie West Railway Station for the 11:31 G5665. From Fenghuanggucheng Station, take the tourist shuttle or taxi 15 to 25 minutes into the old town.",
+        "note": "G5665 is booked from Zhangjiajie West to Fenghuang Gucheng (Gate 2F, 1h 5m). The 2h 26m gap after landing should absorb a normal flight delay."
       }
     },
     {
@@ -805,13 +821,50 @@
       "label": "Day 6",
       "date": "Tuesday, May 19, 2026",
       "display_title": "Fenghuang to Furong day trip, return to Zhangjiajie",
-      "focus": "Leave Fenghuang Ancient Town by train, spend the day in Furong Ancient Town and its waterfall, then train back to Zhangjiajie at night.",
-      "transport_note": "Book Fenghuanggucheng to Furongzhen and Furongzhen to Zhangjiajie West rail tickets in advance. Keep luggage light or store it near the station/old-town entrance.",
+      "focus": "Slow morning around Fenghuang, mid-afternoon HSR to Furong Ancient Town and its waterfall, then a late-evening HSR back to Zhangjiajie West.",
+      "transport_note": "Both rail legs are booked. Keep luggage light or store it near the station / old-town entrance for the day.",
+      "flights": [
+        {
+          "slug": "fenghuang-furongzhen-g6370",
+          "mode": "train",
+          "from": "Fenghuang Gucheng",
+          "to": "Furongzhen",
+          "carrier": "China Railway G6370 (HSR)",
+          "route": "Tue 19 May 15:14 Fenghuang Gucheng → 15:55 Furongzhen",
+          "details": "41m · 1st Class · Car 1",
+          "seats": "3A · 12F",
+          "gate": "Gate 1F"
+        },
+        {
+          "slug": "furongzhen-zjjxi-g6152",
+          "mode": "train",
+          "from": "Furongzhen",
+          "to": "Zhangjiajie West",
+          "carrier": "China Railway G6152 (HSR)",
+          "route": "Tue 19 May 21:52 Furongzhen → 22:16 Zhangjiajiexi",
+          "details": "24m · 1st Class · Car 05",
+          "seats": "01A · 04F",
+          "gate": "Gate 1F"
+        }
+      ],
+      "tickets": [
+        {
+          "slug": "furong-town",
+          "name": "Furong Town Admission",
+          "kind": "Adult (non-mainland traveller)",
+          "qty": "2 adults",
+          "valid": "Valid Tue 19 May → Thu 21 May (use today)",
+          "window": "07:30–23:30 · facial recognition pickup",
+          "pickup": "Foreign visitor facial recognition window · Furong Town Visitor Center",
+          "address": "Furong Town, Yongshun County, Xiangxi, Hunan",
+          "note": "After ticket pickup, scan in at the turnstiles at the entrance to Furong Town."
+        }
+      ],
       "start_transfer": {
         "title": "Homestay to Fenghuanggucheng Station",
         "mode": "Taxi or tourist shuttle",
-        "instructions": "Leave the old town after breakfast and ride 15 to 25 minutes to Fenghuanggucheng Station. Take the high-speed train toward Furongzhen.",
-        "note": "Train times vary; aim for a late-morning arrival in Furong so the waterfall town is not rushed."
+        "instructions": "After a slow morning in the old town, leave around 14:15 and ride 15 to 25 minutes to Fenghuanggucheng Station for the 15:14 G6370 to Furongzhen.",
+        "note": "Be at the station with passports ready ~30 min before departure for ticket pickup at Gate 1F."
       },
       "places": [
         {
@@ -839,20 +892,14 @@
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/downloaded-c059c51fed58.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_aerial_panorama_2017.jpg",
-              "title": "File:1 furong aerial panorama 2017.jpg"
+              "src": "assets/images/places/furong-waterfall-houses.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1_furong_panorama_2012.jpg/1920px-1_furong_panorama_2012.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_furong_panorama_2012.jpg",
+              "title": "File:1 furong panorama 2012.jpg"
             }
           ],
           "access_note": "The old town is ticketed. Keep your ticket for re-entry around the waterfall viewpoints.",
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/1_furong_aerial_panorama_2017.jpg/1920px-1_furong_aerial_panorama_2017.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:1_furong_aerial_panorama_2017.jpg",
-              "title": "File:1 furong aerial panorama 2017.jpg"
-            }
-          ]
+          "manual_images": []
         },
         {
           "slug": "furong-waterfall",
@@ -879,19 +926,13 @@
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/downloaded-129c42640f38.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Wv_Furong_banner.jpg",
-              "title": "File:Wv Furong banner.jpg"
+              "src": "assets/images/places/furong-waterfall-close.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cascate_di_Furong_08.jpg/1280px-Cascate_di_Furong_08.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Cascate_di_Furong_08.jpg",
+              "title": "File:Cascate di Furong 08.jpg"
             }
           ],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wv_Furong_banner.jpg/1920px-Wv_Furong_banner.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Wv_Furong_banner.jpg",
-              "title": "File:Wv Furong banner.jpg"
-            }
-          ]
+          "manual_images": []
         }
       ],
       "transfers": [
@@ -902,12 +943,20 @@
         }
       ],
       "stay": {
-        "label": "Zhinanzhen Boutique Inn",
+        "label": "Zhinanzhen Boutique Inn (Tianmen Mountain Cableway branch)",
         "city": "Zhangjiajie",
         "dates": "May 19 to May 21 (2 nights)",
-        "address": "Guanliping Resettlement Community, Yongding District, Zhangjiajie, Hunan, China",
+        "address": "Guanliping Resettlement Community, Guanliping Residents Committee, Guanliping Office, Yongding District, Zhangjiajie, Hunan, China",
         "phone": "+86-18574480289 / +86-13807443111",
-        "note": "Close to the park access roads. Use this base for the National Forest Park day and Tianmen Mountain.",
+        "room": "Yunlou Duplex Family Room",
+        "bed": "1 single bed + 1 double bed",
+        "size": "38 m²",
+        "view": "Has window(s)",
+        "floor": "Floor 5",
+        "smoking": "Smoking permitted",
+        "check_in": "After 14:00",
+        "check_out": "Before 12:00",
+        "note": "Close to the Tianmen cableway and park access roads. Late check-in tonight: G6152 lands Zhangjiajie West at 22:16, so message the host that you'll arrive ~23:00.",
         "transit": "About 30 to 45 minutes by taxi from Zhangjiajie Hehua Airport (DYG). Park shuttles connect to Wulingyuan and Tianmen.",
         "map": "https://www.google.com/maps/search/?api=1&query=Zhinanzhen+Boutique+Inn+Zhangjiajie+Yongding+District"
       },
@@ -926,12 +975,25 @@
       "date": "Wednesday, May 20, 2026",
       "display_title": "Avatar Mountain Route B and 72 Strange Buildings at night",
       "focus": "Use the most efficient one-day summit route: Wulingyuan East Gate, Bailong Elevator up, Yuanjiajie Avatar viewpoints, Tianzi Mountain, Ten-Mile Gallery, then 72 Strange Buildings at night.",
-      "transport_note": "Best one-day route: Route B / first-timer flow from Wulingyuan East Gate. Eco-bus to Bailong Elevator, elevator up to Yuanjiajie, shuttle to Tianzi Mountain, descend by Tianzi cableway or shuttle, finish Ten-Mile Gallery if daylight remains. Skip Golden Whip Stream unless you drop Yangjiajie or Ten-Mile Gallery.",
+      "transport_note": "One-day Route B from Wulingyuan East Gate: eco-bus to Bailong Elevator, elevator up to Yuanjiajie, shuttle across to Tianzi Mountain, descend by Tianzi cableway or shuttle, then Ten-Mile Gallery if daylight remains. Golden Whip Stream is on the valley floor and only fits if you skip Ten-Mile Gallery — kept here as an option.",
+      "tickets": [
+        {
+          "slug": "zjj-park-4day",
+          "name": "Zhangjiajie National Forest Park · 4-day pass",
+          "kind": "Park entry + Bailong Elevator + 3 cableways · East Gate Line B",
+          "qty": "2 adults",
+          "valid": "Valid Wed 20 May → Sat 23 May · unlimited park entries",
+          "window": "Today's admission slot 07:00–08:00 · Line B (Bailong Elevator / Ten-Mile Gallery / Water-Surrounded Gates)",
+          "pickup": "Park ticket office (Wulingyuan core area) · or any of the 3 cableway / elevator stations",
+          "address": "Zhangjiajie National Forest Park, Wulingyuan, Hunan",
+          "note": "4 one-way transport rides total across the pass. Plan: today Bailong Elevator up + Ten-Mile Gallery shuttle; reserve the other 2 rides for any later add-ons in Wulingyuan."
+        }
+      ],
       "start_transfer": {
         "title": "Inn to Wulingyuan East Gate (Wujiayu Ticket Office)",
         "mode": "Taxi or hotel shuttle",
-        "instructions": "Leave around 07:00 and aim to enter by 08:00. Use Wulingyuan East Gate / Wujiayu Ticket Office because it has the cleanest shuttle access to Bailong Elevator, Tianzi Mountain, and Ten-Mile Gallery.",
-        "note": "Buy the park ticket plus Bailong Elevator and Tianzi Cableway add-ons in advance if possible. Carry passport for ticket pickup/checks."
+        "instructions": "Leave around 07:00 to be inside by the 07:00–08:00 admission slot. Use East Gate (Wujiayu Ticket Office) per the Line B booking — cleanest shuttle access to Bailong Elevator, Tianzi Mountain, and Ten-Mile Gallery.",
+        "note": "4-day pass already covers the park, the Bailong Elevator, and the cableways. Carry passports for ticket pickup at the gate."
       },
       "places": [
         {
@@ -1092,70 +1154,6 @@
           "access_note": "If daylight is low, choose Ten-Mile Gallery over Golden Whip Stream because it is shorter and easier to exit from Wulingyuan."
         },
         {
-          "slug": "golden-whip-stream",
-          "name": "Golden Whip Stream",
-          "area": "Zhangjiajie National Forest Park",
-          "best_time": "Optional late afternoon only if you cut another section",
-          "duration": "1 to 3 hours depending on segment",
-          "summary": "Beautiful valley trail, but a full Golden Whip Stream walk is too much on a one-day Avatar route. Use only a short Water Winding Four Gates / lower-valley segment if you have time.",
-          "highlights": [
-            "Golden Whip Rock area",
-            "Macaques and stream views",
-            "Flat canyon trail",
-            "Best as a separate half-day if possible"
-          ],
-          "transport": "Use eco-bus links between Water Winding Four Gates and the Forest Park/South Gate area. For this itinerary, treat it as a short optional segment rather than a full 7.5 km walk.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Golden+Whip+Stream+Zhangjiajie",
-            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
-          },
-          "image_queries": [
-            "Golden Whip Stream Zhangjiajie",
-            "Jinbianxi trail Zhangjiajie"
-          ],
-          "desired_images": 1,
-          "foods": [
-            {
-              "slug": "sanxiaguo",
-              "name": "Tujia Sanxiaguo (Three-Layer Pot)",
-              "description": "Tujia clay-pot stew layered with smoked pork, root vegetables, and chilies. Heavy, smoky, and warming after a day on the trails.",
-              "where": "Local Tujia restaurants in Zhangjiajie city or Wulingyuan town.",
-              "links": {
-                "reference": "https://en.wikipedia.org/wiki/Tujia_people"
-              },
-              "image_queries": [
-                "Tujia sanxiaguo three layer pot",
-                "Zhangjiajie Tujia food"
-              ],
-              "desired_images": 1,
-              "images": [],
-              "manual_images": [
-                {
-                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Changsha_Hot_Stew.jpg/1920px-Changsha_Hot_Stew.jpg",
-                  "page": "https://commons.wikimedia.org/wiki/File:Changsha_Hot_Stew.jpg",
-                  "title": "File:Changsha Hot Stew.jpg"
-                }
-              ]
-            }
-          ],
-          "images": [
-            {
-              "src": "assets/images/places/golden-whip-stream-2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1920px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
-              "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
-            }
-          ],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
-              "title": "File:1 zhangjiajie huangshizhai wulingyuan panorama 2012.jpg"
-            }
-          ],
-          "access_note": "For one day, Golden Whip Stream is the first thing to cut if queues, fog, or tired legs slow the summit loop."
-        },
-        {
           "slug": "zhangjiajie-72-strange-buildings",
           "name": "Zhangjiajie 72 Strange Buildings",
           "area": "Yongding District, Zhangjiajie",
@@ -1229,128 +1227,109 @@
           "note": "Keep this optional if the park day runs long."
         }
       ],
-      "optional_title": "Optional Zhangjiajie Add-Ons",
       "optional_places": [
         {
-          "slug": "yangjiajie-scenic-area",
-          "name": "Yangjiajie Scenic Area",
+          "slug": "golden-whip-stream",
+          "name": "Golden Whip Stream",
           "area": "Zhangjiajie National Forest Park",
-          "best_time": "Midday if queues are light",
-          "duration": "1.5 to 2.5 hours",
-          "summary": "Quieter peak-wall area between Yuanjiajie and Tianzi. Add it only if you are moving fast; otherwise it makes the one-day route too tight.",
+          "best_time": "Optional late afternoon only if you cut another section",
+          "duration": "1 to 3 hours depending on segment",
+          "summary": "Beautiful valley trail, but a full Golden Whip Stream walk is too much on a one-day Avatar route. Use only a short Water Winding Four Gates / lower-valley segment if you have time.",
           "highlights": [
-            "Natural Great Wall peak walls",
-            "Wulong Village route for adventurous walkers",
-            "Fewer crowds than Yuanjiajie"
+            "Golden Whip Rock area",
+            "Macaques and stream views",
+            "Flat canyon trail",
+            "Best as a separate half-day if possible"
           ],
-          "transport": "From Yuanjiajie Tianqiao Station, take the summit shuttle toward Yangjiajie. Rejoin the shuttle network afterward for Tianzi Mountain.",
+          "transport": "Use eco-bus links between Water Winding Four Gates and the Forest Park/South Gate area. For this itinerary, treat it as a short optional segment rather than a full 7.5 km walk.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Yangjiajie+Zhangjiajie",
+            "map": "https://www.google.com/maps/search/?api=1&query=Golden+Whip+Stream+Zhangjiajie",
             "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
           },
           "image_queries": [
-            "Yangjiajie Zhangjiajie",
-            "Natural Great Wall Yangjiajie"
+            "Golden Whip Stream Zhangjiajie",
+            "Jinbianxi trail Zhangjiajie"
           ],
           "desired_images": 1,
-          "foods": [],
-          "images": [
+          "foods": [
             {
-              "src": "assets/images/places/downloaded-7dac11a11d55.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Yangjiajie.jpg/1920px-Yangjiajie.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Yangjiajie.jpg",
-              "title": "File:Yangjiajie.jpg"
+              "slug": "sanxiaguo",
+              "name": "Tujia Sanxiaguo (Three-Layer Pot)",
+              "description": "Tujia clay-pot stew layered with smoked pork, root vegetables, and chilies. Heavy, smoky, and warming after a day on the trails.",
+              "where": "Local Tujia restaurants in Zhangjiajie city or Wulingyuan town.",
+              "links": {
+                "reference": "https://en.wikipedia.org/wiki/Tujia_people"
+              },
+              "image_queries": [
+                "Tujia sanxiaguo three layer pot",
+                "Zhangjiajie Tujia food"
+              ],
+              "desired_images": 1,
+              "images": [],
+              "manual_images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Changsha_Hot_Stew.jpg/1920px-Changsha_Hot_Stew.jpg",
+                  "page": "https://commons.wikimedia.org/wiki/File:Changsha_Hot_Stew.jpg",
+                  "title": "File:Changsha Hot Stew.jpg"
+                }
+              ]
             }
           ],
-          "access_note": "Best optional inside the park, but skip if the Bailong Elevator or Yuanjiajie queues eat the morning."
-        },
-        {
-          "slug": "huangshi-village",
-          "name": "Huangshi Village (Huangshizhai)",
-          "area": "Zhangjiajie National Forest Park",
-          "best_time": "Separate half day",
-          "duration": "3 to 4 hours",
-          "summary": "High viewpoint area often quieter in the morning, reached by cable car from the Forest Park/South Gate side. It is excellent, but it does not fit cleanly into the Route B day.",
-          "highlights": [
-            "Quieter morning panoramas",
-            "Cable car access",
-            "Good bad-weather backup if summit shuttles are crowded"
-          ],
-          "transport": "Use the Forest Park/South Gate and Huangshi Village cable car. Treat it as a separate half-day, not an add-on after Yuanjiajie/Tianzi.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Huangshi+Village+Zhangjiajie",
-            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_National_Forest_Park"
-          },
-          "image_queries": [
-            "Huangshi Village Zhangjiajie",
-            "Huangshizhai Zhangjiajie"
-          ],
-          "desired_images": 1,
-          "foods": [],
           "images": [
             {
-              "src": "assets/images/places/downloaded-ecef7c85b047.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+              "src": "assets/images/places/golden-whip-stream-2.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/1_tianzishan_wulingyuan_zhangjiajie_2012.jpg/1920px-1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg",
+              "title": "File:1 tianzishan wulingyuan zhangjiajie 2012.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg/1920px-1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
               "title": "File:1 zhangjiajie huangshizhai wulingyuan panorama 2012.jpg"
             }
-          ]
-        },
-        {
-          "slug": "zhangjiajie-grand-canyon-glass-bridge",
-          "name": "Zhangjiajie Grand Canyon Glass Bridge",
-          "area": "Cili County, Zhangjiajie",
-          "best_time": "Separate day",
-          "duration": "4 to 6 hours",
-          "summary": "World-famous glass bridge and canyon walk outside the national forest park. Amazing, but logistically separate from the Avatar mountain day.",
-          "highlights": [
-            "Glass bridge over the canyon",
-            "Canyon walk",
-            "Good extra day if you extend Zhangjiajie"
           ],
-          "transport": "Book as a separate day trip from Wulingyuan/Zhangjiajie city by private car or tour. Do not combine with Yuanjiajie/Tianzi in one day.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Zhangjiajie+Grand+Canyon+Glass+Bridge",
-            "reference": "https://en.wikipedia.org/wiki/Zhangjiajie_Glass_Bridge"
-          },
-          "image_queries": [
-            "Zhangjiajie Glass Bridge",
-            "Zhangjiajie Grand Canyon Glass Bridge"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/downloaded-3bfb7173bec2.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg/1920px-Zhangjiajie_Glass_Bridge_20190726_%282%29.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_Glass_Bridge_20190726_(2).jpg",
-              "title": "File:Zhangjiajie Glass Bridge 20190726 (2).jpg"
-            }
-          ]
+          "access_note": "For one day, Golden Whip Stream is the first thing to cut if queues, fog, or tired legs slow the summit loop."
         }
-      ]
+      ],
+      "optional_title": "Add if daylight allows"
     },
     {
       "id": "day-8",
       "label": "Day 8",
       "date": "Thursday, May 21, 2026",
       "display_title": "Tianmen Mountain Route A, then night flight to Beijing",
-      "focus": "Book Route A / Line A if available: ride up on the long Tianmen Mountain Cableway, use the summit cliff walks and escalators, visit Heaven's Gate, then come down on the shorter Express Cableway.",
-      "transport_note": "Ask for Route A / Line A (A线): Main Tianmen Mountain Cableway up, Tianmen Cave Express Cableway down. If the upper main cableway section is still under maintenance, Route A becomes main cableway to mid-station + eco-bus on 99 Bends + escalator to the summit, then Express Cableway down.",
+      "focus": "Route A is booked: ride up on the long Tianmen Mountain Cableway, use the summit cliff walks and escalators, visit Heaven's Gate, then come down on the shorter Express Cableway.",
+      "transport_note": "Route A (A线): Main Tianmen Mountain Cableway up, Tianmen Cave Express Cableway down. If the upper main cableway is under maintenance on the day, Route A swaps to: main cableway to mid-station + eco-bus on 99 Bends + escalator to the summit, then Express Cableway down.",
+      "tickets": [
+        {
+          "slug": "tianmen-route-a",
+          "name": "Tianmen Mountain National Forest Park · Package A",
+          "kind": "Tianmen Mountain Cableway up · Tianmen Cave Express Cableway down",
+          "qty": "2 adults",
+          "valid": "Thu 21 May",
+          "window": "Admission 08:00–09:00 (slot reserved at booking)",
+          "pickup": "Line A ticket gate · Tianmenshan Cableway Company",
+          "address": "Yongding District, Zhangjiajie City, Hunan",
+          "note": "Reserved 08:00–09:00 entry slot must be honoured. Carry passports for ticket pickup."
+        }
+      ],
       "start_transfer": {
         "title": "Inn to Tianmen Mountain Cableway Lower Station",
         "mode": "Taxi",
-        "instructions": "Taxi or Didi to the downtown Tianmen Mountain Cableway Lower Station beside Zhangjiajie Railway Station. Arrive 30 to 45 minutes before opening if possible and book Route A / Line A.",
-        "note": "Route A is the one that matches your preference: long main cableway up, shorter Express Cableway down. Confirm live operations because cableway maintenance can change the exact sequence."
+        "instructions": "Taxi or Didi to the downtown Tianmen Mountain Cableway Lower Station beside Zhangjiajie Railway Station. Aim to arrive by 07:30 to be at the Line A gate before the 08:00 slot opens.",
+        "note": "Route A booked: long main cableway up, shorter Express Cableway down. Confirm live operations on the day in case cableway maintenance shifts the sequence."
       },
       "flights": [
         {
-          "slug": "dyg-to-pek",
+          "slug": "dyg-pek-ca1954",
           "from": "Zhangjiajie",
           "to": "Beijing",
           "carrier": "Air China CA1954",
-          "route": "22:30 DYG (T2) -> 00:55(+1) PEK (T3)",
-          "details": "Non-stop · 2h 25m · Economy"
+          "route": "Thu 21 May 22:30 DYG (T2) → Fri 22 May 00:55 PEK (T3)",
+          "details": "2h 25m · Economy · Boeing 737-300",
+          "seats": "17K · 17L"
         }
       ],
       "places": [
@@ -1492,39 +1471,6 @@
       "optional_title": "Optional Tianmen Mountain Add-Ons",
       "optional_places": [
         {
-          "slug": "yunmeng-fairy-summit",
-          "name": "Yunmeng Fairy Summit (Yunmeng Xianding)",
-          "area": "Tianmen Mountain summit",
-          "best_time": "Only if weather is clear",
-          "duration": "30 to 45 min",
-          "summary": "Highest viewpoint area on Tianmen Mountain, reached by the small Forest Sightseeing Cable Car from near Tianmen Mountain Temple. Add only if visibility is good.",
-          "highlights": [
-            "Highest viewpoint around 1,518 m",
-            "Small open-air sightseeing cable car",
-            "City and ridge panorama on clear days"
-          ],
-          "transport": "From the West/East Line junction near Tianmen Mountain Temple, take the Forest Sightseeing Cable Car to Yunmeng Xianding, then return to the main loop.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Yunmeng+Xianding+Tianmen+Mountain",
-            "reference": "https://en.wikipedia.org/wiki/Tianmen_Mountain"
-          },
-          "image_queries": [
-            "Yunmeng Xianding Tianmen Mountain",
-            "Tianmen Mountain Temple cable car"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/downloaded-2d9997dbc8b3.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tianmen_Mountain_temple_I_%2830000795430%29.jpg/1920px-Tianmen_Mountain_temple_I_%2830000795430%29.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Tianmen_Mountain_temple_I_(30000795430).jpg",
-              "title": "File:Tianmen Mountain temple I (30000795430).jpg"
-            }
-          ],
-          "access_note": "Skip in fog or if you need to protect the airport transfer buffer."
-        },
-        {
           "slug": "east-line-cliff-walk",
           "name": "East Line Cliff Walk",
           "area": "Tianmen Mountain summit",
@@ -1565,7 +1511,7 @@
       "date": "Friday, May 22, 2026",
       "display_title": "Badaling Great Wall, Longqingxia Gorge and Houhai",
       "focus": "First Beijing day: go north to Badaling Great Wall, continue to Longqingxia Gorge, then return to the city for Houhai Lake at night.",
-      "transport_note": "Book a private car for the wall + gorge loop. It is a long day after the late arrival, but it avoids backtracking through public transport.",
+      "transport_note": "Pre-book a private car for the wall + gorge loop the night before. The CA1954 from Zhangjiajie lands 00:55, so you'll be in bed past 02:00 — leave around 08:00 for Badaling, take the Longqingxia leg only if the morning energy holds, and treat Houhai as a slow-paced wind-down.",
       "start_transfer": {
         "title": "Hotel to Badaling Great Wall",
         "mode": "Pre-booked car",
@@ -1701,12 +1647,21 @@
         }
       ],
       "stay": {
-        "label": "PiaoHome Chain Hotel (Guomao Donghua)",
+        "label": "PiaoHome Chain Hotel (Beijing Guomao Donghua trade store)",
         "city": "Beijing",
-        "dates": "May 22 to May 24 (2 nights)",
-        "address": "No. 1-6, Building 4, Chaijiawan, Chaoyang District, Beijing, 100025, China",
+        "dates": "May 21 to May 24 (3 nights)",
+        "address": "Building 5, Chaijiawan, Chaoyang District, Beijing, 100025, China",
         "phone": "+86-10-65030988-0 / +86-13810081644",
-        "note": "Chaoyang base for the Beijing classics. Late check-in expected because the Zhangjiajie flight lands after midnight.",
+        "room": "Queen Room With Memory Foam Mattress",
+        "bed": "1 queen bed",
+        "size": "18 m²",
+        "view": "Has window(s)",
+        "floor": "Floor 1–6",
+        "smoking": "Non-smoking",
+        "check_in": "After 12:00",
+        "check_out": "Before 14:00",
+        "breakfast": "Breakfast for 2 on May 22, May 23, May 24",
+        "note": "Booked from May 21 so the room is ready for the 00:55 arrival from Zhangjiajie. Chaoyang base for the Beijing classics.",
         "transit": "Closest stations are Sihui and Sihui East (Lines 1 and Batong). Quick taxi to CBD and Wangfujing. Daxing Airport is about 60 to 75 minutes by taxi.",
         "map": "https://www.google.com/maps/search/?api=1&query=PiaoHome+Hotel+Guomao+Donghua+Beijing+Chaijiawan+Chaoyang"
       }
@@ -1717,11 +1672,24 @@
       "date": "Saturday, May 23, 2026",
       "display_title": "Zhengyangmen, Forbidden City, Jingshan, Summer Palace and CBD",
       "focus": "Second Beijing day: old central-axis landmarks, palace roofs from Jingshan, Summer Palace, then the CBD around CCTV Headquarters.",
-      "transport_note": "Book Forbidden City tickets in advance. This is a packed day, so start early and use taxis between distant zones when needed.",
+      "transport_note": "Forbidden City Morning Class is booked (08:30–12:00). Be at Wumen by 08:30, exit through the north Shenwumen for Jingshan, then make a single midday call: Summer Palace (1h NW by Line 4) or skip it for a slower CBD-and-Houhai evening.",
+      "tickets": [
+        {
+          "slug": "forbidden-city-morning",
+          "name": "The Palace Museum (Forbidden City)",
+          "kind": "Standard admission · excludes Treasure Gallery & Gallery of Clocks",
+          "qty": "2 adults",
+          "valid": "Sat 23 May · Morning Class",
+          "window": "Morning Session 08:30–12:00",
+          "pickup": "Gate of the Palace Museum (ticket gate)",
+          "address": "Forbidden City, Dongcheng District, Beijing",
+          "note": "Treasure Gallery and Gallery of Clocks are not included — buy on-site if interested. Carry passports for entry verification."
+        }
+      ],
       "start_transfer": {
         "title": "Hotel to Zhengyangmen / Qianmen",
         "mode": "Metro Line 1 + Line 2 or taxi",
-        "instructions": "Go early to Qianmen/Zhengyangmen. From there continue north toward the Forbidden City entrance route without scheduling the square as a stop.",
+        "instructions": "Be at the Forbidden City south gate (Meridian Gate / Wumen) by 08:30 for the Morning Class slot — go via Qianmen / Zhengyangmen if you want a quick look on the way.",
         "note": "Carry passports for palace security and ticket checks."
       },
       "places": [
@@ -1979,75 +1947,6 @@
           "instructions": "Return from the Summer Palace to Guomao/CBD for the CCTV Headquarters exterior and dinner.",
           "note": "This places the modern business district at the end near the Beijing hotel base."
         }
-      ],
-      "optional_title": "Optional Beijing Add-Ons",
-      "optional_places": [
-        {
-          "slug": "temple-of-heaven",
-          "name": "Temple of Heaven",
-          "area": "Dongcheng District, Beijing",
-          "best_time": "Early morning",
-          "duration": "1.5 to 2 hours",
-          "summary": "Imperial ritual complex with the Hall of Prayer for Good Harvests. It is one of Beijing's most beautiful sites, but only fits if you drop or shorten another stop.",
-          "highlights": [
-            "Hall of Prayer for Good Harvests",
-            "Circular Mound Altar",
-            "Morning locals exercising in the park"
-          ],
-          "transport": "Metro Line 5 to Tiantandongmen. Best before Zhengyangmen, but it makes the day very full.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Temple+of+Heaven+Beijing",
-            "reference": "https://en.wikipedia.org/wiki/Temple_of_Heaven"
-          },
-          "image_queries": [
-            "Temple of Heaven Beijing",
-            "Hall of Prayer for Good Harvests"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/downloaded-a22cdb7585e4.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1920px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven,_Beijing,_China_-_010_edit.jpg",
-              "title": "File:Temple of Heaven, Beijing, China - 010 edit.jpg"
-            }
-          ],
-          "access_note": "Add only by shortening Summer Palace or CBD; do not squeeze it into the middle of the Forbidden City route."
-        },
-        {
-          "slug": "beiwu-park",
-          "name": "Beiwu Park",
-          "area": "Haidian District, Beijing",
-          "best_time": "Late afternoon near Summer Palace",
-          "duration": "45 to 90 min",
-          "summary": "Quiet free park west of the Summer Palace with rice fields, water, boardwalks, and a softer local feel. Good decompression if Summer Palace crowds are heavy.",
-          "highlights": [
-            "Rice-field boardwalks",
-            "Small bridges and water views",
-            "Quiet local park near Summer Palace"
-          ],
-          "transport": "Take the Xijiao Line to Summer Palace West Gate Station and walk about 500 m, or taxi from Summer Palace West Gate.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Beiwu+Park+Beijing",
-            "reference": "https://www.google.com/maps/search/?api=1&query=Beiwu+Park+Beijing"
-          },
-          "image_queries": [
-            "Beiwu Park Beijing",
-            "Beijing Beiwu Park"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/beiwu-park-1.jpg",
-              "source_url": "https://ak-d.tripcdn.com/images/1mi1f12000s1mbecp7EBD.jpg?proc=source/trip",
-              "source_page": "https://in.trip.com/moments/detail/beijing-1-143929773",
-              "title": "Beiwu Park landscape"
-            }
-          ],
-          "access_note": "Use as a crowd-escape swap near Summer Palace, not as an extra if the palace day is already running late."
-        }
       ]
     },
     {
@@ -2056,7 +1955,7 @@
       "date": "Sunday, May 24, 2026",
       "display_title": "Beijing to Taipei",
       "focus": "Early flight south. China leg ends and the Taiwan itinerary picks up the same morning.",
-      "transport_note": "Pre-book an airport transfer the night before. Beijing Capital (PEK) is the right airport for HU7987.",
+      "transport_note": "Pre-book an airport transfer the night before — leave the hotel by 04:45 to clear PEK Terminal 2 by 05:30 for the 07:55 flight. Beijing Capital (PEK) is the right airport for HU7987, not Daxing.",
       "start_transfer": {
         "kicker": "Departure Transfer",
         "title": "Hotel to Beijing Capital Airport",
@@ -2066,12 +1965,12 @@
       },
       "flights": [
         {
-          "slug": "pek-to-tpe",
+          "slug": "pek-tpe-hu7987",
           "from": "Beijing",
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
-          "route": "07:55 PEK -> 11:25 TPE",
-          "details": "Non-stop · 3h 30m · Economy"
+          "route": "Sun 24 May 07:55 PEK → 11:25 TPE",
+          "details": "3h 30m · Economy"
         }
       ],
       "places": []
