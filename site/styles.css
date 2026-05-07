@@ -2673,15 +2673,12 @@ img {
   }
 
   .day-tabs-rail {
-    position: sticky;
-    top: 3rem;
-    z-index: 4;
+    position: static;
     flex-direction: row;
     gap: 0.4rem;
     padding: 0.55rem 0.7rem;
-    margin: 0 -0.7rem;
-    background: linear-gradient(180deg, rgba(10, 19, 28, 0.94) 60%, rgba(10, 19, 28, 0));
-    backdrop-filter: blur(10px);
+    margin: 0 -0.7rem 0.6rem;
+    background: rgba(10, 19, 28, 0.65);
     border-right: none;
     border-bottom: 1px solid var(--line);
     overflow-x: auto;
@@ -2731,7 +2728,22 @@ img {
   }
 
   .day-tab-stage {
-    padding: 0.85rem 0 0.6rem;
+    padding: 0.4rem 0 0.6rem;
+  }
+
+  .day-tab-panel,
+  .flight-card,
+  .transfer-card,
+  .place,
+  .ticket-card,
+  .stay-card,
+  .weather-card,
+  .map-card {
+    scroll-margin-top: 4.85rem;
+  }
+
+  .day[open] .transport-note {
+    display: none;
   }
 
   .detail-grid,
