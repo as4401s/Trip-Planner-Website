@@ -302,8 +302,8 @@
       "label": "Day 3",
       "date": "Saturday, May 16, 2026",
       "display_title": "Shanghai gardens, lanes and Jing'an Temple",
-      "focus": "Old Shanghai at Yu Garden, French Concession lanes at Tianzifang, Jing'an Temple, then cross to Pudong in the evening for the Oriental Pearl Tower (Two-Sphere ticket booked for tonight).",
-      "transport_note": "Use Metro Lines 10, 9, and 2. End the day on Line 2 east to Lujiazui so you can use the pre-booked Pearl Tower ticket during its 17:00–20:30 evening window.",
+      "focus": "Old Shanghai at Yu Garden, French Concession lanes at Tianzifang, Jing'an Temple, then cross to Pudong in the late afternoon for the Mingzhu Roundabout walk and the Pearl Tower (Two-Sphere ticket booked for tonight).",
+      "transport_note": "Metro Lines 10, 9, and 2 cover the day. End on Line 2 east to Lujiazui — Mingzhu Roundabout is the natural warm-up loop before the pre-booked Pearl Tower 17:00–20:30 evening slot.",
       "tickets": [
         {
           "slug": "oriental-pearl-tower",
@@ -467,6 +467,45 @@
           ]
         },
         {
+          "slug": "mingzhu-roundabout",
+          "name": "Mingzhu Roundabout",
+          "area": "Lujiazui, Pudong, Shanghai",
+          "best_time": "Late afternoon, just before the Pearl Tower slot",
+          "duration": "30 to 45 minutes",
+          "summary": "Pudong's elevated pedestrian ring around the Pearl Tower base — a natural warm-up walk before going up. Loop the full circle once for the ground-up Pearl / Shanghai Tower / Jin Mao photo angles, then dive into the tower entrance.",
+          "highlights": [
+            "Circular elevated walkway",
+            "Close-up Oriental Pearl views",
+            "Best orientation point for Lujiazui"
+          ],
+          "transport": "Metro Line 2 from Jing'an Temple Station to Lujiazui Station (about 18 minutes). Exit toward the pedestrian roundabout — signs point straight up to the loop.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Mingzhu+Roundabout+Lujiazui+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Lujiazui"
+          },
+          "image_queries": [
+            "Lujiazui roundabout Shanghai",
+            "Mingzhu roundabout Shanghai"
+          ],
+          "desired_images": 1,
+          "foods": [],
+          "images": [
+            {
+              "src": "assets/images/places/mingzhu-roundabout-1.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
+              "title": "File:Roundabout Lujiazui 2.jpg"
+            }
+          ],
+          "manual_images": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
+              "title": "File:Roundabout Lujiazui 2.jpg"
+            }
+          ]
+        },
+        {
           "slug": "oriental-pearl-tv-tower-deck",
           "name": "Oriental Pearl TV Tower Deck",
           "area": "Lujiazui, Pudong, Shanghai",
@@ -559,9 +598,9 @@
       "id": "day-4",
       "label": "Day 4",
       "date": "Sunday, May 17, 2026",
-      "display_title": "Pudong self-driving cars and Lujiazui icons",
-      "focus": "Spend the morning in Pudong New Area trying a robotaxi, then take in the Mingzhu Roundabout pedestrian loop and the Lujiazui skyline at street level before a calm last evening in Shanghai.",
-      "transport_note": "Robotaxi pickup/drop-off is at designated stops inside the service zone, not anywhere like a normal Didi ride. Most pilots run on Sundays but a few are weekday-only — confirm hours in the app the night before.",
+      "display_title": "Pudong robotaxi morning, then a French Concession streets afternoon",
+      "focus": "Spend the morning in Pudong New Area trying a robotaxi, then cross back to Puxi for a slow afternoon along Wukang Road, Wuyuan and Anfu Roads, ending in Fuxing Park before the early flight south tomorrow.",
+      "transport_note": "Robotaxi pickup/drop-off is at designated stops inside the Pudong service zone, not anywhere like a normal Didi ride. Most pilots run on Sundays but a few are weekday-only — confirm hours in the app the night before. After the trial, take Metro Line 2 west and transfer to Line 10 or 11 for Wukang Road.",
       "start_transfer": {
         "title": "Hotel to Pudong New Area robotaxi zone",
         "mode": "Metro Line 2 + local pickup point",
@@ -610,43 +649,106 @@
           ]
         },
         {
-          "slug": "mingzhu-roundabout",
-          "name": "Mingzhu Roundabout",
-          "area": "Lujiazui, Pudong, Shanghai",
-          "best_time": "Late morning to afternoon",
-          "duration": "1 to 2 hours",
-          "summary": "Pudong's elevated pedestrian ring sits between the Pearl Tower, Shanghai Tower and Jin Mao. Walk the loop for ground-up skyline angles, then drop down to the Bund-side promenade for the river view.",
+          "slug": "wukang-mansion-and-road",
+          "name": "Wukang Mansion and Wukang Road",
+          "area": "Xuhui District (former French Concession), Shanghai",
+          "best_time": "Mid-afternoon",
+          "duration": "1 to 1.5 hours",
+          "summary": "The most photogenic stretch of the former French Concession. Wukang Mansion (formerly the 1920s Normandie Apartments) sits at the head of Wukang Road like a ship's prow; the canopied plane-tree boulevard behind it is lined with 1920s–30s villas, vintage shops and small cafés.",
           "highlights": [
-            "Circular elevated walkway",
-            "Close-up Oriental Pearl views",
-            "Best orientation point for Lujiazui"
+            "Wukang Mansion ship-prow facade from the Wukang × Huaihai intersection",
+            "Plane-tree canopy along Wukang Road",
+            "Soong Ching-ling former residence (interior tour optional)",
+            "Old French Concession villas converted to boutiques"
           ],
-          "transport": "Metro Line 2 to Lujiazui Station. Follow signs up to the pedestrian roundabout outside the station.",
+          "transport": "Metro Line 10 or 11 to Jiaotong University Station, then 5–10 minute walk west on Huaihai Middle Road. From Pudong (Lujiazui), Line 2 to People's Square, transfer to Line 10 — about 35–40 minutes.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Mingzhu+Roundabout+Lujiazui+Shanghai",
-            "reference": "https://en.wikipedia.org/wiki/Lujiazui"
+            "map": "https://www.google.com/maps/search/?api=1&query=Wukang+Mansion+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Wukang_Mansion"
           },
           "image_queries": [
-            "Lujiazui roundabout Shanghai",
-            "Mingzhu roundabout Shanghai"
+            "Wukang Mansion Shanghai",
+            "Wukang Road plane trees"
           ],
           "desired_images": 1,
-          "foods": [],
           "images": [
             {
-              "src": "assets/images/places/mingzhu-roundabout-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
-              "title": "File:Roundabout Lujiazui 2.jpg"
+              "src": "assets/images/places/wukang-mansion.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Wukang_Mansion_(20191114161507).jpg/1280px-Wukang_Mansion_(20191114161507).jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Wukang_Mansion_(20191114161507).jpg",
+              "title": "File:Wukang Mansion (20191114161507).jpg"
             }
           ],
-          "manual_images": [
+          "manual_images": [],
+          "access_note": "Photo crowds spike on weekends and golden-hour evenings — a weekday or mid-afternoon Sunday is calmer. The corner café across Huaihai is the classic shooting spot."
+        },
+        {
+          "slug": "wuyuan-anfu-streets",
+          "name": "Wuyuan and Anfu Roads",
+          "area": "Xuhui District (former French Concession), Shanghai",
+          "best_time": "Late afternoon to early evening",
+          "duration": "1 to 1.5 hours",
+          "summary": "Two parallel streets just north of Wukang Road, packed with independent boutiques, specialty coffee shops, wine bars and small restaurants. The slow-cool side of modern Shanghai — Beijing has Sanlitun, Shanghai has Anfu Road.",
+          "highlights": [
+            "%Arabica and other independent coffee shops along Wuyuan Road",
+            "Anfu Mall and the boutique row on Anfu Road",
+            "Tree-lined café corners between the two streets",
+            "Easy walking distance from Wukang Mansion"
+          ],
+          "transport": "Walk 5–10 minutes north from Wukang Road. Or Metro Line 1 / 7 to Changshu Road Station and walk west.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Anfu+Road+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Xuhui_District"
+          },
+          "image_queries": [
+            "Wuyuan Road Shanghai",
+            "Anfu Road cafe"
+          ],
+          "desired_images": 1,
+          "images": [
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Roundabout_Lujiazui_2.jpg/1920px-Roundabout_Lujiazui_2.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Roundabout_Lujiazui_2.jpg",
-              "title": "File:Roundabout Lujiazui 2.jpg"
+              "src": "assets/images/places/wuyuan-road.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wuyuan_Rd..JPG/1280px-Wuyuan_Rd..JPG",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Wuyuan_Rd..JPG",
+              "title": "File:Wuyuan Rd..JPG"
             }
-          ]
+          ],
+          "manual_images": [],
+          "access_note": "Many shops keep slightly indie hours — most boutiques open from 11:00 onward, cafés earlier. Bars come alive after 19:00."
+        },
+        {
+          "slug": "fuxing-park",
+          "name": "Fuxing Park",
+          "area": "Huangpu District (French Concession), Shanghai",
+          "best_time": "Early evening",
+          "duration": "30 to 60 minutes",
+          "summary": "Shanghai's oldest French-style park (laid out in 1909). Local life on full display in the evenings — line dancers, ballroom couples, chess players, kids on scooters. Borders the Sinan Mansions heritage block to the south.",
+          "highlights": [
+            "French formal-garden layout with central fountain",
+            "Evening dance circles and tai chi corners",
+            "Sun Yat-sen and Marx-Engels statues",
+            "Sinan Mansions heritage block right next door"
+          ],
+          "transport": "From Anfu Road area, taxi 5–10 minutes east, or walk about 20 minutes via Yongjia Road. Metro Line 10 / 13 to Xintiandi Station + 5-minute walk south also works.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Fuxing+Park+Shanghai",
+            "reference": "https://en.wikipedia.org/wiki/Fuxing_Park"
+          },
+          "image_queries": [
+            "Fuxing Park Shanghai fountain",
+            "Fuxing Park dancers evening"
+          ],
+          "desired_images": 1,
+          "images": [
+            {
+              "src": "assets/images/places/fuxing-park.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Fuxing_Park%2C_Shanghai.JPG/1280px-Fuxing_Park%2C_Shanghai.JPG",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Fuxing_Park,_Shanghai.JPG",
+              "title": "File:Fuxing Park, Shanghai.JPG"
+            }
+          ],
+          "manual_images": [],
+          "access_note": "Free to enter. Best after 18:00 once the dance circles get going. From here it's a short walk into Sinan Mansions or up to Xintiandi for dinner."
         }
       ],
       "transfers": [
