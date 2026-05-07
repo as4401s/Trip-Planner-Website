@@ -1130,12 +1130,12 @@ const buildWeatherChart = (data, isoDate) => {
   if (temps.length < 6) return "";
   const rains = indices.map((i) => hourly.precipitation_probability?.[i] ?? 0);
 
-  const W = 320;
-  const H = 130;
-  const padTop = 16;
-  const padBottom = 28;
-  const padLeft = 28;
-  const padRight = 12;
+  const W = 600;
+  const H = 180;
+  const padTop = 28;
+  const padBottom = 40;
+  const padLeft = 44;
+  const padRight = 18;
   const chartW = W - padLeft - padRight;
   const chartH = H - padTop - padBottom;
 
@@ -1183,13 +1183,13 @@ const buildWeatherChart = (data, isoDate) => {
     .filter((h) => h < temps.length)
     .map((h) => {
       const x = padLeft + h * stepX;
-      return `<text x="${x.toFixed(1)}" y="${(H - 10).toFixed(1)}" class="weather-chart-tick" text-anchor="middle">${String(h).padStart(2, "0")}h</text>`;
+      return `<text x="${x.toFixed(1)}" y="${(H - 14).toFixed(1)}" class="weather-chart-tick" text-anchor="middle">${String(h).padStart(2, "0")}h</text>`;
     })
     .join("");
 
   const yLabels = `
-    <text x="${(padLeft - 6).toFixed(1)}" y="${(padTop + 4).toFixed(1)}" class="weather-chart-tick" text-anchor="end">${highT}°</text>
-    <text x="${(padLeft - 6).toFixed(1)}" y="${baselineY.toFixed(1)}" class="weather-chart-tick" text-anchor="end">${lowT}°</text>
+    <text x="${(padLeft - 10).toFixed(1)}" y="${(padTop + 6).toFixed(1)}" class="weather-chart-tick" text-anchor="end">${highT}°</text>
+    <text x="${(padLeft - 10).toFixed(1)}" y="${baselineY.toFixed(1)}" class="weather-chart-tick" text-anchor="end">${lowT}°</text>
   `;
 
   const minIdx = temps.indexOf(minT);
@@ -1201,9 +1201,9 @@ const buildWeatherChart = (data, isoDate) => {
     .filter((m, i, arr) => m.i !== arr[1 - i]?.i || i === 0)
     .map(({ i, value, cls }) => {
       const [x, y] = points[i];
-      const labelY = y - 7;
+      const labelY = y - 10;
       return `
-        <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" class="weather-chart-dot ${cls}"/>
+        <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" class="weather-chart-dot ${cls}"/>
         <text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" class="weather-chart-marker-label" text-anchor="middle">${value}°</text>
       `;
     })
@@ -1225,7 +1225,7 @@ const buildWeatherChart = (data, isoDate) => {
           </span>
         </span>
       </div>
-      <svg class="weather-chart-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+      <svg class="weather-chart-svg" viewBox="0 0 ${W} ${H}">
         <defs>
           <linearGradient id="weather-temp-grad" x1="0" x2="0" y1="0" y2="1">
             <stop offset="0%" stop-color="#ffd17a" stop-opacity="0.5"/>

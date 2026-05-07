@@ -13,8 +13,8 @@
   --warm: #f0b35f;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
   --max: 1180px;
-  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Fraunces", "Iowan Old Style", "Source Serif Pro", "Charter", Georgia, serif;
 }
 
 * {
@@ -110,6 +110,9 @@ body {
     linear-gradient(180deg, #04090f 0%, var(--bg) 32%, var(--bg-2) 100%);
   color: var(--ink);
   font-family: var(--sans);
+  font-feature-settings: "ss01", "cv02", "cv11";
+  letter-spacing: -0.005em;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -474,6 +477,24 @@ img {
 .stays-grid .stay-links {
   align-self: end;
   margin-top: 0.4rem;
+}
+
+.day-tab-panel .stay-card {
+  margin-bottom: 0;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+  align-items: stretch;
+}
+
+.day-tab-panel .stay-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.day-tab-panel .stay-links .links {
+  display: contents;
 }
 
 .stay-phone {
@@ -1490,7 +1511,9 @@ img {
 .weather-chart-svg {
   display: block;
   width: 100%;
-  height: 130px;
+  height: auto;
+  aspect-ratio: 600 / 180;
+  max-height: 220px;
   overflow: visible;
 }
 
@@ -1542,19 +1565,24 @@ img {
   fill: #6ec3e8;
 }
 
+.weather-chart-svg text {
+  font-family: var(--sans);
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  letter-spacing: 0;
+}
+
 .weather-chart-marker-label {
   fill: #f4f8fa;
-  font-size: 9.5px;
+  font-size: 13px;
   font-weight: 600;
-  font-family: var(--sans);
   opacity: 0;
   animation: weather-chart-fade 0.4s ease-out 1.2s forwards;
 }
 
 .weather-chart-tick {
   fill: var(--muted);
-  font-size: 9px;
-  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
   letter-spacing: 0.04em;
 }
 
