@@ -7,6 +7,26 @@ const safeImage = (images = []) => images.find((image) => image.src)?.src || "";
 const assetSrc = (src = "") => (/^(https?:)?\/\//.test(src) ? src : `./${src}`);
 const encode = (value = "") => encodeURIComponent(value);
 
+const ESC_MAP = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&#39;"
+};
+const esc = (value) => {
+  if (value === null || value === undefined) return "";
+  return String(value).replace(/[&<>"']/g, (c) => ESC_MAP[c]);
+};
+
+const safeUrl = (value = "") => {
+  const s = String(value).trim();
+  if (!s) return "";
+  if (/^(https?:|mailto:|tel:)/i.test(s)) return esc(s);
+  if (s.startsWith("/") || s.startsWith("./") || s.startsWith("../") || s.startsWith("#")) return esc(s);
+  return "";
+};
+
 const ICON_EMOJI = {
   plane: "✈️",
   train: "🚄",
@@ -70,7 +90,7 @@ const imageMarkup = (images = [], alt, max = 2) => {
       ${visible
         .map(
           (image, index) =>
-            `<img src="${assetSrc(image.src)}" alt="${alt} photo ${index + 1}" loading="lazy" />`
+            `<img src="${esc(assetSrc(image.src))}" alt="${esc(alt)} photo ${index + 1}" loading="lazy" />`
         )
         .join("")}
     </div>
@@ -90,13 +110,13 @@ const foodGridMarkup = (foods = []) => {
             <article class="food-card${image ? "" : " no-image"}">
               ${
                 image
-                  ? `<img src="${assetSrc(image)}" alt="${food.name}" loading="lazy" />`
+                  ? `<img src="${esc(assetSrc(image))}" alt="${esc(food.name)}" loading="lazy" />`
                   : ""
               }
               <div class="food-body">
-                <h4 class="food-title">${food.name}</h4>
-                <p class="food-meta">${food.where}</p>
-                <p class="food-description">${food.description}</p>
+                <h4 class="food-title">${esc(food.name)}</h4>
+                <p class="food-meta">${esc(food.where)}</p>
+                <p class="food-description">${esc(food.description)}</p>
               </div>
             </article>
           `;
@@ -145,13 +165,13 @@ const flightMarkup = (flights = []) => {
               <div class="flight-top">
                 <div>
                   <p class="flight-label">${icon("plane")}Flight</p>
-                  <h3 class="flight-route">${flight.from} to ${flight.to}</h3>
+                  <h3 class="flight-route">${esc(flight.from)} to ${esc(flight.to)}</h3>
                 </div>
-                <div class="flight-badge">${flight.details}</div>
+                <div class="flight-badge">${esc(flight.details)}</div>
               </div>
               <div class="flight-main">
-                <div class="flight-times">${flight.route}</div>
-                <div class="flight-carrier">${flight.carrier}</div>
+                <div class="flight-times">${esc(flight.route)}</div>
+                <div class="flight-carrier">${esc(flight.carrier)}</div>
               </div>
             </article>
           `
@@ -200,12 +220,12 @@ const mapLinksMarkup = (query, referenceHref) => `
     ${nativeMapLinks(query)
       .map(
         (link) =>
-          `<a class="button-link${link.primary ? " primary" : ""}" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+          `<a class="button-link${link.primary ? " primary" : ""}" href="${esc(link.href)}" target="_blank" rel="noreferrer">${esc(link.label)}</a>`
       )
       .join("")}
     ${
       referenceHref
-        ? `<a class="button-link reference-link" href="${referenceHref}" target="_blank" rel="noreferrer">Reference</a>`
+        ? `<a class="button-link reference-link" href="${safeUrl(referenceHref)}" target="_blank" rel="noreferrer">Reference</a>`
         : ""
     }
   </div>
@@ -245,7 +265,7 @@ const transitLinksMarkup = (fromPlace, toPlace) => {
       ${links
         .map(
           (link) =>
-            `<a class="button-link" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+            `<a class="button-link" href="${esc(link.href)}" target="_blank" rel="noreferrer">${esc(link.label)}</a>`
         )
         .join("")}
     </div>
@@ -354,17 +374,14 @@ const weatherMarkup = (day) => {
   return `
     <article
       class="weather-card weather-card--loading"
-      data-weather-date="${isoDate}"
-      data-weather-lat="${location.latitude}"
-      data-weather-lon="${location.longitude}"
-      data-weather-place="${location.name}"
+      data-weather-date="${esc(isoDate)}"
+      data-weather-lat="${esc(location.latitude)}"
+      data-weather-lon="${esc(location.longitude)}"
+      data-weather-place="${esc(location.name)}"
     >
       <header class="weather-head">
-        <div>
-          <p class="weather-kicker">Forecast</p>
-          <h3 class="weather-title">${location.name}</h3>
-        </div>
-        <p class="weather-date">${formatFriendlyDate(day.date)}</p>
+        <h3 class="weather-title">${esc(location.name)}</h3>
+        <p class="weather-date">${esc(formatFriendlyDate(day.date))}</p>
       </header>
       <div class="weather-body" aria-live="polite">
         <div class="weather-loading">
@@ -381,17 +398,17 @@ const singleStayMarkup = (stay) => {
     return "";
   }
   const kicker = stay.city
-    ? `${stay.city}${stay.dates ? ` · ${stay.dates}` : ""}`
+    ? `${esc(stay.city)}${stay.dates ? ` · ${esc(stay.dates)}` : ""}`
     : "Stay Base";
   return `
     <section class="stay-card fade-up">
       <div class="stay-copy">
         <p class="stay-kicker">${kicker}</p>
-        <h2 class="stay-title">${icon("hotel")}<span>${stay.label}</span></h2>
-        <p class="stay-address">${stay.address}</p>
-        ${stay.phone ? `<p class="stay-phone">${stay.phone}</p>` : ""}
-        <p class="stay-note">${stay.note}</p>
-        <p class="stay-transit">${stay.transit}</p>
+        <h2 class="stay-title">${icon("hotel")}<span>${esc(stay.label)}</span></h2>
+        <p class="stay-address">${esc(stay.address)}</p>
+        ${stay.phone ? `<p class="stay-phone">${esc(stay.phone)}</p>` : ""}
+        <p class="stay-note">${esc(stay.note)}</p>
+        <p class="stay-transit">${esc(stay.transit)}</p>
       </div>
       <div class="stay-links">
         ${mapLinksMarkup(`${stay.label}, ${stay.address || stay.city || ""}`, null)}
@@ -407,7 +424,7 @@ const stayMarkup = (data) => {
       <section class="stays fade-up">
         <header class="stays-head">
           <p class="stays-kicker">Stay Bases</p>
-          <h2 class="stays-title">${stays.length} hotels across the trip</h2>
+          <h2 class="stays-title">${stays.length} hotels</h2>
         </header>
         <div class="stays-grid">
           ${stays.map(singleStayMarkup).join("")}
@@ -428,9 +445,9 @@ const tripSwitcherMarkup = (currentKey) => {
       ${trips
         .map((trip) => {
           const isActive = trip.key === currentKey;
-          return `<a class="trip-tab${isActive ? " active" : ""}" href="${trip.href}"${
+          return `<a class="trip-tab${isActive ? " active" : ""}" href="${esc(trip.href)}"${
             isActive ? ' aria-current="page"' : ""
-          }>${trip.label}</a>`;
+          }>${esc(trip.label)}</a>`;
         })
         .join("")}
     </nav>
@@ -481,7 +498,6 @@ const dayMapMarkup = (day) => {
     <article class="map-card">
       <div class="map-head">
         <h3 class="map-title">Tagged Map</h3>
-        <p class="map-note">Stops shown on one Google map for this day.</p>
       </div>
       <div class="map-frame-wrap">
         <iframe
@@ -489,8 +505,8 @@ const dayMapMarkup = (day) => {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen
-          src="${buildMapEmbedUrl(day)}"
-          title="${day.label} map"
+          src="${esc(buildMapEmbedUrl(day))}"
+          title="${esc(day.label)} map"
         ></iframe>
       </div>
     </article>
@@ -506,13 +522,13 @@ const transferMarkup = (transfer, fromPlace, toPlace) => {
     <article class="transfer-card">
       <div class="transfer-kicker">${icon("arrow")}Next Stop</div>
       <div class="transfer-top">
-        <h3>${fromPlace.name} to ${toPlace.name}</h3>
-        <div class="transfer-badge">${modeIconsMarkup(transfer.mode)}<span>${transfer.mode}</span></div>
+        <h3>${esc(fromPlace.name)} to ${esc(toPlace.name)}</h3>
+        <div class="transfer-badge">${modeIconsMarkup(transfer.mode)}<span>${esc(transfer.mode)}</span></div>
       </div>
-      <p class="transfer-instructions">${transfer.instructions}</p>
+      <p class="transfer-instructions">${esc(transfer.instructions)}</p>
       ${
         transfer.note
-          ? `<p class="transfer-note">${transfer.note}</p>`
+          ? `<p class="transfer-note">${esc(transfer.note)}</p>`
           : ""
       }
       ${transitLinksMarkup(fromPlace, toPlace)}
@@ -527,15 +543,15 @@ const dayStartMarkup = (startTransfer) => {
 
   return `
     <article class="transfer-card start-card">
-      <div class="transfer-kicker">${icon("arrow")}${startTransfer.kicker || "Day Start"}</div>
+      <div class="transfer-kicker">${icon("arrow")}${esc(startTransfer.kicker || "Day Start")}</div>
       <div class="transfer-top">
-        <h3>${startTransfer.title}</h3>
-        <div class="transfer-badge">${modeIconsMarkup(startTransfer.mode)}<span>${startTransfer.mode}</span></div>
+        <h3>${esc(startTransfer.title)}</h3>
+        <div class="transfer-badge">${modeIconsMarkup(startTransfer.mode)}<span>${esc(startTransfer.mode)}</span></div>
       </div>
-      <p class="transfer-instructions">${startTransfer.instructions}</p>
+      <p class="transfer-instructions">${esc(startTransfer.instructions)}</p>
       ${
         startTransfer.note
-          ? `<p class="transfer-note">${startTransfer.note}</p>`
+          ? `<p class="transfer-note">${esc(startTransfer.note)}</p>`
           : ""
       }
     </article>
@@ -549,31 +565,31 @@ const placeMarkup = (place, { showFoods = true } = {}) => `
       <div class="place-body">
         <div class="place-top">
           <div class="place-title-wrap">
-            <h3>${place.name}</h3>
-            <div class="place-area">${place.area}</div>
+            <h3>${esc(place.name)}</h3>
+            <div class="place-area">${esc(place.area)}</div>
           </div>
           <div class="timing">
-            <strong>${place.best_time}</strong>
-            <span>${place.duration}</span>
+            <strong>${esc(place.best_time)}</strong>
+            <span>${esc(place.duration)}</span>
           </div>
         </div>
-        <p class="place-summary">${place.summary}</p>
+        <p class="place-summary">${esc(place.summary)}</p>
         <div class="detail-grid">
           <div class="detail-block">
             <h4>Highlights</h4>
-            <ul>${place.highlights.map((item) => `<li>${item}</li>`).join("")}</ul>
+            <ul>${(place.highlights || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
           </div>
           <div class="detail-block">
             <h4>${icon("compass")}How To Get There${modeIconsMarkup(place.transport, "inline")}</h4>
-            <p>${place.transport}</p>
+            <p>${esc(place.transport)}</p>
           </div>
         </div>
         ${
           place.access_note
-            ? `<div class="access-note">${place.access_note}</div>`
+            ? `<div class="access-note">${esc(place.access_note)}</div>`
             : ""
         }
-        ${mapLinksMarkup(placeQuery(place), place.links.reference)}
+        ${mapLinksMarkup(placeQuery(place), place.links?.reference)}
         ${showFoods ? foodMarkup(place.foods) : ""}
       </div>
     </div>
@@ -611,7 +627,7 @@ const optionalPlacesMarkup = (day, options = {}) => {
       <summary class="optional-section-summary">
         <div>
           <p class="optional-section-kicker">Optional</p>
-          <h3 class="optional-section-title">${day.optional_title || "Worth Adding If Time Allows"}</h3>
+          <h3 class="optional-section-title">${esc(day.optional_title || "Optional stops")}</h3>
         </div>
         <div class="optional-section-meta">
           <span>${day.optional_places.length} stop${day.optional_places.length > 1 ? "s" : ""}</span>
@@ -631,13 +647,13 @@ const planMarkup = (plan) => `
     <summary class="plan-summary">
       <div class="plan-head">
         <div>
-          <p class="plan-kicker">${plan.label}</p>
-          <h3 class="plan-title">${plan.title}</h3>
-          ${plan.focus ? `<p class="plan-focus">${plan.focus}</p>` : ""}
+          <p class="plan-kicker">${esc(plan.label)}</p>
+          <h3 class="plan-title">${esc(plan.title)}</h3>
+          ${plan.focus ? `<p class="plan-focus">${esc(plan.focus)}</p>` : ""}
         </div>
         ${
           plan.transport_note
-            ? `<div class="plan-transport-note">${modeIconsMarkup(plan.transport_note, "stack")}<span>${plan.transport_note}</span></div>`
+            ? `<div class="plan-transport-note">${modeIconsMarkup(plan.transport_note, "stack")}<span>${esc(plan.transport_note)}</span></div>`
             : ""
         }
         <div class="plan-toggle" aria-hidden="true">
@@ -671,7 +687,7 @@ const celebrationMarkup = (images = []) => `
     ${images
       .map(
         (image, index) =>
-          `<img src="${assetSrc(image.src)}" alt="${image.alt || `Celebration image ${index + 1}`}" loading="lazy" />`
+          `<img src="${esc(assetSrc(image.src))}" alt="${esc(image.alt || `Celebration image ${index + 1}`)}" loading="lazy" />`
       )
       .join("")}
   </div>
@@ -695,63 +711,7 @@ const aggregateDayFoods = (day) => {
   return foods;
 };
 
-const daySectionMarkup = (section) => {
-  const hasContent = !!section.body && section.body.trim().length > 0;
-  const meta = hasContent && section.count
-    ? `<span class="day-section-count">${section.count}</span>`
-    : "";
-  const body = hasContent
-    ? section.body
-    : `<div class="day-section-empty">
-        <span class="day-section-empty-icon" aria-hidden="true">${section.icon}</span>
-        <p>${section.emptyMessage}</p>
-      </div>`;
-  return `
-    <details class="day-section day-section--${section.type}${hasContent ? "" : " day-section--empty-state"}" id="${section.id}"${section.defaultOpen ? " open" : ""}>
-      <summary class="day-section-summary">
-        <div class="day-section-summary-main">
-          <span class="day-section-icon" aria-hidden="true">${section.icon}</span>
-          <div>
-            <p class="day-section-kicker">${section.kicker}</p>
-            <h3 class="day-section-title">${section.title}</h3>
-          </div>
-        </div>
-        <div class="day-section-meta">
-          ${meta}
-          <span class="day-section-toggle" aria-hidden="true">
-            <span class="when-open">Hide</span>
-            <span class="when-closed">Show</span>
-          </span>
-        </div>
-      </summary>
-      <div class="day-section-panel">
-        ${body}
-      </div>
-    </details>
-  `;
-};
-
-const daySectionNavMarkup = (sections) => `
-  <nav class="day-section-nav" aria-label="Day sections">
-    <div class="day-section-nav-track">
-      ${sections
-        .map(
-          (section) => `
-            <a class="day-section-chip day-section-chip--${section.type}${section.empty ? " is-empty" : ""}"
-               href="#${section.id}"
-               data-section-target="${section.id}">
-              <span class="day-section-chip-icon" aria-hidden="true">${section.icon}</span>
-              <span class="day-section-chip-label">${section.title}</span>
-              ${section.count ? `<span class="day-section-chip-count">${section.count}</span>` : ""}
-            </a>
-          `
-        )
-        .join("")}
-    </div>
-  </nav>
-`;
-
-const dayBodySectionsMarkup = (day) => {
+const dayBodyTabsMarkup = (day) => {
   const flightsBody = flightMarkup(day.flights);
   const stayBody = singleStayMarkup(day.stay);
 
@@ -768,83 +728,149 @@ const dayBodySectionsMarkup = (day) => {
 
   const aggregatedFoods = aggregateDayFoods(day);
   const foodsBody = foodGridMarkup(aggregatedFoods);
+  const weatherBody = weatherMarkup(day);
 
   const flightsCount = day.flights?.length || 0;
   const placesCount = (day.places?.length || 0) + (day.optional_places?.length || 0);
 
-  const sections = [
+  const safeDayId = esc(day.id);
+  const tabs = [
     {
-      id: `${day.id}-flights`,
-      type: "flights",
-      icon: "✈️",
-      kicker: "Travel",
-      title: "Flights & Trains",
-      count: flightsCount ? `${flightsCount} segment${flightsCount > 1 ? "s" : ""}` : "",
-      body: flightsBody,
-      empty: !flightsBody,
-      emptyMessage: "No flights or trains today — enjoy a slower morning.",
-      defaultOpen: !!flightsBody
-    },
-    {
-      id: `${day.id}-hotel`,
-      type: "hotel",
-      icon: "🏨",
-      kicker: "Stay",
-      title: "Hotel",
-      count: day.stay?.label ? "1 base" : "",
-      body: stayBody,
-      empty: !stayBody,
-      emptyMessage: "Travel night — no fixed hotel for this date.",
-      defaultOpen: false
-    },
-    {
-      id: `${day.id}-itinerary`,
+      id: `${safeDayId}-itinerary`,
       type: "itinerary",
       icon: "🧭",
-      kicker: "Plan",
       title: "Itinerary",
-      count: placesCount ? `${placesCount} stop${placesCount > 1 ? "s" : ""}` : "",
+      desc: placesCount ? `${placesCount} stop${placesCount > 1 ? "s" : ""}` : "Free day",
       body: itineraryBody,
       empty: !itineraryBody,
-      emptyMessage: "Free day to wander — no fixed stops.",
-      defaultOpen: true
+      emptyMessage: "No fixed stops."
     },
     {
-      id: `${day.id}-foods`,
+      id: `${safeDayId}-flights`,
+      type: "flights",
+      icon: "✈️",
+      title: "Flights & Trains",
+      desc: flightsCount ? `${flightsCount} segment${flightsCount > 1 ? "s" : ""}` : "No travel",
+      body: flightsBody,
+      empty: !flightsBody,
+      emptyMessage: "No flights or trains today."
+    },
+    {
+      id: `${safeDayId}-hotel`,
+      type: "hotel",
+      icon: "🏨",
+      title: "Hotel",
+      desc: esc(day.stay?.label || "No hotel"),
+      body: stayBody,
+      empty: !stayBody,
+      emptyMessage: "No hotel for this night."
+    },
+    {
+      id: `${safeDayId}-foods`,
       type: "foods",
       icon: "🍜",
-      kicker: "Eats",
       title: "Foods to Try",
-      count: aggregatedFoods.length ? `${aggregatedFoods.length} pick${aggregatedFoods.length > 1 ? "s" : ""}` : "",
+      desc: aggregatedFoods.length ? `${aggregatedFoods.length} pick${aggregatedFoods.length > 1 ? "s" : ""}` : "No picks",
       body: foodsBody,
       empty: !foodsBody,
-      emptyMessage: "No curated picks — explore neighborhood spots as you go.",
-      defaultOpen: false
+      emptyMessage: "No food picks for today."
+    },
+    {
+      id: `${safeDayId}-weather`,
+      type: "weather",
+      icon: "🌤️",
+      title: "Weather",
+      desc: weatherBody ? "Hourly forecast" : "Forecast unavailable",
+      body: weatherBody,
+      empty: !weatherBody,
+      emptyMessage: "Forecast unavailable."
     }
   ];
 
+  const defaultActive =
+    tabs.find((t) => t.type === "itinerary" && !t.empty)?.id || tabs.find((t) => !t.empty)?.id || tabs[0].id;
+
+  const renderBody = (tab) =>
+    tab.empty
+      ? `<div class="day-tab-empty">
+          <span class="day-tab-empty-icon" aria-hidden="true">${tab.icon}</span>
+          <p>${tab.emptyMessage}</p>
+        </div>`
+      : tab.body;
+
   return `
-    ${daySectionNavMarkup(sections)}
-    <div class="day-sections">
-      ${sections.map(daySectionMarkup).join("")}
+    <div class="day-tabs" data-day-tabs>
+      <div class="day-tabs-rail" role="tablist" aria-label="Day sections">
+        ${tabs
+          .map(
+            (tab) => `
+              <button class="day-tab day-tab--${tab.type}${tab.id === defaultActive ? " is-active" : ""}${tab.empty ? " is-empty" : ""}"
+                      type="button"
+                      role="tab"
+                      data-tab-target="${tab.id}"
+                      aria-selected="${tab.id === defaultActive ? "true" : "false"}"
+                      aria-controls="${tab.id}">
+                <span class="day-tab-icon" aria-hidden="true">${tab.icon}</span>
+                <span class="day-tab-text">
+                  <span class="day-tab-title">${tab.title}</span>
+                  <span class="day-tab-desc">${tab.desc}</span>
+                </span>
+              </button>
+            `
+          )
+          .join("")}
+      </div>
+      <div class="day-tab-stage">
+        ${tabs
+          .map(
+            (tab) => `
+              <div class="day-tab-panel" id="${tab.id}" role="tabpanel" data-tab-panel="${tab.id}"${tab.id === defaultActive ? "" : " hidden"}>
+                ${renderBody(tab)}
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+};
+
+const daySummaryStatsMarkup = (day) => {
+  if (day.gallery_only) return "";
+  const stats = [];
+  if (day.flights?.length) stats.push({ icon: "✈️", value: day.flights.length, label: "flights" });
+  const placesCount = (day.places?.length || 0) + (day.optional_places?.length || 0);
+  if (placesCount) stats.push({ icon: "🧭", value: placesCount, label: "stops" });
+  const foodsCount = aggregateDayFoods(day).length;
+  if (foodsCount) stats.push({ icon: "🍜", value: foodsCount, label: "food picks" });
+  if (day.stay) stats.push({ icon: "🏨", value: 1, label: "hotel" });
+  if (!stats.length) return "";
+  return `
+    <div class="day-stats" aria-hidden="true">
+      ${stats
+        .map(
+          (s) => `<span class="day-stat" title="${s.value} ${s.label}"><span class="day-stat-icon">${s.icon}</span>${s.value}</span>`
+        )
+        .join("")}
     </div>
   `;
 };
 
 const dayMarkup = (day, index) => `
-  <details class="day fade-up" id="${day.id}"${index === 0 ? " open" : ""}>
+  <details class="day fade-up" id="${esc(day.id)}"${index === 0 ? " open" : ""}>
     <summary class="day-summary">
       <div class="day-head${day.gallery_only ? " compact" : ""}">
         <div>
-          <p class="day-label">${day.label}</p>
-          <h2 class="day-title">${day.date}</h2>
-          ${day.display_title ? `<p class="day-subtitle">${day.display_title}</p>` : ""}
-          ${day.focus ? `<p class="day-focus">${day.focus}</p>` : ""}
+          <p class="day-label">${esc(day.label)}</p>
+          <h2 class="day-title">${esc(day.date)}</h2>
+          ${day.display_title ? `<p class="day-subtitle">${esc(day.display_title)}</p>` : ""}
+          ${day.focus ? `<p class="day-focus">${esc(day.focus)}</p>` : ""}
+          ${daySummaryStatsMarkup(day)}
         </div>
         <div class="day-summary-meta">
           ${
             day.transport_note
-              ? `<div class="transport-note">${modeIconsMarkup(day.transport_note, "stack")}<span>${day.transport_note}</span></div>`
+              ? `<div class="transport-note">${modeIconsMarkup(day.transport_note, "stack")}<span>${esc(day.transport_note)}</span></div>`
               : ""
           }
           <div class="day-toggle" aria-hidden="true">
@@ -855,11 +881,22 @@ const dayMarkup = (day, index) => `
       </div>
     </summary>
     <div class="day-panel">
-      ${weatherMarkup(day)}
-      ${day.plans?.length ? planListMarkup(day.plans) : dayBodySectionsMarkup(day)}
+      ${day.plans?.length ? `${weatherMarkup(day)}${planListMarkup(day.plans)}` : dayBodyTabsMarkup(day)}
     </div>
   </details>
 `;
+
+const activateDayTab = (wrap, panelId) => {
+  if (!wrap) return;
+  wrap.querySelectorAll(".day-tab").forEach((btn) => {
+    const active = btn.dataset.tabTarget === panelId;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-selected", active ? "true" : "false");
+  });
+  wrap.querySelectorAll(".day-tab-panel").forEach((panel) => {
+    panel.hidden = panel.dataset.tabPanel !== panelId;
+  });
+};
 
 const openDayFromHash = () => {
   const id = window.location.hash.slice(1);
@@ -874,6 +911,12 @@ const openDayFromHash = () => {
   const parentDay = target.closest("details.day");
   if (parentDay instanceof HTMLDetailsElement) {
     parentDay.open = true;
+  }
+  const tabPanel = target.classList?.contains("day-tab-panel")
+    ? target
+    : target.closest(".day-tab-panel");
+  if (tabPanel) {
+    activateDayTab(tabPanel.closest(".day-tabs"), tabPanel.id);
   }
 };
 
@@ -892,23 +935,18 @@ const wireDayNav = () => {
   });
 };
 
-const wireDaySectionNav = () => {
-  document.querySelectorAll("[data-section-target]").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const id = link.getAttribute("data-section-target");
-      if (!id) return;
-      const target = document.getElementById(id);
-      if (!target) return;
-      if (target instanceof HTMLDetailsElement) {
-        target.open = true;
-      }
-      const parentDay = target.closest("details.day");
-      if (parentDay instanceof HTMLDetailsElement) {
-        parentDay.open = true;
-      }
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-      history.replaceState(null, "", `#${id}`);
+const wireDayTabs = () => {
+  document.querySelectorAll(".day-tabs").forEach((wrap) => {
+    wrap.querySelectorAll(".day-tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.tabTarget;
+        if (!target) return;
+        activateDayTab(wrap, target);
+        const tabsRect = wrap.getBoundingClientRect();
+        if (tabsRect.top < 80 || tabsRect.top > window.innerHeight - 200) {
+          wrap.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
     });
   });
 };
@@ -1079,6 +1117,132 @@ const animateCount = (el, target) => {
   requestAnimationFrame(tick);
 };
 
+const buildWeatherChart = (data, isoDate) => {
+  const hourly = data.hourly;
+  if (!hourly?.time?.length) return "";
+  const indices = hourly.time.reduce((acc, t, i) => {
+    if (typeof t === "string" && t.startsWith(isoDate)) acc.push(i);
+    return acc;
+  }, []);
+  if (indices.length < 6) return "";
+
+  const temps = indices.map((i) => hourly.temperature_2m?.[i]).filter(Number.isFinite);
+  if (temps.length < 6) return "";
+  const rains = indices.map((i) => hourly.precipitation_probability?.[i] ?? 0);
+
+  const W = 320;
+  const H = 130;
+  const padTop = 16;
+  const padBottom = 28;
+  const padLeft = 28;
+  const padRight = 12;
+  const chartW = W - padLeft - padRight;
+  const chartH = H - padTop - padBottom;
+
+  const minT = Math.min(...temps);
+  const maxT = Math.max(...temps);
+  const range = Math.max(2, maxT - minT);
+  const lowT = Math.floor(minT - range * 0.1);
+  const highT = Math.ceil(maxT + range * 0.1);
+  const span = highT - lowT;
+
+  const stepX = chartW / (temps.length - 1);
+  const points = temps.map((t, i) => {
+    const x = padLeft + i * stepX;
+    const y = padTop + chartH - ((t - lowT) / span) * chartH;
+    return [x, y];
+  });
+
+  let linePath = `M ${points[0][0].toFixed(1)} ${points[0][1].toFixed(1)}`;
+  for (let i = 0; i < points.length - 1; i += 1) {
+    const [x1, y1] = points[i];
+    const [x2, y2] = points[i + 1];
+    const mx = (x1 + x2) / 2;
+    const my = (y1 + y2) / 2;
+    linePath += ` Q ${x1.toFixed(1)} ${y1.toFixed(1)} ${mx.toFixed(1)} ${my.toFixed(1)}`;
+  }
+  const last = points[points.length - 1];
+  linePath += ` T ${last[0].toFixed(1)} ${last[1].toFixed(1)}`;
+
+  const baselineY = padTop + chartH;
+  const areaPath = `${linePath} L ${last[0].toFixed(1)} ${baselineY.toFixed(1)} L ${points[0][0].toFixed(1)} ${baselineY.toFixed(1)} Z`;
+
+  const barW = Math.max(2, stepX * 0.55);
+  const rainBars = rains
+    .map((r, i) => {
+      if (!r) return "";
+      const x = padLeft + i * stepX - barW / 2;
+      const h = (r / 100) * chartH * 0.6;
+      const y = baselineY - h;
+      return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${h.toFixed(1)}" rx="1.5" class="weather-chart-rain"/>`;
+    })
+    .join("");
+
+  const tickHours = [0, 6, 12, 18];
+  const xLabels = tickHours
+    .filter((h) => h < temps.length)
+    .map((h) => {
+      const x = padLeft + h * stepX;
+      return `<text x="${x.toFixed(1)}" y="${(H - 10).toFixed(1)}" class="weather-chart-tick" text-anchor="middle">${String(h).padStart(2, "0")}h</text>`;
+    })
+    .join("");
+
+  const yLabels = `
+    <text x="${(padLeft - 6).toFixed(1)}" y="${(padTop + 4).toFixed(1)}" class="weather-chart-tick" text-anchor="end">${highT}°</text>
+    <text x="${(padLeft - 6).toFixed(1)}" y="${baselineY.toFixed(1)}" class="weather-chart-tick" text-anchor="end">${lowT}°</text>
+  `;
+
+  const minIdx = temps.indexOf(minT);
+  const maxIdx = temps.indexOf(maxT);
+  const markers = [
+    { i: minIdx, value: Math.round(minT), cls: "weather-chart-marker--min" },
+    { i: maxIdx, value: Math.round(maxT), cls: "weather-chart-marker--max" }
+  ]
+    .filter((m, i, arr) => m.i !== arr[1 - i]?.i || i === 0)
+    .map(({ i, value, cls }) => {
+      const [x, y] = points[i];
+      const labelY = y - 7;
+      return `
+        <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" class="weather-chart-dot ${cls}"/>
+        <text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" class="weather-chart-marker-label" text-anchor="middle">${value}°</text>
+      `;
+    })
+    .join("");
+
+  const now = new Date();
+  const updatedLabel = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}`;
+
+  return `
+    <div class="weather-chart" role="img" aria-label="Hourly temperature and rain probability">
+      <div class="weather-chart-head">
+        <span class="weather-chart-title">Hour by hour</span>
+        <span class="weather-chart-legend">
+          <span class="weather-chart-legend-item"><span class="weather-chart-swatch weather-chart-swatch--temp"></span>Temp</span>
+          <span class="weather-chart-legend-item"><span class="weather-chart-swatch weather-chart-swatch--rain"></span>Rain %</span>
+          <span class="weather-chart-updated" title="Auto-refreshes every 15 minutes">
+            <span class="weather-chart-pulse" aria-hidden="true"></span>
+            Live · ${updatedLabel}
+          </span>
+        </span>
+      </div>
+      <svg class="weather-chart-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="weather-temp-grad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#ffd17a" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#ffd17a" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path d="${areaPath}" class="weather-chart-area" fill="url(#weather-temp-grad)"/>
+        ${rainBars}
+        <path d="${linePath}" class="weather-chart-line" fill="none"/>
+        ${markers}
+        ${yLabels}
+        ${xLabels}
+      </svg>
+    </div>
+  `;
+};
+
 const renderWeatherData = (card, data, index) => {
   const code = data.daily.weather_code?.[index];
   const meta = weatherCodeMeta[code] || { label: "Forecast", icon: "🌡️", type: "cloudy" };
@@ -1091,6 +1255,8 @@ const renderWeatherData = (card, data, index) => {
   const uv = data.daily.uv_index_max?.[index];
   const sunrise = formatClockTime(data.daily.sunrise?.[index] || "");
   const sunset = formatClockTime(data.daily.sunset?.[index] || "");
+  const isoDate = data.daily.time?.[index] || "";
+  const chartMarkup = buildWeatherChart(data, isoDate);
 
   card.classList.remove(
     "weather-card--loading",
@@ -1158,6 +1324,7 @@ const renderWeatherData = (card, data, index) => {
       ${humidityRow}
       ${uvRow}
     </div>
+    ${chartMarkup}
     ${sunRow}
   `;
 
@@ -1168,7 +1335,7 @@ const renderWeatherData = (card, data, index) => {
 const fetchWeather = async (lat, lon) => {
   const key = `${lat},${lon}`;
   if (!weatherCache.has(key)) {
-    const params = [
+    const dailyParams = [
       "weather_code",
       "temperature_2m_max",
       "temperature_2m_min",
@@ -1182,7 +1349,12 @@ const fetchWeather = async (lat, lon) => {
       "sunrise",
       "sunset"
     ].join(",");
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encode(lat)}&longitude=${encode(lon)}&daily=${params}&forecast_days=16&timezone=auto`;
+    const hourlyParams = [
+      "temperature_2m",
+      "precipitation_probability",
+      "weather_code"
+    ].join(",");
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encode(lat)}&longitude=${encode(lon)}&daily=${dailyParams}&hourly=${hourlyParams}&forecast_days=16&timezone=auto`;
     weatherCache.set(
       key,
       fetch(url).then((response) => {
@@ -1224,7 +1396,7 @@ const hydrateWeather = async () => {
       }
 
       if (daysAway > 15) {
-        setWeatherStatus(card, `Forecast opens about 16 days before ${date}`);
+        setWeatherStatus(card, "Forecast opens 16 days out.");
         return;
       }
 
@@ -1232,12 +1404,12 @@ const hydrateWeather = async () => {
         const data = await fetchWeather(lat, lon);
         const index = data.daily?.time?.indexOf(date) ?? -1;
         if (index === -1) {
-          setWeatherStatus(card, `Forecast not published yet for ${date}`);
+          setWeatherStatus(card, "Forecast pending.");
           return;
         }
         renderWeatherData(card, data, index);
       } catch {
-        setWeatherStatus(card, "Weather service unavailable. Try again later.");
+        setWeatherStatus(card, "Weather unavailable.");
       }
     })
   );
@@ -1279,22 +1451,21 @@ const render = (data, tripKey) => {
   const hasDayStays = data.days?.some((day) => day.stay);
   app.innerHTML = `
     <div class="page">
-      <header class="hero" style="--hero-image: url('${assetSrc(heroImage)}')">
+      <header class="hero" style="--hero-image: url('${esc(assetSrc(heroImage))}')">
         <div class="hero-inner">
           ${tripSwitcherMarkup(tripKey)}
-          <div class="eyebrow">${trip.eyebrow}</div>
-          <h1 class="hero-title"><span class="hero-title-main">${trip.titleMain}</span><span class="hero-title-sub">${trip.titleSub}</span></h1>
+          <div class="eyebrow">${esc(trip.eyebrow)}</div>
+          <h1 class="hero-title"><span class="hero-title-main">${esc(trip.titleMain)}</span><span class="hero-title-sub">${esc(trip.titleSub)}</span></h1>
           <div class="hero-meta">
-            <div class="meta-pill">${data.trip_dates}</div>
-            <div class="meta-pill">${data.summary}</div>
+            <div class="meta-pill">${esc(data.trip_dates)}</div>
+            <div class="meta-pill">${esc(data.summary)}</div>
           </div>
-          <p class="hero-copy">Flights, stops, food, and route planning in one polished itinerary.</p>
         </div>
       </header>
       <nav class="day-nav" aria-label="Day navigation">
         <div class="day-nav-inner">
           <div class="day-nav-scroller">
-            ${data.days.map((day) => `<a href="#${day.id}">${day.label}</a>`).join("")}
+            ${data.days.map((day) => `<a href="#${esc(day.id)}">${esc(day.label)}</a>`).join("")}
           </div>
           <button type="button" class="toggle-all" data-state="collapse" aria-label="Collapse all days">
             <span class="toggle-all-collapse">Collapse all</span>
@@ -1306,7 +1477,6 @@ const render = (data, tripKey) => {
         ${hasDayStays ? "" : stayMarkup(data)}
         ${data.days.map(dayMarkup).join("")}
       </main>
-      <footer class="footer">Maps and source links are attached to each stop.</footer>
       <button type="button" class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/></svg>
       </button>
@@ -1314,7 +1484,7 @@ const render = (data, tripKey) => {
   `;
 
   wireDayNav();
-  wireDaySectionNav();
+  wireDayTabs();
   openDayFromHash();
   startObservers();
   wireActiveDay();
@@ -1322,17 +1492,60 @@ const render = (data, tripKey) => {
   wireBackToTop();
   wirePrint();
   hydrateWeather();
+  scheduleWeatherRefresh();
+};
+
+let weatherRefreshTimer = 0;
+let lastWeatherFetchAt = Date.now();
+const WEATHER_REFRESH_MS = 15 * 60 * 1000;
+
+const refreshWeather = async () => {
+  weatherCache.clear();
+  lastWeatherFetchAt = Date.now();
+  await hydrateWeather();
+};
+
+const scheduleWeatherRefresh = () => {
+  if (weatherRefreshTimer) {
+    clearInterval(weatherRefreshTimer);
+  }
+  weatherRefreshTimer = window.setInterval(() => {
+    if (document.visibilityState === "visible") {
+      refreshWeather();
+    }
+  }, WEATHER_REFRESH_MS);
+
+  document.addEventListener("visibilitychange", () => {
+    if (
+      document.visibilityState === "visible" &&
+      Date.now() - lastWeatherFetchAt > WEATHER_REFRESH_MS
+    ) {
+      refreshWeather();
+    }
+  });
+};
+
+const detectTrip = () => {
+  const pathname = window.location.pathname || "";
+  if (window.TRIP_KEY === "china" || pathname.endsWith("china.html")) {
+    return { key: "china", path: window.TRIP_DATA_PATH || "./data/china.json" };
+  }
+  return { key: "taiwan", path: window.TRIP_DATA_PATH || "./data/itinerary.json" };
 };
 
 const init = async () => {
-  const tripKey = window.TRIP_KEY || "taiwan";
-  const dataPath = window.TRIP_DATA_PATH || "./data/itinerary.json";
-  const response = await fetch(dataPath);
+  const trip = detectTrip();
+  const response = await fetch(trip.path);
+  if (!response.ok) {
+    throw new Error(`Failed to load itinerary (${response.status})`);
+  }
   const data = await response.json();
-  render(data, tripKey);
+  render(data, trip.key);
   window.addEventListener("hashchange", openDayFromHash);
 };
 
 init().catch((error) => {
-  app.innerHTML = `<pre>${error.message}</pre>`;
+  const pre = document.createElement("pre");
+  pre.textContent = error?.message || "Failed to load itinerary.";
+  app.replaceChildren(pre);
 });
