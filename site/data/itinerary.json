@@ -46,7 +46,8 @@
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
           "route": "Sun 24 May 07:55 PEK → 11:25 TPE",
-          "details": "3h 30m · Economy"
+          "details": "3h 30m · Economy",
+          "airports": "PEK Beijing Capital ✈ TPE Taipei Taoyuan"
         }
       ],
       "places": [
@@ -1809,7 +1810,8 @@
           "to": "Istanbul (transit)",
           "carrier": "Turkish Airlines TK125",
           "route": "Sun 31 May 09:35 TPE → 17:10 IST",
-          "details": "12h 35m · Economy"
+          "details": "12h 35m · Economy",
+          "airports": "TPE Taipei Taoyuan ✈ IST Istanbul"
         },
         {
           "slug": "ist-ber-tk1727",
@@ -1819,7 +1821,8 @@
           "carrier": "Turkish Airlines TK1727",
           "route": "Sun 31 May 19:25 IST → 21:25 BER",
           "details": "3h · Economy",
-          "layover": "2h 15m at IST"
+          "layover": "2h 15m at IST",
+          "airports": "IST Istanbul ✈ BER Berlin Brandenburg"
         }
       ],
       "places": []

@@ -1790,6 +1790,14 @@ img {
   font-size: 0.9rem;
 }
 
+.flight-airports {
+  margin-top: 0.32rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
 .flight-meta {
   display: flex;
   flex-wrap: wrap;

@@ -112,7 +112,8 @@
           "carrier": "Hainan Airlines HU490",
           "route": "Thu 14 May 13:55 BER → Fri 15 May 05:00 PEK",
           "details": "9h 05m · Economy",
-          "seats": "56A · 56B"
+          "seats": "56A · 56B",
+          "airports": "BER Berlin Brandenburg ✈ PEK Beijing Capital"
         },
         {
           "slug": "pek-pvg-hu7613",
@@ -123,7 +124,8 @@
           "route": "Fri 15 May 07:30 PEK → 09:50 PVG",
           "details": "2h 20m · Economy",
           "seats": "47A · 47B",
-          "layover": "2h 30m at PEK"
+          "layover": "2h 30m at PEK",
+          "airports": "PEK Beijing Capital ✈ PVG Shanghai Pudong"
         }
       ],
       "places": []
@@ -674,7 +676,8 @@
           "to": "Zhangjiajie",
           "carrier": "Juneyao Airlines HO2199",
           "route": "Mon 18 May 06:40 PVG (T2) → 09:05 DYG (T2)",
-          "details": "2h 25m · Economy · Airbus A319/A320/A321"
+          "details": "2h 25m · Economy · Airbus A319/A320/A321",
+          "airports": "PVG Shanghai Pudong ✈ DYG Zhangjiajie Hehua"
         },
         {
           "slug": "zjjxi-fenghuang-g5665",
@@ -1329,7 +1332,8 @@
           "carrier": "Air China CA1954",
           "route": "Thu 21 May 22:30 DYG (T2) → Fri 22 May 00:55 PEK (T3)",
           "details": "2h 25m · Economy · Boeing 737-300",
-          "seats": "17K · 17L"
+          "seats": "17K · 17L",
+          "airports": "DYG Zhangjiajie Hehua ✈ PEK Beijing Capital"
         }
       ],
       "places": [
@@ -1509,95 +1513,129 @@
       "id": "day-9",
       "label": "Day 9",
       "date": "Friday, May 22, 2026",
-      "display_title": "Badaling Great Wall, Longqingxia Gorge and Houhai",
-      "focus": "First Beijing day: go north to Badaling Great Wall, continue to Longqingxia Gorge, then return to the city for Houhai Lake at night.",
-      "transport_note": "Pre-book a private car for the wall + gorge loop the night before. The CA1954 from Zhangjiajie lands 00:55, so you'll be in bed past 02:00 — leave around 08:00 for Badaling, take the Longqingxia leg only if the morning energy holds, and treat Houhai as a slow-paced wind-down.",
+      "display_title": "Mutianyu Great Wall, Guomao and Sanlitun, then Houhai",
+      "focus": "First Beijing day after the late arrival. Drive out to Mutianyu in the morning for the quieter, better-restored stretch of wall, return to the Chaoyang CBD for the CCTV skyline and the Sanlitun streets, then wind down at Houhai under lanterns.",
+      "transport_note": "Pre-book a private car for Mutianyu the night before. The CA1954 from Zhangjiajie lands 00:55, so you'll be in bed past 02:00 — leave the hotel around 08:30 for an unhurried Mutianyu morning, then the rest of the day is in walking distance of the hotel: CBD → Sanlitun → Houhai by metro / taxi.",
       "start_transfer": {
-        "title": "Hotel to Badaling Great Wall",
+        "title": "Hotel to Mutianyu Great Wall",
         "mode": "Pre-booked car",
-        "instructions": "Start around 07:30 from the hotel and drive north to Badaling. A private car lets you continue to Longqingxia Gorge afterward instead of returning to Beijing first.",
-        "note": "Badaling is the easiest logistics choice but crowded. Book tickets in advance and bring passports."
+        "instructions": "Leave the hotel around 08:30 and drive 1.5 to 2 hours northeast to Mutianyu. The car waits at the Mutianyu visitor centre and brings you back to Chaoyang in the afternoon, dropping at Guomao for the CBD walk.",
+        "note": "Mutianyu is the better-restored, less-crowded substitute for Badaling. The chairlift / cable car / toboggan tickets are paid separately at the gate."
       },
       "places": [
         {
-          "slug": "badaling-great-wall",
-          "name": "Badaling Great Wall",
-          "area": "Yanqing District, Beijing",
-          "best_time": "Morning",
-          "duration": "2.5 to 3.5 hours",
-          "summary": "The most accessible restored Great Wall section, with broad ramparts, strong views, and easy cable-car options. Go early to beat the biggest crowds.",
+          "slug": "mutianyu-great-wall",
+          "name": "Mutianyu Great Wall",
+          "area": "Huairou District, Beijing",
+          "best_time": "Arrive 10:00–10:30 for a quieter wall before the day-tour crowds",
+          "duration": "3 to 4 hours on the wall plus driving",
+          "summary": "The most photogenic and least-crowded restored section of the Great Wall within easy reach of Beijing — about 70 km northeast of the city. Towers 14 to 20 give the cleanest mountain views; ride the cable car up and the toboggan down for the full Mutianyu experience.",
           "highlights": [
-            "Classic restored Great Wall towers",
-            "North and south walking routes",
-            "Cable car or pulley options depending on route"
+            "Towers 14 to 20 — quiet stretch with the best photo angles",
+            "Cable car or chairlift up, toboggan slide down",
+            "Forested ridges and restored battlements in every direction",
+            "Quieter alternative to Badaling, especially before noon"
           ],
-          "transport": "Private car is easiest from the hotel. Public transport is possible by high-speed train to Badaling Great Wall Station, but less convenient if continuing to Longqingxia.",
+          "transport": "Pre-booked private car covers the round trip in 1.5 to 2 hours each way from Chaoyang. Self-drive isn't practical in Beijing for visitors. Public transport (Bus 916 Express from Dongzhimen + the H23/H24 shuttle from Huairou) works but eats half the day; stick with the booked driver.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Badaling+Great+Wall",
-            "reference": "https://en.wikipedia.org/wiki/Badaling"
+            "map": "https://www.google.com/maps/search/?api=1&query=Mutianyu+Great+Wall",
+            "reference": "https://en.wikipedia.org/wiki/Mutianyu"
           },
           "image_queries": [
-            "Badaling Great Wall",
-            "Great Wall Badaling Beijing"
+            "Mutianyu Great Wall watchtowers",
+            "Mutianyu Great Wall mountains"
           ],
           "desired_images": 1,
-          "foods": [],
           "images": [
             {
               "src": "assets/images/places/mutianyu-great-wall-1.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Great_Wall_of_China_July_2006.JPG/1920px-Great_Wall_of_China_July_2006.JPG",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
-              "title": "File:Great Wall of China July 2006.JPG"
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Great_Wall_of_China_at_Mutianyu_-_panoramio_%286%29.jpg/1920px-Great_Wall_of_China_at_Mutianyu_-_panoramio_%286%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_at_Mutianyu_-_panoramio_(6).jpg",
+              "title": "File:Great Wall of China at Mutianyu - panoramio (6).jpg"
             }
           ],
-          "access_note": "Carry passports for ticket checks. Start early; Badaling gets crowded fast."
+          "manual_images": [],
+          "access_note": "Cable car / chairlift / toboggan tickets are sold separately at the Mutianyu visitor centre or via the WeChat mini-program. Allow 2 to 2.5 hours from gate-in to gate-out if you ride up and toboggan down."
         },
         {
-          "slug": "longqingxia-gorge",
-          "name": "Longqingxia Gorge",
-          "area": "Yanqing District, Beijing",
-          "best_time": "Afternoon",
-          "duration": "2 to 3 hours",
-          "summary": "Longqingxia / Dragon Gorge is a reservoir canyon with boat cruises through steep northern-China cliffs. It pairs well with Badaling because both sit in Yanqing.",
+          "slug": "beijing-cbd-cctv-headquarters",
+          "name": "Beijing CBD and CCTV Headquarters",
+          "area": "Guomao, Chaoyang District, Beijing",
+          "best_time": "Late afternoon golden hour",
+          "duration": "45 minutes to 1 hour",
+          "summary": "End in Guomao/CBD for the modern contrast: CCTV Headquarters exterior, China World towers, and bright business-district streets near your hotel side of town.",
           "highlights": [
-            "Boat cruise through the gorge if operating",
-            "Dragon escalator up the dam area",
-            "Cable car viewpoint if time allows",
-            "Cooler mountain air than central Beijing"
+            "CCTV Headquarters / underpants building exterior",
+            "China World Trade Center skyline",
+            "Guomao night lights",
+            "Easy dinner and taxi back"
           ],
-          "transport": "Drive from Badaling to Longqingxia in about 40 to 60 minutes. Ask the driver to wait. Inside, prioritize entrance + boat ticket first; add cable car/viewpoint only if the boat line is short.",
+          "transport": "From Mutianyu, the booked car drops you near Guomao Bridge or Subway Line 10 Guomao Station. From the hotel, it's a 5 to 10 minute walk west to the CCTV viewing plaza.",
           "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=Longqingxia+Gorge+Beijing",
-            "reference": "https://en.wikipedia.org/wiki/Longqingxia"
+            "map": "https://www.google.com/maps/search/?api=1&query=CCTV+Headquarters+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/CCTV_Headquarters"
           },
           "image_queries": [
-            "Longqingxia Gorge Beijing",
-            "Longqing Gorge Yanqing"
+            "CCTV Headquarters Beijing",
+            "Beijing CBD Guomao skyline"
           ],
           "desired_images": 1,
           "foods": [],
           "images": [
             {
-              "src": "assets/images/places/downloaded-7242c30eecac.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cable_car_longqing_gorge.jpg/1920px-Cable_car_longqing_gorge.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:Cable_car_longqing_gorge.jpg",
-              "title": "File:Cable car longqing gorge.jpg"
+              "src": "assets/images/places/downloaded-6970c1883f1d.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
+              "title": "File:CCTV Headquarters (6349184617).jpg"
             }
           ],
-          "access_note": "Arrive as early as possible after Badaling. Boat schedules and water activities vary by season/weather; if closed, use the gorge viewpoints and head back to Beijing earlier.",
           "manual_images": [
             {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_%285668676781%29.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:Longqingxia_%E9%BE%99%E5%BA%86%E5%B3%A1_(5668676781).jpg",
-              "title": "File:Longqingxia 龙庆峡 (5668676781).jpg"
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
+              "page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
+              "title": "File:CCTV Headquarters (6349184617).jpg"
             }
           ]
+        },
+        {
+          "slug": "sanlitun-taikoo-li",
+          "name": "Sanlitun · Taikoo Li",
+          "area": "Chaoyang District, Beijing",
+          "best_time": "Early evening — 17:00 onward as the lights come on",
+          "duration": "1.5 to 2 hours",
+          "summary": "Beijing's most polished modern district — open-air shopping streets at Taikoo Li North and South, the glass-cube Apple flagship, dozens of restaurants, and the small bars and cafés on Sanlitun Bar Street. The most pleasant 'walk and graze' stretch in the city.",
+          "highlights": [
+            "Taikoo Li North + South open-air malls",
+            "Apple Sanlitun — the giant glass cube flagship",
+            "Sanlitun Bar Street (Tongli Studios alley)",
+            "Rooftop dinner spots with views toward CCTV"
+          ],
+          "transport": "From Beijing CBD walk 15 to 20 minutes north along Sanlitun Road, or take Subway Line 10 from Guomao to Tuanjiehu (2 stops) and walk 10 minutes east. Cab from the hotel is about 10 minutes outside rush hour.",
+          "links": {
+            "map": "https://www.google.com/maps/search/?api=1&query=Taikoo+Li+Sanlitun+Beijing",
+            "reference": "https://en.wikipedia.org/wiki/Sanlitun"
+          },
+          "image_queries": [
+            "Sanlitun Taikoo Li night",
+            "Sanlitun Beijing street"
+          ],
+          "desired_images": 1,
+          "images": [
+            {
+              "src": "assets/images/places/sanlitun-taikoo-li.jpg",
+              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Taikoo_Li_Sanlitun_South_(20200808170437).jpg/1280px-Taikoo_Li_Sanlitun_South_(20200808170437).jpg",
+              "source_page": "https://commons.wikimedia.org/wiki/File:Taikoo_Li_Sanlitun_South_(20200808170437).jpg",
+              "title": "File:Taikoo Li Sanlitun South (20200808170437).jpg"
+            }
+          ],
+          "manual_images": [],
+          "access_note": "Open-air streets — open all hours. Taikoo Li shops typically run 10:00–22:00; bars on Sanlitun Bar Street go later."
         },
         {
           "slug": "houhai-lake",
           "name": "Houhai Lake",
           "area": "Shichahai, Xicheng District, Beijing",
-          "best_time": "Evening",
+          "best_time": "After dark, 20:00 onward",
           "duration": "60 to 90 min",
           "summary": "Houhai is the relaxed Shichahai lake-and-hutong evening zone. Use it for a soft landing after the wall/gorge day: lakeside walk, Yinding Bridge, dinner, and bars if you want them.",
           "highlights": [
@@ -1606,7 +1644,7 @@
             "Easy dinner after the long drive",
             "Optional bar street without committing to nightlife"
           ],
-          "transport": "Have the driver drop you at Shichahai/Houhai, or rest at the hotel first and taxi over. Metro Line 8 to Shichahai also works if you are returning independently.",
+          "transport": "From Sanlitun, taxi 15 minutes (or Line 10 to Hujialou → Line 6 to Beihai North → 10 minute walk). The lake loop is fully walkable; no extra ticket needed.",
           "links": {
             "map": "https://www.google.com/maps/search/?api=1&query=Houhai+Lake+Beijing",
             "reference": "https://en.wikipedia.org/wiki/Shichahai"
@@ -1670,9 +1708,9 @@
       "id": "day-10",
       "label": "Day 10",
       "date": "Saturday, May 23, 2026",
-      "display_title": "Zhengyangmen, Forbidden City, Jingshan, Summer Palace and CBD",
-      "focus": "Second Beijing day: old central-axis landmarks, palace roofs from Jingshan, Summer Palace, then the CBD around CCTV Headquarters.",
-      "transport_note": "Forbidden City Morning Class is booked (08:30–12:00). Be at Wumen by 08:30, exit through the north Shenwumen for Jingshan, then make a single midday call: Summer Palace (1h NW by Line 4) or skip it for a slower CBD-and-Houhai evening.",
+      "display_title": "Forbidden City Morning Class, Jingshan and Summer Palace",
+      "focus": "Second Beijing day, built around the Forbidden City Morning Class slot. Climb Jingshan for the palace-roof view, then take Line 4 northwest to the Summer Palace for the long lakeside afternoon.",
+      "transport_note": "Be at the Forbidden City south gate (Wumen) by 08:30 for the booked Morning Class. Exit through the north Shenwumen straight into Jingshan, then Line 4 from Pinganli to Beigongmen for the Summer Palace. CBD / CCTV moved to Day 9 so this day stays central.",
       "tickets": [
         {
           "slug": "forbidden-city-morning",
@@ -1884,46 +1922,6 @@
               "title": "File:Longevity Hill of the Summer Palace.jpg"
             }
           ]
-        },
-        {
-          "slug": "beijing-cbd-cctv-headquarters",
-          "name": "Beijing CBD and CCTV Headquarters",
-          "area": "Guomao, Chaoyang District, Beijing",
-          "best_time": "Evening",
-          "duration": "60 to 90 min",
-          "summary": "End in Guomao/CBD for the modern contrast: CCTV Headquarters exterior, China World towers, and bright business-district streets near your hotel side of town.",
-          "highlights": [
-            "CCTV Headquarters / underpants building exterior",
-            "China World Trade Center skyline",
-            "Guomao night lights",
-            "Easy dinner and taxi back"
-          ],
-          "transport": "Taxi from Summer Palace is easiest. By metro, use Line 4/10 toward Guomao. The CCTV building is viewed from public sidewalks; there is no tourist interior visit.",
-          "links": {
-            "map": "https://www.google.com/maps/search/?api=1&query=CCTV+Headquarters+Beijing",
-            "reference": "https://en.wikipedia.org/wiki/CCTV_Headquarters"
-          },
-          "image_queries": [
-            "CCTV Headquarters Beijing",
-            "Beijing CBD Guomao skyline"
-          ],
-          "desired_images": 1,
-          "foods": [],
-          "images": [
-            {
-              "src": "assets/images/places/downloaded-6970c1883f1d.jpg",
-              "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
-              "source_page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
-              "title": "File:CCTV Headquarters (6349184617).jpg"
-            }
-          ],
-          "manual_images": [
-            {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CCTV_Headquarters_%286349184617%29.jpg/1920px-CCTV_Headquarters_%286349184617%29.jpg",
-              "page": "https://commons.wikimedia.org/wiki/File:CCTV_Headquarters_(6349184617).jpg",
-              "title": "File:CCTV Headquarters (6349184617).jpg"
-            }
-          ]
         }
       ],
       "transfers": [
@@ -1970,7 +1968,8 @@
           "to": "Taipei",
           "carrier": "Hainan Airlines HU7987",
           "route": "Sun 24 May 07:55 PEK → 11:25 TPE",
-          "details": "3h 30m · Economy"
+          "details": "3h 30m · Economy",
+          "airports": "PEK Beijing Capital ✈ TPE Taipei Taoyuan"
         }
       ],
       "places": []

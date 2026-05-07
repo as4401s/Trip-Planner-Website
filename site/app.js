@@ -176,6 +176,7 @@ const flightMarkup = (flights = []) => {
               <div class="flight-main">
                 <div class="flight-times">${esc(flight.route)}</div>
                 <div class="flight-carrier">${esc(flight.carrier)}</div>
+                ${flight.airports ? `<div class="flight-airports">${esc(flight.airports)}</div>` : ""}
               </div>
               ${
                 flight.seats || flight.layover || flight.gate
