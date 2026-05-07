@@ -77,6 +77,35 @@ const imageMarkup = (images = [], alt, max = 2) => {
   `;
 };
 
+const foodGridMarkup = (foods = []) => {
+  if (!foods.length) {
+    return "";
+  }
+  return `
+    <div class="foods">
+      ${foods
+        .map((food) => {
+          const image = safeImage(food.images);
+          return `
+            <article class="food-card${image ? "" : " no-image"}">
+              ${
+                image
+                  ? `<img src="${assetSrc(image)}" alt="${food.name}" loading="lazy" />`
+                  : ""
+              }
+              <div class="food-body">
+                <h4 class="food-title">${food.name}</h4>
+                <p class="food-meta">${food.where}</p>
+                <p class="food-description">${food.description}</p>
+              </div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+};
+
 const foodMarkup = (foods = []) => {
   if (!foods.length) {
     return "";
@@ -96,27 +125,7 @@ const foodMarkup = (foods = []) => {
         </div>
       </summary>
       <div class="food-section-panel">
-        <div class="foods">
-          ${foods
-            .map((food) => {
-              const image = safeImage(food.images);
-              return `
-                <article class="food-card${image ? "" : " no-image"}">
-                  ${
-                    image
-                      ? `<img src="${assetSrc(image)}" alt="${food.name}" loading="lazy" />`
-                      : ""
-                  }
-                  <div class="food-body">
-                    <h4 class="food-title">${food.name}</h4>
-                    <p class="food-meta">${food.where}</p>
-                    <p class="food-description">${food.description}</p>
-                  </div>
-                </article>
-              `;
-            })
-            .join("")}
-        </div>
+        ${foodGridMarkup(foods)}
       </div>
     </details>
   `;
@@ -269,23 +278,42 @@ const weatherLocations = {
   }
 };
 
-const weatherCodeLabels = {
-  0: "Clear",
-  1: "Mostly clear",
-  2: "Partly cloudy",
-  3: "Overcast",
-  45: "Fog",
-  48: "Rime fog",
-  51: "Light drizzle",
-  53: "Drizzle",
-  55: "Dense drizzle",
-  61: "Light rain",
-  63: "Rain",
-  65: "Heavy rain",
-  80: "Rain showers",
-  81: "Rain showers",
-  82: "Heavy showers",
-  95: "Thunderstorm"
+const weatherCodeMeta = {
+  0: { label: "Clear sky", icon: "☀️", type: "sunny" },
+  1: { label: "Mostly clear", icon: "🌤️", type: "sunny" },
+  2: { label: "Partly cloudy", icon: "⛅", type: "cloudy" },
+  3: { label: "Overcast", icon: "☁️", type: "cloudy" },
+  45: { label: "Fog", icon: "🌫️", type: "foggy" },
+  48: { label: "Rime fog", icon: "🌫️", type: "foggy" },
+  51: { label: "Light drizzle", icon: "🌦️", type: "rainy" },
+  53: { label: "Drizzle", icon: "🌦️", type: "rainy" },
+  55: { label: "Dense drizzle", icon: "🌧️", type: "rainy" },
+  61: { label: "Light rain", icon: "🌧️", type: "rainy" },
+  63: { label: "Rain", icon: "🌧️", type: "rainy" },
+  65: { label: "Heavy rain", icon: "⛈️", type: "rainy" },
+  71: { label: "Light snow", icon: "🌨️", type: "snowy" },
+  73: { label: "Snow", icon: "🌨️", type: "snowy" },
+  75: { label: "Heavy snow", icon: "❄️", type: "snowy" },
+  77: { label: "Snow grains", icon: "❄️", type: "snowy" },
+  80: { label: "Rain showers", icon: "🌦️", type: "rainy" },
+  81: { label: "Rain showers", icon: "🌧️", type: "rainy" },
+  82: { label: "Heavy showers", icon: "⛈️", type: "stormy" },
+  85: { label: "Snow showers", icon: "🌨️", type: "snowy" },
+  86: { label: "Snow showers", icon: "❄️", type: "snowy" },
+  95: { label: "Thunderstorm", icon: "⛈️", type: "stormy" },
+  96: { label: "Thunderstorm + hail", icon: "⛈️", type: "stormy" },
+  99: { label: "Thunderstorm + hail", icon: "⛈️", type: "stormy" }
+};
+
+const formatFriendlyDate = (dateText = "") => {
+  const match = dateText.match(/^(\w+),\s+(\w+)\s+(\d+)/);
+  if (!match) return dateText;
+  return `${match[1].slice(0, 3)} · ${match[2].slice(0, 3)} ${match[3]}`;
+};
+
+const formatClockTime = (iso = "") => {
+  const time = iso.split("T")[1];
+  return time ? time.slice(0, 5) : "";
 };
 
 const formatIsoDate = (dateText = "") => {
@@ -325,19 +353,24 @@ const weatherMarkup = (day) => {
 
   return `
     <article
-      class="weather-card"
+      class="weather-card weather-card--loading"
       data-weather-date="${isoDate}"
       data-weather-lat="${location.latitude}"
       data-weather-lon="${location.longitude}"
       data-weather-place="${location.name}"
     >
-      <div>
-        <p class="weather-kicker">Weather</p>
-        <h3 class="weather-title">${location.name}</h3>
-        <p class="weather-copy">Live daily forecast from Open-Meteo will load when this date is inside the forecast window.</p>
-      </div>
-      <div class="weather-values" aria-live="polite">
-        <span class="weather-status">Checking forecast...</span>
+      <header class="weather-head">
+        <div>
+          <p class="weather-kicker">Forecast</p>
+          <h3 class="weather-title">${location.name}</h3>
+        </div>
+        <p class="weather-date">${formatFriendlyDate(day.date)}</p>
+      </header>
+      <div class="weather-body" aria-live="polite">
+        <div class="weather-loading">
+          <span class="weather-loading-orb" aria-hidden="true"></span>
+          <p class="weather-status">Checking forecast…</p>
+        </div>
       </div>
     </article>
   `;
@@ -437,17 +470,7 @@ const dayMapMarkup = (day) => {
   }
 
   if (currentTripKey === "china") {
-    const origin = day.places[0];
-    const destination = day.places.at(-1);
-    return `
-      <article class="map-card route-card">
-        <div class="map-head">
-          <h3 class="map-title">China Map & Transit</h3>
-          <p class="map-note">Amap/Gaode works reliably in mainland China. Use it for live metro, bus, taxi, and walking routes.</p>
-        </div>
-        ${origin && destination && origin !== destination ? transitLinksMarkup(origin, destination) : mapLinksMarkup(placeQuery(origin), null)}
-      </article>
-    `;
+    return "";
   }
 
   if (!mapsApiKey) {
@@ -519,7 +542,7 @@ const dayStartMarkup = (startTransfer) => {
   `;
 };
 
-const placeMarkup = (place) => `
+const placeMarkup = (place, { showFoods = true } = {}) => `
   <article class="place">
     <div class="place-grid">
       ${imageMarkup(place.images, place.name)}
@@ -551,13 +574,13 @@ const placeMarkup = (place) => `
             : ""
         }
         ${mapLinksMarkup(placeQuery(place), place.links.reference)}
-        ${foodMarkup(place.foods)}
+        ${showFoods ? foodMarkup(place.foods) : ""}
       </div>
     </div>
   </article>
 `;
 
-const placeListMarkup = (day) => {
+const placeListMarkup = (day, options = {}) => {
   if (!day.places?.length) {
     return "";
   }
@@ -567,7 +590,7 @@ const placeListMarkup = (day) => {
       ${day.places
         .map((place, index) => {
           const nextPlace = day.places[index + 1];
-          return `${placeMarkup(place)}${transferMarkup(
+          return `${placeMarkup(place, options)}${transferMarkup(
             day.transfers?.[index],
             place,
             nextPlace
@@ -578,7 +601,7 @@ const placeListMarkup = (day) => {
   `;
 };
 
-const optionalPlacesMarkup = (day) => {
+const optionalPlacesMarkup = (day, options = {}) => {
   if (!day.optional_places?.length) {
     return "";
   }
@@ -597,7 +620,7 @@ const optionalPlacesMarkup = (day) => {
         </div>
       </summary>
       <div class="optional-section-panel">
-        ${placeListMarkup({ places: day.optional_places, transfers: day.optional_transfers || [] })}
+        ${placeListMarkup({ places: day.optional_places, transfers: day.optional_transfers || [] }, options)}
       </div>
     </details>
   `;
@@ -654,6 +677,160 @@ const celebrationMarkup = (images = []) => `
   </div>
 `;
 
+const aggregateDayFoods = (day) => {
+  const foods = [];
+  const seen = new Set();
+  const collect = (places = []) => {
+    places.forEach((place) => {
+      (place.foods || []).forEach((food) => {
+        const key = food.slug || food.name;
+        if (!key || seen.has(key)) return;
+        seen.add(key);
+        foods.push(food);
+      });
+    });
+  };
+  collect(day.places);
+  collect(day.optional_places);
+  return foods;
+};
+
+const daySectionMarkup = (section) => {
+  const hasContent = !!section.body && section.body.trim().length > 0;
+  const meta = hasContent && section.count
+    ? `<span class="day-section-count">${section.count}</span>`
+    : "";
+  const body = hasContent
+    ? section.body
+    : `<div class="day-section-empty">
+        <span class="day-section-empty-icon" aria-hidden="true">${section.icon}</span>
+        <p>${section.emptyMessage}</p>
+      </div>`;
+  return `
+    <details class="day-section day-section--${section.type}${hasContent ? "" : " day-section--empty-state"}" id="${section.id}"${section.defaultOpen ? " open" : ""}>
+      <summary class="day-section-summary">
+        <div class="day-section-summary-main">
+          <span class="day-section-icon" aria-hidden="true">${section.icon}</span>
+          <div>
+            <p class="day-section-kicker">${section.kicker}</p>
+            <h3 class="day-section-title">${section.title}</h3>
+          </div>
+        </div>
+        <div class="day-section-meta">
+          ${meta}
+          <span class="day-section-toggle" aria-hidden="true">
+            <span class="when-open">Hide</span>
+            <span class="when-closed">Show</span>
+          </span>
+        </div>
+      </summary>
+      <div class="day-section-panel">
+        ${body}
+      </div>
+    </details>
+  `;
+};
+
+const daySectionNavMarkup = (sections) => `
+  <nav class="day-section-nav" aria-label="Day sections">
+    <div class="day-section-nav-track">
+      ${sections
+        .map(
+          (section) => `
+            <a class="day-section-chip day-section-chip--${section.type}${section.empty ? " is-empty" : ""}"
+               href="#${section.id}"
+               data-section-target="${section.id}">
+              <span class="day-section-chip-icon" aria-hidden="true">${section.icon}</span>
+              <span class="day-section-chip-label">${section.title}</span>
+              ${section.count ? `<span class="day-section-chip-count">${section.count}</span>` : ""}
+            </a>
+          `
+        )
+        .join("")}
+    </div>
+  </nav>
+`;
+
+const dayBodySectionsMarkup = (day) => {
+  const flightsBody = flightMarkup(day.flights);
+  const stayBody = singleStayMarkup(day.stay);
+
+  const itineraryParts = [
+    dayStartMarkup(day.start_transfer),
+    dayStartMarkup(day.after_flight_transfer),
+    dayMapMarkup(day),
+    day.gallery_only ? celebrationMarkup(day.gallery) : "",
+    placeListMarkup(day, { showFoods: false }),
+    optionalPlacesMarkup(day, { showFoods: false }),
+    dayStartMarkup(day.end_transfer)
+  ].filter((part) => part && part.trim().length);
+  const itineraryBody = itineraryParts.join("\n");
+
+  const aggregatedFoods = aggregateDayFoods(day);
+  const foodsBody = foodGridMarkup(aggregatedFoods);
+
+  const flightsCount = day.flights?.length || 0;
+  const placesCount = (day.places?.length || 0) + (day.optional_places?.length || 0);
+
+  const sections = [
+    {
+      id: `${day.id}-flights`,
+      type: "flights",
+      icon: "✈️",
+      kicker: "Travel",
+      title: "Flights & Trains",
+      count: flightsCount ? `${flightsCount} segment${flightsCount > 1 ? "s" : ""}` : "",
+      body: flightsBody,
+      empty: !flightsBody,
+      emptyMessage: "No flights or trains today — enjoy a slower morning.",
+      defaultOpen: !!flightsBody
+    },
+    {
+      id: `${day.id}-hotel`,
+      type: "hotel",
+      icon: "🏨",
+      kicker: "Stay",
+      title: "Hotel",
+      count: day.stay?.label ? "1 base" : "",
+      body: stayBody,
+      empty: !stayBody,
+      emptyMessage: "Travel night — no fixed hotel for this date.",
+      defaultOpen: false
+    },
+    {
+      id: `${day.id}-itinerary`,
+      type: "itinerary",
+      icon: "🧭",
+      kicker: "Plan",
+      title: "Itinerary",
+      count: placesCount ? `${placesCount} stop${placesCount > 1 ? "s" : ""}` : "",
+      body: itineraryBody,
+      empty: !itineraryBody,
+      emptyMessage: "Free day to wander — no fixed stops.",
+      defaultOpen: true
+    },
+    {
+      id: `${day.id}-foods`,
+      type: "foods",
+      icon: "🍜",
+      kicker: "Eats",
+      title: "Foods to Try",
+      count: aggregatedFoods.length ? `${aggregatedFoods.length} pick${aggregatedFoods.length > 1 ? "s" : ""}` : "",
+      body: foodsBody,
+      empty: !foodsBody,
+      emptyMessage: "No curated picks — explore neighborhood spots as you go.",
+      defaultOpen: false
+    }
+  ];
+
+  return `
+    ${daySectionNavMarkup(sections)}
+    <div class="day-sections">
+      ${sections.map(daySectionMarkup).join("")}
+    </div>
+  `;
+};
+
 const dayMarkup = (day, index) => `
   <details class="day fade-up" id="${day.id}"${index === 0 ? " open" : ""}>
     <summary class="day-summary">
@@ -679,22 +856,7 @@ const dayMarkup = (day, index) => `
     </summary>
     <div class="day-panel">
       ${weatherMarkup(day)}
-      ${
-        day.plans?.length
-          ? planListMarkup(day.plans)
-          : `${dayStartMarkup(day.start_transfer)}
-      ${day.stay_position ? "" : singleStayMarkup(day.stay)}
-      ${day.flight_position === "after_places" ? "" : flightMarkup(day.flights)}
-      ${dayStartMarkup(day.after_flight_transfer)}
-      ${day.stay_position === "after_flights" ? singleStayMarkup(day.stay) : ""}
-      ${dayMapMarkup(day)}
-      ${day.gallery_only ? celebrationMarkup(day.gallery) : ""}
-      ${placeListMarkup(day)}
-      ${optionalPlacesMarkup(day)}
-      ${dayStartMarkup(day.end_transfer)}
-      ${day.stay_position === "after_places" ? singleStayMarkup(day.stay) : ""}
-      ${day.flight_position === "after_places" ? flightMarkup(day.flights) : ""}`
-      }
+      ${day.plans?.length ? planListMarkup(day.plans) : dayBodySectionsMarkup(day)}
     </div>
   </details>
 `;
@@ -704,9 +866,14 @@ const openDayFromHash = () => {
   if (!id) {
     return;
   }
-  const day = document.getElementById(id);
-  if (day instanceof HTMLDetailsElement) {
-    day.open = true;
+  const target = document.getElementById(id);
+  if (!target) return;
+  if (target instanceof HTMLDetailsElement) {
+    target.open = true;
+  }
+  const parentDay = target.closest("details.day");
+  if (parentDay instanceof HTMLDetailsElement) {
+    parentDay.open = true;
   }
 };
 
@@ -721,6 +888,27 @@ const wireDayNav = () => {
       if (day instanceof HTMLDetailsElement) {
         day.open = true;
       }
+    });
+  });
+};
+
+const wireDaySectionNav = () => {
+  document.querySelectorAll("[data-section-target]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const id = link.getAttribute("data-section-target");
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+      }
+      const parentDay = target.closest("details.day");
+      if (parentDay instanceof HTMLDetailsElement) {
+        parentDay.open = true;
+      }
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#${id}`);
     });
   });
 };
@@ -859,17 +1047,142 @@ const wireBackToTop = () => {
 
 const weatherCache = new Map();
 
+const prefersReducedMotion = () =>
+  window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+
 const setWeatherStatus = (card, message) => {
-  const target = card.querySelector(".weather-values");
-  if (target) {
-    target.innerHTML = `<span class="weather-status">${message}</span>`;
+  card.classList.remove("weather-card--loading", "weather-card--ready");
+  card.classList.add("weather-card--unavailable");
+  const body = card.querySelector(".weather-body");
+  if (body) {
+    body.innerHTML = `<p class="weather-status">${message}</p>`;
   }
+};
+
+const animateCount = (el, target) => {
+  if (!Number.isFinite(target)) {
+    el.textContent = "--";
+    return;
+  }
+  if (prefersReducedMotion()) {
+    el.textContent = String(target);
+    return;
+  }
+  const duration = 900;
+  const start = performance.now();
+  const tick = (now) => {
+    const t = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - t, 3);
+    el.textContent = String(Math.round(target * eased));
+    if (t < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+};
+
+const renderWeatherData = (card, data, index) => {
+  const code = data.daily.weather_code?.[index];
+  const meta = weatherCodeMeta[code] || { label: "Forecast", icon: "🌡️", type: "cloudy" };
+  const max = Math.round(data.daily.temperature_2m_max?.[index]);
+  const min = Math.round(data.daily.temperature_2m_min?.[index]);
+  const feelsMax = Math.round(data.daily.apparent_temperature_max?.[index]);
+  const rain = data.daily.precipitation_probability_max?.[index] ?? 0;
+  const wind = Math.round(data.daily.wind_speed_10m_max?.[index]);
+  const humidity = data.daily.relative_humidity_2m_mean?.[index];
+  const uv = data.daily.uv_index_max?.[index];
+  const sunrise = formatClockTime(data.daily.sunrise?.[index] || "");
+  const sunset = formatClockTime(data.daily.sunset?.[index] || "");
+
+  card.classList.remove(
+    "weather-card--loading",
+    "weather-card--unavailable",
+    "weather-card--sunny",
+    "weather-card--cloudy",
+    "weather-card--rainy",
+    "weather-card--stormy",
+    "weather-card--foggy",
+    "weather-card--snowy"
+  );
+  card.classList.add("weather-card--ready", `weather-card--${meta.type}`);
+
+  const body = card.querySelector(".weather-body");
+  if (!body) return;
+
+  const humidityRow = Number.isFinite(humidity)
+    ? `<div class="weather-stat" style="--stat-delay:180ms">
+        <span class="weather-stat-icon" aria-hidden="true">💦</span>
+        <span class="weather-stat-label">Humidity</span>
+        <span class="weather-stat-value">${Math.round(humidity)}%</span>
+      </div>`
+    : "";
+  const uvRow = Number.isFinite(uv)
+    ? `<div class="weather-stat" style="--stat-delay:240ms">
+        <span class="weather-stat-icon" aria-hidden="true">🌞</span>
+        <span class="weather-stat-label">UV index</span>
+        <span class="weather-stat-value">${Math.round(uv)}</span>
+      </div>`
+    : "";
+  const sunRow = sunrise && sunset
+    ? `<div class="weather-sun">
+        <span class="weather-sun-item">🌅 ${sunrise}</span>
+        <span class="weather-sun-divider" aria-hidden="true"></span>
+        <span class="weather-sun-item">🌇 ${sunset}</span>
+      </div>`
+    : "";
+
+  body.innerHTML = `
+    <div class="weather-hero">
+      <div class="weather-icon-wrap weather-icon-wrap--${meta.type}">
+        <span class="weather-atmosphere" aria-hidden="true"></span>
+        <span class="weather-icon-emoji" aria-hidden="true">${meta.icon}</span>
+      </div>
+      <div class="weather-hero-info">
+        <p class="weather-condition">${meta.label}</p>
+        <div class="weather-temp">
+          <span class="weather-temp-value">0</span>
+          <span class="weather-temp-unit">°C</span>
+        </div>
+        <p class="weather-feels">Low ${Number.isFinite(min) ? `${min}°` : "--"}${Number.isFinite(feelsMax) ? ` · Feels ${feelsMax}°` : ""}</p>
+      </div>
+    </div>
+    <div class="weather-stats">
+      <div class="weather-stat" style="--stat-delay:60ms">
+        <span class="weather-stat-icon" aria-hidden="true">💧</span>
+        <span class="weather-stat-label">Rain</span>
+        <span class="weather-stat-value">${rain}%</span>
+      </div>
+      <div class="weather-stat" style="--stat-delay:120ms">
+        <span class="weather-stat-icon" aria-hidden="true">💨</span>
+        <span class="weather-stat-label">Wind</span>
+        <span class="weather-stat-value">${Number.isFinite(wind) ? `${wind} km/h` : "--"}</span>
+      </div>
+      ${humidityRow}
+      ${uvRow}
+    </div>
+    ${sunRow}
+  `;
+
+  const tempEl = body.querySelector(".weather-temp-value");
+  if (tempEl) animateCount(tempEl, max);
 };
 
 const fetchWeather = async (lat, lon) => {
   const key = `${lat},${lon}`;
   if (!weatherCache.has(key)) {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encode(lat)}&longitude=${encode(lon)}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&forecast_days=16&timezone=auto`;
+    const params = [
+      "weather_code",
+      "temperature_2m_max",
+      "temperature_2m_min",
+      "apparent_temperature_max",
+      "apparent_temperature_min",
+      "precipitation_probability_max",
+      "precipitation_sum",
+      "wind_speed_10m_max",
+      "relative_humidity_2m_mean",
+      "uv_index_max",
+      "sunrise",
+      "sunset"
+    ].join(",");
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encode(lat)}&longitude=${encode(lon)}&daily=${params}&forecast_days=16&timezone=auto`;
     weatherCache.set(
       key,
       fetch(url).then((response) => {
@@ -897,7 +1210,6 @@ const hydrateWeather = async () => {
       const date = card.dataset.weatherDate;
       const lat = card.dataset.weatherLat;
       const lon = card.dataset.weatherLon;
-      const place = card.dataset.weatherPlace;
       const tripDate = new Date(`${date}T00:00:00`);
       const daysAway = Math.round((tripDate - today) / 86400000);
 
@@ -923,18 +1235,7 @@ const hydrateWeather = async () => {
           setWeatherStatus(card, `Forecast not published yet for ${date}`);
           return;
         }
-
-        const code = data.daily.weather_code?.[index];
-        const max = Math.round(data.daily.temperature_2m_max?.[index]);
-        const min = Math.round(data.daily.temperature_2m_min?.[index]);
-        const rain = data.daily.precipitation_probability_max?.[index];
-        const wind = Math.round(data.daily.wind_speed_10m_max?.[index]);
-        card.querySelector(".weather-values").innerHTML = `
-          <span><strong>${weatherCodeLabels[code] || "Forecast"}</strong>${place}</span>
-          <span>${min}° / ${max}°C</span>
-          <span>${rain ?? 0}% rain</span>
-          <span>${wind} km/h wind</span>
-        `;
+        renderWeatherData(card, data, index);
       } catch {
         setWeatherStatus(card, "Weather service unavailable. Try again later.");
       }
@@ -1013,6 +1314,7 @@ const render = (data, tripKey) => {
   `;
 
   wireDayNav();
+  wireDaySectionNav();
   openDayFromHash();
   startObservers();
   wireActiveDay();
