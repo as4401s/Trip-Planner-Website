@@ -2,3 +2,7 @@
 __pycache__/
 .DS_Store
 .playwright-cli/
+
+# Private booking notes — contains passenger names / booking refs / PINs.
+# Must never be committed to the public repo.
+CLAUDE.md
