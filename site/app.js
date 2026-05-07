@@ -802,9 +802,65 @@ const aggregateDayFoods = (day) => {
   return foods;
 };
 
+const parseFullDate = (text = "") => {
+  const m = String(text).match(/(\w+)\s+(\d+),?\s+(\d{4})/);
+  if (!m) return null;
+  const d = new Date(`${m[1]} ${m[2]}, ${m[3]}`);
+  return Number.isNaN(d.getTime()) ? null : d;
+};
+
+const parseStayRange = (dates = "", year = 2026) => {
+  const m = String(dates).match(/^(\w+)\s+(\d+)\s+to\s+(?:(\w+)\s+)?(\d+)/);
+  if (!m) return null;
+  const [, sm, sd, em, ed] = m;
+  const start = new Date(`${sm} ${sd}, ${year}`);
+  const end = new Date(`${em || sm} ${ed}, ${year}`);
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return null;
+  return { start, end };
+};
+
+let activeStayByDayId = new Map();
+
+const buildStayLookup = (days = []) => {
+  activeStayByDayId = new Map();
+  const stays = [];
+  days.forEach((day) => {
+    if (!day.stay) return;
+    const dayDate = parseFullDate(day.date);
+    const year = dayDate ? dayDate.getFullYear() : 2026;
+    const range = parseStayRange(day.stay.dates, year);
+    if (range) stays.push({ stay: day.stay, ...range });
+  });
+  days.forEach((day) => {
+    const dayDate = parseFullDate(day.date);
+    if (!dayDate) return;
+    if (day.stay) {
+      activeStayByDayId.set(day.id, day.stay);
+      return;
+    }
+    const match = stays.find((s) => dayDate >= s.start && dayDate < s.end);
+    if (match) activeStayByDayId.set(day.id, match.stay);
+  });
+};
+
+const stayDescForDay = (stay, day) => {
+  if (!stay) return "No hotel";
+  const isStart = day.stay === stay;
+  if (isStart) return stay.label;
+  const dayDate = parseFullDate(day.date);
+  const range = parseStayRange(stay.dates, dayDate ? dayDate.getFullYear() : 2026);
+  if (range) {
+    const checkoutDate = new Date(range.end);
+    const checkoutLabel = checkoutDate.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+    return `${stay.label} · check out ${checkoutLabel}`;
+  }
+  return stay.label;
+};
+
 const dayBodyTabsMarkup = (day) => {
   const flightsBody = flightMarkup(day.flights);
-  const stayBody = singleStayMarkup(day.stay);
+  const activeStay = activeStayByDayId.get(day.id) || null;
+  const stayBody = singleStayMarkup(activeStay);
 
   const itineraryParts = [
     dayStartMarkup(day.start_transfer),
@@ -852,10 +908,10 @@ const dayBodyTabsMarkup = (day) => {
       type: "hotel",
       icon: "🏨",
       title: "Hotel",
-      desc: esc(day.stay?.label || "No hotel"),
+      desc: esc(activeStay ? stayDescForDay(activeStay, day) : "No hotel"),
       body: stayBody,
       empty: !stayBody,
-      emptyMessage: "No hotel for this night."
+      emptyMessage: "No hotel for this night — travel night."
     },
     {
       id: `${safeDayId}-foods`,
@@ -1541,6 +1597,7 @@ const render = (data, tripKey) => {
   const heroImage = safeImage(data.hero?.images);
   const trip = tripDefaults[tripKey] || tripDefaults.taiwan;
   const hasDayStays = data.days?.some((day) => day.stay);
+  buildStayLookup(data.days || []);
   app.innerHTML = `
     <div class="page">
       <header class="hero" style="--hero-image: url('${esc(assetSrc(heroImage))}')">
