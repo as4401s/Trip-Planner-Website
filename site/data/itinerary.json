@@ -3,10 +3,12 @@
   "trip_dates": "May 24 to May 31, 2026",
   "summary": "Taipei-base itinerary with city temples, north-coast routes, alternate day plans, and the graduation weekend kept intact.",
   "stay": {
-    "label": "No. 250, Wenhua 1st Rd, Guishan District",
+    "label": "Family stay base · Guishan, Taoyuan",
+    "city": "Taoyuan / Greater Taipei",
+    "dates": "May 24 to May 31 (7 nights)",
     "address": "No. 250, Wenhua 1st Rd, Guishan District, Taoyuan City, Taiwan 333",
-    "note": "Use this as the start and end point for the daily routes below.",
-    "transit": "Best rail access is Taoyuan Airport MRT A7 National Taiwan Sport University. A8 Chang Gung Memorial Hospital also works if you prefer a taxi pickup.",
+    "note": "Family base for the whole Taiwan leg. Use this as the start and end point for the daily routes below — most days return here at night.",
+    "transit": "Closest rail access is Taoyuan Airport MRT A7 National Taiwan Sport University. A8 Chang Gung Memorial Hospital also works if you prefer a taxi pickup.",
     "map": "https://www.google.com/maps/place/%E6%A8%B8%E5%9C%92%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E4%B8%AD%E5%BF%83/@25.0347049,121.3853484,18z/data=!4m6!3m5!1s0x3442a765141a87dd:0xf8226da0bfcb779d!8m2!3d25.0347049!4d121.3867334!16s%2Fg%2F11bzt947dg?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D"
   },
   "hero": {

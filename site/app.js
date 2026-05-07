@@ -821,9 +821,11 @@ const parseStayRange = (dates = "", year = 2026) => {
 };
 
 let activeStayByDayId = new Map();
+let tripDefaultStay = null;
 
-const buildStayLookup = (days = []) => {
+const buildStayLookup = (days = [], tripStay = null) => {
   activeStayByDayId = new Map();
+  tripDefaultStay = tripStay || null;
   const stays = [];
   days.forEach((day) => {
     if (!day.stay) return;
@@ -834,13 +836,20 @@ const buildStayLookup = (days = []) => {
   });
   days.forEach((day) => {
     const dayDate = parseFullDate(day.date);
-    if (!dayDate) return;
     if (day.stay) {
       activeStayByDayId.set(day.id, day.stay);
       return;
     }
-    const match = stays.find((s) => dayDate >= s.start && dayDate < s.end);
-    if (match) activeStayByDayId.set(day.id, match.stay);
+    if (dayDate) {
+      const match = stays.find((s) => dayDate >= s.start && dayDate < s.end);
+      if (match) {
+        activeStayByDayId.set(day.id, match.stay);
+        return;
+      }
+    }
+    if (tripDefaultStay) {
+      activeStayByDayId.set(day.id, tripDefaultStay);
+    }
   });
 };
 
@@ -858,86 +867,141 @@ const stayDescForDay = (stay, day) => {
   return stay.label;
 };
 
+const planTabBodyMarkup = (plan) => {
+  const itineraryParts = [
+    plan.focus ? `<p class="plan-tab-focus">${esc(plan.focus)}</p>` : "",
+    plan.transport_note ? `<p class="plan-tab-transport">${esc(plan.transport_note)}</p>` : "",
+    dayStartMarkup(plan.start_transfer),
+    dayMapMarkup(plan),
+    placeListMarkup(plan, { showFoods: false }),
+    dayStartMarkup(plan.end_transfer)
+  ].filter((part) => part && part.trim().length);
+  const aggregated = aggregateDayFoods(plan);
+  const foods = foodGridMarkup(aggregated);
+  const itinerary = itineraryParts.join("\n");
+  const sections = [];
+  if (itinerary) {
+    sections.push(`<section class="plan-tab-section">
+      <h4 class="plan-tab-section-heading"><span aria-hidden="true">🧭</span> Itinerary</h4>
+      ${itinerary}
+    </section>`);
+  }
+  if (foods) {
+    sections.push(`<section class="plan-tab-section">
+      <h4 class="plan-tab-section-heading"><span aria-hidden="true">🍜</span> Foods to Try</h4>
+      ${foods}
+    </section>`);
+  }
+  return sections.join("\n");
+};
+
 const dayBodyTabsMarkup = (day) => {
-  const flightsBody = flightMarkup(day.flights);
   const activeStay = activeStayByDayId.get(day.id) || null;
   const stayBody = singleStayMarkup(activeStay);
-
-  const itineraryParts = [
-    dayStartMarkup(day.start_transfer),
-    dayStartMarkup(day.after_flight_transfer),
-    ticketsMarkup(day.tickets),
-    dayMapMarkup(day),
-    day.gallery_only ? celebrationMarkup(day.gallery) : "",
-    placeListMarkup(day, { showFoods: false }),
-    optionalPlacesMarkup(day, { showFoods: false }),
-    dayStartMarkup(day.end_transfer)
-  ].filter((part) => part && part.trim().length);
-  const itineraryBody = itineraryParts.join("\n");
-
-  const aggregatedFoods = aggregateDayFoods(day);
-  const foodsBody = foodGridMarkup(aggregatedFoods);
   const weatherBody = weatherMarkup(day);
-
-  const flightsCount = day.flights?.length || 0;
-  const placesCount = (day.places?.length || 0) + (day.optional_places?.length || 0);
-
   const safeDayId = esc(day.id);
-  const tabs = [
-    {
-      id: `${safeDayId}-itinerary`,
-      type: "itinerary",
-      icon: "🧭",
-      title: "Itinerary",
-      desc: placesCount ? `${placesCount} stop${placesCount > 1 ? "s" : ""}` : "Free day",
-      body: itineraryBody,
-      empty: !itineraryBody,
-      emptyMessage: "No fixed stops."
-    },
-    {
-      id: `${safeDayId}-flights`,
-      type: "flights",
-      icon: "✈️",
-      title: "Flights & Trains",
-      desc: flightsCount ? `${flightsCount} segment${flightsCount > 1 ? "s" : ""}` : "No travel",
-      body: flightsBody,
-      empty: !flightsBody,
-      emptyMessage: "No flights or trains today."
-    },
-    {
-      id: `${safeDayId}-hotel`,
-      type: "hotel",
-      icon: "🏨",
-      title: "Hotel",
-      desc: esc(activeStay ? stayDescForDay(activeStay, day) : "No hotel"),
-      body: stayBody,
-      empty: !stayBody,
-      emptyMessage: "No hotel for this night — travel night."
-    },
-    {
-      id: `${safeDayId}-foods`,
-      type: "foods",
-      icon: "🍜",
-      title: "Foods to Try",
-      desc: aggregatedFoods.length ? `${aggregatedFoods.length} pick${aggregatedFoods.length > 1 ? "s" : ""}` : "No picks",
-      body: foodsBody,
-      empty: !foodsBody,
-      emptyMessage: "No food picks for today."
-    },
-    {
-      id: `${safeDayId}-weather`,
-      type: "weather",
-      icon: "🌤️",
-      title: "Weather",
-      desc: weatherBody ? "Hourly forecast" : "Forecast unavailable",
-      body: weatherBody,
-      empty: !weatherBody,
-      emptyMessage: "Forecast unavailable."
-    }
-  ];
+  const hotelTab = {
+    id: `${safeDayId}-hotel`,
+    type: "hotel",
+    icon: "🏨",
+    title: "Hotel",
+    desc: esc(activeStay ? stayDescForDay(activeStay, day) : "No hotel"),
+    body: stayBody,
+    empty: !stayBody,
+    emptyMessage: "No hotel for this night — travel night."
+  };
+  const weatherTab = {
+    id: `${safeDayId}-weather`,
+    type: "weather",
+    icon: "🌤️",
+    title: "Weather",
+    desc: weatherBody ? "Hourly forecast" : "Forecast unavailable",
+    body: weatherBody,
+    empty: !weatherBody,
+    emptyMessage: "Forecast unavailable."
+  };
+
+  let tabs;
+  let defaultType;
+
+  if (Array.isArray(day.plans) && day.plans.length) {
+    const planTabs = day.plans.map((plan, idx) => {
+      const slug = (plan.label || `plan-${idx + 1}`).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || `plan-${idx + 1}`;
+      const body = planTabBodyMarkup(plan);
+      return {
+        id: `${safeDayId}-${slug}`,
+        type: idx === 0 ? "plan-a" : "plan-b",
+        icon: idx === 0 ? "🅰️" : "🅱️",
+        title: plan.label || `Plan ${idx + 1}`,
+        desc: plan.title || "Plan option",
+        body,
+        empty: !body,
+        emptyMessage: "Plan details to be filled in."
+      };
+    });
+    tabs = [...planTabs, hotelTab, weatherTab];
+    defaultType = planTabs[0]?.type;
+  } else {
+    const flightsBody = flightMarkup(day.flights);
+    const itineraryParts = [
+      dayStartMarkup(day.start_transfer),
+      dayStartMarkup(day.after_flight_transfer),
+      ticketsMarkup(day.tickets),
+      dayMapMarkup(day),
+      day.gallery_only ? celebrationMarkup(day.gallery) : "",
+      placeListMarkup(day, { showFoods: false }),
+      optionalPlacesMarkup(day, { showFoods: false }),
+      dayStartMarkup(day.end_transfer)
+    ].filter((part) => part && part.trim().length);
+    const itineraryBody = itineraryParts.join("\n");
+
+    const aggregatedFoods = aggregateDayFoods(day);
+    const foodsBody = foodGridMarkup(aggregatedFoods);
+
+    const flightsCount = day.flights?.length || 0;
+    const placesCount = (day.places?.length || 0) + (day.optional_places?.length || 0);
+
+    tabs = [
+      {
+        id: `${safeDayId}-itinerary`,
+        type: "itinerary",
+        icon: "🧭",
+        title: "Itinerary",
+        desc: placesCount ? `${placesCount} stop${placesCount > 1 ? "s" : ""}` : "Free day",
+        body: itineraryBody,
+        empty: !itineraryBody,
+        emptyMessage: "No fixed stops."
+      },
+      {
+        id: `${safeDayId}-flights`,
+        type: "flights",
+        icon: "✈️",
+        title: "Flights & Trains",
+        desc: flightsCount ? `${flightsCount} segment${flightsCount > 1 ? "s" : ""}` : "No travel",
+        body: flightsBody,
+        empty: !flightsBody,
+        emptyMessage: "No flights or trains today."
+      },
+      hotelTab,
+      {
+        id: `${safeDayId}-foods`,
+        type: "foods",
+        icon: "🍜",
+        title: "Foods to Try",
+        desc: aggregatedFoods.length ? `${aggregatedFoods.length} pick${aggregatedFoods.length > 1 ? "s" : ""}` : "No picks",
+        body: foodsBody,
+        empty: !foodsBody,
+        emptyMessage: "No food picks for today."
+      },
+      weatherTab
+    ];
+    defaultType = "itinerary";
+  }
 
   const defaultActive =
-    tabs.find((t) => t.type === "itinerary" && !t.empty)?.id || tabs.find((t) => !t.empty)?.id || tabs[0].id;
+    tabs.find((t) => t.type === defaultType && !t.empty)?.id ||
+    tabs.find((t) => !t.empty)?.id ||
+    tabs[0].id;
 
   const renderBody = (tab) =>
     tab.empty
@@ -1030,7 +1094,7 @@ const dayMarkup = (day, index) => `
       </div>
     </summary>
     <div class="day-panel">
-      ${day.plans?.length ? `${weatherMarkup(day)}${planListMarkup(day.plans)}` : dayBodyTabsMarkup(day)}
+      ${dayBodyTabsMarkup(day)}
     </div>
   </details>
 `;
@@ -1598,7 +1662,7 @@ const render = (data, tripKey) => {
   const heroImage = safeImage(data.hero?.images);
   const trip = tripDefaults[tripKey] || tripDefaults.taiwan;
   const hasDayStays = data.days?.some((day) => day.stay);
-  buildStayLookup(data.days || []);
+  buildStayLookup(data.days || [], data.stay || null);
   app.innerHTML = `
     <div class="page">
       <header class="hero" style="--hero-image: url('${esc(assetSrc(heroImage))}')">
